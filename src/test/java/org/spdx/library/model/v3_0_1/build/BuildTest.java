@@ -169,17 +169,6 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setComment}.
-	 */
-	public void testBuildsetComment() throws InvalidSPDXAnalysisException {
-		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBuild.getComment());
-		String newStringValue = "new comment value";
-		testBuild.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setName}.
 	 */
 	public void testBuildsetName() throws InvalidSPDXAnalysisException {
@@ -188,6 +177,17 @@ public class BuildTest extends TestCase {
 		String newStringValue = "new name value";
 		testBuild.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBuild.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setComment}.
+	 */
+	public void testBuildsetComment() throws InvalidSPDXAnalysisException {
+		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBuild.getComment());
+		String newStringValue = "new comment value";
+		testBuild.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getComment());
 	}
 	
 	/**

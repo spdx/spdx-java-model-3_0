@@ -60,6 +60,7 @@ import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
 import org.spdx.library.model.v3_0_1.security.CvssV2VulnAssessmentRelationship.CvssV2VulnAssessmentRelationshipBuilder;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * GENERATED FILE - DO NOT MODIFY
@@ -266,17 +267,6 @@ public class CvssV2VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV2VulnAssessmentRelationship#setComment}.
-	 */
-	public void testCvssV2VulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		CvssV2VulnAssessmentRelationship testCvssV2VulnAssessmentRelationship = generator.builderForCvssV2VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testCvssV2VulnAssessmentRelationship.getComment());
-		String newStringValue = "new comment value";
-		testCvssV2VulnAssessmentRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testCvssV2VulnAssessmentRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV2VulnAssessmentRelationship#setName}.
 	 */
 	public void testCvssV2VulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -285,6 +275,17 @@ public class CvssV2VulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new name value";
 		testCvssV2VulnAssessmentRelationship.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testCvssV2VulnAssessmentRelationship.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV2VulnAssessmentRelationship#setComment}.
+	 */
+	public void testCvssV2VulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
+		CvssV2VulnAssessmentRelationship testCvssV2VulnAssessmentRelationship = generator.builderForCvssV2VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testCvssV2VulnAssessmentRelationship.getComment());
+		String newStringValue = "new comment value";
+		testCvssV2VulnAssessmentRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testCvssV2VulnAssessmentRelationship.getComment());
 	}
 	
 	/**

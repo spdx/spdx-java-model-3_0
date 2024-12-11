@@ -43,7 +43,7 @@ import org.spdx.library.model.v3_0_1.core.ProfileIdentifierType;
  * A characterization of some aspect of an Element that is associated with the Element 
  * in a generalized fashion. 
  */
-public abstract class Extension extends ModelObjectV3  {
+public  class Extension extends ModelObjectV3  {
 
 	
 	/**
@@ -114,7 +114,7 @@ public abstract class Extension extends ModelObjectV3  {
 	
 	
 	
-	public static abstract class ExtensionBuilder extends ModelObjectV3Builder {
+	public static class ExtensionBuilder extends ModelObjectV3Builder {
 	
 		/**
 		 * Create an ExtensionBuilder from another model object copying the modelStore and copyManager and using an anonymous ID
@@ -153,6 +153,13 @@ public abstract class Extension extends ModelObjectV3  {
 		 * @return the Extension
 		 * @throws InvalidSPDXAnalysisException on any errors during build
 		 */
-		public abstract Extension build() throws InvalidSPDXAnalysisException;
+		public Extension build() throws InvalidSPDXAnalysisException {
+			IModelStoreLock lock = getModelStore().enterCriticalSection(false);
+			try {
+				return new Extension(this);
+			} finally {
+				getModelStore().leaveCriticalSection(lock);
+			}
+		}
 	}
 }

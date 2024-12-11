@@ -52,8 +52,8 @@ import org.spdx.library.model.v3_0_1.extension.Extension;
  */
 public abstract class ElementCollection extends Element  {
 
-	Collection<Element> elements = Collections.emptyList();
 	Collection<Element> rootElements = Collections.emptyList();
+	Collection<Element> elements = Collections.emptyList();
 	Collection<ProfileIdentifierType> profileConformances = Collections.emptyList();
 	
 	/**
@@ -86,10 +86,10 @@ public abstract class ElementCollection extends Element  {
 			boolean create, String idPrefix) throws InvalidSPDXAnalysisException {
 		super(modelStore, objectUri, copyManager, create, idPrefix);
 		if (!isExternal()) {
-			elements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ELEMENT, Element.class);
+			rootElements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ROOT_ELEMENT, Element.class);
 		}
 		if (!isExternal()) {
-			rootElements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ROOT_ELEMENT, Element.class);
+			elements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ELEMENT, Element.class);
 		}
 		if (!isExternal()) {
 			profileConformances = (Collection<ProfileIdentifierType>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_PROFILE_CONFORMANCE, ProfileIdentifierType.class);
@@ -104,11 +104,11 @@ public abstract class ElementCollection extends Element  {
 	 @SuppressWarnings("unchecked")
 	protected ElementCollection(ElementCollectionBuilder builder) throws InvalidSPDXAnalysisException {
 		super(builder);
-		elements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ELEMENT, Element.class);
 		rootElements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ROOT_ELEMENT, Element.class);
+		elements = (Collection<Element>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_ELEMENT, Element.class);
 		profileConformances = (Collection<ProfileIdentifierType>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_PROFILE_CONFORMANCE, ProfileIdentifierType.class);
-		getElements().addAll(builder.elements);
 		getRootElements().addAll(builder.rootElements);
+		getElements().addAll(builder.elements);
 		getProfileConformances().addAll(builder.profileConformances);
 	}
 
@@ -121,11 +121,11 @@ public abstract class ElementCollection extends Element  {
 	}
 	
 	// Getters and Setters
-	public Collection<Element> getElements() {
-		return elements;
-	}
 	public Collection<Element> getRootElements() {
 		return rootElements;
+	}
+	public Collection<Element> getElements() {
+		return elements;
 	}
 	public Collection<ProfileIdentifierType> getProfileConformances() {
 		return profileConformances;
@@ -162,16 +162,6 @@ public abstract class ElementCollection extends Element  {
 		return this;
 	}	
 	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public ElementCollection setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -179,6 +169,16 @@ public abstract class ElementCollection extends Element  {
 	 @Override
 	public ElementCollection setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public ElementCollection setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	
@@ -195,11 +195,11 @@ public abstract class ElementCollection extends Element  {
 	public List<String> _verify(Set<String> verifiedIds, String specVersionForVerify, List<IndividualUriValue> profiles) {
 		List<String> retval = new ArrayList<>();
 		retval.addAll(super._verify(verifiedIds, specVersionForVerify, profiles));
-		for (Element element:elements) {
-			retval.addAll(element.verify(verifiedIds, specVersionForVerify, profiles));
-		}
 		for (Element rootElement:rootElements) {
 			retval.addAll(rootElement.verify(verifiedIds, specVersionForVerify, profiles));
+		}
+		for (Element element:elements) {
+			retval.addAll(element.verify(verifiedIds, specVersionForVerify, profiles));
 		}
 		return retval;
 	}
@@ -244,58 +244,10 @@ public abstract class ElementCollection extends Element  {
 			super(modelStore, objectUri, copyManager);
 		}
 		
-		protected Collection<Element> elements = new ArrayList<>();
 		protected Collection<Element> rootElements = new ArrayList<>();
+		protected Collection<Element> elements = new ArrayList<>();
 		protected Collection<ProfileIdentifierType> profileConformances = new ArrayList<>();
 		
-		
-		/**
-		 * Adds a element to the initial collection
-		 * @parameter element element to add
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder addElement(Element element) {
-			if (Objects.nonNull(element)) {
-				elements.add(element);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds all elements from a collection to the initial element collection
-		 * @parameter elementCollection collection to initialize the element
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder addAllElement(Collection<Element> elementCollection) {
-			if (Objects.nonNull(elementCollection)) {
-				elements.addAll(elementCollection);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder addExternalRef(ExternalRef externalRef) {
-			if (Objects.nonNull(externalRef)) {
-				super.externalRefs.add(externalRef);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
-			if (Objects.nonNull(externalRefCollection)) {
-				super.externalRefs.addAll(externalRefCollection);
-			}
-			return this;
-		}
 		
 		/**
 		 * Adds a extension to the initial collection
@@ -365,6 +317,54 @@ public abstract class ElementCollection extends Element  {
 		public ElementCollectionBuilder addAllRootElement(Collection<Element> rootElementCollection) {
 			if (Objects.nonNull(rootElementCollection)) {
 				rootElements.addAll(rootElementCollection);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds a element to the initial collection
+		 * @parameter element element to add
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder addElement(Element element) {
+			if (Objects.nonNull(element)) {
+				elements.add(element);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds all elements from a collection to the initial element collection
+		 * @parameter elementCollection collection to initialize the element
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder addAllElement(Collection<Element> elementCollection) {
+			if (Objects.nonNull(elementCollection)) {
+				elements.addAll(elementCollection);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds a externalRef to the initial collection
+		 * @parameter externalRef externalRef to add
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder addExternalRef(ExternalRef externalRef) {
+			if (Objects.nonNull(externalRef)) {
+				super.externalRefs.add(externalRef);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds all elements from a collection to the initial externalRef collection
+		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
+			if (Objects.nonNull(externalRefCollection)) {
+				super.externalRefs.addAll(externalRefCollection);
 			}
 			return this;
 		}
@@ -448,22 +448,22 @@ public abstract class ElementCollection extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 	

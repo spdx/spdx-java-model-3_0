@@ -27,6 +27,7 @@ import org.spdx.library.model.v3_0_1.core.Element;
 
 import org.spdx.library.model.v3_0_1.core.NoAssertionElement;
 import org.spdx.library.model.v3_0_1.core.NoneElement;
+import org.spdx.library.model.v3_0_1.core.SpdxOrganization;
 import org.spdx.library.model.v3_0_1.expandedlicensing.NoAssertionLicense;
 import org.spdx.library.model.v3_0_1.expandedlicensing.NoneLicense;
  
@@ -50,6 +51,7 @@ public class SpdxIndividualFactory {
 			map.put("https://spdx.org/rdf/3.0.1/terms/Core/NoneElement", new NoneElement());
 			map.put("https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoAssertionLicense", new NoAssertionLicense());
 			map.put("https://spdx.org/rdf/3.0.1/terms/ExpandedLicensing/NoneLicense", new NoneLicense());
+			map.put("https://spdx.org/rdf/3.0.1/terms/Core/SpdxOrganization", new SpdxOrganization());
 		} catch (InvalidSPDXAnalysisException ex) {
 			throw new RuntimeException("Unable to load individuals", ex);
 		}

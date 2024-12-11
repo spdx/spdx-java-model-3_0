@@ -206,16 +206,6 @@ public  class CustomLicense extends License  {
 		return this;
 	}	
 	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public CustomLicense setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -223,6 +213,16 @@ public  class CustomLicense extends License  {
 	 @Override
 	public CustomLicense setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public CustomLicense setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	/**
@@ -519,22 +519,22 @@ public  class CustomLicense extends License  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public CustomLicenseBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public CustomLicenseBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 		

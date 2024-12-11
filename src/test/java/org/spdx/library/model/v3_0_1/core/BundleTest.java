@@ -151,17 +151,6 @@ public class BundleTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setComment}.
-	 */
-	public void testBundlesetComment() throws InvalidSPDXAnalysisException {
-		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBundle.getComment());
-		String newStringValue = "new comment value";
-		testBundle.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBundle.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setName}.
 	 */
 	public void testBundlesetName() throws InvalidSPDXAnalysisException {
@@ -170,6 +159,17 @@ public class BundleTest extends TestCase {
 		String newStringValue = "new name value";
 		testBundle.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBundle.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setComment}.
+	 */
+	public void testBundlesetComment() throws InvalidSPDXAnalysisException {
+		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBundle.getComment());
+		String newStringValue = "new comment value";
+		testBundle.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBundle.getComment());
 	}
 	
 	/**

@@ -151,17 +151,6 @@ public class BomTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setComment}.
-	 */
-	public void testBomsetComment() throws InvalidSPDXAnalysisException {
-		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBom.getComment());
-		String newStringValue = "new comment value";
-		testBom.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBom.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setName}.
 	 */
 	public void testBomsetName() throws InvalidSPDXAnalysisException {
@@ -170,6 +159,17 @@ public class BomTest extends TestCase {
 		String newStringValue = "new name value";
 		testBom.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBom.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setComment}.
+	 */
+	public void testBomsetComment() throws InvalidSPDXAnalysisException {
+		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBom.getComment());
+		String newStringValue = "new comment value";
+		testBom.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBom.getComment());
 	}
 	
 	/**

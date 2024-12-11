@@ -180,16 +180,6 @@ public  class SpdxDocument extends ElementCollection  {
 		return this;
 	}	
 	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public SpdxDocument setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -197,6 +187,16 @@ public  class SpdxDocument extends ElementCollection  {
 	 @Override
 	public SpdxDocument setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public SpdxDocument setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	
@@ -533,22 +533,22 @@ public  class SpdxDocument extends ElementCollection  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public SpdxDocumentBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public SpdxDocumentBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 	

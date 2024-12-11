@@ -115,6 +115,26 @@ public  class Organization extends Agent  {
 		return this;
 	}	
 	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Organization setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Organization setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
+		return this;
+	}	
+	/**
 	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -132,26 +152,6 @@ public  class Organization extends Agent  {
 	 @Override
 	public Organization setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		super.setDescription(description);
-		return this;
-	}	
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Organization setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Organization setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
 		return this;
 	}	
 	
@@ -320,6 +320,26 @@ public  class Organization extends Agent  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @parameter name value to set
+		 * @return this for chaining
+		**/
+		public OrganizationBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public OrganizationBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of summary
 		 * @parameter summary value to set
 		 * @return this for chaining
@@ -336,26 +356,6 @@ public  class Organization extends Agent  {
 		**/
 		public OrganizationBuilder setDescription(String description) {
 			super.description = description;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public OrganizationBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public OrganizationBuilder setName(String name) {
-			super.name = name;
 			return this;
 		}
 	

@@ -151,6 +151,26 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		return this;
 	}
 	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public OrLaterOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public OrLaterOperator setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
+		return this;
+	}	
+	/**
 	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -168,26 +188,6 @@ public  class OrLaterOperator extends ExtendableLicense  {
 	 @Override
 	public OrLaterOperator setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		super.setDescription(description);
-		return this;
-	}	
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public OrLaterOperator setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public OrLaterOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
 		return this;
 	}	
 	
@@ -410,6 +410,26 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @parameter name value to set
+		 * @return this for chaining
+		**/
+		public OrLaterOperatorBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public OrLaterOperatorBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of summary
 		 * @parameter summary value to set
 		 * @return this for chaining
@@ -426,26 +446,6 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		**/
 		public OrLaterOperatorBuilder setDescription(String description) {
 			super.description = description;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public OrLaterOperatorBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public OrLaterOperatorBuilder setName(String name) {
-			super.name = name;
 			return this;
 		}
 	

@@ -233,17 +233,6 @@ public class SpdxFileTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setComment}.
-	 */
-	public void testSpdxFilesetComment() throws InvalidSPDXAnalysisException {
-		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxFile.getComment());
-		String newStringValue = "new comment value";
-		testSpdxFile.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxFile.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setName}.
 	 */
 	public void testSpdxFilesetName() throws InvalidSPDXAnalysisException {
@@ -252,6 +241,17 @@ public class SpdxFileTest extends TestCase {
 		String newStringValue = "new name value";
 		testSpdxFile.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSpdxFile.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setComment}.
+	 */
+	public void testSpdxFilesetComment() throws InvalidSPDXAnalysisException {
+		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxFile.getComment());
+		String newStringValue = "new comment value";
+		testSpdxFile.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxFile.getComment());
 	}
 	
 	/**

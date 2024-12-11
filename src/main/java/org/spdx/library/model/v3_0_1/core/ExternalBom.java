@@ -194,20 +194,6 @@ public class ExternalBom extends Bom  implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the comment
-	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Bom setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the name
 	 */
 	public Optional<String> getName() throws InvalidSPDXAnalysisException {
@@ -219,6 +205,20 @@ public class ExternalBom extends Bom  implements IndividualUriValue {
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Bom setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Bom setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

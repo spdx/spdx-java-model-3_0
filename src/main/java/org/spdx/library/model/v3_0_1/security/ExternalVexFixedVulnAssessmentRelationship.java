@@ -53,6 +53,7 @@ import org.spdx.library.model.v3_0_1.core.ProfileIdentifierType;
 import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * This is an external representation of VexFixedVulnAssessmentRelationship - nothing can be set and properties returned
@@ -170,7 +171,7 @@ public class ExternalVexFixedVulnAssessmentRelationship extends VexFixedVulnAsse
 	 * @return the assessedElement
 	 */
 	 @SuppressWarnings("unchecked")
-	public Optional<Element> getAssessedElement() throws InvalidSPDXAnalysisException {
+	public Optional<SoftwareArtifact> getAssessedElement() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	
@@ -179,7 +180,7 @@ public class ExternalVexFixedVulnAssessmentRelationship extends VexFixedVulnAsse
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public VexFixedVulnAssessmentRelationship setAssessedElement(@Nullable Element assessedElement) throws InvalidSPDXAnalysisException {
+	public VexFixedVulnAssessmentRelationship setAssessedElement(@Nullable SoftwareArtifact assessedElement) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -340,20 +341,6 @@ public class ExternalVexFixedVulnAssessmentRelationship extends VexFixedVulnAsse
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the comment
-	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public VexFixedVulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the name
 	 */
 	public Optional<String> getName() throws InvalidSPDXAnalysisException {
@@ -365,6 +352,20 @@ public class ExternalVexFixedVulnAssessmentRelationship extends VexFixedVulnAsse
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public VexFixedVulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public VexFixedVulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

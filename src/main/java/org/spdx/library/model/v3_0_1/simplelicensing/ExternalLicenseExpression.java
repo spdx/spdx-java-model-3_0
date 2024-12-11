@@ -59,9 +59,9 @@ import org.spdx.library.model.v3_0_1.extension.Extension;
 **/
 public class ExternalLicenseExpression extends LicenseExpression  implements IndividualUriValue {
 
-	Collection<ExternalRef> externalRefs = Collections.emptyList();
 	Collection<Extension> extensions = Collections.emptyList();
 	Collection<IntegrityMethod> verifiedUsings = Collections.emptyList();
+	Collection<ExternalRef> externalRefs = Collections.emptyList();
 	Collection<DictionaryEntry> customIdToUris = Collections.emptyList();
 	Collection<ExternalIdentifier> externalIdentifiers = Collections.emptyList();
 
@@ -118,14 +118,14 @@ public class ExternalLicenseExpression extends LicenseExpression  implements Ind
 	}
 	
 	// Getters and Setters
-	public Collection<ExternalRef> getExternalRefs() {
-		return externalRefs;
-	}
 	public Collection<Extension> getExtensions() {
 		return extensions;
 	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return verifiedUsings;
+	}
+	public Collection<ExternalRef> getExternalRefs() {
+		return externalRefs;
 	}
 	public Collection<DictionaryEntry> getCustomIdToUris() {
 		return customIdToUris;
@@ -147,20 +147,6 @@ public class ExternalLicenseExpression extends LicenseExpression  implements Ind
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public LicenseExpression setCreationInfo(@Nullable CreationInfo creationInfo) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
-	 * @return the licenseListVersion
-	 */
-	public Optional<String> getLicenseListVersion() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param licenseListVersion the licenseListVersion to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public LicenseExpression setLicenseListVersion(@Nullable String licenseListVersion) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -191,18 +177,32 @@ public class ExternalLicenseExpression extends LicenseExpression  implements Ind
 	public LicenseExpression setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
-		/**
-	 * @return the comment
-	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
 	/**
-	 * @param comment the comment to set
+	 * @return the licenseExpression
+	 */
+	public @Nullable String getLicenseExpression() throws InvalidSPDXAnalysisException {
+		return null;
+	}
+		/**
+	 * @param licenseExpression the licenseExpression to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public LicenseExpression setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+	public LicenseExpression setLicenseExpression(@Nullable String licenseExpression) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the licenseListVersion
+	 */
+	public Optional<String> getLicenseListVersion() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param licenseListVersion the licenseListVersion to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public LicenseExpression setLicenseListVersion(@Nullable String licenseListVersion) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -219,18 +219,18 @@ public class ExternalLicenseExpression extends LicenseExpression  implements Ind
 	public LicenseExpression setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
-	/**
-	 * @return the licenseExpression
-	 */
-	public @Nullable String getLicenseExpression() throws InvalidSPDXAnalysisException {
-		return null;
-	}
 		/**
-	 * @param licenseExpression the licenseExpression to set
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public LicenseExpression setLicenseExpression(@Nullable String licenseExpression) throws InvalidSPDXAnalysisException {
+	public LicenseExpression setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

@@ -256,16 +256,6 @@ public  class Snippet extends SoftwareArtifact  {
 		return this;
 	}	
 	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Snippet setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
-		return this;
-	}	
-	/**
 	 * @param releaseTime the releaseTime to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -293,6 +283,16 @@ public  class Snippet extends SoftwareArtifact  {
 	 @Override
 	public Snippet setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Snippet setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
 		return this;
 	}	
 	/**
@@ -421,30 +421,6 @@ public  class Snippet extends SoftwareArtifact  {
 		}
 		
 		/**
-		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
-		 * @return this for chaining
-		**/
-		public SnippetBuilder addExtension(Extension extension) {
-			if (Objects.nonNull(extension)) {
-				super.extensions.add(extension);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
-		 * @return this for chaining
-		**/
-		public SnippetBuilder addAllExtension(Collection<Extension> extensionCollection) {
-			if (Objects.nonNull(extensionCollection)) {
-				super.extensions.addAll(extensionCollection);
-			}
-			return this;
-		}
-		
-		/**
 		 * Adds a verifiedUsing to the initial collection
 		 * @parameter verifiedUsing verifiedUsing to add
 		 * @return this for chaining
@@ -464,30 +440,6 @@ public  class Snippet extends SoftwareArtifact  {
 		public SnippetBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
 			if (Objects.nonNull(verifiedUsingCollection)) {
 				super.verifiedUsings.addAll(verifiedUsingCollection);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
-		 * @return this for chaining
-		**/
-		public SnippetBuilder addOriginatedBy(Agent originatedBy) {
-			if (Objects.nonNull(originatedBy)) {
-				super.originatedBys.add(originatedBy);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
-		 * @return this for chaining
-		**/
-		public SnippetBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
-			if (Objects.nonNull(originatedByCollection)) {
-				super.originatedBys.addAll(originatedByCollection);
 			}
 			return this;
 		}
@@ -536,6 +488,54 @@ public  class Snippet extends SoftwareArtifact  {
 		public SnippetBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
 			if (Objects.nonNull(externalIdentifierCollection)) {
 				super.externalIdentifiers.addAll(externalIdentifierCollection);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds a extension to the initial collection
+		 * @parameter extension extension to add
+		 * @return this for chaining
+		**/
+		public SnippetBuilder addExtension(Extension extension) {
+			if (Objects.nonNull(extension)) {
+				super.extensions.add(extension);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds all elements from a collection to the initial extension collection
+		 * @parameter extensionCollection collection to initialize the extension
+		 * @return this for chaining
+		**/
+		public SnippetBuilder addAllExtension(Collection<Extension> extensionCollection) {
+			if (Objects.nonNull(extensionCollection)) {
+				super.extensions.addAll(extensionCollection);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds a originatedBy to the initial collection
+		 * @parameter originatedBy originatedBy to add
+		 * @return this for chaining
+		**/
+		public SnippetBuilder addOriginatedBy(Agent originatedBy) {
+			if (Objects.nonNull(originatedBy)) {
+				super.originatedBys.add(originatedBy);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds all elements from a collection to the initial originatedBy collection
+		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @return this for chaining
+		**/
+		public SnippetBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
+			if (Objects.nonNull(originatedByCollection)) {
+				super.originatedBys.addAll(originatedByCollection);
 			}
 			return this;
 		}
@@ -727,16 +727,6 @@ public  class Snippet extends SoftwareArtifact  {
 		}
 		
 		/**
-		 * Sets the initial value of description
-		 * @parameter description value to set
-		 * @return this for chaining
-		**/
-		public SnippetBuilder setDescription(String description) {
-			super.description = description;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of releaseTime
 		 * @parameter releaseTime value to set
 		 * @return this for chaining
@@ -763,6 +753,16 @@ public  class Snippet extends SoftwareArtifact  {
 		**/
 		public SnippetBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of description
+		 * @parameter description value to set
+		 * @return this for chaining
+		**/
+		public SnippetBuilder setDescription(String description) {
+			super.description = description;
 			return this;
 		}
 		

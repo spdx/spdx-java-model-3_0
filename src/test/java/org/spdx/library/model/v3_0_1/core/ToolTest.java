@@ -118,6 +118,28 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
+	 */
+	public void testToolsetName() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
+		String newStringValue = "new name value";
+		testTool.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setComment}.
+	 */
+	public void testToolsetComment() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testTool.getComment());
+		String newStringValue = "new comment value";
+		testTool.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getComment());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setSummary}.
 	 */
 	public void testToolsetSummary() throws InvalidSPDXAnalysisException {
@@ -137,28 +159,6 @@ public class ToolTest extends TestCase {
 		String newStringValue = "new description value";
 		testTool.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testTool.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setComment}.
-	 */
-	public void testToolsetComment() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testTool.getComment());
-		String newStringValue = "new comment value";
-		testTool.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getComment());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
-	 */
-	public void testToolsetName() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
-		String newStringValue = "new name value";
-		testTool.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getName());
 	}
 	
 	/**

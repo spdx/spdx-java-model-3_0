@@ -211,16 +211,6 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		return this;
 	}	
 	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public LifecycleScopedRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -228,6 +218,16 @@ public  class LifecycleScopedRelationship extends Relationship  {
 	 @Override
 	public LifecycleScopedRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public LifecycleScopedRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	
@@ -507,22 +507,22 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public LifecycleScopedRelationshipBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public LifecycleScopedRelationshipBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 	

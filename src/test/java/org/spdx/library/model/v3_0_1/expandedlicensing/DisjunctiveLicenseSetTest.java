@@ -125,6 +125,28 @@ public class DisjunctiveLicenseSetTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.DisjunctiveLicenseSet#setName}.
+	 */
+	public void testDisjunctiveLicenseSetsetName() throws InvalidSPDXAnalysisException {
+		DisjunctiveLicenseSet testDisjunctiveLicenseSet = generator.builderForDisjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testDisjunctiveLicenseSet.getName());
+		String newStringValue = "new name value";
+		testDisjunctiveLicenseSet.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testDisjunctiveLicenseSet.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.DisjunctiveLicenseSet#setComment}.
+	 */
+	public void testDisjunctiveLicenseSetsetComment() throws InvalidSPDXAnalysisException {
+		DisjunctiveLicenseSet testDisjunctiveLicenseSet = generator.builderForDisjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testDisjunctiveLicenseSet.getComment());
+		String newStringValue = "new comment value";
+		testDisjunctiveLicenseSet.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testDisjunctiveLicenseSet.getComment());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.DisjunctiveLicenseSet#setSummary}.
 	 */
 	public void testDisjunctiveLicenseSetsetSummary() throws InvalidSPDXAnalysisException {
@@ -144,28 +166,6 @@ public class DisjunctiveLicenseSetTest extends TestCase {
 		String newStringValue = "new description value";
 		testDisjunctiveLicenseSet.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testDisjunctiveLicenseSet.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.DisjunctiveLicenseSet#setComment}.
-	 */
-	public void testDisjunctiveLicenseSetsetComment() throws InvalidSPDXAnalysisException {
-		DisjunctiveLicenseSet testDisjunctiveLicenseSet = generator.builderForDisjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testDisjunctiveLicenseSet.getComment());
-		String newStringValue = "new comment value";
-		testDisjunctiveLicenseSet.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testDisjunctiveLicenseSet.getComment());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.DisjunctiveLicenseSet#setName}.
-	 */
-	public void testDisjunctiveLicenseSetsetName() throws InvalidSPDXAnalysisException {
-		DisjunctiveLicenseSet testDisjunctiveLicenseSet = generator.builderForDisjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testDisjunctiveLicenseSet.getName());
-		String newStringValue = "new name value";
-		testDisjunctiveLicenseSet.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testDisjunctiveLicenseSet.getName());
 	}
 	
 	/**

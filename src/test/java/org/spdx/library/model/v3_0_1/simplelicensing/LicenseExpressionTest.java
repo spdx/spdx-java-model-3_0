@@ -124,17 +124,6 @@ public class LicenseExpressionTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setLicenseListVersion}.
-	 */
-	public void testLicenseExpressionsetLicenseListVersion() throws InvalidSPDXAnalysisException {
-		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.LICENSE_LIST_VERSION_TEST_VALUE), testLicenseExpression.getLicenseListVersion());
-		String newStringValue = UnitTestHelper.genRandPattern("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$");
-		testLicenseExpression.setLicenseListVersion(newStringValue);
-		assertEquals(Optional.of(newStringValue), testLicenseExpression.getLicenseListVersion());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setSummary}.
 	 */
 	public void testLicenseExpressionsetSummary() throws InvalidSPDXAnalysisException {
@@ -157,14 +146,25 @@ public class LicenseExpressionTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setLicenseExpression}.
 	 */
-	public void testLicenseExpressionsetComment() throws InvalidSPDXAnalysisException {
+	public void testLicenseExpressionsetLicenseExpression() throws InvalidSPDXAnalysisException {
 		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testLicenseExpression.getComment());
-		String newStringValue = "new comment value";
-		testLicenseExpression.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testLicenseExpression.getComment());
+		assertEquals(TestValuesGenerator.LICENSE_EXPRESSION_TEST_VALUE, testLicenseExpression.getLicenseExpression());
+		String newStringValue = "new licenseExpression value";
+		testLicenseExpression.setLicenseExpression(newStringValue);
+		assertEquals(newStringValue, testLicenseExpression.getLicenseExpression());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setLicenseListVersion}.
+	 */
+	public void testLicenseExpressionsetLicenseListVersion() throws InvalidSPDXAnalysisException {
+		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.LICENSE_LIST_VERSION_TEST_VALUE), testLicenseExpression.getLicenseListVersion());
+		String newStringValue = UnitTestHelper.genRandPattern("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$");
+		testLicenseExpression.setLicenseListVersion(newStringValue);
+		assertEquals(Optional.of(newStringValue), testLicenseExpression.getLicenseListVersion());
 	}
 	
 	/**
@@ -179,26 +179,14 @@ public class LicenseExpressionTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setLicenseExpression}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setComment}.
 	 */
-	public void testLicenseExpressionsetLicenseExpression() throws InvalidSPDXAnalysisException {
+	public void testLicenseExpressionsetComment() throws InvalidSPDXAnalysisException {
 		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
-		assertEquals(TestValuesGenerator.LICENSE_EXPRESSION_TEST_VALUE, testLicenseExpression.getLicenseExpression());
-		String newStringValue = "new licenseExpression value";
-		testLicenseExpression.setLicenseExpression(newStringValue);
-		assertEquals(newStringValue, testLicenseExpression.getLicenseExpression());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#getExternalRef}.
-	 */
-	public void testLicenseExpressiongetExternalRefs() throws InvalidSPDXAnalysisException {
-		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testLicenseExpression.getExternalRefs())));
-//		testLicenseExpression.getExternalRefs().clear();
-//		testLicenseExpression.getExternalRefs().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testLicenseExpression.getExternalRefs())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testLicenseExpression.getComment());
+		String newStringValue = "new comment value";
+		testLicenseExpression.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testLicenseExpression.getComment());
 	}
 	
 	/**
@@ -222,6 +210,18 @@ public class LicenseExpressionTest extends TestCase {
 //		testLicenseExpression.getVerifiedUsings().clear();
 //		testLicenseExpression.getVerifiedUsings().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testLicenseExpression.getVerifiedUsings())));
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#getExternalRef}.
+	 */
+	public void testLicenseExpressiongetExternalRefs() throws InvalidSPDXAnalysisException {
+		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testLicenseExpression.getExternalRefs())));
+//		testLicenseExpression.getExternalRefs().clear();
+//		testLicenseExpression.getExternalRefs().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testLicenseExpression.getExternalRefs())));
 		//TODO: Implement
 	}
 	

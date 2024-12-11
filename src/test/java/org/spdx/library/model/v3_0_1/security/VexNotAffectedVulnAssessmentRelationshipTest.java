@@ -60,6 +60,7 @@ import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
 import org.spdx.library.model.v3_0_1.security.VexNotAffectedVulnAssessmentRelationship.VexNotAffectedVulnAssessmentRelationshipBuilder;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * GENERATED FILE - DO NOT MODIFY

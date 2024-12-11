@@ -249,16 +249,6 @@ public abstract class Artifact extends Element  {
 		return this;
 	}
 	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Artifact setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -266,6 +256,16 @@ public abstract class Artifact extends Element  {
 	 @Override
 	public Artifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Artifact setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	
@@ -612,22 +612,22 @@ public abstract class Artifact extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public ArtifactBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public ArtifactBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 	

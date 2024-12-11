@@ -53,6 +53,7 @@ import org.spdx.library.model.v3_0_1.core.ProfileIdentifierType;
 import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * This is an external representation of VexNotAffectedVulnAssessmentRelationship - nothing can be set and properties returned
@@ -186,7 +187,7 @@ public class ExternalVexNotAffectedVulnAssessmentRelationship extends VexNotAffe
 	 * @return the assessedElement
 	 */
 	 @SuppressWarnings("unchecked")
-	public Optional<Element> getAssessedElement() throws InvalidSPDXAnalysisException {
+	public Optional<SoftwareArtifact> getAssessedElement() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	
@@ -195,7 +196,7 @@ public class ExternalVexNotAffectedVulnAssessmentRelationship extends VexNotAffe
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public VexNotAffectedVulnAssessmentRelationship setAssessedElement(@Nullable Element assessedElement) throws InvalidSPDXAnalysisException {
+	public VexNotAffectedVulnAssessmentRelationship setAssessedElement(@Nullable SoftwareArtifact assessedElement) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	/**

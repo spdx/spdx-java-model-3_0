@@ -60,6 +60,7 @@ import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
 import org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship.VexFixedVulnAssessmentRelationshipBuilder;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * GENERATED FILE - DO NOT MODIFY
@@ -267,17 +268,6 @@ public class VexFixedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setComment}.
-	 */
-	public void testVexFixedVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		VexFixedVulnAssessmentRelationship testVexFixedVulnAssessmentRelationship = generator.builderForVexFixedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexFixedVulnAssessmentRelationship.getComment());
-		String newStringValue = "new comment value";
-		testVexFixedVulnAssessmentRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setName}.
 	 */
 	public void testVexFixedVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -286,6 +276,17 @@ public class VexFixedVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new name value";
 		testVexFixedVulnAssessmentRelationship.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setComment}.
+	 */
+	public void testVexFixedVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
+		VexFixedVulnAssessmentRelationship testVexFixedVulnAssessmentRelationship = generator.builderForVexFixedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexFixedVulnAssessmentRelationship.getComment());
+		String newStringValue = "new comment value";
+		testVexFixedVulnAssessmentRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getComment());
 	}
 	
 	/**

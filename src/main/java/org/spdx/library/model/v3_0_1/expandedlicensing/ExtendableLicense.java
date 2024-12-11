@@ -55,7 +55,7 @@ import org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo;
  * 
  * Abstract class representing a License or an OrLaterOperator. 
  */
-public abstract class ExtendableLicense extends AnyLicenseInfo  {
+public  class ExtendableLicense extends AnyLicenseInfo  {
 
 	
 	/**
@@ -120,6 +120,26 @@ public abstract class ExtendableLicense extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public ExtendableLicense setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public ExtendableLicense setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
+		return this;
+	}	
+	/**
 	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -137,26 +157,6 @@ public abstract class ExtendableLicense extends AnyLicenseInfo  {
 	 @Override
 	public ExtendableLicense setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		super.setDescription(description);
-		return this;
-	}	
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public ExtendableLicense setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public ExtendableLicense setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
 		return this;
 	}	
 	
@@ -178,7 +178,7 @@ public abstract class ExtendableLicense extends AnyLicenseInfo  {
 	
 	
 	
-	public static abstract class ExtendableLicenseBuilder extends AnyLicenseInfoBuilder {
+	public static class ExtendableLicenseBuilder extends AnyLicenseInfoBuilder {
 	
 		/**
 		 * Create an ExtendableLicenseBuilder from another model object copying the modelStore and copyManager and using an anonymous ID
@@ -325,6 +325,26 @@ public abstract class ExtendableLicense extends AnyLicenseInfo  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @parameter name value to set
+		 * @return this for chaining
+		**/
+		public ExtendableLicenseBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public ExtendableLicenseBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of summary
 		 * @parameter summary value to set
 		 * @return this for chaining
@@ -343,31 +363,18 @@ public abstract class ExtendableLicense extends AnyLicenseInfo  {
 			super.description = description;
 			return this;
 		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public ExtendableLicenseBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public ExtendableLicenseBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
 	
 		/**
 		 * @return the ExtendableLicense
 		 * @throws InvalidSPDXAnalysisException on any errors during build
 		 */
-		public abstract ExtendableLicense build() throws InvalidSPDXAnalysisException;
+		public ExtendableLicense build() throws InvalidSPDXAnalysisException {
+			IModelStoreLock lock = getModelStore().enterCriticalSection(false);
+			try {
+				return new ExtendableLicense(this);
+			} finally {
+				getModelStore().leaveCriticalSection(lock);
+			}
+		}
 	}
 }
