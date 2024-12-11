@@ -44,6 +44,7 @@ import org.spdx.library.model.v3_0_1.core.ExternalBundle;
 import org.spdx.library.model.v3_0_1.core.ExternalElement;
 import org.spdx.library.model.v3_0_1.core.ExternalElementCollection;
 import org.spdx.library.model.v3_0_1.core.ExternalIdentifier;
+import org.spdx.library.model.v3_0_1.core.ExternalIndividualElement;
 import org.spdx.library.model.v3_0_1.core.ExternalLifecycleScopedRelationship;
 import org.spdx.library.model.v3_0_1.core.ExternalMap;
 import org.spdx.library.model.v3_0_1.core.ExternalOrganization;
@@ -54,6 +55,7 @@ import org.spdx.library.model.v3_0_1.core.ExternalSoftwareAgent;
 import org.spdx.library.model.v3_0_1.core.ExternalSpdxDocument;
 import org.spdx.library.model.v3_0_1.core.ExternalTool;
 import org.spdx.library.model.v3_0_1.core.Hash;
+import org.spdx.library.model.v3_0_1.core.IndividualElement;
 import org.spdx.library.model.v3_0_1.core.IntegrityMethod;
 import org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship;
 import org.spdx.library.model.v3_0_1.core.NamespaceMap;
@@ -534,6 +536,17 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 	}
 	
 		/**
+	 * Create an ExtensionBuilder inheriting model, and other information from this object
+	 * @param objectUri - URI or anonymous ID for the Extension
+	 * @return ExtensionBuilder using the same modelStore and documentUri as this object
+	 * @throws InvalidSPDXAnalysisException
+	 */
+	public Extension.ExtensionBuilder createExtension(String objectUri) throws InvalidSPDXAnalysisException {
+		Objects.requireNonNull(objectUri, "objectUri can not be null");
+		return new Extension.ExtensionBuilder(this, objectUri);
+	}
+	
+		/**
 	 * Create an SbomBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Sbom
 	 * @return SbomBuilder using the same modelStore and documentUri as this object
@@ -853,6 +866,28 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 	}
 	
 		/**
+	 * Create an ExtendableLicenseBuilder inheriting model, and other information from this object
+	 * @param objectUri - URI or anonymous ID for the ExtendableLicense
+	 * @return ExtendableLicenseBuilder using the same modelStore and documentUri as this object
+	 * @throws InvalidSPDXAnalysisException
+	 */
+	public ExtendableLicense.ExtendableLicenseBuilder createExtendableLicense(String objectUri) throws InvalidSPDXAnalysisException {
+		Objects.requireNonNull(objectUri, "objectUri can not be null");
+		return new ExtendableLicense.ExtendableLicenseBuilder(this, objectUri);
+	}
+	
+		/**
+	 * Create an IndividualElementBuilder inheriting model, and other information from this object
+	 * @param objectUri - URI or anonymous ID for the IndividualElement
+	 * @return IndividualElementBuilder using the same modelStore and documentUri as this object
+	 * @throws InvalidSPDXAnalysisException
+	 */
+	public IndividualElement.IndividualElementBuilder createIndividualElement(String objectUri) throws InvalidSPDXAnalysisException {
+		Objects.requireNonNull(objectUri, "objectUri can not be null");
+		return new IndividualElement.IndividualElementBuilder(this, objectUri);
+	}
+	
+		/**
 	 * Create an IndividualLicensingInfoBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the IndividualLicensingInfo
 	 * @return IndividualLicensingInfoBuilder using the same modelStore and documentUri as this object
@@ -872,6 +907,17 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 	public Bom.BomBuilder createBom(String objectUri) throws InvalidSPDXAnalysisException {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Bom.BomBuilder(this, objectUri);
+	}
+	
+		/**
+	 * Create an AnyLicenseInfoBuilder inheriting model, and other information from this object
+	 * @param objectUri - URI or anonymous ID for the AnyLicenseInfo
+	 * @return AnyLicenseInfoBuilder using the same modelStore and documentUri as this object
+	 * @throws InvalidSPDXAnalysisException
+	 */
+	public AnyLicenseInfo.AnyLicenseInfoBuilder createAnyLicenseInfo(String objectUri) throws InvalidSPDXAnalysisException {
+		Objects.requireNonNull(objectUri, "objectUri can not be null");
+		return new AnyLicenseInfo.AnyLicenseInfoBuilder(this, objectUri);
 	}
 	
 		/**

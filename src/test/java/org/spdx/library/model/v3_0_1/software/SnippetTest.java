@@ -213,17 +213,6 @@ public class SnippetTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#setDescription}.
-	 */
-	public void testSnippetsetDescription() throws InvalidSPDXAnalysisException {
-		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testSnippet.getDescription());
-		String newStringValue = "new description value";
-		testSnippet.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSnippet.getDescription());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#setReleaseTime}.
 	 */
 	public void testSnippetsetReleaseTime() throws InvalidSPDXAnalysisException {
@@ -257,6 +246,17 @@ public class SnippetTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#setDescription}.
+	 */
+	public void testSnippetsetDescription() throws InvalidSPDXAnalysisException {
+		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testSnippet.getDescription());
+		String newStringValue = "new description value";
+		testSnippet.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSnippet.getDescription());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#setName}.
 	 */
 	public void testSnippetsetName() throws InvalidSPDXAnalysisException {
@@ -280,18 +280,6 @@ public class SnippetTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#getExtension}.
-	 */
-	public void testSnippetgetExtensions() throws InvalidSPDXAnalysisException {
-		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSnippet.getExtensions())));
-//		testSnippet.getExtensions().clear();
-//		testSnippet.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getExtensions())));
-		//TODO: Implement
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#getVerifiedUsing}.
 	 */
 	public void testSnippetgetVerifiedUsings() throws InvalidSPDXAnalysisException {
@@ -300,18 +288,6 @@ public class SnippetTest extends TestCase {
 //		testSnippet.getVerifiedUsings().clear();
 //		testSnippet.getVerifiedUsings().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getVerifiedUsings())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#getOriginatedBy}.
-	 */
-	public void testSnippetgetOriginatedBys() throws InvalidSPDXAnalysisException {
-		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSnippet.getOriginatedBys())));
-//		testSnippet.getOriginatedBys().clear();
-//		testSnippet.getOriginatedBys().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getOriginatedBys())));
 		//TODO: Implement
 	}
 	
@@ -336,6 +312,30 @@ public class SnippetTest extends TestCase {
 //		testSnippet.getExternalIdentifiers().clear();
 //		testSnippet.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getExternalIdentifiers())));
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#getExtension}.
+	 */
+	public void testSnippetgetExtensions() throws InvalidSPDXAnalysisException {
+		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSnippet.getExtensions())));
+//		testSnippet.getExtensions().clear();
+//		testSnippet.getExtensions().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getExtensions())));
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#getOriginatedBy}.
+	 */
+	public void testSnippetgetOriginatedBys() throws InvalidSPDXAnalysisException {
+		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSnippet.getOriginatedBys())));
+//		testSnippet.getOriginatedBys().clear();
+//		testSnippet.getOriginatedBys().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getOriginatedBys())));
 		//TODO: Implement
 	}
 	

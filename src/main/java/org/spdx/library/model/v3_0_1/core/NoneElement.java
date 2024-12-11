@@ -50,7 +50,7 @@ import org.spdx.storage.NullModelStore;
  * An Individual Value for Element representing a set of Elements with cardinality 
  * (number/count) of zero. 
  */
-public class NoneElement extends Element implements IndividualUriValue {
+public class NoneElement extends IndividualElement implements IndividualUriValue {
 
 	/**
 	 * @throws InvalidSPDXAnalysisException when unable to create the NoneElement
@@ -103,6 +103,34 @@ public class NoneElement extends Element implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoneElement setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoneElement setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
 	 * @return the summary
 	 */
 	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
@@ -128,34 +156,6 @@ public class NoneElement extends Element implements IndividualUriValue {
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public NoneElement setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the comment
-	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public NoneElement setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public NoneElement setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 	

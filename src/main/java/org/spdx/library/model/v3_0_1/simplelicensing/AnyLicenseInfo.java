@@ -54,7 +54,7 @@ import org.spdx.library.model.v3_0_1.extension.Extension;
  * 
  * Abstract class representing a license combination consisting of one or more licenses. 
  */
-public abstract class AnyLicenseInfo extends Element  {
+public  class AnyLicenseInfo extends Element  {
 
 	
 	/**
@@ -119,6 +119,26 @@ public abstract class AnyLicenseInfo extends Element  {
 		return this;
 	}	
 	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public AnyLicenseInfo setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
+		return this;
+	}	
+	/**
 	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -136,26 +156,6 @@ public abstract class AnyLicenseInfo extends Element  {
 	 @Override
 	public AnyLicenseInfo setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		super.setDescription(description);
-		return this;
-	}	
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public AnyLicenseInfo setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
 		return this;
 	}	
 	
@@ -177,7 +177,7 @@ public abstract class AnyLicenseInfo extends Element  {
 	
 	
 	
-	public static abstract class AnyLicenseInfoBuilder extends ElementBuilder {
+	public static class AnyLicenseInfoBuilder extends ElementBuilder {
 	
 		/**
 		 * Create an AnyLicenseInfoBuilder from another model object copying the modelStore and copyManager and using an anonymous ID
@@ -324,6 +324,26 @@ public abstract class AnyLicenseInfo extends Element  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @parameter name value to set
+		 * @return this for chaining
+		**/
+		public AnyLicenseInfoBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public AnyLicenseInfoBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of summary
 		 * @parameter summary value to set
 		 * @return this for chaining
@@ -342,31 +362,18 @@ public abstract class AnyLicenseInfo extends Element  {
 			super.description = description;
 			return this;
 		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public AnyLicenseInfoBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public AnyLicenseInfoBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
 	
 		/**
 		 * @return the AnyLicenseInfo
 		 * @throws InvalidSPDXAnalysisException on any errors during build
 		 */
-		public abstract AnyLicenseInfo build() throws InvalidSPDXAnalysisException;
+		public AnyLicenseInfo build() throws InvalidSPDXAnalysisException {
+			IModelStoreLock lock = getModelStore().enterCriticalSection(false);
+			try {
+				return new AnyLicenseInfo(this);
+			} finally {
+				getModelStore().leaveCriticalSection(lock);
+			}
+		}
 	}
 }

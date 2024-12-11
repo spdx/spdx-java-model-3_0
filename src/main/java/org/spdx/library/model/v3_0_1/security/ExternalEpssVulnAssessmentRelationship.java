@@ -53,6 +53,7 @@ import org.spdx.library.model.v3_0_1.core.ProfileIdentifierType;
 import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * This is an external representation of EpssVulnAssessmentRelationship - nothing can be set and properties returned
@@ -170,7 +171,7 @@ public class ExternalEpssVulnAssessmentRelationship extends EpssVulnAssessmentRe
 	 * @return the assessedElement
 	 */
 	 @SuppressWarnings("unchecked")
-	public Optional<Element> getAssessedElement() throws InvalidSPDXAnalysisException {
+	public Optional<SoftwareArtifact> getAssessedElement() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	
@@ -179,7 +180,7 @@ public class ExternalEpssVulnAssessmentRelationship extends EpssVulnAssessmentRe
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public EpssVulnAssessmentRelationship setAssessedElement(@Nullable Element assessedElement) throws InvalidSPDXAnalysisException {
+	public EpssVulnAssessmentRelationship setAssessedElement(@Nullable SoftwareArtifact assessedElement) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -342,20 +343,6 @@ public class ExternalEpssVulnAssessmentRelationship extends EpssVulnAssessmentRe
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the comment
-	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public EpssVulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the name
 	 */
 	public Optional<String> getName() throws InvalidSPDXAnalysisException {
@@ -367,6 +354,20 @@ public class ExternalEpssVulnAssessmentRelationship extends EpssVulnAssessmentRe
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public EpssVulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public EpssVulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

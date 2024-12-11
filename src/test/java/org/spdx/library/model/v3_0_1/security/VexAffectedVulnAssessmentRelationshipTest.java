@@ -60,6 +60,7 @@ import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
 import org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship.VexAffectedVulnAssessmentRelationshipBuilder;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * GENERATED FILE - DO NOT MODIFY
@@ -115,17 +116,6 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setFrom}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetFrom() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-//		assertEquals(TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getFrom());
-//		testVexAffectedVulnAssessmentRelationship.setFrom(NEW_TEST_VALUE);
-//		assertEquals(NEW_TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getFrom());
-		//TODO: Implement
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setCreationInfo}.
 	 */
 	public void testVexAffectedVulnAssessmentRelationshipsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -133,17 +123,6 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 //		assertEquals(TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getCreationInfo());
 //		testVexAffectedVulnAssessmentRelationship.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getCreationInfo());
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setAssessedElement}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetAssessedElement() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-//		assertEquals(Optional.of(TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getAssessedElement());
-//		testVexAffectedVulnAssessmentRelationship.setAssessedElement(NEW_TEST_VALUE);
-//		assertEquals(Optional.of(NEW_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getAssessedElement());
 		//TODO: Implement
 	}
 	
@@ -159,13 +138,25 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setCompleteness}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setFrom}.
 	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetCompleteness() throws InvalidSPDXAnalysisException {
+	public void testVexAffectedVulnAssessmentRelationshipsetFrom() throws InvalidSPDXAnalysisException {
 		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMPLETENESS_TEST_VALUE1), testVexAffectedVulnAssessmentRelationship.getCompleteness());
-		testVexAffectedVulnAssessmentRelationship.setCompleteness(TestValuesGenerator.COMPLETENESS_TEST_VALUE2);
-		assertEquals(Optional.of(TestValuesGenerator.COMPLETENESS_TEST_VALUE2), testVexAffectedVulnAssessmentRelationship.getCompleteness());
+//		assertEquals(TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getFrom());
+//		testVexAffectedVulnAssessmentRelationship.setFrom(NEW_TEST_VALUE);
+//		assertEquals(NEW_TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getFrom());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setAssessedElement}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetAssessedElement() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getAssessedElement());
+//		testVexAffectedVulnAssessmentRelationship.setAssessedElement(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getAssessedElement());
+		//TODO: Implement
 	}
 	
 	/**
@@ -176,6 +167,71 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 		assertEquals(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE1, testVexAffectedVulnAssessmentRelationship.getRelationshipType());
 		testVexAffectedVulnAssessmentRelationship.setRelationshipType(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE2);
 		assertEquals(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE2, testVexAffectedVulnAssessmentRelationship.getRelationshipType());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setCompleteness}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetCompleteness() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMPLETENESS_TEST_VALUE1), testVexAffectedVulnAssessmentRelationship.getCompleteness());
+		testVexAffectedVulnAssessmentRelationship.setCompleteness(TestValuesGenerator.COMPLETENESS_TEST_VALUE2);
+		assertEquals(Optional.of(TestValuesGenerator.COMPLETENESS_TEST_VALUE2), testVexAffectedVulnAssessmentRelationship.getCompleteness());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setSummary}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getSummary());
+		String newStringValue = "new summary value";
+		testVexAffectedVulnAssessmentRelationship.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setActionStatementTime}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetActionStatementTime() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.ACTION_STATEMENT_TIME_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getActionStatementTime());
+		String newStringValue = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
+		testVexAffectedVulnAssessmentRelationship.setActionStatementTime(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getActionStatementTime());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setWithdrawnTime}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetWithdrawnTime() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.WITHDRAWN_TIME_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getWithdrawnTime());
+		String newStringValue = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
+		testVexAffectedVulnAssessmentRelationship.setWithdrawnTime(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getWithdrawnTime());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setComment}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getComment());
+		String newStringValue = "new comment value";
+		testVexAffectedVulnAssessmentRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setModifiedTime}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetModifiedTime() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.MODIFIED_TIME_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getModifiedTime());
+		String newStringValue = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
+		testVexAffectedVulnAssessmentRelationship.setModifiedTime(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getModifiedTime());
 	}
 	
 	/**
@@ -201,17 +257,6 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setSummary}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getSummary());
-		String newStringValue = "new summary value";
-		testVexAffectedVulnAssessmentRelationship.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setDescription}.
 	 */
 	public void testVexAffectedVulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
@@ -227,10 +272,10 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 	 */
 	public void testVexAffectedVulnAssessmentRelationshipsetActionStatement() throws InvalidSPDXAnalysisException {
 		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.ACTION_STATEMENT_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getActionStatement());
+		assertEquals(TestValuesGenerator.ACTION_STATEMENT_TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getActionStatement());
 		String newStringValue = "new actionStatement value";
 		testVexAffectedVulnAssessmentRelationship.setActionStatement(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getActionStatement());
+		assertEquals(newStringValue, testVexAffectedVulnAssessmentRelationship.getActionStatement());
 	}
 	
 	/**
@@ -267,28 +312,6 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setWithdrawnTime}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetWithdrawnTime() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.WITHDRAWN_TIME_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getWithdrawnTime());
-		String newStringValue = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
-		testVexAffectedVulnAssessmentRelationship.setWithdrawnTime(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getWithdrawnTime());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setComment}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getComment());
-		String newStringValue = "new comment value";
-		testVexAffectedVulnAssessmentRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setName}.
 	 */
 	public void testVexAffectedVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -297,29 +320,6 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new name value";
 		testVexAffectedVulnAssessmentRelationship.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getName());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setModifiedTime}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipsetModifiedTime() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.MODIFIED_TIME_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getModifiedTime());
-		String newStringValue = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
-		testVexAffectedVulnAssessmentRelationship.setModifiedTime(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexAffectedVulnAssessmentRelationship.getModifiedTime());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#getExtension}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExtensions())));
-//		testVexAffectedVulnAssessmentRelationship.getExtensions().clear();
-//		testVexAffectedVulnAssessmentRelationship.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExtensions())));
-		//TODO: Implement
 	}
 	
 	/**
@@ -371,13 +371,14 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#getActionStatementTimes}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#getExtension}.
 	 */
-	public void testVexAffectedVulnAssessmentRelationshipgetActionStatementTimes() throws InvalidSPDXAnalysisException {
+	public void testVexAffectedVulnAssessmentRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
 		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertTrue(UnitTestHelper.isListsEqual(TestValuesGenerator.ACTION_STATEMENT_TIME_TEST_LIST1, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getActionStatementTimes())));
-		testVexAffectedVulnAssessmentRelationship.getActionStatementTimes().clear();
-		testVexAffectedVulnAssessmentRelationship.getActionStatementTimes().addAll(TestValuesGenerator.ACTION_STATEMENT_TIME_TEST_LIST2);
-		assertTrue(UnitTestHelper.isListsEqual(TestValuesGenerator.ACTION_STATEMENT_TIME_TEST_LIST2, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getActionStatementTimes())));
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExtensions())));
+//		testVexAffectedVulnAssessmentRelationship.getExtensions().clear();
+//		testVexAffectedVulnAssessmentRelationship.getExtensions().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExtensions())));
+		//TODO: Implement
 	}
 }

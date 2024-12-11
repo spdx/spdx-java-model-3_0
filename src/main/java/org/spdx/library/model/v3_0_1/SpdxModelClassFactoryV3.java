@@ -160,9 +160,11 @@ public class SpdxModelClassFactoryV3 {
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_EXTERNAL_CONJUNCTIVE_LICENSE_SET, org.spdx.library.model.v3_0_1.expandedlicensing.ExternalConjunctiveLicenseSet.class);
 		typeToClassV3.put(SpdxConstantsV3.SOFTWARE_SPDX_PACKAGE, org.spdx.library.model.v3_0_1.software.SpdxPackage.class);
 		typeToClassV3.put(SpdxConstantsV3.SOFTWARE_EXTERNAL_SPDX_PACKAGE, org.spdx.library.model.v3_0_1.software.ExternalSpdxPackage.class);
+		typeToClassV3.put(SpdxConstantsV3.DATASET_DATASET_TYPE, org.spdx.library.model.v3_0_1.dataset.DatasetType.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_EXTENDABLE_LICENSE, org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_EXTERNAL_EXTENDABLE_LICENSE, org.spdx.library.model.v3_0_1.expandedlicensing.ExternalExtendableLicense.class);
-		typeToClassV3.put(SpdxConstantsV3.DATASET_DATASET_TYPE, org.spdx.library.model.v3_0_1.dataset.DatasetType.class);
+		typeToClassV3.put(SpdxConstantsV3.CORE_INDIVIDUAL_ELEMENT, org.spdx.library.model.v3_0_1.core.IndividualElement.class);
+		typeToClassV3.put(SpdxConstantsV3.CORE_EXTERNAL_INDIVIDUAL_ELEMENT, org.spdx.library.model.v3_0_1.core.ExternalIndividualElement.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_INDIVIDUAL_LICENSING_INFO, org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_EXTERNAL_INDIVIDUAL_LICENSING_INFO, org.spdx.library.model.v3_0_1.expandedlicensing.ExternalIndividualLicensingInfo.class);
 		typeToClassV3.put(SpdxConstantsV3.CORE_ELEMENT, org.spdx.library.model.v3_0_1.core.Element.class);
@@ -197,6 +199,7 @@ public class SpdxModelClassFactoryV3 {
 		typeToClassV3.put(SpdxConstantsV3.CORE_NONE_ELEMENT, org.spdx.library.model.v3_0_1.core.NoneElement.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_NO_ASSERTION_LICENSE, org.spdx.library.model.v3_0_1.expandedlicensing.NoAssertionLicense.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_NONE_LICENSE, org.spdx.library.model.v3_0_1.expandedlicensing.NoneLicense.class);
+		typeToClassV3.put(SpdxConstantsV3.CORE_SPDX_ORGANIZATION, org.spdx.library.model.v3_0_1.core.SpdxOrganization.class);
 		
 		SPDX_TYPE_TO_CLASS_V3 = Collections.unmodifiableMap(typeToClassV3);
 		

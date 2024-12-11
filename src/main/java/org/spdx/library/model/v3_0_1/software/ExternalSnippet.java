@@ -62,11 +62,11 @@ import org.spdx.library.model.v3_0_1.extension.Extension;
 public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 
 	Collection<ContentIdentifier> contentIdentifiers = Collections.emptyList();
-	Collection<Extension> extensions = Collections.emptyList();
 	Collection<IntegrityMethod> verifiedUsings = Collections.emptyList();
-	Collection<Agent> originatedBys = Collections.emptyList();
 	Collection<ExternalRef> externalRefs = Collections.emptyList();
 	Collection<ExternalIdentifier> externalIdentifiers = Collections.emptyList();
+	Collection<Extension> extensions = Collections.emptyList();
+	Collection<Agent> originatedBys = Collections.emptyList();
 	Collection<String> attributionTexts = Collections.emptyList();
 	Collection<String> standardNames = Collections.emptyList();
 	Collection<SupportType> supportLevels = Collections.emptyList();
@@ -128,20 +128,20 @@ public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 	public Collection<ContentIdentifier> getContentIdentifiers() {
 		return contentIdentifiers;
 	}
-	public Collection<Extension> getExtensions() {
-		return extensions;
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return verifiedUsings;
-	}
-	public Collection<Agent> getOriginatedBys() {
-		return originatedBys;
 	}
 	public Collection<ExternalRef> getExternalRefs() {
 		return externalRefs;
 	}
 	public Collection<ExternalIdentifier> getExternalIdentifiers() {
 		return externalIdentifiers;
+	}
+	public Collection<Extension> getExtensions() {
+		return extensions;
+	}
+	public Collection<Agent> getOriginatedBys() {
+		return originatedBys;
 	}
 	public Collection<SupportType> getSupportLevels() {
 		return supportLevels;
@@ -292,20 +292,6 @@ public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Snippet setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the releaseTime
 	 */
 	public Optional<String> getReleaseTime() throws InvalidSPDXAnalysisException {
@@ -345,6 +331,20 @@ public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Snippet setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Snippet setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

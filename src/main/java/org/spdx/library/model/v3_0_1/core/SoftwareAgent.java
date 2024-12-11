@@ -115,6 +115,26 @@ public  class SoftwareAgent extends Agent  {
 		return this;
 	}	
 	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public SoftwareAgent setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public SoftwareAgent setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
+		return this;
+	}	
+	/**
 	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -132,26 +152,6 @@ public  class SoftwareAgent extends Agent  {
 	 @Override
 	public SoftwareAgent setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		super.setDescription(description);
-		return this;
-	}	
-	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public SoftwareAgent setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public SoftwareAgent setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
 		return this;
 	}	
 	
@@ -320,6 +320,26 @@ public  class SoftwareAgent extends Agent  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @parameter name value to set
+		 * @return this for chaining
+		**/
+		public SoftwareAgentBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
+		 * @return this for chaining
+		**/
+		public SoftwareAgentBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of summary
 		 * @parameter summary value to set
 		 * @return this for chaining
@@ -336,26 +356,6 @@ public  class SoftwareAgent extends Agent  {
 		**/
 		public SoftwareAgentBuilder setDescription(String description) {
 			super.description = description;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public SoftwareAgentBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public SoftwareAgentBuilder setName(String name) {
-			super.name = name;
 			return this;
 		}
 	

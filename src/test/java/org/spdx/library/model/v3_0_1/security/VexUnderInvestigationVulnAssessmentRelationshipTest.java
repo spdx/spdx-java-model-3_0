@@ -60,6 +60,7 @@ import org.spdx.library.model.v3_0_1.core.RelationshipCompleteness;
 import org.spdx.library.model.v3_0_1.core.RelationshipType;
 import org.spdx.library.model.v3_0_1.extension.Extension;
 import org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship.VexUnderInvestigationVulnAssessmentRelationshipBuilder;
+import org.spdx.library.model.v3_0_1.software.SoftwareArtifact;
 
 /**
  * GENERATED FILE - DO NOT MODIFY
@@ -267,17 +268,6 @@ public class VexUnderInvestigationVulnAssessmentRelationshipTest extends TestCas
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship#setComment}.
-	 */
-	public void testVexUnderInvestigationVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		VexUnderInvestigationVulnAssessmentRelationship testVexUnderInvestigationVulnAssessmentRelationship = generator.builderForVexUnderInvestigationVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexUnderInvestigationVulnAssessmentRelationship.getComment());
-		String newStringValue = "new comment value";
-		testVexUnderInvestigationVulnAssessmentRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexUnderInvestigationVulnAssessmentRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship#setName}.
 	 */
 	public void testVexUnderInvestigationVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -286,6 +276,17 @@ public class VexUnderInvestigationVulnAssessmentRelationshipTest extends TestCas
 		String newStringValue = "new name value";
 		testVexUnderInvestigationVulnAssessmentRelationship.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testVexUnderInvestigationVulnAssessmentRelationship.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship#setComment}.
+	 */
+	public void testVexUnderInvestigationVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
+		VexUnderInvestigationVulnAssessmentRelationship testVexUnderInvestigationVulnAssessmentRelationship = generator.builderForVexUnderInvestigationVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexUnderInvestigationVulnAssessmentRelationship.getComment());
+		String newStringValue = "new comment value";
+		testVexUnderInvestigationVulnAssessmentRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexUnderInvestigationVulnAssessmentRelationship.getComment());
 	}
 	
 	/**

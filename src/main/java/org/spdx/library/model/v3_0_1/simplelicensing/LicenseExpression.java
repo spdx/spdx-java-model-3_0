@@ -104,10 +104,10 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		super(builder);
 		customIdToUris = (Collection<DictionaryEntry>)(Collection<?>)this.getObjectPropertyValueCollection(SpdxConstantsV3.PROP_CUSTOM_ID_TO_URI, DictionaryEntry.class);
 		getCustomIdToUris().addAll(builder.customIdToUris);
-		setLicenseListVersion(builder.licenseListVersion);
 		if (Objects.nonNull(builder.licenseExpression)) {
 			setLicenseExpression(builder.licenseExpression);
 		}
+		setLicenseListVersion(builder.licenseListVersion);
 	}
 
 	/* (non-Javadoc)
@@ -133,25 +133,6 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		super.setCreationInfo(creationInfo);
 		return this;
 	}	
-		/**
-	 * @return the licenseListVersion
-	 */
-	public Optional<String> getLicenseListVersion() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_LICENSE_LIST_VERSION);
-	}
-	/**
-	 * @param licenseListVersion the licenseListVersion to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public LicenseExpression setLicenseListVersion(@Nullable String licenseListVersion) throws InvalidSPDXAnalysisException {
-		if (isStrict() && Objects.nonNull(licenseListVersion) && !Pattern.matches("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$", licenseListVersion)) {
-			throw new InvalidSPDXAnalysisException("licenseListVersion value '" + licenseListVersion + 
-				"' does not match the pattern '^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$'");
-		}
-		setPropertyValue(SpdxConstantsV3.PROP_LICENSE_LIST_VERSION, licenseListVersion);
-		return this;
-	}
 	/**
 	 * @param summary the summary to set
 	 * @return this to chain setters
@@ -173,26 +154,6 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
-	 * @param comment the comment to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public LicenseExpression setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public LicenseExpression setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @return the licenseExpression
 	 */
 	public @Nullable String getLicenseExpression() throws InvalidSPDXAnalysisException {
@@ -211,6 +172,45 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		setPropertyValue(SpdxConstantsV3.PROP_LICENSE_EXPRESSION, licenseExpression);
 		return this;
 	}
+		/**
+	 * @return the licenseListVersion
+	 */
+	public Optional<String> getLicenseListVersion() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_LICENSE_LIST_VERSION);
+	}
+	/**
+	 * @param licenseListVersion the licenseListVersion to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public LicenseExpression setLicenseListVersion(@Nullable String licenseListVersion) throws InvalidSPDXAnalysisException {
+		if (isStrict() && Objects.nonNull(licenseListVersion) && !Pattern.matches("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$", licenseListVersion)) {
+			throw new InvalidSPDXAnalysisException("licenseListVersion value '" + licenseListVersion + 
+				"' does not match the pattern '^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$'");
+		}
+		setPropertyValue(SpdxConstantsV3.PROP_LICENSE_LIST_VERSION, licenseListVersion);
+		return this;
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public LicenseExpression setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public LicenseExpression setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
+		return this;
+	}	
 	
 	
 	@Override
@@ -226,15 +226,6 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		List<String> retval = new ArrayList<>();
 		retval.addAll(super._verify(verifiedIds, specVersionForVerify, profiles));
 		try {
-			Optional<String> licenseListVersion = getLicenseListVersion();
-			if (licenseListVersion.isPresent() && !Pattern.matches("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$", licenseListVersion.get())) {
-				retval.add("licenseListVersion value '" + licenseListVersion.get() + 
-					"' does not match the pattern '^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$'");
-			}
-		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting licenseListVersion for LicenseExpression: "+e.getMessage());
-		}
-		try {
 			String licenseExpression = getLicenseExpression();
 			if (Objects.isNull(licenseExpression) &&
 					Collections.disjoint(profiles, Arrays.asList(new ProfileIdentifierType[] { ProfileIdentifierType.SIMPLE_LICENSING }))) {
@@ -242,6 +233,15 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 			}
 		} catch (InvalidSPDXAnalysisException e) {
 			retval.add("Error getting licenseExpression for LicenseExpression: "+e.getMessage());
+		}
+		try {
+			Optional<String> licenseListVersion = getLicenseListVersion();
+			if (licenseListVersion.isPresent() && !Pattern.matches("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$", licenseListVersion.get())) {
+				retval.add("licenseListVersion value '" + licenseListVersion.get() + 
+					"' does not match the pattern '^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$'");
+			}
+		} catch (InvalidSPDXAnalysisException e) {
+			retval.add("Error getting licenseListVersion for LicenseExpression: "+e.getMessage());
 		}
 		for (DictionaryEntry customIdToUri:customIdToUris) {
 			retval.addAll(customIdToUri.verify(verifiedIds, specVersionForVerify, profiles));
@@ -290,33 +290,9 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		}
 		
 		protected Collection<DictionaryEntry> customIdToUris = new ArrayList<>();
-		protected String licenseListVersion = null;
 		protected String licenseExpression = null;
+		protected String licenseListVersion = null;
 		
-		
-		/**
-		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
-		 * @return this for chaining
-		**/
-		public LicenseExpressionBuilder addExternalRef(ExternalRef externalRef) {
-			if (Objects.nonNull(externalRef)) {
-				super.externalRefs.add(externalRef);
-			}
-			return this;
-		}
-		
-		/**
-		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
-		 * @return this for chaining
-		**/
-		public LicenseExpressionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
-			if (Objects.nonNull(externalRefCollection)) {
-				super.externalRefs.addAll(externalRefCollection);
-			}
-			return this;
-		}
 		
 		/**
 		 * Adds a extension to the initial collection
@@ -362,6 +338,30 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		public LicenseExpressionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
 			if (Objects.nonNull(verifiedUsingCollection)) {
 				super.verifiedUsings.addAll(verifiedUsingCollection);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds a externalRef to the initial collection
+		 * @parameter externalRef externalRef to add
+		 * @return this for chaining
+		**/
+		public LicenseExpressionBuilder addExternalRef(ExternalRef externalRef) {
+			if (Objects.nonNull(externalRef)) {
+				super.externalRefs.add(externalRef);
+			}
+			return this;
+		}
+		
+		/**
+		 * Adds all elements from a collection to the initial externalRef collection
+		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @return this for chaining
+		**/
+		public LicenseExpressionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
+			if (Objects.nonNull(externalRefCollection)) {
+				super.externalRefs.addAll(externalRefCollection);
 			}
 			return this;
 		}
@@ -425,16 +425,6 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of licenseListVersion
-		 * @parameter licenseListVersion value to set
-		 * @return this for chaining
-		**/
-		public LicenseExpressionBuilder setLicenseListVersion(String licenseListVersion) {
-			this.licenseListVersion = licenseListVersion;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
 		 * @parameter summary value to set
 		 * @return this for chaining
@@ -455,12 +445,22 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * Sets the initial value of licenseExpression
+		 * @parameter licenseExpression value to set
 		 * @return this for chaining
 		**/
-		public LicenseExpressionBuilder setComment(String comment) {
-			super.comment = comment;
+		public LicenseExpressionBuilder setLicenseExpression(String licenseExpression) {
+			this.licenseExpression = licenseExpression;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of licenseListVersion
+		 * @parameter licenseListVersion value to set
+		 * @return this for chaining
+		**/
+		public LicenseExpressionBuilder setLicenseListVersion(String licenseListVersion) {
+			this.licenseListVersion = licenseListVersion;
 			return this;
 		}
 		
@@ -475,12 +475,12 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of licenseExpression
-		 * @parameter licenseExpression value to set
+		 * Sets the initial value of comment
+		 * @parameter comment value to set
 		 * @return this for chaining
 		**/
-		public LicenseExpressionBuilder setLicenseExpression(String licenseExpression) {
-			this.licenseExpression = licenseExpression;
+		public LicenseExpressionBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 	
