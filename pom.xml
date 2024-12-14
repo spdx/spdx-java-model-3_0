@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.spdx</groupId>
   <artifactId>spdx-java-model-3_0</artifactId>
-  <version>1.0.0-RC1</version>
+  <version>1.0.0-RC2-SNAPSHOT</version>
   <name>spdx-java-model-3</name>
   <description>Generated java model source code</description>
   <url>https://github.com/spdx/spdx-java-model-3_0</url>
@@ -31,7 +31,7 @@
     <connection>scm:git:git://github.com/spdx/spdx-java-model-3_0.git</connection>
     <developerConnection>scm:git:git@github.com:spdx/spdx-java-model-3_0.git</developerConnection>
     <url>https://github.com/spdx/spdx-java-model-3_0</url>
-    <tag>v1.0.0-RC1</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
