@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -151,6 +151,16 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		return this;
 	}
 	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public OrLaterOperator setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
+		return this;
+	}	
+	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -168,16 +178,6 @@ public  class OrLaterOperator extends ExtendableLicense  {
 	 @Override
 	public OrLaterOperator setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public OrLaterOperator setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -410,6 +410,16 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		}
 		
 		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public OrLaterOperatorBuilder setSummary(String summary) {
+			super.summary = summary;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
@@ -426,16 +436,6 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		**/
 		public OrLaterOperatorBuilder setComment(String comment) {
 			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public OrLaterOperatorBuilder setSummary(String summary) {
-			super.summary = summary;
 			return this;
 		}
 		

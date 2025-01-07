@@ -1721,6 +1721,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of summary
+			 * @parameter summary value to set
+			 * @return this for chaining
+			**/
+			public MockElementBuilder setSummary(String summary) {
+				this.summary = summary;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of name
 			 * @parameter name value to set
 			 * @return this for chaining
@@ -1737,16 +1747,6 @@ public class TestValuesGenerator {
 			**/
 			public MockElementBuilder setComment(String comment) {
 				this.comment = comment;
-				return this;
-			}
-			
-			/**
-			 * Sets the initial value of summary
-			 * @parameter summary value to set
-			 * @return this for chaining
-			**/
-			public MockElementBuilder setSummary(String summary) {
-				this.summary = summary;
 				return this;
 			}
 			
@@ -2601,11 +2601,11 @@ public class TestValuesGenerator {
 
 	public static final Integer DATASET_SIZE_TEST_VALUE = 55;
 	public static final Integer END_INTEGER_RANGE_TEST_VALUE = 55;
-	public static final Integer SCORE_TEST_VALUE = 55;
-	public static final Integer PERCENTILE_TEST_VALUE = 55;
 	public static final Integer BEGIN_INTEGER_RANGE_TEST_VALUE = 55;
-	public static final Integer PROBABILITY_TEST_VALUE = 55;
-	public static final Integer ENERGY_QUANTITY_TEST_VALUE = 55;
+	public static final Double SCORE_TEST_VALUE = 55.1;
+	public static final Double PERCENTILE_TEST_VALUE = 55.1;
+	public static final Double PROBABILITY_TEST_VALUE = 55.1;
+	public static final Double ENERGY_QUANTITY_TEST_VALUE = 55.1;
 	public static final String STANDARD_LICENSE_TEMPLATE_TEST_VALUE = "test standardLicenseTemplate";
 	public static final String INTENDED_USE_TEST_VALUE = "test intendedUse";
 	public static final String MODIFIED_TIME_TEST_VALUE = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
@@ -2847,9 +2847,9 @@ public class TestValuesGenerator {
 	
 	public OrLaterOperatorBuilder builderForOrLaterOperatorTests(String objectUri) throws InvalidSPDXAnalysisException {
 		OrLaterOperatorBuilder retval = new OrLaterOperatorBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setSubjectLicense(builderForLicenseTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2890,9 +2890,9 @@ public class TestValuesGenerator {
 	
 	public IndividualLicensingInfoBuilder builderForIndividualLicensingInfoTests(String objectUri) throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfoBuilder retval = new IndividualLicensingInfoBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2998,9 +2998,9 @@ public class TestValuesGenerator {
 	
 	public ConjunctiveLicenseSetBuilder builderForConjunctiveLicenseSetTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ConjunctiveLicenseSetBuilder retval = new ConjunctiveLicenseSetBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3014,9 +3014,9 @@ public class TestValuesGenerator {
 	
 	public ToolBuilder builderForToolTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ToolBuilder retval = new ToolBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3029,9 +3029,9 @@ public class TestValuesGenerator {
 	
 	public DisjunctiveLicenseSetBuilder builderForDisjunctiveLicenseSetTests(String objectUri) throws InvalidSPDXAnalysisException {
 		DisjunctiveLicenseSetBuilder retval = new DisjunctiveLicenseSetBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3117,9 +3117,9 @@ public class TestValuesGenerator {
 	
 	public PersonBuilder builderForPersonTests(String objectUri) throws InvalidSPDXAnalysisException {
 		PersonBuilder retval = new PersonBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3442,9 +3442,9 @@ public class TestValuesGenerator {
 	
 	public ElementBuilder builderForElementTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ElementBuilder retval = new MockElement.MockElementBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3457,9 +3457,9 @@ public class TestValuesGenerator {
 	
 	public ExtendableLicenseBuilder builderForExtendableLicenseTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ExtendableLicenseBuilder retval = new ExtendableLicenseBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3585,9 +3585,9 @@ public class TestValuesGenerator {
 	
 	public WithAdditionOperatorBuilder builderForWithAdditionOperatorTests(String objectUri) throws InvalidSPDXAnalysisException {
 		WithAdditionOperatorBuilder retval = new WithAdditionOperatorBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setSubjectAddition(builderForLicenseAdditionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSubjectExtendableLicense(builderForExtendableLicenseTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3637,9 +3637,9 @@ public class TestValuesGenerator {
 	
 	public IndividualElementBuilder builderForIndividualElementTests(String objectUri) throws InvalidSPDXAnalysisException {
 		IndividualElementBuilder retval = new IndividualElementBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3677,9 +3677,9 @@ public class TestValuesGenerator {
 	
 	public AnyLicenseInfoBuilder builderForAnyLicenseInfoTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AnyLicenseInfoBuilder retval = new AnyLicenseInfoBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3721,9 +3721,9 @@ public class TestValuesGenerator {
 	
 	public OrganizationBuilder builderForOrganizationTests(String objectUri) throws InvalidSPDXAnalysisException {
 		OrganizationBuilder retval = new OrganizationBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3826,9 +3826,9 @@ public class TestValuesGenerator {
 	
 	public SoftwareAgentBuilder builderForSoftwareAgentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SoftwareAgentBuilder retval = new SoftwareAgentBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3865,9 +3865,9 @@ public class TestValuesGenerator {
 	
 	public AgentBuilder builderForAgentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AgentBuilder retval = new AgentBuilder(modelStore, objectUri, copyManager)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3881,9 +3881,9 @@ public class TestValuesGenerator {
 	public SimpleLicensingTextBuilder builderForSimpleLicensingTextTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SimpleLicensingTextBuilder retval = new SimpleLicensingTextBuilder(modelStore, objectUri, copyManager)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())

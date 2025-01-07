@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -182,17 +182,17 @@ public  class CvssV2VulnAssessmentRelationship extends VulnAssessmentRelationshi
 	/**
 	 * @return the score
 	 */
-	public @Nullable Integer getScore() throws InvalidSPDXAnalysisException {
-		Optional<Integer> retval = getIntegerPropertyValue(SpdxConstantsV3.PROP_SCORE);
+	public @Nullable Double getScore() throws InvalidSPDXAnalysisException {
+		Optional<Double> retval = getDoublePropertyValue(SpdxConstantsV3.PROP_SCORE);
 		return retval.isPresent() ? retval.get() : null;
 	}
-	
+
 	/**
 	 * @param score the score to set
 	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
+	 * @throws InvalidSPDXAnalysisException
 	 */
-	public CvssV2VulnAssessmentRelationship setScore(@Nullable Integer score) throws InvalidSPDXAnalysisException {
+	public CvssV2VulnAssessmentRelationship setScore(@Nullable Double score) throws InvalidSPDXAnalysisException {
 		if (isStrict() && Objects.isNull(score)) {
 			throw new InvalidSPDXAnalysisException("score is a required property");
 		}
@@ -323,7 +323,7 @@ public  class CvssV2VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		List<String> retval = new ArrayList<>();
 		retval.addAll(super._verify(verifiedIds, specVersionForVerify, profiles));
 		try {
-			Integer score = getScore();
+			Double score = getScore();
 			if (Objects.isNull(score) &&
 					Collections.disjoint(profiles, Arrays.asList(new ProfileIdentifierType[] { ProfileIdentifierType.SECURITY }))) {
 				retval.add("Missing score in CvssV2VulnAssessmentRelationship");
@@ -383,7 +383,7 @@ public  class CvssV2VulnAssessmentRelationship extends VulnAssessmentRelationshi
 			super(modelStore, objectUri, copyManager);
 		}
 		
-		protected Integer score = null;
+		protected Double score = null;
 		protected String vectorString = null;
 		
 		
@@ -566,13 +566,13 @@ public  class CvssV2VulnAssessmentRelationship extends VulnAssessmentRelationshi
 			super.relationshipType = relationshipType;
 			return this;
 		}
-		
+
 		/**
 		 * Sets the initial value of score
 		 * @parameter score value to set
 		 * @return this for chaining
 		**/
-		public CvssV2VulnAssessmentRelationshipBuilder setScore(Integer score) {
+		public CvssV2VulnAssessmentRelationshipBuilder setScore(Double score) {
 			this.score = score;
 			return this;
 		}

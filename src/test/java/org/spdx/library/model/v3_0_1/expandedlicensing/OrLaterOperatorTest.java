@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -133,6 +133,17 @@ public class OrLaterOperatorTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setSummary}.
+	 */
+	public void testOrLaterOperatorsetSummary() throws InvalidSPDXAnalysisException {
+		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrLaterOperator.getSummary());
+		String newStringValue = "new summary value";
+		testOrLaterOperator.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setName}.
 	 */
 	public void testOrLaterOperatorsetName() throws InvalidSPDXAnalysisException {
@@ -152,17 +163,6 @@ public class OrLaterOperatorTest extends TestCase {
 		String newStringValue = "new comment value";
 		testOrLaterOperator.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getComment());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setSummary}.
-	 */
-	public void testOrLaterOperatorsetSummary() throws InvalidSPDXAnalysisException {
-		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrLaterOperator.getSummary());
-		String newStringValue = "new summary value";
-		testOrLaterOperator.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getSummary());
 	}
 	
 	/**

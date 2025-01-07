@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -118,6 +118,17 @@ public class PersonTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setSummary}.
+	 */
+	public void testPersonsetSummary() throws InvalidSPDXAnalysisException {
+		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testPerson.getSummary());
+		String newStringValue = "new summary value";
+		testPerson.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testPerson.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setName}.
 	 */
 	public void testPersonsetName() throws InvalidSPDXAnalysisException {
@@ -137,17 +148,6 @@ public class PersonTest extends TestCase {
 		String newStringValue = "new comment value";
 		testPerson.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testPerson.getComment());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setSummary}.
-	 */
-	public void testPersonsetSummary() throws InvalidSPDXAnalysisException {
-		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testPerson.getSummary());
-		String newStringValue = "new summary value";
-		testPerson.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testPerson.getSummary());
 	}
 	
 	/**

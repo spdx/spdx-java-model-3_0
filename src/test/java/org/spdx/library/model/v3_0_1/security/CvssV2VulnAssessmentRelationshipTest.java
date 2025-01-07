@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -178,15 +178,15 @@ public class CvssV2VulnAssessmentRelationshipTest extends TestCase {
 		testCvssV2VulnAssessmentRelationship.setRelationshipType(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE2);
 		assertEquals(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE2, testCvssV2VulnAssessmentRelationship.getRelationshipType());
 	}
-	
+
 	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV2VulnAssessmentRelationship#setScore}.
 	 */
 	public void testCvssV2VulnAssessmentRelationshipsetScore() throws InvalidSPDXAnalysisException {
 		CvssV2VulnAssessmentRelationship testCvssV2VulnAssessmentRelationship = generator.builderForCvssV2VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
 		assertEquals(TestValuesGenerator.SCORE_TEST_VALUE, testCvssV2VulnAssessmentRelationship.getScore());
-		testCvssV2VulnAssessmentRelationship.setScore(new Integer(653));
-		assertEquals(new Integer(653), testCvssV2VulnAssessmentRelationship.getScore());
+		testCvssV2VulnAssessmentRelationship.setScore(new Double(653.6));
+		assertEquals(new Double(653.6), testCvssV2VulnAssessmentRelationship.getScore());
 	}
 	
 	/**

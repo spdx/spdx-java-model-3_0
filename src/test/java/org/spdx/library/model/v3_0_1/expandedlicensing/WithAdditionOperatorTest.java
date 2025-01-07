@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -145,6 +145,17 @@ public class WithAdditionOperatorTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setSummary}.
+	 */
+	public void testWithAdditionOperatorsetSummary() throws InvalidSPDXAnalysisException {
+		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testWithAdditionOperator.getSummary());
+		String newStringValue = "new summary value";
+		testWithAdditionOperator.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setName}.
 	 */
 	public void testWithAdditionOperatorsetName() throws InvalidSPDXAnalysisException {
@@ -164,17 +175,6 @@ public class WithAdditionOperatorTest extends TestCase {
 		String newStringValue = "new comment value";
 		testWithAdditionOperator.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getComment());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setSummary}.
-	 */
-	public void testWithAdditionOperatorsetSummary() throws InvalidSPDXAnalysisException {
-		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testWithAdditionOperator.getSummary());
-		String newStringValue = "new summary value";
-		testWithAdditionOperator.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getSummary());
 	}
 	
 	/**

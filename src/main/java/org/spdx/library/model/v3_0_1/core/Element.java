@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -117,9 +117,9 @@ public abstract class Element extends ModelObjectV3  {
 		if (Objects.nonNull(builder.creationInfo)) {
 			setCreationInfo(builder.creationInfo);
 		}
+		setSummary(builder.summary);
 		setName(builder.name);
 		setComment(builder.comment);
-		setSummary(builder.summary);
 		setDescription(builder.description);
 	}
 
@@ -174,6 +174,21 @@ public abstract class Element extends ModelObjectV3  {
 		return this;
 	}
 		/**
+	 * @return the summary
+	 */
+	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_SUMMARY);
+	}
+	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Element setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		setPropertyValue(SpdxConstantsV3.PROP_SUMMARY, summary);
+		return this;
+	}
+		/**
 	 * @return the name
 	 */
 	public Optional<String> getName() throws InvalidSPDXAnalysisException {
@@ -201,21 +216,6 @@ public abstract class Element extends ModelObjectV3  {
 	 */
 	public Element setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		setPropertyValue(SpdxConstantsV3.PROP_COMMENT, comment);
-		return this;
-	}
-		/**
-	 * @return the summary
-	 */
-	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_SUMMARY);
-	}
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Element setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		setPropertyValue(SpdxConstantsV3.PROP_SUMMARY, summary);
 		return this;
 	}
 		/**
@@ -275,6 +275,12 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		try {
 			@SuppressWarnings("unused")
+			Optional<String> summary = getSummary();
+		} catch (InvalidSPDXAnalysisException e) {
+			retval.add("Error getting summary for Element: "+e.getMessage());
+		}
+		try {
+			@SuppressWarnings("unused")
 			Optional<String> name = getName();
 		} catch (InvalidSPDXAnalysisException e) {
 			retval.add("Error getting name for Element: "+e.getMessage());
@@ -284,12 +290,6 @@ public abstract class Element extends ModelObjectV3  {
 			Optional<String> comment = getComment();
 		} catch (InvalidSPDXAnalysisException e) {
 			retval.add("Error getting comment for Element: "+e.getMessage());
-		}
-		try {
-			@SuppressWarnings("unused")
-			Optional<String> summary = getSummary();
-		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting summary for Element: "+e.getMessage());
 		}
 		try {
 			@SuppressWarnings("unused")
@@ -357,9 +357,9 @@ public abstract class Element extends ModelObjectV3  {
 		protected Collection<IntegrityMethod> verifiedUsings = new ArrayList<>();
 		protected Collection<ExternalIdentifier> externalIdentifiers = new ArrayList<>();
 		protected CreationInfo creationInfo = null;
+		protected String summary = null;
 		protected String name = null;
 		protected String comment = null;
-		protected String summary = null;
 		protected String description = null;
 		
 		
@@ -470,6 +470,16 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		
 		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public ElementBuilder setSummary(String summary) {
+			this.summary = summary;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
@@ -486,16 +496,6 @@ public abstract class Element extends ModelObjectV3  {
 		**/
 		public ElementBuilder setComment(String comment) {
 			this.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public ElementBuilder setSummary(String summary) {
-			this.summary = summary;
 			return this;
 		}
 		

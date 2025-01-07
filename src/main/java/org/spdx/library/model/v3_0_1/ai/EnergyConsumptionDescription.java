@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -135,17 +135,17 @@ public  class EnergyConsumptionDescription extends ModelObjectV3  {
 	/**
 	 * @return the energyQuantity
 	 */
-	public @Nullable Integer getEnergyQuantity() throws InvalidSPDXAnalysisException {
-		Optional<Integer> retval = getIntegerPropertyValue(SpdxConstantsV3.PROP_ENERGY_QUANTITY);
+	public @Nullable Double getEnergyQuantity() throws InvalidSPDXAnalysisException {
+		Optional<Double> retval = getDoublePropertyValue(SpdxConstantsV3.PROP_ENERGY_QUANTITY);
 		return retval.isPresent() ? retval.get() : null;
 	}
-	
+
 	/**
 	 * @param energyQuantity the energyQuantity to set
 	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
+	 * @throws InvalidSPDXAnalysisException
 	 */
-	public EnergyConsumptionDescription setEnergyQuantity(@Nullable Integer energyQuantity) throws InvalidSPDXAnalysisException {
+	public EnergyConsumptionDescription setEnergyQuantity(@Nullable Double energyQuantity) throws InvalidSPDXAnalysisException {
 		if (isStrict() && Objects.isNull(energyQuantity)) {
 			throw new InvalidSPDXAnalysisException("energyQuantity is a required property");
 		}
@@ -176,7 +176,7 @@ public  class EnergyConsumptionDescription extends ModelObjectV3  {
 			retval.add("Error getting energyUnit for EnergyConsumptionDescription: "+e.getMessage());
 		}
 		try {
-			Integer energyQuantity = getEnergyQuantity();
+			Double energyQuantity = getEnergyQuantity();
 			if (Objects.isNull(energyQuantity) &&
 					Collections.disjoint(profiles, Arrays.asList(new ProfileIdentifierType[] { ProfileIdentifierType.AI }))) {
 				retval.add("Missing energyQuantity in EnergyConsumptionDescription");
@@ -223,7 +223,7 @@ public  class EnergyConsumptionDescription extends ModelObjectV3  {
 		}
 		
 		protected EnergyUnitType energyUnit = null;
-		protected Integer energyQuantity = null;
+		protected Double energyQuantity = null;
 		
 		
 		/**
@@ -235,13 +235,13 @@ public  class EnergyConsumptionDescription extends ModelObjectV3  {
 			this.energyUnit = energyUnit;
 			return this;
 		}
-		
+
 		/**
 		 * Sets the initial value of energyQuantity
 		 * @parameter energyQuantity value to set
 		 * @return this for chaining
 		**/
-		public EnergyConsumptionDescriptionBuilder setEnergyQuantity(Integer energyQuantity) {
+		public EnergyConsumptionDescriptionBuilder setEnergyQuantity(Double energyQuantity) {
 			this.energyQuantity = energyQuantity;
 			return this;
 		}

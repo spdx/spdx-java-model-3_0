@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -228,36 +228,36 @@ public class ExternalEpssVulnAssessmentRelationship extends EpssVulnAssessmentRe
 	public EpssVulnAssessmentRelationship setRelationshipType(@Nullable RelationshipType relationshipType) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
-	/**
-	 * @return the probability
-	 */
-	public @Nullable Integer getProbability() throws InvalidSPDXAnalysisException {
-		return null;
-	}
-	
-	/**
-	 * @param probability the probability to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public EpssVulnAssessmentRelationship setProbability(@Nullable Integer probability) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-	/**
-	 * @return the percentile
-	 */
-	public @Nullable Integer getPercentile() throws InvalidSPDXAnalysisException {
-		return null;
-	}
-	
-	/**
-	 * @param percentile the percentile to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public EpssVulnAssessmentRelationship setPercentile(@Nullable Integer percentile) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
+    /**
+     * @return the probability
+     */
+    public @Nullable Double getProbability() throws InvalidSPDXAnalysisException {
+        return null;
+    }
+
+    /**
+     * @param probability the probability to set
+     * @return this to chain setters
+     * @throws InvalidSPDXAnalysisException
+     */
+    public EpssVulnAssessmentRelationship setProbability(@Nullable Double probability) throws InvalidSPDXAnalysisException {
+        throw new InvalidSPDXAnalysisException("External elements can not set properties");
+    }
+    /**
+     * @return the percentile
+     */
+    public @Nullable Double getPercentile() throws InvalidSPDXAnalysisException {
+        return null;
+    }
+
+    /**
+     * @param percentile the percentile to set
+     * @return this to chain setters
+     * @throws InvalidSPDXAnalysisException
+     */
+    public EpssVulnAssessmentRelationship setPercentile(@Nullable Double percentile) throws InvalidSPDXAnalysisException {
+        throw new InvalidSPDXAnalysisException("External elements can not set properties");
+    }
 		/**
 	 * @return the publishedTime
 	 */

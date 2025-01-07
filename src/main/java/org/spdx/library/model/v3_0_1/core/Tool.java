@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -115,6 +115,16 @@ public  class Tool extends Element  {
 		return this;
 	}	
 	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Tool setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
+		return this;
+	}	
+	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -132,16 +142,6 @@ public  class Tool extends Element  {
 	 @Override
 	public Tool setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Tool setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -320,6 +320,16 @@ public  class Tool extends Element  {
 		}
 		
 		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public ToolBuilder setSummary(String summary) {
+			super.summary = summary;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
@@ -336,16 +346,6 @@ public  class Tool extends Element  {
 		**/
 		public ToolBuilder setComment(String comment) {
 			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public ToolBuilder setSummary(String summary) {
-			super.summary = summary;
 			return this;
 		}
 		

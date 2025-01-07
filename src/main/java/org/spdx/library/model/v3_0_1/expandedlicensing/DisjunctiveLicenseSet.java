@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -132,6 +132,16 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public DisjunctiveLicenseSet setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
+		return this;
+	}	
+	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -149,16 +159,6 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 	 @Override
 	public DisjunctiveLicenseSet setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
-		return this;
-	}	
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public DisjunctiveLicenseSet setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -500,6 +500,16 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		
 		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public DisjunctiveLicenseSetBuilder setSummary(String summary) {
+			super.summary = summary;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
@@ -516,16 +526,6 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		**/
 		public DisjunctiveLicenseSetBuilder setComment(String comment) {
 			super.comment = comment;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public DisjunctiveLicenseSetBuilder setSummary(String summary) {
-			super.summary = summary;
 			return this;
 		}
 		

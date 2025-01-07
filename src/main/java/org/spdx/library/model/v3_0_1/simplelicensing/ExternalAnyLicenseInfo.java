@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -144,6 +144,20 @@ public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements Individua
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
+	 * @return the summary
+	 */
+	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
 	 * @return the name
 	 */
 	public Optional<String> getName() throws InvalidSPDXAnalysisException {
@@ -169,20 +183,6 @@ public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements Individua
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public AnyLicenseInfo setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
-	 * @return the summary
-	 */
-	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

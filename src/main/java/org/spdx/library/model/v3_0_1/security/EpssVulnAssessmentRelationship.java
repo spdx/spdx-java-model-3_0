@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -182,17 +182,17 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 	/**
 	 * @return the probability
 	 */
-	public @Nullable Integer getProbability() throws InvalidSPDXAnalysisException {
-		Optional<Integer> retval = getIntegerPropertyValue(SpdxConstantsV3.PROP_PROBABILITY);
+	public @Nullable Double getProbability() throws InvalidSPDXAnalysisException {
+		Optional<Double> retval = getDoublePropertyValue(SpdxConstantsV3.PROP_PROBABILITY);
 		return retval.isPresent() ? retval.get() : null;
 	}
-	
+
 	/**
 	 * @param probability the probability to set
 	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
+	 * @throws InvalidSPDXAnalysisException
 	 */
-	public EpssVulnAssessmentRelationship setProbability(@Nullable Integer probability) throws InvalidSPDXAnalysisException {
+	public EpssVulnAssessmentRelationship setProbability(@Nullable Double probability) throws InvalidSPDXAnalysisException {
 		if (isStrict() && Objects.isNull(probability)) {
 			throw new InvalidSPDXAnalysisException("probability is a required property");
 		}
@@ -202,17 +202,17 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 	/**
 	 * @return the percentile
 	 */
-	public @Nullable Integer getPercentile() throws InvalidSPDXAnalysisException {
-		Optional<Integer> retval = getIntegerPropertyValue(SpdxConstantsV3.PROP_PERCENTILE);
+	public @Nullable Double getPercentile() throws InvalidSPDXAnalysisException {
+		Optional<Double> retval = getDoublePropertyValue(SpdxConstantsV3.PROP_PERCENTILE);
 		return retval.isPresent() ? retval.get() : null;
 	}
-	
+
 	/**
 	 * @param percentile the percentile to set
 	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
+	 * @throws InvalidSPDXAnalysisException
 	 */
-	public EpssVulnAssessmentRelationship setPercentile(@Nullable Integer percentile) throws InvalidSPDXAnalysisException {
+	public EpssVulnAssessmentRelationship setPercentile(@Nullable Double percentile) throws InvalidSPDXAnalysisException {
 		if (isStrict() && Objects.isNull(percentile)) {
 			throw new InvalidSPDXAnalysisException("percentile is a required property");
 		}
@@ -324,7 +324,7 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 		List<String> retval = new ArrayList<>();
 		retval.addAll(super._verify(verifiedIds, specVersionForVerify, profiles));
 		try {
-			Integer probability = getProbability();
+			Double probability = getProbability();
 			if (Objects.isNull(probability) &&
 					Collections.disjoint(profiles, Arrays.asList(new ProfileIdentifierType[] { ProfileIdentifierType.SECURITY }))) {
 				retval.add("Missing probability in EpssVulnAssessmentRelationship");
@@ -333,7 +333,7 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 			retval.add("Error getting probability for EpssVulnAssessmentRelationship: "+e.getMessage());
 		}
 		try {
-			Integer percentile = getPercentile();
+			Double percentile = getPercentile();
 			if (Objects.isNull(percentile) &&
 					Collections.disjoint(profiles, Arrays.asList(new ProfileIdentifierType[] { ProfileIdentifierType.SECURITY }))) {
 				retval.add("Missing percentile in EpssVulnAssessmentRelationship");
@@ -384,8 +384,8 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 			super(modelStore, objectUri, copyManager);
 		}
 		
-		protected Integer probability = null;
-		protected Integer percentile = null;
+		protected Double probability = null;
+		protected Double percentile = null;
 		
 		
 		/**
@@ -567,23 +567,23 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 			super.relationshipType = relationshipType;
 			return this;
 		}
-		
+
 		/**
 		 * Sets the initial value of probability
 		 * @parameter probability value to set
 		 * @return this for chaining
 		**/
-		public EpssVulnAssessmentRelationshipBuilder setProbability(Integer probability) {
+		public EpssVulnAssessmentRelationshipBuilder setProbability(Double probability) {
 			this.probability = probability;
 			return this;
 		}
-		
+
 		/**
 		 * Sets the initial value of percentile
 		 * @parameter percentile value to set
 		 * @return this for chaining
 		**/
-		public EpssVulnAssessmentRelationshipBuilder setPercentile(Integer percentile) {
+		public EpssVulnAssessmentRelationshipBuilder setPercentile(Double percentile) {
 			this.percentile = percentile;
 			return this;
 		}

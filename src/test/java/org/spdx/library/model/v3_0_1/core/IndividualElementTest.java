@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -118,6 +118,17 @@ public class IndividualElementTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setSummary}.
+	 */
+	public void testIndividualElementsetSummary() throws InvalidSPDXAnalysisException {
+		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualElement.getSummary());
+		String newStringValue = "new summary value";
+		testIndividualElement.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualElement.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setName}.
 	 */
 	public void testIndividualElementsetName() throws InvalidSPDXAnalysisException {
@@ -137,17 +148,6 @@ public class IndividualElementTest extends TestCase {
 		String newStringValue = "new comment value";
 		testIndividualElement.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testIndividualElement.getComment());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setSummary}.
-	 */
-	public void testIndividualElementsetSummary() throws InvalidSPDXAnalysisException {
-		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualElement.getSummary());
-		String newStringValue = "new summary value";
-		testIndividualElement.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualElement.getSummary());
 	}
 	
 	/**

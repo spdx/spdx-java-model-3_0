@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -112,14 +112,14 @@ public class EnergyConsumptionDescriptionTest extends TestCase {
 		testEnergyConsumptionDescription.setEnergyUnit(TestValuesGenerator.ENERGY_UNIT_TEST_VALUE2);
 		assertEquals(TestValuesGenerator.ENERGY_UNIT_TEST_VALUE2, testEnergyConsumptionDescription.getEnergyUnit());
 	}
-	
+
 	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.ai.EnergyConsumptionDescription#setEnergyQuantity}.
 	 */
 	public void testEnergyConsumptionDescriptionsetEnergyQuantity() throws InvalidSPDXAnalysisException {
 		EnergyConsumptionDescription testEnergyConsumptionDescription = generator.builderForEnergyConsumptionDescriptionTests(TEST_OBJECT_URI).build();
 		assertEquals(TestValuesGenerator.ENERGY_QUANTITY_TEST_VALUE, testEnergyConsumptionDescription.getEnergyQuantity());
-		testEnergyConsumptionDescription.setEnergyQuantity(new Integer(653));
-		assertEquals(new Integer(653), testEnergyConsumptionDescription.getEnergyQuantity());
+		testEnergyConsumptionDescription.setEnergyQuantity(new Double(653.6));
+		assertEquals(new Double(653.6), testEnergyConsumptionDescription.getEnergyQuantity());
 	}
 }

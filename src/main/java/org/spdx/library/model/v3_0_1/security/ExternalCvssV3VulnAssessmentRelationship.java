@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -242,21 +242,21 @@ public class ExternalCvssV3VulnAssessmentRelationship extends CvssV3VulnAssessme
 	public CvssV3VulnAssessmentRelationship setRelationshipType(@Nullable RelationshipType relationshipType) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
-	/**
-	 * @return the score
-	 */
-	public @Nullable Integer getScore() throws InvalidSPDXAnalysisException {
-		return null;
-	}
-	
-	/**
-	 * @param score the score to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public CvssV3VulnAssessmentRelationship setScore(@Nullable Integer score) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
+    /**
+     * @return the score
+     */
+    public @Nullable Double getScore() throws InvalidSPDXAnalysisException {
+        return null;
+    }
+
+    /**
+     * @param score the score to set
+     * @return this to chain setters
+     * @throws InvalidSPDXAnalysisException
+     */
+    public CvssV3VulnAssessmentRelationship setScore(@Nullable Double score) throws InvalidSPDXAnalysisException {
+        throw new InvalidSPDXAnalysisException("External elements can not set properties");
+    }
 	/**
 	 * @return the vectorString
 	 */
