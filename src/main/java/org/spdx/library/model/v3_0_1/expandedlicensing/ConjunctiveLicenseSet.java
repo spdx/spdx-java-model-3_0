@@ -132,16 +132,6 @@ public  class ConjunctiveLicenseSet extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public ConjunctiveLicenseSet setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -149,6 +139,16 @@ public  class ConjunctiveLicenseSet extends AnyLicenseInfo  {
 	 @Override
 	public ConjunctiveLicenseSet setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public ConjunctiveLicenseSet setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -500,22 +500,22 @@ public  class ConjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public ConjunctiveLicenseSetBuilder setSummary(String summary) {
-			super.summary = summary;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public ConjunctiveLicenseSetBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public ConjunctiveLicenseSetBuilder setSummary(String summary) {
+			super.summary = summary;
 			return this;
 		}
 		

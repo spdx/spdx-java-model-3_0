@@ -119,16 +119,6 @@ public  class AnyLicenseInfo extends Element  {
 		return this;
 	}	
 	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -136,6 +126,16 @@ public  class AnyLicenseInfo extends Element  {
 	 @Override
 	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -324,22 +324,22 @@ public  class AnyLicenseInfo extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public AnyLicenseInfoBuilder setSummary(String summary) {
-			super.summary = summary;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public AnyLicenseInfoBuilder setSummary(String summary) {
+			super.summary = summary;
 			return this;
 		}
 		

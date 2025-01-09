@@ -167,16 +167,6 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		return this;
 	}
 	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public WithAdditionOperator setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
-		return this;
-	}	
-	/**
 	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -184,6 +174,16 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 	 @Override
 	public WithAdditionOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		super.setName(name);
+		return this;
+	}	
+	/**
+	 * @param summary the summary to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public WithAdditionOperator setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -484,22 +484,22 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of summary
-		 * @parameter summary value to set
-		 * @return this for chaining
-		**/
-		public WithAdditionOperatorBuilder setSummary(String summary) {
-			super.summary = summary;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of name
 		 * @parameter name value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setName(String name) {
 			super.name = name;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of summary
+		 * @parameter summary value to set
+		 * @return this for chaining
+		**/
+		public WithAdditionOperatorBuilder setSummary(String summary) {
+			super.summary = summary;
 			return this;
 		}
 		

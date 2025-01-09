@@ -122,17 +122,6 @@ public class AnyLicenseInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setSummary}.
-	 */
-	public void testAnyLicenseInfosetSummary() throws InvalidSPDXAnalysisException {
-		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAnyLicenseInfo.getSummary());
-		String newStringValue = "new summary value";
-		testAnyLicenseInfo.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setName}.
 	 */
 	public void testAnyLicenseInfosetName() throws InvalidSPDXAnalysisException {
@@ -141,6 +130,17 @@ public class AnyLicenseInfoTest extends TestCase {
 		String newStringValue = "new name value";
 		testAnyLicenseInfo.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setSummary}.
+	 */
+	public void testAnyLicenseInfosetSummary() throws InvalidSPDXAnalysisException {
+		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAnyLicenseInfo.getSummary());
+		String newStringValue = "new summary value";
+		testAnyLicenseInfo.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getSummary());
 	}
 	
 	/**

@@ -118,17 +118,6 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setSummary}.
-	 */
-	public void testToolsetSummary() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testTool.getSummary());
-		String newStringValue = "new summary value";
-		testTool.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
 	 */
 	public void testToolsetName() throws InvalidSPDXAnalysisException {
@@ -137,6 +126,17 @@ public class ToolTest extends TestCase {
 		String newStringValue = "new name value";
 		testTool.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testTool.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setSummary}.
+	 */
+	public void testToolsetSummary() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testTool.getSummary());
+		String newStringValue = "new summary value";
+		testTool.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getSummary());
 	}
 	
 	/**
