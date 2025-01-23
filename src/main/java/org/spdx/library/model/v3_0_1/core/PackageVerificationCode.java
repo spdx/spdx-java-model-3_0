@@ -249,7 +249,7 @@ public  class PackageVerificationCode extends IntegrityMethod  {
 		
 		/**
 		 * Adds a packageVerificationCodeExcludedFile to the initial collection
-		 * @parameter packageVerificationCodeExcludedFile packageVerificationCodeExcludedFile to add
+		 * @param packageVerificationCodeExcludedFile packageVerificationCodeExcludedFile to add
 		 * @return this for chaining
 		**/
 		public PackageVerificationCodeBuilder addPackageVerificationCodeExcludedFile(String packageVerificationCodeExcludedFile) {
@@ -261,7 +261,7 @@ public  class PackageVerificationCode extends IntegrityMethod  {
 		
 		/**
 		 * Adds all elements from a collection to the initial packageVerificationCodeExcludedFile collection
-		 * @parameter packageVerificationCodeExcludedFileCollection collection to initialize the packageVerificationCodeExcludedFile
+		 * @param packageVerificationCodeExcludedFileCollection collection to initialize the packageVerificationCodeExcludedFile
 		 * @return this for chaining
 		**/
 		public PackageVerificationCodeBuilder addAllPackageVerificationCodeExcludedFile(Collection<String> packageVerificationCodeExcludedFileCollection) {
@@ -273,7 +273,7 @@ public  class PackageVerificationCode extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of algorithm
-		 * @parameter algorithm value to set
+		 * @param algorithm value to set
 		 * @return this for chaining
 		**/
 		public PackageVerificationCodeBuilder setAlgorithm(HashAlgorithm algorithm) {
@@ -283,7 +283,7 @@ public  class PackageVerificationCode extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of hashValue
-		 * @parameter hashValue value to set
+		 * @param hashValue value to set
 		 * @return this for chaining
 		**/
 		public PackageVerificationCodeBuilder setHashValue(String hashValue) {
@@ -293,7 +293,7 @@ public  class PackageVerificationCode extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public PackageVerificationCodeBuilder setComment(String comment) {

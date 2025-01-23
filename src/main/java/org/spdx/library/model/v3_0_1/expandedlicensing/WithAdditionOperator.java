@@ -359,7 +359,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addExternalRef(ExternalRef externalRef) {
@@ -371,7 +371,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -383,7 +383,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addExtension(Extension extension) {
@@ -395,7 +395,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -407,7 +407,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -419,7 +419,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -431,7 +431,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -443,7 +443,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -455,7 +455,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -465,7 +465,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of subjectAddition
-		 * @parameter subjectAddition value to set
+		 * @param subjectAddition value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setSubjectAddition(LicenseAddition subjectAddition) {
@@ -475,7 +475,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of subjectExtendableLicense
-		 * @parameter subjectExtendableLicense value to set
+		 * @param subjectExtendableLicense value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setSubjectExtendableLicense(ExtendableLicense subjectExtendableLicense) {
@@ -485,7 +485,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setName(String name) {
@@ -495,7 +495,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setComment(String comment) {
@@ -505,7 +505,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setSummary(String summary) {
@@ -515,7 +515,7 @@ public  class WithAdditionOperator extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public WithAdditionOperatorBuilder setDescription(String description) {

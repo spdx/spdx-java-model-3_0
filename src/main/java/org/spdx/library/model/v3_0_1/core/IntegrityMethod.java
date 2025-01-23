@@ -175,7 +175,7 @@ public abstract class IntegrityMethod extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public IntegrityMethodBuilder setComment(String comment) {

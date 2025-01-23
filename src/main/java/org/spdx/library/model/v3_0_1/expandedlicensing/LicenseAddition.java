@@ -355,7 +355,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addExtension(Extension extension) {
@@ -367,7 +367,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -379,7 +379,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -391,7 +391,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -403,7 +403,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addExternalRef(ExternalRef externalRef) {
@@ -415,7 +415,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -427,7 +427,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -439,7 +439,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -451,7 +451,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds a seeAlso to the initial collection
-		 * @parameter seeAlso seeAlso to add
+		 * @param seeAlso seeAlso to add
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addSeeAlso(String seeAlso) {
@@ -463,7 +463,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial seeAlso collection
-		 * @parameter seeAlsoCollection collection to initialize the seeAlso
+		 * @param seeAlsoCollection collection to initialize the seeAlso
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder addAllSeeAlso(Collection<String> seeAlsoCollection) {
@@ -475,7 +475,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -485,7 +485,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of isDeprecatedAdditionId
-		 * @parameter isDeprecatedAdditionId value to set
+		 * @param isDeprecatedAdditionId value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setIsDeprecatedAdditionId(Boolean isDeprecatedAdditionId) {
@@ -495,7 +495,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setSummary(String summary) {
@@ -505,7 +505,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setDescription(String description) {
@@ -515,7 +515,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of obsoletedBy
-		 * @parameter obsoletedBy value to set
+		 * @param obsoletedBy value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setObsoletedBy(String obsoletedBy) {
@@ -525,7 +525,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of additionText
-		 * @parameter additionText value to set
+		 * @param additionText value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setAdditionText(String additionText) {
@@ -535,7 +535,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of licenseXml
-		 * @parameter licenseXml value to set
+		 * @param licenseXml value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setLicenseXml(String licenseXml) {
@@ -545,7 +545,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setName(String name) {
@@ -555,7 +555,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setComment(String comment) {
@@ -565,7 +565,7 @@ public abstract class LicenseAddition extends Element  {
 		
 		/**
 		 * Sets the initial value of standardAdditionTemplate
-		 * @parameter standardAdditionTemplate value to set
+		 * @param standardAdditionTemplate value to set
 		 * @return this for chaining
 		**/
 		public LicenseAdditionBuilder setStandardAdditionTemplate(String standardAdditionTemplate) {

@@ -342,7 +342,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addExtension(Extension extension) {
@@ -354,7 +354,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -366,7 +366,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -378,7 +378,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -390,7 +390,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addExternalRef(ExternalRef externalRef) {
@@ -402,7 +402,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -414,7 +414,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -426,7 +426,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -438,7 +438,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds a seeAlso to the initial collection
-		 * @parameter seeAlso seeAlso to add
+		 * @param seeAlso seeAlso to add
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addSeeAlso(String seeAlso) {
@@ -450,7 +450,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Adds all elements from a collection to the initial seeAlso collection
-		 * @parameter seeAlsoCollection collection to initialize the seeAlso
+		 * @param seeAlsoCollection collection to initialize the seeAlso
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder addAllSeeAlso(Collection<String> seeAlsoCollection) {
@@ -462,7 +462,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -472,7 +472,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of isFsfLibre
-		 * @parameter isFsfLibre value to set
+		 * @param isFsfLibre value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setIsFsfLibre(Boolean isFsfLibre) {
@@ -482,7 +482,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of isDeprecatedLicenseId
-		 * @parameter isDeprecatedLicenseId value to set
+		 * @param isDeprecatedLicenseId value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setIsDeprecatedLicenseId(Boolean isDeprecatedLicenseId) {
@@ -492,7 +492,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of isOsiApproved
-		 * @parameter isOsiApproved value to set
+		 * @param isOsiApproved value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setIsOsiApproved(Boolean isOsiApproved) {
@@ -502,7 +502,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of licenseText
-		 * @parameter licenseText value to set
+		 * @param licenseText value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setLicenseText(String licenseText) {
@@ -512,7 +512,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setSummary(String summary) {
@@ -522,7 +522,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setDescription(String description) {
@@ -532,7 +532,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of standardLicenseTemplate
-		 * @parameter standardLicenseTemplate value to set
+		 * @param standardLicenseTemplate value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setStandardLicenseTemplate(String standardLicenseTemplate) {
@@ -542,7 +542,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of obsoletedBy
-		 * @parameter obsoletedBy value to set
+		 * @param obsoletedBy value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setObsoletedBy(String obsoletedBy) {
@@ -552,7 +552,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of listVersionAdded
-		 * @parameter listVersionAdded value to set
+		 * @param listVersionAdded value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setListVersionAdded(String listVersionAdded) {
@@ -562,7 +562,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of licenseXml
-		 * @parameter licenseXml value to set
+		 * @param licenseXml value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setLicenseXml(String licenseXml) {
@@ -572,7 +572,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setName(String name) {
@@ -582,7 +582,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setComment(String comment) {
@@ -592,7 +592,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of deprecatedVersion
-		 * @parameter deprecatedVersion value to set
+		 * @param deprecatedVersion value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setDeprecatedVersion(String deprecatedVersion) {
@@ -602,7 +602,7 @@ public  class ListedLicense extends License  {
 		
 		/**
 		 * Sets the initial value of standardLicenseHeader
-		 * @parameter standardLicenseHeader value to set
+		 * @param standardLicenseHeader value to set
 		 * @return this for chaining
 		**/
 		public ListedLicenseBuilder setStandardLicenseHeader(String standardLicenseHeader) {

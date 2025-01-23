@@ -407,7 +407,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -419,7 +419,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -431,7 +431,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds a to to the initial collection
-		 * @parameter to to to add
+		 * @param to to to add
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addTo(Element to) {
@@ -443,7 +443,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds all elements from a collection to the initial to collection
-		 * @parameter toCollection collection to initialize the to
+		 * @param toCollection collection to initialize the to
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addAllTo(Collection<Element> toCollection) {
@@ -455,7 +455,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addExternalRef(ExternalRef externalRef) {
@@ -467,7 +467,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -479,7 +479,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -491,7 +491,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -503,7 +503,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addExtension(Extension extension) {
@@ -515,7 +515,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -527,7 +527,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -537,7 +537,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setSuppliedBy(Agent suppliedBy) {
@@ -547,7 +547,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of from
-		 * @parameter from value to set
+		 * @param from value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setFrom(Element from) {
@@ -557,7 +557,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of assessedElement
-		 * @parameter assessedElement value to set
+		 * @param assessedElement value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setAssessedElement(SoftwareArtifact assessedElement) {
@@ -567,7 +567,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of relationshipType
-		 * @parameter relationshipType value to set
+		 * @param relationshipType value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setRelationshipType(RelationshipType relationshipType) {
@@ -577,7 +577,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of completeness
-		 * @parameter completeness value to set
+		 * @param completeness value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setCompleteness(RelationshipCompleteness completeness) {
@@ -587,7 +587,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setSummary(String summary) {
@@ -597,7 +597,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of actionStatementTime
-		 * @parameter actionStatementTime value to set
+		 * @param actionStatementTime value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setActionStatementTime(String actionStatementTime) {
@@ -607,7 +607,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of withdrawnTime
-		 * @parameter withdrawnTime value to set
+		 * @param withdrawnTime value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setWithdrawnTime(String withdrawnTime) {
@@ -617,7 +617,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setComment(String comment) {
@@ -627,7 +627,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of modifiedTime
-		 * @parameter modifiedTime value to set
+		 * @param modifiedTime value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setModifiedTime(String modifiedTime) {
@@ -637,7 +637,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of publishedTime
-		 * @parameter publishedTime value to set
+		 * @param publishedTime value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setPublishedTime(String publishedTime) {
@@ -647,7 +647,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of vexVersion
-		 * @parameter vexVersion value to set
+		 * @param vexVersion value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setVexVersion(String vexVersion) {
@@ -657,7 +657,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setDescription(String description) {
@@ -667,7 +667,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of actionStatement
-		 * @parameter actionStatement value to set
+		 * @param actionStatement value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setActionStatement(String actionStatement) {
@@ -677,7 +677,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of endTime
-		 * @parameter endTime value to set
+		 * @param endTime value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setEndTime(String endTime) {
@@ -687,7 +687,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of statusNotes
-		 * @parameter statusNotes value to set
+		 * @param statusNotes value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setStatusNotes(String statusNotes) {
@@ -697,7 +697,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of startTime
-		 * @parameter startTime value to set
+		 * @param startTime value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setStartTime(String startTime) {
@@ -707,7 +707,7 @@ public  class VexAffectedVulnAssessmentRelationship extends VexVulnAssessmentRel
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public VexAffectedVulnAssessmentRelationshipBuilder setName(String name) {

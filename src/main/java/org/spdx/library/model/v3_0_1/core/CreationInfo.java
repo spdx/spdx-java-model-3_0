@@ -287,7 +287,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Adds a createdBy to the initial collection
-		 * @parameter createdBy createdBy to add
+		 * @param createdBy createdBy to add
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder addCreatedBy(Agent createdBy) {
@@ -299,7 +299,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial createdBy collection
-		 * @parameter createdByCollection collection to initialize the createdBy
+		 * @param createdByCollection collection to initialize the createdBy
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder addAllCreatedBy(Collection<Agent> createdByCollection) {
@@ -311,7 +311,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Adds a createdUsing to the initial collection
-		 * @parameter createdUsing createdUsing to add
+		 * @param createdUsing createdUsing to add
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder addCreatedUsing(Tool createdUsing) {
@@ -323,7 +323,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial createdUsing collection
-		 * @parameter createdUsingCollection collection to initialize the createdUsing
+		 * @param createdUsingCollection collection to initialize the createdUsing
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder addAllCreatedUsing(Collection<Tool> createdUsingCollection) {
@@ -335,7 +335,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of created
-		 * @parameter created value to set
+		 * @param created value to set
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder setCreated(String created) {
@@ -345,7 +345,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of specVersion
-		 * @parameter specVersion value to set
+		 * @param specVersion value to set
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder setSpecVersion(String specVersion) {
@@ -355,7 +355,7 @@ public  class CreationInfo extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public CreationInfoBuilder setComment(String comment) {

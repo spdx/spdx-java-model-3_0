@@ -278,7 +278,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addExtension(Extension extension) {
@@ -290,7 +290,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -302,7 +302,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -314,7 +314,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -326,7 +326,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a rootElement to the initial collection
-		 * @parameter rootElement rootElement to add
+		 * @param rootElement rootElement to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addRootElement(Element rootElement) {
@@ -338,7 +338,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial rootElement collection
-		 * @parameter rootElementCollection collection to initialize the rootElement
+		 * @param rootElementCollection collection to initialize the rootElement
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllRootElement(Collection<Element> rootElementCollection) {
@@ -350,7 +350,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a element to the initial collection
-		 * @parameter element element to add
+		 * @param element element to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addElement(Element element) {
@@ -362,7 +362,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial element collection
-		 * @parameter elementCollection collection to initialize the element
+		 * @param elementCollection collection to initialize the element
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllElement(Collection<Element> elementCollection) {
@@ -374,7 +374,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addExternalRef(ExternalRef externalRef) {
@@ -386,7 +386,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -398,7 +398,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a spdxImport to the initial collection
-		 * @parameter spdxImport spdxImport to add
+		 * @param spdxImport spdxImport to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addSpdxImport(ExternalMap spdxImport) {
@@ -410,7 +410,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial spdxImport collection
-		 * @parameter spdxImportCollection collection to initialize the spdxImport
+		 * @param spdxImportCollection collection to initialize the spdxImport
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllSpdxImport(Collection<ExternalMap> spdxImportCollection) {
@@ -422,7 +422,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a namespaceMap to the initial collection
-		 * @parameter namespaceMap namespaceMap to add
+		 * @param namespaceMap namespaceMap to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addNamespaceMap(NamespaceMap namespaceMap) {
@@ -434,7 +434,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial namespaceMap collection
-		 * @parameter namespaceMapCollection collection to initialize the namespaceMap
+		 * @param namespaceMapCollection collection to initialize the namespaceMap
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllNamespaceMap(Collection<NamespaceMap> namespaceMapCollection) {
@@ -446,7 +446,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -458,7 +458,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -470,7 +470,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds a profileConformance to the initial collection
-		 * @parameter profileConformance profileConformance to add
+		 * @param profileConformance profileConformance to add
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addProfileConformance(ProfileIdentifierType profileConformance) {
@@ -482,7 +482,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial profileConformance collection
-		 * @parameter profileConformanceCollection collection to initialize the profileConformance
+		 * @param profileConformanceCollection collection to initialize the profileConformance
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder addAllProfileConformance(Collection<ProfileIdentifierType> profileConformanceCollection) {
@@ -494,7 +494,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -504,7 +504,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of dataLicense
-		 * @parameter dataLicense value to set
+		 * @param dataLicense value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setDataLicense(AnyLicenseInfo dataLicense) {
@@ -514,7 +514,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setSummary(String summary) {
@@ -524,7 +524,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setDescription(String description) {
@@ -534,7 +534,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setName(String name) {
@@ -544,7 +544,7 @@ public  class SpdxDocument extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SpdxDocumentBuilder setComment(String comment) {

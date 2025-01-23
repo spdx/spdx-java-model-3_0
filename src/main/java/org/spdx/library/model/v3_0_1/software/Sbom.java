@@ -240,7 +240,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addExtension(Extension extension) {
@@ -252,7 +252,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -264,7 +264,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -276,7 +276,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -288,7 +288,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a rootElement to the initial collection
-		 * @parameter rootElement rootElement to add
+		 * @param rootElement rootElement to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addRootElement(Element rootElement) {
@@ -300,7 +300,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial rootElement collection
-		 * @parameter rootElementCollection collection to initialize the rootElement
+		 * @param rootElementCollection collection to initialize the rootElement
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllRootElement(Collection<Element> rootElementCollection) {
@@ -312,7 +312,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a element to the initial collection
-		 * @parameter element element to add
+		 * @param element element to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addElement(Element element) {
@@ -324,7 +324,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial element collection
-		 * @parameter elementCollection collection to initialize the element
+		 * @param elementCollection collection to initialize the element
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllElement(Collection<Element> elementCollection) {
@@ -336,7 +336,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addExternalRef(ExternalRef externalRef) {
@@ -348,7 +348,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -360,7 +360,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -372,7 +372,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -384,7 +384,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a profileConformance to the initial collection
-		 * @parameter profileConformance profileConformance to add
+		 * @param profileConformance profileConformance to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addProfileConformance(ProfileIdentifierType profileConformance) {
@@ -396,7 +396,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial profileConformance collection
-		 * @parameter profileConformanceCollection collection to initialize the profileConformance
+		 * @param profileConformanceCollection collection to initialize the profileConformance
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllProfileConformance(Collection<ProfileIdentifierType> profileConformanceCollection) {
@@ -408,7 +408,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds a sbomType to the initial collection
-		 * @parameter sbomType sbomType to add
+		 * @param sbomType sbomType to add
 		 * @return this for chaining
 		**/
 		public SbomBuilder addSbomType(SbomType sbomType) {
@@ -420,7 +420,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Adds all elements from a collection to the initial sbomType collection
-		 * @parameter sbomTypeCollection collection to initialize the sbomType
+		 * @param sbomTypeCollection collection to initialize the sbomType
 		 * @return this for chaining
 		**/
 		public SbomBuilder addAllSbomType(Collection<SbomType> sbomTypeCollection) {
@@ -432,7 +432,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SbomBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -442,7 +442,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SbomBuilder setSummary(String summary) {
@@ -452,7 +452,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SbomBuilder setDescription(String description) {
@@ -462,7 +462,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Sets the initial value of context
-		 * @parameter context value to set
+		 * @param context value to set
 		 * @return this for chaining
 		**/
 		public SbomBuilder setContext(String context) {
@@ -472,7 +472,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public SbomBuilder setName(String name) {
@@ -482,7 +482,7 @@ public  class Sbom extends Bom  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SbomBuilder setComment(String comment) {

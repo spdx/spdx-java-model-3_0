@@ -251,7 +251,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addExternalRef(ExternalRef externalRef) {
@@ -263,7 +263,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -275,7 +275,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addExtension(Extension extension) {
@@ -287,7 +287,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -299,7 +299,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -311,7 +311,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -323,7 +323,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -335,7 +335,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -347,7 +347,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -357,7 +357,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Sets the initial value of licenseText
-		 * @parameter licenseText value to set
+		 * @param licenseText value to set
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder setLicenseText(String licenseText) {
@@ -367,7 +367,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder setName(String name) {
@@ -377,7 +377,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder setComment(String comment) {
@@ -387,7 +387,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder setSummary(String summary) {
@@ -397,7 +397,7 @@ public  class SimpleLicensingText extends Element  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SimpleLicensingTextBuilder setDescription(String description) {

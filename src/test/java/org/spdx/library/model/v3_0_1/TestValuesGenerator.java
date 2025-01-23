@@ -209,7 +209,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addExtension(Extension extension) {
@@ -221,7 +221,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -232,7 +232,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -244,7 +244,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -255,7 +255,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a to to the initial collection
-			 * @parameter to to to add
+			 * @param to to to add
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addTo(Element to) {
@@ -267,7 +267,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial to collection
-			 * @parameter toCollection collection to initialize the to
+			 * @param toCollection collection to initialize the to
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addAllTo(Collection<Element> toCollection) {
@@ -278,7 +278,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addExternalRef(ExternalRef externalRef) {
@@ -290,7 +290,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -301,7 +301,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -313,7 +313,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -325,7 +325,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of from
-			 * @parameter from value to set
+			 * @param from value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setFrom(Element from) {
@@ -335,7 +335,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -345,7 +345,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of assessedElement
-			 * @parameter assessedElement value to set
+			 * @param assessedElement value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setAssessedElement(SoftwareArtifact assessedElement) {
@@ -355,7 +355,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of suppliedBy
-			 * @parameter suppliedBy value to set
+			 * @param suppliedBy value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setSuppliedBy(Agent suppliedBy) {
@@ -365,7 +365,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of completeness
-			 * @parameter completeness value to set
+			 * @param completeness value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setCompleteness(RelationshipCompleteness completeness) {
@@ -375,7 +375,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of relationshipType
-			 * @parameter relationshipType value to set
+			 * @param relationshipType value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setRelationshipType(RelationshipType relationshipType) {
@@ -385,7 +385,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of publishedTime
-			 * @parameter publishedTime value to set
+			 * @param publishedTime value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setPublishedTime(String publishedTime) {
@@ -395,7 +395,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of vexVersion
-			 * @parameter vexVersion value to set
+			 * @param vexVersion value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setVexVersion(String vexVersion) {
@@ -405,7 +405,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setSummary(String summary) {
@@ -415,7 +415,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setDescription(String description) {
@@ -425,7 +425,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of endTime
-			 * @parameter endTime value to set
+			 * @param endTime value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setEndTime(String endTime) {
@@ -435,7 +435,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of statusNotes
-			 * @parameter statusNotes value to set
+			 * @param statusNotes value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setStatusNotes(String statusNotes) {
@@ -445,7 +445,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of startTime
-			 * @parameter startTime value to set
+			 * @param startTime value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setStartTime(String startTime) {
@@ -455,7 +455,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of withdrawnTime
-			 * @parameter withdrawnTime value to set
+			 * @param withdrawnTime value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setWithdrawnTime(String withdrawnTime) {
@@ -465,7 +465,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setName(String name) {
@@ -475,7 +475,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setComment(String comment) {
@@ -485,7 +485,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of modifiedTime
-			 * @parameter modifiedTime value to set
+			 * @param modifiedTime value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setModifiedTime(String modifiedTime) {
@@ -547,7 +547,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockIntegrityMethodBuilder setComment(String comment) {
@@ -608,7 +608,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addExtension(Extension extension) {
@@ -620,7 +620,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -631,7 +631,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -643,7 +643,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -654,7 +654,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a to to the initial collection
-			 * @parameter to to to add
+			 * @param to to to add
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addTo(Element to) {
@@ -666,7 +666,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial to collection
-			 * @parameter toCollection collection to initialize the to
+			 * @param toCollection collection to initialize the to
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addAllTo(Collection<Element> toCollection) {
@@ -677,7 +677,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addExternalRef(ExternalRef externalRef) {
@@ -689,7 +689,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -700,7 +700,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -712,7 +712,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -724,7 +724,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of from
-			 * @parameter from value to set
+			 * @param from value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setFrom(Element from) {
@@ -734,7 +734,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -744,7 +744,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of assessedElement
-			 * @parameter assessedElement value to set
+			 * @param assessedElement value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setAssessedElement(SoftwareArtifact assessedElement) {
@@ -754,7 +754,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of suppliedBy
-			 * @parameter suppliedBy value to set
+			 * @param suppliedBy value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setSuppliedBy(Agent suppliedBy) {
@@ -764,7 +764,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of completeness
-			 * @parameter completeness value to set
+			 * @param completeness value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setCompleteness(RelationshipCompleteness completeness) {
@@ -774,7 +774,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of relationshipType
-			 * @parameter relationshipType value to set
+			 * @param relationshipType value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setRelationshipType(RelationshipType relationshipType) {
@@ -784,7 +784,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of publishedTime
-			 * @parameter publishedTime value to set
+			 * @param publishedTime value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setPublishedTime(String publishedTime) {
@@ -794,7 +794,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setSummary(String summary) {
@@ -804,7 +804,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setDescription(String description) {
@@ -814,7 +814,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of endTime
-			 * @parameter endTime value to set
+			 * @param endTime value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setEndTime(String endTime) {
@@ -824,7 +824,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of startTime
-			 * @parameter startTime value to set
+			 * @param startTime value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setStartTime(String startTime) {
@@ -834,7 +834,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of withdrawnTime
-			 * @parameter withdrawnTime value to set
+			 * @param withdrawnTime value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setWithdrawnTime(String withdrawnTime) {
@@ -844,7 +844,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setName(String name) {
@@ -854,7 +854,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setComment(String comment) {
@@ -864,7 +864,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of modifiedTime
-			 * @parameter modifiedTime value to set
+			 * @param modifiedTime value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setModifiedTime(String modifiedTime) {
@@ -925,7 +925,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addExtension(Extension extension) {
@@ -937,7 +937,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -948,7 +948,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -960,7 +960,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -971,7 +971,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addExternalRef(ExternalRef externalRef) {
@@ -983,7 +983,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -994,7 +994,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -1006,7 +1006,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -1018,7 +1018,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a seeAlso to the initial collection
-			 * @parameter seeAlso seeAlso to add
+			 * @param seeAlso seeAlso to add
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addSeeAlso(String seeAlso) {
@@ -1030,7 +1030,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial seeAlso collection
-			 * @parameter seeAlsoCollection collection to initialize the seeAlso
+			 * @param seeAlsoCollection collection to initialize the seeAlso
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder addAllSeeAlso(Collection<String> seeAlsoCollection) {
@@ -1042,7 +1042,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -1052,7 +1052,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of isFsfLibre
-			 * @parameter isFsfLibre value to set
+			 * @param isFsfLibre value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setIsFsfLibre(Boolean isFsfLibre) {
@@ -1062,7 +1062,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of isDeprecatedLicenseId
-			 * @parameter isDeprecatedLicenseId value to set
+			 * @param isDeprecatedLicenseId value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setIsDeprecatedLicenseId(Boolean isDeprecatedLicenseId) {
@@ -1072,7 +1072,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of isOsiApproved
-			 * @parameter isOsiApproved value to set
+			 * @param isOsiApproved value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setIsOsiApproved(Boolean isOsiApproved) {
@@ -1082,7 +1082,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of licenseText
-			 * @parameter licenseText value to set
+			 * @param licenseText value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setLicenseText(String licenseText) {
@@ -1092,7 +1092,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setSummary(String summary) {
@@ -1102,7 +1102,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setDescription(String description) {
@@ -1112,7 +1112,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of standardLicenseTemplate
-			 * @parameter standardLicenseTemplate value to set
+			 * @param standardLicenseTemplate value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setStandardLicenseTemplate(String standardLicenseTemplate) {
@@ -1122,7 +1122,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of obsoletedBy
-			 * @parameter obsoletedBy value to set
+			 * @param obsoletedBy value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setObsoletedBy(String obsoletedBy) {
@@ -1132,7 +1132,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of licenseXml
-			 * @parameter licenseXml value to set
+			 * @param licenseXml value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setLicenseXml(String licenseXml) {
@@ -1142,7 +1142,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setName(String name) {
@@ -1152,7 +1152,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setComment(String comment) {
@@ -1162,7 +1162,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of standardLicenseHeader
-			 * @parameter standardLicenseHeader value to set
+			 * @param standardLicenseHeader value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setStandardLicenseHeader(String standardLicenseHeader) {
@@ -1223,7 +1223,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a contentIdentifier to the initial collection
-			 * @parameter contentIdentifier contentIdentifier to add
+			 * @param contentIdentifier contentIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -1235,7 +1235,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial contentIdentifier collection
-			 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+			 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -1246,7 +1246,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addExtension(Extension extension) {
@@ -1258,7 +1258,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -1269,7 +1269,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -1281,7 +1281,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -1292,7 +1292,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a originatedBy to the initial collection
-			 * @parameter originatedBy originatedBy to add
+			 * @param originatedBy originatedBy to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addOriginatedBy(Agent originatedBy) {
@@ -1304,7 +1304,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial originatedBy collection
-			 * @parameter originatedByCollection collection to initialize the originatedBy
+			 * @param originatedByCollection collection to initialize the originatedBy
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -1315,7 +1315,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addExternalRef(ExternalRef externalRef) {
@@ -1327,7 +1327,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -1338,7 +1338,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -1350,7 +1350,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -1362,7 +1362,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a supportLevel to the initial collection
-			 * @parameter supportLevel supportLevel to add
+			 * @param supportLevel supportLevel to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addSupportLevel(SupportType supportLevel) {
@@ -1374,7 +1374,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial supportLevel collection
-			 * @parameter supportLevelCollection collection to initialize the supportLevel
+			 * @param supportLevelCollection collection to initialize the supportLevel
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -1386,7 +1386,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a additionalPurpose to the initial collection
-			 * @parameter additionalPurpose additionalPurpose to add
+			 * @param additionalPurpose additionalPurpose to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -1398,7 +1398,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial additionalPurpose collection
-			 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+			 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -1410,7 +1410,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a attributionText to the initial collection
-			 * @parameter attributionText attributionText to add
+			 * @param attributionText attributionText to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAttributionText(String attributionText) {
@@ -1422,7 +1422,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial attributionText collection
-			 * @parameter attributionTextCollection collection to initialize the attributionText
+			 * @param attributionTextCollection collection to initialize the attributionText
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -1434,7 +1434,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a standardName to the initial collection
-			 * @parameter standardName standardName to add
+			 * @param standardName standardName to add
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addStandardName(String standardName) {
@@ -1446,7 +1446,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial standardName collection
-			 * @parameter standardNameCollection collection to initialize the standardName
+			 * @param standardNameCollection collection to initialize the standardName
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -1458,7 +1458,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -1468,7 +1468,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of suppliedBy
-			 * @parameter suppliedBy value to set
+			 * @param suppliedBy value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setSuppliedBy(Agent suppliedBy) {
@@ -1478,7 +1478,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of primaryPurpose
-			 * @parameter primaryPurpose value to set
+			 * @param primaryPurpose value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -1488,7 +1488,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of validUntilTime
-			 * @parameter validUntilTime value to set
+			 * @param validUntilTime value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setValidUntilTime(String validUntilTime) {
@@ -1498,7 +1498,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of builtTime
-			 * @parameter builtTime value to set
+			 * @param builtTime value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setBuiltTime(String builtTime) {
@@ -1508,7 +1508,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setSummary(String summary) {
@@ -1518,7 +1518,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setDescription(String description) {
@@ -1528,7 +1528,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of releaseTime
-			 * @parameter releaseTime value to set
+			 * @param releaseTime value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setReleaseTime(String releaseTime) {
@@ -1538,7 +1538,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of copyrightText
-			 * @parameter copyrightText value to set
+			 * @param copyrightText value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setCopyrightText(String copyrightText) {
@@ -1548,7 +1548,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setName(String name) {
@@ -1558,7 +1558,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setComment(String comment) {
@@ -1619,7 +1619,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addExternalRef(ExternalRef externalRef) {
@@ -1631,7 +1631,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -1642,7 +1642,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addExtension(Extension extension) {
@@ -1654,7 +1654,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -1665,7 +1665,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -1677,7 +1677,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -1688,7 +1688,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -1700,7 +1700,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockElementBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -1712,7 +1712,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockElementBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -1722,7 +1722,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockElementBuilder setName(String name) {
@@ -1732,7 +1732,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockElementBuilder setComment(String comment) {
@@ -1742,7 +1742,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockElementBuilder setSummary(String summary) {
@@ -1752,7 +1752,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockElementBuilder setDescription(String description) {
@@ -1813,7 +1813,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addExtension(Extension extension) {
@@ -1825,7 +1825,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -1836,7 +1836,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -1848,7 +1848,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -1859,7 +1859,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a rootElement to the initial collection
-			 * @parameter rootElement rootElement to add
+			 * @param rootElement rootElement to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addRootElement(Element rootElement) {
@@ -1871,7 +1871,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial rootElement collection
-			 * @parameter rootElementCollection collection to initialize the rootElement
+			 * @param rootElementCollection collection to initialize the rootElement
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllRootElement(Collection<Element> rootElementCollection) {
@@ -1882,7 +1882,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a element to the initial collection
-			 * @parameter element element to add
+			 * @param element element to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addElement(Element element) {
@@ -1894,7 +1894,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial element collection
-			 * @parameter elementCollection collection to initialize the element
+			 * @param elementCollection collection to initialize the element
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllElement(Collection<Element> elementCollection) {
@@ -1905,7 +1905,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addExternalRef(ExternalRef externalRef) {
@@ -1917,7 +1917,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -1928,7 +1928,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -1940,7 +1940,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -1952,7 +1952,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a profileConformance to the initial collection
-			 * @parameter profileConformance profileConformance to add
+			 * @param profileConformance profileConformance to add
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addProfileConformance(ProfileIdentifierType profileConformance) {
@@ -1964,7 +1964,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial profileConformance collection
-			 * @parameter profileConformanceCollection collection to initialize the profileConformance
+			 * @param profileConformanceCollection collection to initialize the profileConformance
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder addAllProfileConformance(Collection<ProfileIdentifierType> profileConformanceCollection) {
@@ -1976,7 +1976,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -1986,7 +1986,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder setSummary(String summary) {
@@ -1996,7 +1996,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder setDescription(String description) {
@@ -2006,7 +2006,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder setName(String name) {
@@ -2016,7 +2016,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder setComment(String comment) {
@@ -2077,7 +2077,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addExtension(Extension extension) {
@@ -2089,7 +2089,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -2100,7 +2100,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -2112,7 +2112,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -2123,7 +2123,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addExternalRef(ExternalRef externalRef) {
@@ -2135,7 +2135,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -2146,7 +2146,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -2158,7 +2158,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -2170,7 +2170,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a seeAlso to the initial collection
-			 * @parameter seeAlso seeAlso to add
+			 * @param seeAlso seeAlso to add
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addSeeAlso(String seeAlso) {
@@ -2182,7 +2182,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial seeAlso collection
-			 * @parameter seeAlsoCollection collection to initialize the seeAlso
+			 * @param seeAlsoCollection collection to initialize the seeAlso
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder addAllSeeAlso(Collection<String> seeAlsoCollection) {
@@ -2194,7 +2194,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -2204,7 +2204,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of isDeprecatedAdditionId
-			 * @parameter isDeprecatedAdditionId value to set
+			 * @param isDeprecatedAdditionId value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setIsDeprecatedAdditionId(Boolean isDeprecatedAdditionId) {
@@ -2214,7 +2214,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setSummary(String summary) {
@@ -2224,7 +2224,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setDescription(String description) {
@@ -2234,7 +2234,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of obsoletedBy
-			 * @parameter obsoletedBy value to set
+			 * @param obsoletedBy value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setObsoletedBy(String obsoletedBy) {
@@ -2244,7 +2244,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of additionText
-			 * @parameter additionText value to set
+			 * @param additionText value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setAdditionText(String additionText) {
@@ -2254,7 +2254,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of licenseXml
-			 * @parameter licenseXml value to set
+			 * @param licenseXml value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setLicenseXml(String licenseXml) {
@@ -2264,7 +2264,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setName(String name) {
@@ -2274,7 +2274,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setComment(String comment) {
@@ -2284,7 +2284,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of standardAdditionTemplate
-			 * @parameter standardAdditionTemplate value to set
+			 * @param standardAdditionTemplate value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setStandardAdditionTemplate(String standardAdditionTemplate) {
@@ -2345,7 +2345,7 @@ public class TestValuesGenerator {
 			
 				/**
 			 * Adds a extension to the initial collection
-			 * @parameter extension extension to add
+			 * @param extension extension to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addExtension(Extension extension) {
@@ -2357,7 +2357,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial extension collection
-			 * @parameter extensionCollection collection to initialize the extension
+			 * @param extensionCollection collection to initialize the extension
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -2368,7 +2368,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
-			 * @parameter verifiedUsing verifiedUsing to add
+			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -2380,7 +2380,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial verifiedUsing collection
-			 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+			 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -2391,7 +2391,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a originatedBy to the initial collection
-			 * @parameter originatedBy originatedBy to add
+			 * @param originatedBy originatedBy to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addOriginatedBy(Agent originatedBy) {
@@ -2403,7 +2403,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial originatedBy collection
-			 * @parameter originatedByCollection collection to initialize the originatedBy
+			 * @param originatedByCollection collection to initialize the originatedBy
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -2414,7 +2414,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalRef to the initial collection
-			 * @parameter externalRef externalRef to add
+			 * @param externalRef externalRef to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addExternalRef(ExternalRef externalRef) {
@@ -2426,7 +2426,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalRef collection
-			 * @parameter externalRefCollection collection to initialize the externalRef
+			 * @param externalRefCollection collection to initialize the externalRef
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -2437,7 +2437,7 @@ public class TestValuesGenerator {
 			}
 				/**
 			 * Adds a externalIdentifier to the initial collection
-			 * @parameter externalIdentifier externalIdentifier to add
+			 * @param externalIdentifier externalIdentifier to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -2449,7 +2449,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial externalIdentifier collection
-			 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+			 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -2461,7 +2461,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a supportLevel to the initial collection
-			 * @parameter supportLevel supportLevel to add
+			 * @param supportLevel supportLevel to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addSupportLevel(SupportType supportLevel) {
@@ -2473,7 +2473,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial supportLevel collection
-			 * @parameter supportLevelCollection collection to initialize the supportLevel
+			 * @param supportLevelCollection collection to initialize the supportLevel
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -2485,7 +2485,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds a standardName to the initial collection
-			 * @parameter standardName standardName to add
+			 * @param standardName standardName to add
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addStandardName(String standardName) {
@@ -2497,7 +2497,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Adds all elements from a collection to the initial standardName collection
-			 * @parameter standardNameCollection collection to initialize the standardName
+			 * @param standardNameCollection collection to initialize the standardName
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -2509,7 +2509,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of creationInfo
-			 * @parameter creationInfo value to set
+			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -2519,7 +2519,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of suppliedBy
-			 * @parameter suppliedBy value to set
+			 * @param suppliedBy value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setSuppliedBy(Agent suppliedBy) {
@@ -2529,7 +2529,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of validUntilTime
-			 * @parameter validUntilTime value to set
+			 * @param validUntilTime value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setValidUntilTime(String validUntilTime) {
@@ -2539,7 +2539,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of builtTime
-			 * @parameter builtTime value to set
+			 * @param builtTime value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setBuiltTime(String builtTime) {
@@ -2549,7 +2549,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of summary
-			 * @parameter summary value to set
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setSummary(String summary) {
@@ -2559,7 +2559,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of description
-			 * @parameter description value to set
+			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setDescription(String description) {
@@ -2569,7 +2569,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of releaseTime
-			 * @parameter releaseTime value to set
+			 * @param releaseTime value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setReleaseTime(String releaseTime) {
@@ -2579,7 +2579,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of name
-			 * @parameter name value to set
+			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setName(String name) {
@@ -2589,7 +2589,7 @@ public class TestValuesGenerator {
 			
 			/**
 			 * Sets the initial value of comment
-			 * @parameter comment value to set
+			 * @param comment value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setComment(String comment) {

@@ -197,7 +197,7 @@ public  class EnergyConsumption extends ModelObjectV3  {
 		
 		/**
 		 * Adds a trainingEnergyConsumption to the initial collection
-		 * @parameter trainingEnergyConsumption trainingEnergyConsumption to add
+		 * @param trainingEnergyConsumption trainingEnergyConsumption to add
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionBuilder addTrainingEnergyConsumption(EnergyConsumptionDescription trainingEnergyConsumption) {
@@ -209,7 +209,7 @@ public  class EnergyConsumption extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial trainingEnergyConsumption collection
-		 * @parameter trainingEnergyConsumptionCollection collection to initialize the trainingEnergyConsumption
+		 * @param trainingEnergyConsumptionCollection collection to initialize the trainingEnergyConsumption
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionBuilder addAllTrainingEnergyConsumption(Collection<EnergyConsumptionDescription> trainingEnergyConsumptionCollection) {
@@ -221,7 +221,7 @@ public  class EnergyConsumption extends ModelObjectV3  {
 		
 		/**
 		 * Adds a finetuningEnergyConsumption to the initial collection
-		 * @parameter finetuningEnergyConsumption finetuningEnergyConsumption to add
+		 * @param finetuningEnergyConsumption finetuningEnergyConsumption to add
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionBuilder addFinetuningEnergyConsumption(EnergyConsumptionDescription finetuningEnergyConsumption) {
@@ -233,7 +233,7 @@ public  class EnergyConsumption extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial finetuningEnergyConsumption collection
-		 * @parameter finetuningEnergyConsumptionCollection collection to initialize the finetuningEnergyConsumption
+		 * @param finetuningEnergyConsumptionCollection collection to initialize the finetuningEnergyConsumption
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionBuilder addAllFinetuningEnergyConsumption(Collection<EnergyConsumptionDescription> finetuningEnergyConsumptionCollection) {
@@ -245,7 +245,7 @@ public  class EnergyConsumption extends ModelObjectV3  {
 		
 		/**
 		 * Adds a inferenceEnergyConsumption to the initial collection
-		 * @parameter inferenceEnergyConsumption inferenceEnergyConsumption to add
+		 * @param inferenceEnergyConsumption inferenceEnergyConsumption to add
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionBuilder addInferenceEnergyConsumption(EnergyConsumptionDescription inferenceEnergyConsumption) {
@@ -257,7 +257,7 @@ public  class EnergyConsumption extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial inferenceEnergyConsumption collection
-		 * @parameter inferenceEnergyConsumptionCollection collection to initialize the inferenceEnergyConsumption
+		 * @param inferenceEnergyConsumptionCollection collection to initialize the inferenceEnergyConsumption
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionBuilder addAllInferenceEnergyConsumption(Collection<EnergyConsumptionDescription> inferenceEnergyConsumptionCollection) {

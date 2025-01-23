@@ -228,7 +228,7 @@ public  class EnergyConsumptionDescription extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of energyUnit
-		 * @parameter energyUnit value to set
+		 * @param energyUnit value to set
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionDescriptionBuilder setEnergyUnit(EnergyUnitType energyUnit) {
@@ -238,7 +238,7 @@ public  class EnergyConsumptionDescription extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of energyQuantity
-		 * @parameter energyQuantity value to set
+		 * @param energyQuantity value to set
 		 * @return this for chaining
 		**/
 		public EnergyConsumptionDescriptionBuilder setEnergyQuantity(Integer energyQuantity) {

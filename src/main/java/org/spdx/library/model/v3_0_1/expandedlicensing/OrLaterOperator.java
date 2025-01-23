@@ -295,7 +295,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addExternalRef(ExternalRef externalRef) {
@@ -307,7 +307,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -319,7 +319,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addExtension(Extension extension) {
@@ -331,7 +331,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -343,7 +343,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -355,7 +355,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -367,7 +367,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -379,7 +379,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -391,7 +391,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -401,7 +401,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of subjectLicense
-		 * @parameter subjectLicense value to set
+		 * @param subjectLicense value to set
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder setSubjectLicense(License subjectLicense) {
@@ -411,7 +411,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder setName(String name) {
@@ -421,7 +421,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder setComment(String comment) {
@@ -431,7 +431,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder setSummary(String summary) {
@@ -441,7 +441,7 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public OrLaterOperatorBuilder setDescription(String description) {

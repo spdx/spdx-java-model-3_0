@@ -236,7 +236,7 @@ public  class Hash extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of algorithm
-		 * @parameter algorithm value to set
+		 * @param algorithm value to set
 		 * @return this for chaining
 		**/
 		public HashBuilder setAlgorithm(HashAlgorithm algorithm) {
@@ -246,7 +246,7 @@ public  class Hash extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of hashValue
-		 * @parameter hashValue value to set
+		 * @param hashValue value to set
 		 * @return this for chaining
 		**/
 		public HashBuilder setHashValue(String hashValue) {
@@ -256,7 +256,7 @@ public  class Hash extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public HashBuilder setComment(String comment) {

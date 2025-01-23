@@ -210,7 +210,7 @@ public  class CdxPropertyEntry extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of cdxPropName
-		 * @parameter cdxPropName value to set
+		 * @param cdxPropName value to set
 		 * @return this for chaining
 		**/
 		public CdxPropertyEntryBuilder setCdxPropName(String cdxPropName) {
@@ -220,7 +220,7 @@ public  class CdxPropertyEntry extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of cdxPropValue
-		 * @parameter cdxPropValue value to set
+		 * @param cdxPropValue value to set
 		 * @return this for chaining
 		**/
 		public CdxPropertyEntryBuilder setCdxPropValue(String cdxPropValue) {

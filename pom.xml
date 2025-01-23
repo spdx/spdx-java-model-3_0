@@ -118,7 +118,7 @@
         <configuration>
           <quiet>true</quiet>
           <notimestamp>true</notimestamp>
-          <additionalOptions>-Xdoclint:none</additionalOptions>
+          <doclint>all,-missing</doclint>
         </configuration>
       </plugin>
       <plugin>
@@ -195,15 +195,6 @@
     </plugins>
   </build>
   <profiles>
-    <profile>
-      <id>doclint-java8-disable</id>
-      <activation>
-        <jdk>[1.8,)</jdk>
-      </activation>
-      <properties>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-      </properties>
-    </profile>
     <profile>
       <id>test</id>
       <dependencies>

@@ -398,7 +398,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a contentIdentifier to the initial collection
-		 * @parameter contentIdentifier contentIdentifier to add
+		 * @param contentIdentifier contentIdentifier to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -410,7 +410,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial contentIdentifier collection
-		 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+		 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -422,7 +422,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -434,7 +434,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -446,7 +446,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addExternalRef(ExternalRef externalRef) {
@@ -458,7 +458,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -470,7 +470,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -482,7 +482,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -494,7 +494,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addExtension(Extension extension) {
@@ -506,7 +506,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -518,7 +518,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addOriginatedBy(Agent originatedBy) {
@@ -530,7 +530,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -542,7 +542,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addSupportLevel(SupportType supportLevel) {
@@ -554,7 +554,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -566,7 +566,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a additionalPurpose to the initial collection
-		 * @parameter additionalPurpose additionalPurpose to add
+		 * @param additionalPurpose additionalPurpose to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -578,7 +578,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial additionalPurpose collection
-		 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+		 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -590,7 +590,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a attributionText to the initial collection
-		 * @parameter attributionText attributionText to add
+		 * @param attributionText attributionText to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAttributionText(String attributionText) {
@@ -602,7 +602,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial attributionText collection
-		 * @parameter attributionTextCollection collection to initialize the attributionText
+		 * @param attributionTextCollection collection to initialize the attributionText
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -614,7 +614,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addStandardName(String standardName) {
@@ -626,7 +626,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public SnippetBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -638,7 +638,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -648,7 +648,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setSuppliedBy(Agent suppliedBy) {
@@ -658,7 +658,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of lineRange
-		 * @parameter lineRange value to set
+		 * @param lineRange value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setLineRange(PositiveIntegerRange lineRange) {
@@ -668,7 +668,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of byteRange
-		 * @parameter byteRange value to set
+		 * @param byteRange value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setByteRange(PositiveIntegerRange byteRange) {
@@ -678,7 +678,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of snippetFromFile
-		 * @parameter snippetFromFile value to set
+		 * @param snippetFromFile value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setSnippetFromFile(SpdxFile snippetFromFile) {
@@ -688,7 +688,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of primaryPurpose
-		 * @parameter primaryPurpose value to set
+		 * @param primaryPurpose value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -698,7 +698,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setValidUntilTime(String validUntilTime) {
@@ -708,7 +708,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setBuiltTime(String builtTime) {
@@ -718,7 +718,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setSummary(String summary) {
@@ -728,7 +728,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setReleaseTime(String releaseTime) {
@@ -738,7 +738,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of copyrightText
-		 * @parameter copyrightText value to set
+		 * @param copyrightText value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setCopyrightText(String copyrightText) {
@@ -748,7 +748,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setComment(String comment) {
@@ -758,7 +758,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setDescription(String description) {
@@ -768,7 +768,7 @@ public  class Snippet extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public SnippetBuilder setName(String name) {

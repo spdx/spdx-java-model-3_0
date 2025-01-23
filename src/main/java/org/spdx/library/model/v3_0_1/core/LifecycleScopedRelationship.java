@@ -298,7 +298,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addExtension(Extension extension) {
@@ -310,7 +310,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -322,7 +322,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -334,7 +334,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -346,7 +346,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds a to to the initial collection
-		 * @parameter to to to add
+		 * @param to to to add
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addTo(Element to) {
@@ -358,7 +358,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial to collection
-		 * @parameter toCollection collection to initialize the to
+		 * @param toCollection collection to initialize the to
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addAllTo(Collection<Element> toCollection) {
@@ -370,7 +370,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addExternalRef(ExternalRef externalRef) {
@@ -382,7 +382,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -394,7 +394,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -406,7 +406,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -418,7 +418,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of from
-		 * @parameter from value to set
+		 * @param from value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setFrom(Element from) {
@@ -428,7 +428,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -438,7 +438,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of completeness
-		 * @parameter completeness value to set
+		 * @param completeness value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setCompleteness(RelationshipCompleteness completeness) {
@@ -448,7 +448,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of scope
-		 * @parameter scope value to set
+		 * @param scope value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setScope(LifecycleScopeType scope) {
@@ -458,7 +458,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of relationshipType
-		 * @parameter relationshipType value to set
+		 * @param relationshipType value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setRelationshipType(RelationshipType relationshipType) {
@@ -468,7 +468,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setSummary(String summary) {
@@ -478,7 +478,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setDescription(String description) {
@@ -488,7 +488,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of endTime
-		 * @parameter endTime value to set
+		 * @param endTime value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setEndTime(String endTime) {
@@ -498,7 +498,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of startTime
-		 * @parameter startTime value to set
+		 * @param startTime value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setStartTime(String startTime) {
@@ -508,7 +508,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setName(String name) {
@@ -518,7 +518,7 @@ public  class LifecycleScopedRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public LifecycleScopedRelationshipBuilder setComment(String comment) {

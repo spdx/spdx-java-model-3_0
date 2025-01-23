@@ -607,7 +607,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a contentIdentifier to the initial collection
-		 * @parameter contentIdentifier contentIdentifier to add
+		 * @param contentIdentifier contentIdentifier to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -619,7 +619,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial contentIdentifier collection
-		 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+		 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -631,7 +631,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -643,7 +643,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -655,7 +655,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addExternalRef(ExternalRef externalRef) {
@@ -667,7 +667,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -679,7 +679,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a sensor to the initial collection
-		 * @parameter sensor sensor to add
+		 * @param sensor sensor to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addSensor(DictionaryEntry sensor) {
@@ -691,7 +691,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial sensor collection
-		 * @parameter sensorCollection collection to initialize the sensor
+		 * @param sensorCollection collection to initialize the sensor
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllSensor(Collection<DictionaryEntry> sensorCollection) {
@@ -703,7 +703,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -715,7 +715,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -727,7 +727,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addExtension(Extension extension) {
@@ -739,7 +739,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -751,7 +751,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addOriginatedBy(Agent originatedBy) {
@@ -763,7 +763,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -775,7 +775,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addSupportLevel(SupportType supportLevel) {
@@ -787,7 +787,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -799,7 +799,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a additionalPurpose to the initial collection
-		 * @parameter additionalPurpose additionalPurpose to add
+		 * @param additionalPurpose additionalPurpose to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -811,7 +811,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial additionalPurpose collection
-		 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+		 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -823,7 +823,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a datasetType to the initial collection
-		 * @parameter datasetType datasetType to add
+		 * @param datasetType datasetType to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addDatasetType(DatasetType datasetType) {
@@ -835,7 +835,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial datasetType collection
-		 * @parameter datasetTypeCollection collection to initialize the datasetType
+		 * @param datasetTypeCollection collection to initialize the datasetType
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllDatasetType(Collection<DatasetType> datasetTypeCollection) {
@@ -847,7 +847,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a attributionText to the initial collection
-		 * @parameter attributionText attributionText to add
+		 * @param attributionText attributionText to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAttributionText(String attributionText) {
@@ -859,7 +859,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial attributionText collection
-		 * @parameter attributionTextCollection collection to initialize the attributionText
+		 * @param attributionTextCollection collection to initialize the attributionText
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -871,7 +871,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addStandardName(String standardName) {
@@ -883,7 +883,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -895,7 +895,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a anonymizationMethodUsed to the initial collection
-		 * @parameter anonymizationMethodUsed anonymizationMethodUsed to add
+		 * @param anonymizationMethodUsed anonymizationMethodUsed to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAnonymizationMethodUsed(String anonymizationMethodUsed) {
@@ -907,7 +907,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial anonymizationMethodUsed collection
-		 * @parameter anonymizationMethodUsedCollection collection to initialize the anonymizationMethodUsed
+		 * @param anonymizationMethodUsedCollection collection to initialize the anonymizationMethodUsed
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllAnonymizationMethodUsed(Collection<String> anonymizationMethodUsedCollection) {
@@ -919,7 +919,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a knownBias to the initial collection
-		 * @parameter knownBias knownBias to add
+		 * @param knownBias knownBias to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addKnownBias(String knownBias) {
@@ -931,7 +931,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial knownBias collection
-		 * @parameter knownBiasCollection collection to initialize the knownBias
+		 * @param knownBiasCollection collection to initialize the knownBias
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllKnownBias(Collection<String> knownBiasCollection) {
@@ -943,7 +943,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a dataPreprocessing to the initial collection
-		 * @parameter dataPreprocessing dataPreprocessing to add
+		 * @param dataPreprocessing dataPreprocessing to add
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addDataPreprocessing(String dataPreprocessing) {
@@ -955,7 +955,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial dataPreprocessing collection
-		 * @parameter dataPreprocessingCollection collection to initialize the dataPreprocessing
+		 * @param dataPreprocessingCollection collection to initialize the dataPreprocessing
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder addAllDataPreprocessing(Collection<String> dataPreprocessingCollection) {
@@ -967,7 +967,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -977,7 +977,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setSuppliedBy(Agent suppliedBy) {
@@ -987,7 +987,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of datasetAvailability
-		 * @parameter datasetAvailability value to set
+		 * @param datasetAvailability value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDatasetAvailability(DatasetAvailabilityType datasetAvailability) {
@@ -997,7 +997,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of confidentialityLevel
-		 * @parameter confidentialityLevel value to set
+		 * @param confidentialityLevel value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setConfidentialityLevel(ConfidentialityLevelType confidentialityLevel) {
@@ -1007,7 +1007,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of hasSensitivePersonalInformation
-		 * @parameter hasSensitivePersonalInformation value to set
+		 * @param hasSensitivePersonalInformation value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setHasSensitivePersonalInformation(PresenceType hasSensitivePersonalInformation) {
@@ -1017,7 +1017,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of primaryPurpose
-		 * @parameter primaryPurpose value to set
+		 * @param primaryPurpose value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -1027,7 +1027,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of datasetSize
-		 * @parameter datasetSize value to set
+		 * @param datasetSize value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDatasetSize(Integer datasetSize) {
@@ -1037,7 +1037,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setValidUntilTime(String validUntilTime) {
@@ -1047,7 +1047,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of downloadLocation
-		 * @parameter downloadLocation value to set
+		 * @param downloadLocation value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDownloadLocation(String downloadLocation) {
@@ -1057,7 +1057,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setBuiltTime(String builtTime) {
@@ -1067,7 +1067,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of datasetNoise
-		 * @parameter datasetNoise value to set
+		 * @param datasetNoise value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDatasetNoise(String datasetNoise) {
@@ -1077,7 +1077,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setSummary(String summary) {
@@ -1087,7 +1087,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of packageVersion
-		 * @parameter packageVersion value to set
+		 * @param packageVersion value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setPackageVersion(String packageVersion) {
@@ -1097,7 +1097,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setReleaseTime(String releaseTime) {
@@ -1107,7 +1107,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of copyrightText
-		 * @parameter copyrightText value to set
+		 * @param copyrightText value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setCopyrightText(String copyrightText) {
@@ -1117,7 +1117,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setComment(String comment) {
@@ -1127,7 +1127,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of homePage
-		 * @parameter homePage value to set
+		 * @param homePage value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setHomePage(String homePage) {
@@ -1137,7 +1137,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of sourceInfo
-		 * @parameter sourceInfo value to set
+		 * @param sourceInfo value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setSourceInfo(String sourceInfo) {
@@ -1147,7 +1147,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of intendedUse
-		 * @parameter intendedUse value to set
+		 * @param intendedUse value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setIntendedUse(String intendedUse) {
@@ -1157,7 +1157,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDescription(String description) {
@@ -1167,7 +1167,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of dataCollectionProcess
-		 * @parameter dataCollectionProcess value to set
+		 * @param dataCollectionProcess value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDataCollectionProcess(String dataCollectionProcess) {
@@ -1177,7 +1177,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of datasetUpdateMechanism
-		 * @parameter datasetUpdateMechanism value to set
+		 * @param datasetUpdateMechanism value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setDatasetUpdateMechanism(String datasetUpdateMechanism) {
@@ -1187,7 +1187,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setName(String name) {
@@ -1197,7 +1197,7 @@ public  class DatasetPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of packageUrl
-		 * @parameter packageUrl value to set
+		 * @param packageUrl value to set
 		 * @return this for chaining
 		**/
 		public DatasetPackageBuilder setPackageUrl(String packageUrl) {

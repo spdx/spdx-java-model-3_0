@@ -262,7 +262,7 @@ public  class ExternalMap extends ModelObjectV3  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public ExternalMapBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -274,7 +274,7 @@ public  class ExternalMap extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public ExternalMapBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -286,7 +286,7 @@ public  class ExternalMap extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of definingArtifact
-		 * @parameter definingArtifact value to set
+		 * @param definingArtifact value to set
 		 * @return this for chaining
 		**/
 		public ExternalMapBuilder setDefiningArtifact(Artifact definingArtifact) {
@@ -296,7 +296,7 @@ public  class ExternalMap extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of externalSpdxId
-		 * @parameter externalSpdxId value to set
+		 * @param externalSpdxId value to set
 		 * @return this for chaining
 		**/
 		public ExternalMapBuilder setExternalSpdxId(String externalSpdxId) {
@@ -306,7 +306,7 @@ public  class ExternalMap extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of locationHint
-		 * @parameter locationHint value to set
+		 * @param locationHint value to set
 		 * @return this for chaining
 		**/
 		public ExternalMapBuilder setLocationHint(String locationHint) {

@@ -285,7 +285,7 @@ public  class ExternalIdentifier extends ModelObjectV3  {
 		
 		/**
 		 * Adds a identifierLocator to the initial collection
-		 * @parameter identifierLocator identifierLocator to add
+		 * @param identifierLocator identifierLocator to add
 		 * @return this for chaining
 		**/
 		public ExternalIdentifierBuilder addIdentifierLocator(String identifierLocator) {
@@ -297,7 +297,7 @@ public  class ExternalIdentifier extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial identifierLocator collection
-		 * @parameter identifierLocatorCollection collection to initialize the identifierLocator
+		 * @param identifierLocatorCollection collection to initialize the identifierLocator
 		 * @return this for chaining
 		**/
 		public ExternalIdentifierBuilder addAllIdentifierLocator(Collection<String> identifierLocatorCollection) {
@@ -309,7 +309,7 @@ public  class ExternalIdentifier extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of externalIdentifierType
-		 * @parameter externalIdentifierType value to set
+		 * @param externalIdentifierType value to set
 		 * @return this for chaining
 		**/
 		public ExternalIdentifierBuilder setExternalIdentifierType(ExternalIdentifierType externalIdentifierType) {
@@ -319,7 +319,7 @@ public  class ExternalIdentifier extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of identifier
-		 * @parameter identifier value to set
+		 * @param identifier value to set
 		 * @return this for chaining
 		**/
 		public ExternalIdentifierBuilder setIdentifier(String identifier) {
@@ -329,7 +329,7 @@ public  class ExternalIdentifier extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public ExternalIdentifierBuilder setComment(String comment) {
@@ -339,7 +339,7 @@ public  class ExternalIdentifier extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of issuingAuthority
-		 * @parameter issuingAuthority value to set
+		 * @param issuingAuthority value to set
 		 * @return this for chaining
 		**/
 		public ExternalIdentifierBuilder setIssuingAuthority(String issuingAuthority) {

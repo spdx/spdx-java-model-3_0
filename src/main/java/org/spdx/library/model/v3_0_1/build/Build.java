@@ -396,7 +396,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a environment to the initial collection
-		 * @parameter environment environment to add
+		 * @param environment environment to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addEnvironment(DictionaryEntry environment) {
@@ -408,7 +408,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial environment collection
-		 * @parameter environmentCollection collection to initialize the environment
+		 * @param environmentCollection collection to initialize the environment
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllEnvironment(Collection<DictionaryEntry> environmentCollection) {
@@ -420,7 +420,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addExtension(Extension extension) {
@@ -432,7 +432,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -444,7 +444,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -456,7 +456,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -468,7 +468,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addExternalRef(ExternalRef externalRef) {
@@ -480,7 +480,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -492,7 +492,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a configSourceDigest to the initial collection
-		 * @parameter configSourceDigest configSourceDigest to add
+		 * @param configSourceDigest configSourceDigest to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addConfigSourceDigest(Hash configSourceDigest) {
@@ -504,7 +504,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial configSourceDigest collection
-		 * @parameter configSourceDigestCollection collection to initialize the configSourceDigest
+		 * @param configSourceDigestCollection collection to initialize the configSourceDigest
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllConfigSourceDigest(Collection<Hash> configSourceDigestCollection) {
@@ -516,7 +516,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a parameter to the initial collection
-		 * @parameter parameter parameter to add
+		 * @param parameter parameter to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addParameter(DictionaryEntry parameter) {
@@ -528,7 +528,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial parameter collection
-		 * @parameter parameterCollection collection to initialize the parameter
+		 * @param parameterCollection collection to initialize the parameter
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllParameter(Collection<DictionaryEntry> parameterCollection) {
@@ -540,7 +540,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -552,7 +552,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -564,7 +564,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a configSourceEntrypoint to the initial collection
-		 * @parameter configSourceEntrypoint configSourceEntrypoint to add
+		 * @param configSourceEntrypoint configSourceEntrypoint to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addConfigSourceEntrypoint(String configSourceEntrypoint) {
@@ -576,7 +576,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial configSourceEntrypoint collection
-		 * @parameter configSourceEntrypointCollection collection to initialize the configSourceEntrypoint
+		 * @param configSourceEntrypointCollection collection to initialize the configSourceEntrypoint
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllConfigSourceEntrypoint(Collection<String> configSourceEntrypointCollection) {
@@ -588,7 +588,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds a configSourceUri to the initial collection
-		 * @parameter configSourceUri configSourceUri to add
+		 * @param configSourceUri configSourceUri to add
 		 * @return this for chaining
 		**/
 		public BuildBuilder addConfigSourceUri(String configSourceUri) {
@@ -600,7 +600,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial configSourceUri collection
-		 * @parameter configSourceUriCollection collection to initialize the configSourceUri
+		 * @param configSourceUriCollection collection to initialize the configSourceUri
 		 * @return this for chaining
 		**/
 		public BuildBuilder addAllConfigSourceUri(Collection<String> configSourceUriCollection) {
@@ -612,7 +612,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -622,7 +622,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of buildId
-		 * @parameter buildId value to set
+		 * @param buildId value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setBuildId(String buildId) {
@@ -632,7 +632,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of buildEndTime
-		 * @parameter buildEndTime value to set
+		 * @param buildEndTime value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setBuildEndTime(String buildEndTime) {
@@ -642,7 +642,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setSummary(String summary) {
@@ -652,7 +652,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setDescription(String description) {
@@ -662,7 +662,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setName(String name) {
@@ -672,7 +672,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setComment(String comment) {
@@ -682,7 +682,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of buildStartTime
-		 * @parameter buildStartTime value to set
+		 * @param buildStartTime value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setBuildStartTime(String buildStartTime) {
@@ -692,7 +692,7 @@ public  class Build extends Element  {
 		
 		/**
 		 * Sets the initial value of buildType
-		 * @parameter buildType value to set
+		 * @param buildType value to set
 		 * @return this for chaining
 		**/
 		public BuildBuilder setBuildType(String buildType) {
