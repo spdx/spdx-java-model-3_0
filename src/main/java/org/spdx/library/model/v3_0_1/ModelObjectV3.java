@@ -238,8 +238,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 	
 	@Override
 	protected boolean isNoAssertion(Object value) {
-		return value instanceof IndividualLicensingInfo && 
-				((IndividualLicensingInfo)value).getObjectUri() == "https://spdx.org/rdf/3.0.1/terms/Licensing/NoAssertion";
+		return value instanceof IndividualLicensingInfo &&
+				"https://spdx.org/rdf/3.0.1/terms/Licensing/NoAssertion".equals(((IndividualLicensingInfo) value).getObjectUri());
 	}
 	
 	/**
