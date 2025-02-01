@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -151,17 +151,6 @@ public class BundleTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setName}.
-	 */
-	public void testBundlesetName() throws InvalidSPDXAnalysisException {
-		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testBundle.getName());
-		String newStringValue = "new name value";
-		testBundle.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBundle.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setComment}.
 	 */
 	public void testBundlesetComment() throws InvalidSPDXAnalysisException {
@@ -170,6 +159,17 @@ public class BundleTest extends TestCase {
 		String newStringValue = "new comment value";
 		testBundle.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBundle.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setName}.
+	 */
+	public void testBundlesetName() throws InvalidSPDXAnalysisException {
+		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testBundle.getName());
+		String newStringValue = "new name value";
+		testBundle.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBundle.getName());
 	}
 	
 	/**

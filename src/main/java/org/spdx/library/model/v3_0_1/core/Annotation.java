@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -232,16 +232,6 @@ public  class Annotation extends Element  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Annotation setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -249,6 +239,16 @@ public  class Annotation extends Element  {
 	 @Override
 	public Annotation setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Annotation setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -351,7 +351,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addExtension(Extension extension) {
@@ -363,7 +363,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -375,7 +375,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -387,7 +387,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -399,7 +399,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addExternalRef(ExternalRef externalRef) {
@@ -411,7 +411,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -423,7 +423,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -435,7 +435,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -447,7 +447,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of subject
-		 * @parameter subject value to set
+		 * @param subject value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setSubject(Element subject) {
@@ -457,7 +457,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -467,7 +467,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of annotationType
-		 * @parameter annotationType value to set
+		 * @param annotationType value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setAnnotationType(AnnotationType annotationType) {
@@ -477,7 +477,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setSummary(String summary) {
@@ -487,7 +487,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setDescription(String description) {
@@ -497,7 +497,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of statement
-		 * @parameter statement value to set
+		 * @param statement value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setStatement(String statement) {
@@ -507,7 +507,7 @@ public  class Annotation extends Element  {
 		
 		/**
 		 * Sets the initial value of contentType
-		 * @parameter contentType value to set
+		 * @param contentType value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setContentType(String contentType) {
@@ -516,22 +516,22 @@ public  class Annotation extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public AnnotationBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public AnnotationBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public AnnotationBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

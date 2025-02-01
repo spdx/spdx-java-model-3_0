@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -341,20 +341,6 @@ public class ExternalVexUnderInvestigationVulnAssessmentRelationship extends Vex
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public VexUnderInvestigationVulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the comment
 	 */
 	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
@@ -366,6 +352,20 @@ public class ExternalVexUnderInvestigationVulnAssessmentRelationship extends Vex
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public VexUnderInvestigationVulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public VexUnderInvestigationVulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

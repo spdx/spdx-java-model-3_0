@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -187,17 +187,6 @@ public class CustomLicenseAdditionTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.CustomLicenseAddition#setName}.
-	 */
-	public void testCustomLicenseAdditionsetName() throws InvalidSPDXAnalysisException {
-		CustomLicenseAddition testCustomLicenseAddition = generator.builderForCustomLicenseAdditionTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testCustomLicenseAddition.getName());
-		String newStringValue = "new name value";
-		testCustomLicenseAddition.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testCustomLicenseAddition.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.CustomLicenseAddition#setComment}.
 	 */
 	public void testCustomLicenseAdditionsetComment() throws InvalidSPDXAnalysisException {
@@ -206,6 +195,17 @@ public class CustomLicenseAdditionTest extends TestCase {
 		String newStringValue = "new comment value";
 		testCustomLicenseAddition.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testCustomLicenseAddition.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.CustomLicenseAddition#setName}.
+	 */
+	public void testCustomLicenseAdditionsetName() throws InvalidSPDXAnalysisException {
+		CustomLicenseAddition testCustomLicenseAddition = generator.builderForCustomLicenseAdditionTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testCustomLicenseAddition.getName());
+		String newStringValue = "new name value";
+		testCustomLicenseAddition.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testCustomLicenseAddition.getName());
 	}
 	
 	/**

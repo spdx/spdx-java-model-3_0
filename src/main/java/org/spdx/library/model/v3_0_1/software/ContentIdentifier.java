@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -238,7 +238,7 @@ public  class ContentIdentifier extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of contentIdentifierType
-		 * @parameter contentIdentifierType value to set
+		 * @param contentIdentifierType value to set
 		 * @return this for chaining
 		**/
 		public ContentIdentifierBuilder setContentIdentifierType(ContentIdentifierType contentIdentifierType) {
@@ -248,7 +248,7 @@ public  class ContentIdentifier extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public ContentIdentifierBuilder setComment(String comment) {
@@ -258,7 +258,7 @@ public  class ContentIdentifier extends IntegrityMethod  {
 		
 		/**
 		 * Sets the initial value of contentIdentifierValue
-		 * @parameter contentIdentifierValue value to set
+		 * @param contentIdentifierValue value to set
 		 * @return this for chaining
 		**/
 		public ContentIdentifierBuilder setContentIdentifierValue(String contentIdentifierValue) {

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -256,17 +256,6 @@ public class SsvcVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.SsvcVulnAssessmentRelationship#setName}.
-	 */
-	public void testSsvcVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
-		SsvcVulnAssessmentRelationship testSsvcVulnAssessmentRelationship = generator.builderForSsvcVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSsvcVulnAssessmentRelationship.getName());
-		String newStringValue = "new name value";
-		testSsvcVulnAssessmentRelationship.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSsvcVulnAssessmentRelationship.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.SsvcVulnAssessmentRelationship#setComment}.
 	 */
 	public void testSsvcVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
@@ -275,6 +264,17 @@ public class SsvcVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new comment value";
 		testSsvcVulnAssessmentRelationship.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSsvcVulnAssessmentRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.SsvcVulnAssessmentRelationship#setName}.
+	 */
+	public void testSsvcVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
+		SsvcVulnAssessmentRelationship testSsvcVulnAssessmentRelationship = generator.builderForSsvcVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSsvcVulnAssessmentRelationship.getName());
+		String newStringValue = "new name value";
+		testSsvcVulnAssessmentRelationship.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSsvcVulnAssessmentRelationship.getName());
 	}
 	
 	/**

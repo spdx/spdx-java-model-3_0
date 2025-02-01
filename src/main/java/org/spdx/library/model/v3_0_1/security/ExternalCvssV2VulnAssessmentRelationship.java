@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -228,21 +228,21 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 	public CvssV2VulnAssessmentRelationship setRelationshipType(@Nullable RelationshipType relationshipType) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
-	/**
-	 * @return the score
-	 */
-	public @Nullable Integer getScore() throws InvalidSPDXAnalysisException {
-		return null;
-	}
-	
-	/**
-	 * @param score the score to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public CvssV2VulnAssessmentRelationship setScore(@Nullable Integer score) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
+    /**
+     * @return the score
+     */
+    public @Nullable Double getScore() throws InvalidSPDXAnalysisException {
+        return null;
+    }
+
+    /**
+     * @param score the score to set
+     * @return this to chain setters
+     * @throws InvalidSPDXAnalysisException
+     */
+    public CvssV2VulnAssessmentRelationship setScore(@Nullable Double score) throws InvalidSPDXAnalysisException {
+        throw new InvalidSPDXAnalysisException("External elements can not set properties");
+    }
 	/**
 	 * @return the vectorString
 	 */
@@ -342,20 +342,6 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public CvssV2VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the comment
 	 */
 	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
@@ -367,6 +353,20 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public CvssV2VulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public CvssV2VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

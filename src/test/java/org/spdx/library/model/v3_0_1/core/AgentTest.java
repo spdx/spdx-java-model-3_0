@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -117,14 +117,14 @@ public class AgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setSummary}.
 	 */
-	public void testAgentsetName() throws InvalidSPDXAnalysisException {
+	public void testAgentsetSummary() throws InvalidSPDXAnalysisException {
 		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAgent.getName());
-		String newStringValue = "new name value";
-		testAgent.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAgent.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAgent.getSummary());
+		String newStringValue = "new summary value";
+		testAgent.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAgent.getSummary());
 	}
 	
 	/**
@@ -139,14 +139,14 @@ public class AgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setName}.
 	 */
-	public void testAgentsetSummary() throws InvalidSPDXAnalysisException {
+	public void testAgentsetName() throws InvalidSPDXAnalysisException {
 		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAgent.getSummary());
-		String newStringValue = "new summary value";
-		testAgent.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAgent.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAgent.getName());
+		String newStringValue = "new name value";
+		testAgent.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAgent.getName());
 	}
 	
 	/**

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -117,9 +117,9 @@ public abstract class Element extends ModelObjectV3  {
 		if (Objects.nonNull(builder.creationInfo)) {
 			setCreationInfo(builder.creationInfo);
 		}
-		setName(builder.name);
-		setComment(builder.comment);
 		setSummary(builder.summary);
+		setComment(builder.comment);
+		setName(builder.name);
 		setDescription(builder.description);
 	}
 
@@ -174,18 +174,18 @@ public abstract class Element extends ModelObjectV3  {
 		return this;
 	}
 		/**
-	 * @return the name
+	 * @return the summary
 	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_NAME);
+	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_SUMMARY);
 	}
 	/**
-	 * @param name the name to set
+	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public Element setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		setPropertyValue(SpdxConstantsV3.PROP_NAME, name);
+	public Element setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		setPropertyValue(SpdxConstantsV3.PROP_SUMMARY, summary);
 		return this;
 	}
 		/**
@@ -204,18 +204,18 @@ public abstract class Element extends ModelObjectV3  {
 		return this;
 	}
 		/**
-	 * @return the summary
+	 * @return the name
 	 */
-	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_SUMMARY);
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_NAME);
 	}
 	/**
-	 * @param summary the summary to set
+	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public Element setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		setPropertyValue(SpdxConstantsV3.PROP_SUMMARY, summary);
+	public Element setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		setPropertyValue(SpdxConstantsV3.PROP_NAME, name);
 		return this;
 	}
 		/**
@@ -275,9 +275,9 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		try {
 			@SuppressWarnings("unused")
-			Optional<String> name = getName();
+			Optional<String> summary = getSummary();
 		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting name for Element: "+e.getMessage());
+			retval.add("Error getting summary for Element: "+e.getMessage());
 		}
 		try {
 			@SuppressWarnings("unused")
@@ -287,9 +287,9 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		try {
 			@SuppressWarnings("unused")
-			Optional<String> summary = getSummary();
+			Optional<String> name = getName();
 		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting summary for Element: "+e.getMessage());
+			retval.add("Error getting name for Element: "+e.getMessage());
 		}
 		try {
 			@SuppressWarnings("unused")
@@ -357,15 +357,15 @@ public abstract class Element extends ModelObjectV3  {
 		protected Collection<IntegrityMethod> verifiedUsings = new ArrayList<>();
 		protected Collection<ExternalIdentifier> externalIdentifiers = new ArrayList<>();
 		protected CreationInfo creationInfo = null;
-		protected String name = null;
-		protected String comment = null;
 		protected String summary = null;
+		protected String comment = null;
+		protected String name = null;
 		protected String description = null;
 		
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public ElementBuilder addExternalRef(ExternalRef externalRef) {
@@ -377,7 +377,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public ElementBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -389,7 +389,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public ElementBuilder addExtension(Extension extension) {
@@ -401,7 +401,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public ElementBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -413,7 +413,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public ElementBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -425,7 +425,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public ElementBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -437,7 +437,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public ElementBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -449,7 +449,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public ElementBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -461,7 +461,7 @@ public abstract class Element extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public ElementBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -470,28 +470,8 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public ElementBuilder setName(String name) {
-			this.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public ElementBuilder setComment(String comment) {
-			this.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public ElementBuilder setSummary(String summary) {
@@ -500,8 +480,28 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		
 		/**
+		 * Sets the initial value of comment
+		 * @param comment value to set
+		 * @return this for chaining
+		**/
+		public ElementBuilder setComment(String comment) {
+			this.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public ElementBuilder setName(String name) {
+			this.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public ElementBuilder setDescription(String description) {

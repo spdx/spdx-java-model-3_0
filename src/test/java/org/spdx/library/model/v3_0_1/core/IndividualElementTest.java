@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -118,14 +118,14 @@ public class IndividualElementTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setSummary}.
 	 */
-	public void testIndividualElementsetName() throws InvalidSPDXAnalysisException {
+	public void testIndividualElementsetSummary() throws InvalidSPDXAnalysisException {
 		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualElement.getName());
-		String newStringValue = "new name value";
-		testIndividualElement.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualElement.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualElement.getSummary());
+		String newStringValue = "new summary value";
+		testIndividualElement.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualElement.getSummary());
 	}
 	
 	/**
@@ -140,14 +140,14 @@ public class IndividualElementTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setName}.
 	 */
-	public void testIndividualElementsetSummary() throws InvalidSPDXAnalysisException {
+	public void testIndividualElementsetName() throws InvalidSPDXAnalysisException {
 		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualElement.getSummary());
-		String newStringValue = "new summary value";
-		testIndividualElement.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualElement.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualElement.getName());
+		String newStringValue = "new name value";
+		testIndividualElement.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualElement.getName());
 	}
 	
 	/**

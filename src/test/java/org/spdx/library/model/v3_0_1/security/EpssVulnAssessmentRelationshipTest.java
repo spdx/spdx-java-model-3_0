@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -178,25 +178,25 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 		testEpssVulnAssessmentRelationship.setRelationshipType(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE2);
 		assertEquals(TestValuesGenerator.RELATIONSHIP_TYPE_TEST_VALUE2, testEpssVulnAssessmentRelationship.getRelationshipType());
 	}
-	
+
 	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setProbability}.
 	 */
 	public void testEpssVulnAssessmentRelationshipsetProbability() throws InvalidSPDXAnalysisException {
 		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
 		assertEquals(TestValuesGenerator.PROBABILITY_TEST_VALUE, testEpssVulnAssessmentRelationship.getProbability());
-		testEpssVulnAssessmentRelationship.setProbability(new Integer(653));
-		assertEquals(new Integer(653), testEpssVulnAssessmentRelationship.getProbability());
+		testEpssVulnAssessmentRelationship.setProbability(new Double(653.6));
+		assertEquals(new Double(653.6), testEpssVulnAssessmentRelationship.getProbability());
 	}
-	
+
 	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setPercentile}.
 	 */
 	public void testEpssVulnAssessmentRelationshipsetPercentile() throws InvalidSPDXAnalysisException {
 		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
 		assertEquals(TestValuesGenerator.PERCENTILE_TEST_VALUE, testEpssVulnAssessmentRelationship.getPercentile());
-		testEpssVulnAssessmentRelationship.setPercentile(new Integer(653));
-		assertEquals(new Integer(653), testEpssVulnAssessmentRelationship.getPercentile());
+		testEpssVulnAssessmentRelationship.setPercentile(new Double(653.6));
+		assertEquals(new Double(653.6), testEpssVulnAssessmentRelationship.getPercentile());
 	}
 	
 	/**
@@ -266,17 +266,6 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setName}.
-	 */
-	public void testEpssVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
-		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testEpssVulnAssessmentRelationship.getName());
-		String newStringValue = "new name value";
-		testEpssVulnAssessmentRelationship.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setComment}.
 	 */
 	public void testEpssVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
@@ -285,6 +274,17 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new comment value";
 		testEpssVulnAssessmentRelationship.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setName}.
+	 */
+	public void testEpssVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
+		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testEpssVulnAssessmentRelationship.getName());
+		String newStringValue = "new name value";
+		testEpssVulnAssessmentRelationship.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getName());
 	}
 	
 	/**

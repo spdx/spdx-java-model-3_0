@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -184,17 +184,6 @@ public class AnnotationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setName}.
-	 */
-	public void testAnnotationsetName() throws InvalidSPDXAnalysisException {
-		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAnnotation.getName());
-		String newStringValue = "new name value";
-		testAnnotation.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnnotation.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setComment}.
 	 */
 	public void testAnnotationsetComment() throws InvalidSPDXAnalysisException {
@@ -203,6 +192,17 @@ public class AnnotationTest extends TestCase {
 		String newStringValue = "new comment value";
 		testAnnotation.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testAnnotation.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setName}.
+	 */
+	public void testAnnotationsetName() throws InvalidSPDXAnalysisException {
+		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAnnotation.getName());
+		String newStringValue = "new name value";
+		testAnnotation.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnnotation.getName());
 	}
 	
 	/**

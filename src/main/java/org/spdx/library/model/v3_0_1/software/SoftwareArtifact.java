@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -251,16 +251,6 @@ public abstract class SoftwareArtifact extends Artifact  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public SoftwareArtifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -268,6 +258,16 @@ public abstract class SoftwareArtifact extends Artifact  {
 	 @Override
 	public SoftwareArtifact setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public SoftwareArtifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -351,7 +351,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a contentIdentifier to the initial collection
-		 * @parameter contentIdentifier contentIdentifier to add
+		 * @param contentIdentifier contentIdentifier to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -363,7 +363,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial contentIdentifier collection
-		 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+		 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -375,7 +375,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addExtension(Extension extension) {
@@ -387,7 +387,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -399,7 +399,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -411,7 +411,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -423,7 +423,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addOriginatedBy(Agent originatedBy) {
@@ -435,7 +435,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -447,7 +447,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addExternalRef(ExternalRef externalRef) {
@@ -459,7 +459,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -471,7 +471,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -483,7 +483,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -495,7 +495,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addSupportLevel(SupportType supportLevel) {
@@ -507,7 +507,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -519,7 +519,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a additionalPurpose to the initial collection
-		 * @parameter additionalPurpose additionalPurpose to add
+		 * @param additionalPurpose additionalPurpose to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -531,7 +531,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial additionalPurpose collection
-		 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+		 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -543,7 +543,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a attributionText to the initial collection
-		 * @parameter attributionText attributionText to add
+		 * @param attributionText attributionText to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAttributionText(String attributionText) {
@@ -555,7 +555,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial attributionText collection
-		 * @parameter attributionTextCollection collection to initialize the attributionText
+		 * @param attributionTextCollection collection to initialize the attributionText
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -567,7 +567,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addStandardName(String standardName) {
@@ -579,7 +579,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -591,7 +591,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -601,7 +601,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setSuppliedBy(Agent suppliedBy) {
@@ -611,7 +611,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of primaryPurpose
-		 * @parameter primaryPurpose value to set
+		 * @param primaryPurpose value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -621,7 +621,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setValidUntilTime(String validUntilTime) {
@@ -631,7 +631,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setBuiltTime(String builtTime) {
@@ -641,7 +641,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setSummary(String summary) {
@@ -651,7 +651,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setDescription(String description) {
@@ -661,7 +661,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setReleaseTime(String releaseTime) {
@@ -671,7 +671,7 @@ public abstract class SoftwareArtifact extends Artifact  {
 		
 		/**
 		 * Sets the initial value of copyrightText
-		 * @parameter copyrightText value to set
+		 * @param copyrightText value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setCopyrightText(String copyrightText) {
@@ -680,22 +680,22 @@ public abstract class SoftwareArtifact extends Artifact  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public SoftwareArtifactBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SoftwareArtifactBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public SoftwareArtifactBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

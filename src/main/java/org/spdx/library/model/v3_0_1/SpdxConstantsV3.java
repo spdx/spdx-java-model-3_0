@@ -115,7 +115,7 @@ public class SpdxConstantsV3 {
 	public static final PropertyDescriptor PROP_HASH_VALUE = new PropertyDescriptor("hashValue", CORE_NAMESPACE);
 	public static final PropertyDescriptor PROP_IDENTIFIER = new PropertyDescriptor("identifier", CORE_NAMESPACE);
 	public static final PropertyDescriptor PROP_IDENTIFIER_LOCATOR = new PropertyDescriptor("identifierLocator", CORE_NAMESPACE);
-	public static final PropertyDescriptor PROP_SPDX_IMPORT = new PropertyDescriptor("spdxImport", CORE_NAMESPACE);
+	public static final PropertyDescriptor PROP_SPDX_IMPORT = new PropertyDescriptor("import", CORE_NAMESPACE);
 	public static final PropertyDescriptor PROP_ISSUING_AUTHORITY = new PropertyDescriptor("issuingAuthority", CORE_NAMESPACE);
 	public static final PropertyDescriptor PROP_KEY = new PropertyDescriptor("key", CORE_NAMESPACE);
 	public static final PropertyDescriptor PROP_LOCATION_HINT = new PropertyDescriptor("locationHint", CORE_NAMESPACE);

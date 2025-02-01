@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -249,16 +249,6 @@ public abstract class Artifact extends Element  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Artifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -266,6 +256,16 @@ public abstract class Artifact extends Element  {
 	 @Override
 	public Artifact setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Artifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -375,7 +375,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addExtension(Extension extension) {
@@ -387,7 +387,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -399,7 +399,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -411,7 +411,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -423,7 +423,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addOriginatedBy(Agent originatedBy) {
@@ -435,7 +435,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -447,7 +447,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addExternalRef(ExternalRef externalRef) {
@@ -459,7 +459,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -471,7 +471,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -483,7 +483,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -495,7 +495,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addSupportLevel(SupportType supportLevel) {
@@ -507,7 +507,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -519,7 +519,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addStandardName(String standardName) {
@@ -531,7 +531,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -543,7 +543,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -553,7 +553,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setSuppliedBy(Agent suppliedBy) {
@@ -563,7 +563,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setValidUntilTime(String validUntilTime) {
@@ -573,7 +573,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setBuiltTime(String builtTime) {
@@ -583,7 +583,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setSummary(String summary) {
@@ -593,7 +593,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setDescription(String description) {
@@ -603,7 +603,7 @@ public abstract class Artifact extends Element  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setReleaseTime(String releaseTime) {
@@ -612,22 +612,22 @@ public abstract class Artifact extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public ArtifactBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public ArtifactBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public ArtifactBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

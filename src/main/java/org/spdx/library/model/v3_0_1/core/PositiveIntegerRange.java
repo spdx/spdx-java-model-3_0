@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -232,7 +232,7 @@ public  class PositiveIntegerRange extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of endIntegerRange
-		 * @parameter endIntegerRange value to set
+		 * @param endIntegerRange value to set
 		 * @return this for chaining
 		**/
 		public PositiveIntegerRangeBuilder setEndIntegerRange(Integer endIntegerRange) {
@@ -242,7 +242,7 @@ public  class PositiveIntegerRange extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of beginIntegerRange
-		 * @parameter beginIntegerRange value to set
+		 * @param beginIntegerRange value to set
 		 * @return this for chaining
 		**/
 		public PositiveIntegerRangeBuilder setBeginIntegerRange(Integer beginIntegerRange) {

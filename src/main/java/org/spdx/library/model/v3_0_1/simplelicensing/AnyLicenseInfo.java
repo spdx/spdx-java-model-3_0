@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -119,13 +119,13 @@ public  class AnyLicenseInfo extends Element  {
 		return this;
 	}	
 	/**
-	 * @param name the name to set
+	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
+	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -139,13 +139,13 @@ public  class AnyLicenseInfo extends Element  {
 		return this;
 	}	
 	/**
-	 * @param summary the summary to set
+	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
+	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	/**
@@ -219,7 +219,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addExternalRef(ExternalRef externalRef) {
@@ -231,7 +231,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -243,7 +243,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addExtension(Extension extension) {
@@ -255,7 +255,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -267,7 +267,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -279,7 +279,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -291,7 +291,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -303,7 +303,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -315,7 +315,7 @@ public  class AnyLicenseInfo extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -324,28 +324,8 @@ public  class AnyLicenseInfo extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public AnyLicenseInfoBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public AnyLicenseInfoBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder setSummary(String summary) {
@@ -354,8 +334,28 @@ public  class AnyLicenseInfo extends Element  {
 		}
 		
 		/**
+		 * Sets the initial value of comment
+		 * @param comment value to set
+		 * @return this for chaining
+		**/
+		public AnyLicenseInfoBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public AnyLicenseInfoBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public AnyLicenseInfoBuilder setDescription(String description) {

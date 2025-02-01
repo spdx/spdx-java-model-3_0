@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -118,14 +118,14 @@ public class SoftwareAgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setSummary}.
 	 */
-	public void testSoftwareAgentsetName() throws InvalidSPDXAnalysisException {
+	public void testSoftwareAgentsetSummary() throws InvalidSPDXAnalysisException {
 		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSoftwareAgent.getName());
-		String newStringValue = "new name value";
-		testSoftwareAgent.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSoftwareAgent.getSummary());
+		String newStringValue = "new summary value";
+		testSoftwareAgent.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getSummary());
 	}
 	
 	/**
@@ -140,14 +140,14 @@ public class SoftwareAgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setName}.
 	 */
-	public void testSoftwareAgentsetSummary() throws InvalidSPDXAnalysisException {
+	public void testSoftwareAgentsetName() throws InvalidSPDXAnalysisException {
 		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSoftwareAgent.getSummary());
-		String newStringValue = "new summary value";
-		testSoftwareAgent.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSoftwareAgent.getName());
+		String newStringValue = "new name value";
+		testSoftwareAgent.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getName());
 	}
 	
 	/**

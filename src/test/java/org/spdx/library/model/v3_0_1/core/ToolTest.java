@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -118,14 +118,14 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setSummary}.
 	 */
-	public void testToolsetName() throws InvalidSPDXAnalysisException {
+	public void testToolsetSummary() throws InvalidSPDXAnalysisException {
 		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
-		String newStringValue = "new name value";
-		testTool.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testTool.getSummary());
+		String newStringValue = "new summary value";
+		testTool.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getSummary());
 	}
 	
 	/**
@@ -140,14 +140,14 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
 	 */
-	public void testToolsetSummary() throws InvalidSPDXAnalysisException {
+	public void testToolsetName() throws InvalidSPDXAnalysisException {
 		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testTool.getSummary());
-		String newStringValue = "new summary value";
-		testTool.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
+		String newStringValue = "new name value";
+		testTool.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getName());
 	}
 	
 	/**

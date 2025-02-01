@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -125,14 +125,14 @@ public class ConjunctiveLicenseSetTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setSummary}.
 	 */
-	public void testConjunctiveLicenseSetsetName() throws InvalidSPDXAnalysisException {
+	public void testConjunctiveLicenseSetsetSummary() throws InvalidSPDXAnalysisException {
 		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testConjunctiveLicenseSet.getName());
-		String newStringValue = "new name value";
-		testConjunctiveLicenseSet.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testConjunctiveLicenseSet.getSummary());
+		String newStringValue = "new summary value";
+		testConjunctiveLicenseSet.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getSummary());
 	}
 	
 	/**
@@ -147,14 +147,14 @@ public class ConjunctiveLicenseSetTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setName}.
 	 */
-	public void testConjunctiveLicenseSetsetSummary() throws InvalidSPDXAnalysisException {
+	public void testConjunctiveLicenseSetsetName() throws InvalidSPDXAnalysisException {
 		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testConjunctiveLicenseSet.getSummary());
-		String newStringValue = "new summary value";
-		testConjunctiveLicenseSet.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testConjunctiveLicenseSet.getName());
+		String newStringValue = "new name value";
+		testConjunctiveLicenseSet.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getName());
 	}
 	
 	/**

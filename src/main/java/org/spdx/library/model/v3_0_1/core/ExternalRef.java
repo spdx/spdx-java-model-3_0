@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -252,7 +252,7 @@ public  class ExternalRef extends ModelObjectV3  {
 		
 		/**
 		 * Adds a locator to the initial collection
-		 * @parameter locator locator to add
+		 * @param locator locator to add
 		 * @return this for chaining
 		**/
 		public ExternalRefBuilder addLocator(String locator) {
@@ -264,7 +264,7 @@ public  class ExternalRef extends ModelObjectV3  {
 		
 		/**
 		 * Adds all elements from a collection to the initial locator collection
-		 * @parameter locatorCollection collection to initialize the locator
+		 * @param locatorCollection collection to initialize the locator
 		 * @return this for chaining
 		**/
 		public ExternalRefBuilder addAllLocator(Collection<String> locatorCollection) {
@@ -276,7 +276,7 @@ public  class ExternalRef extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of externalRefType
-		 * @parameter externalRefType value to set
+		 * @param externalRefType value to set
 		 * @return this for chaining
 		**/
 		public ExternalRefBuilder setExternalRefType(ExternalRefType externalRefType) {
@@ -286,7 +286,7 @@ public  class ExternalRef extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of contentType
-		 * @parameter contentType value to set
+		 * @param contentType value to set
 		 * @return this for chaining
 		**/
 		public ExternalRefBuilder setContentType(String contentType) {
@@ -296,7 +296,7 @@ public  class ExternalRef extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public ExternalRefBuilder setComment(String comment) {

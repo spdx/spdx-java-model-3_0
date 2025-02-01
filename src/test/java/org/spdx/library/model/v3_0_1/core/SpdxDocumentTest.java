@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -152,17 +152,6 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setName}.
-	 */
-	public void testSpdxDocumentsetName() throws InvalidSPDXAnalysisException {
-		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSpdxDocument.getName());
-		String newStringValue = "new name value";
-		testSpdxDocument.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxDocument.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setComment}.
 	 */
 	public void testSpdxDocumentsetComment() throws InvalidSPDXAnalysisException {
@@ -171,6 +160,17 @@ public class SpdxDocumentTest extends TestCase {
 		String newStringValue = "new comment value";
 		testSpdxDocument.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSpdxDocument.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setName}.
+	 */
+	public void testSpdxDocumentsetName() throws InvalidSPDXAnalysisException {
+		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSpdxDocument.getName());
+		String newStringValue = "new name value";
+		testSpdxDocument.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxDocument.getName());
 	}
 	
 	/**

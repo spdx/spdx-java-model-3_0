@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -168,17 +168,6 @@ public class LicenseExpressionTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setName}.
-	 */
-	public void testLicenseExpressionsetName() throws InvalidSPDXAnalysisException {
-		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testLicenseExpression.getName());
-		String newStringValue = "new name value";
-		testLicenseExpression.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testLicenseExpression.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setComment}.
 	 */
 	public void testLicenseExpressionsetComment() throws InvalidSPDXAnalysisException {
@@ -187,6 +176,17 @@ public class LicenseExpressionTest extends TestCase {
 		String newStringValue = "new comment value";
 		testLicenseExpression.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testLicenseExpression.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.LicenseExpression#setName}.
+	 */
+	public void testLicenseExpressionsetName() throws InvalidSPDXAnalysisException {
+		LicenseExpression testLicenseExpression = generator.builderForLicenseExpressionTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testLicenseExpression.getName());
+		String newStringValue = "new name value";
+		testLicenseExpression.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testLicenseExpression.getName());
 	}
 	
 	/**
