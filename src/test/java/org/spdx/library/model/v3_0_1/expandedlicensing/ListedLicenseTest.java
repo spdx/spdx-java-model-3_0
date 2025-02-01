@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -229,17 +229,6 @@ public class ListedLicenseTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ListedLicense#setName}.
-	 */
-	public void testListedLicensesetName() throws InvalidSPDXAnalysisException {
-		ListedLicense testListedLicense = generator.builderForListedLicenseTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testListedLicense.getName());
-		String newStringValue = "new name value";
-		testListedLicense.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testListedLicense.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ListedLicense#setComment}.
 	 */
 	public void testListedLicensesetComment() throws InvalidSPDXAnalysisException {
@@ -248,6 +237,17 @@ public class ListedLicenseTest extends TestCase {
 		String newStringValue = "new comment value";
 		testListedLicense.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testListedLicense.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ListedLicense#setName}.
+	 */
+	public void testListedLicensesetName() throws InvalidSPDXAnalysisException {
+		ListedLicense testListedLicense = generator.builderForListedLicenseTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testListedLicense.getName());
+		String newStringValue = "new name value";
+		testListedLicense.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testListedLicense.getName());
 	}
 	
 	/**

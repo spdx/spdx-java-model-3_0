@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -218,7 +218,7 @@ public  class NamespaceMap extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of prefix
-		 * @parameter prefix value to set
+		 * @param prefix value to set
 		 * @return this for chaining
 		**/
 		public NamespaceMapBuilder setPrefix(String prefix) {
@@ -228,7 +228,7 @@ public  class NamespaceMap extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of namespace
-		 * @parameter namespace value to set
+		 * @param namespace value to set
 		 * @return this for chaining
 		**/
 		public NamespaceMapBuilder setNamespace(String namespace) {

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -133,14 +133,14 @@ public class OrLaterOperatorTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setSummary}.
 	 */
-	public void testOrLaterOperatorsetName() throws InvalidSPDXAnalysisException {
+	public void testOrLaterOperatorsetSummary() throws InvalidSPDXAnalysisException {
 		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrLaterOperator.getName());
-		String newStringValue = "new name value";
-		testOrLaterOperator.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrLaterOperator.getSummary());
+		String newStringValue = "new summary value";
+		testOrLaterOperator.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getSummary());
 	}
 	
 	/**
@@ -155,14 +155,14 @@ public class OrLaterOperatorTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setName}.
 	 */
-	public void testOrLaterOperatorsetSummary() throws InvalidSPDXAnalysisException {
+	public void testOrLaterOperatorsetName() throws InvalidSPDXAnalysisException {
 		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrLaterOperator.getSummary());
-		String newStringValue = "new summary value";
-		testOrLaterOperator.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrLaterOperator.getName());
+		String newStringValue = "new name value";
+		testOrLaterOperator.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getName());
 	}
 	
 	/**

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -211,17 +211,17 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 	/**
 	 * @return the score
 	 */
-	public @Nullable Integer getScore() throws InvalidSPDXAnalysisException {
-		Optional<Integer> retval = getIntegerPropertyValue(SpdxConstantsV3.PROP_SCORE);
+	public @Nullable Double getScore() throws InvalidSPDXAnalysisException {
+		Optional<Double> retval = getDoublePropertyValue(SpdxConstantsV3.PROP_SCORE);
 		return retval.isPresent() ? retval.get() : null;
 	}
-	
+
 	/**
 	 * @param score the score to set
 	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
+	 * @throws InvalidSPDXAnalysisException
 	 */
-	public CvssV3VulnAssessmentRelationship setScore(@Nullable Integer score) throws InvalidSPDXAnalysisException {
+	public CvssV3VulnAssessmentRelationship setScore(@Nullable Double score) throws InvalidSPDXAnalysisException {
 		if (isStrict() && Objects.isNull(score)) {
 			throw new InvalidSPDXAnalysisException("score is a required property");
 		}
@@ -308,16 +308,6 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		return this;
 	}	
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public CvssV3VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -325,6 +315,16 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 	 @Override
 	public CvssV3VulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public CvssV3VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	/**
@@ -361,7 +361,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 			retval.add("Error getting severity for CvssV3VulnAssessmentRelationship: "+e.getMessage());
 		}
 		try {
-			Integer score = getScore();
+			Double score = getScore();
 			if (Objects.isNull(score) &&
 					Collections.disjoint(profiles, Arrays.asList(new ProfileIdentifierType[] { ProfileIdentifierType.SECURITY }))) {
 				retval.add("Missing score in CvssV3VulnAssessmentRelationship");
@@ -422,13 +422,13 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		}
 		
 		protected CvssSeverityType severity = null;
-		protected Integer score = null;
+		protected Double score = null;
 		protected String vectorString = null;
 		
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addExtension(Extension extension) {
@@ -440,7 +440,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -452,7 +452,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -464,7 +464,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -476,7 +476,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds a to to the initial collection
-		 * @parameter to to to add
+		 * @param to to to add
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addTo(Element to) {
@@ -488,7 +488,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds all elements from a collection to the initial to collection
-		 * @parameter toCollection collection to initialize the to
+		 * @param toCollection collection to initialize the to
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addAllTo(Collection<Element> toCollection) {
@@ -500,7 +500,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addExternalRef(ExternalRef externalRef) {
@@ -512,7 +512,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -524,7 +524,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -536,7 +536,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -548,7 +548,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of from
-		 * @parameter from value to set
+		 * @param from value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setFrom(Element from) {
@@ -558,7 +558,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -568,7 +568,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of assessedElement
-		 * @parameter assessedElement value to set
+		 * @param assessedElement value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setAssessedElement(SoftwareArtifact assessedElement) {
@@ -578,7 +578,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setSuppliedBy(Agent suppliedBy) {
@@ -588,7 +588,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of severity
-		 * @parameter severity value to set
+		 * @param severity value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setSeverity(CvssSeverityType severity) {
@@ -598,7 +598,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of completeness
-		 * @parameter completeness value to set
+		 * @param completeness value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setCompleteness(RelationshipCompleteness completeness) {
@@ -608,27 +608,27 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of relationshipType
-		 * @parameter relationshipType value to set
+		 * @param relationshipType value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setRelationshipType(RelationshipType relationshipType) {
 			super.relationshipType = relationshipType;
 			return this;
 		}
-		
+
 		/**
 		 * Sets the initial value of score
-		 * @parameter score value to set
+		 * @param score value to set
 		 * @return this for chaining
 		**/
-		public CvssV3VulnAssessmentRelationshipBuilder setScore(Integer score) {
+		public CvssV3VulnAssessmentRelationshipBuilder setScore(Double score) {
 			this.score = score;
 			return this;
 		}
 		
 		/**
 		 * Sets the initial value of vectorString
-		 * @parameter vectorString value to set
+		 * @param vectorString value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setVectorString(String vectorString) {
@@ -638,7 +638,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of publishedTime
-		 * @parameter publishedTime value to set
+		 * @param publishedTime value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setPublishedTime(String publishedTime) {
@@ -648,7 +648,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setSummary(String summary) {
@@ -658,7 +658,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setDescription(String description) {
@@ -668,7 +668,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of endTime
-		 * @parameter endTime value to set
+		 * @param endTime value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setEndTime(String endTime) {
@@ -678,7 +678,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of startTime
-		 * @parameter startTime value to set
+		 * @param startTime value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setStartTime(String startTime) {
@@ -688,7 +688,7 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		
 		/**
 		 * Sets the initial value of withdrawnTime
-		 * @parameter withdrawnTime value to set
+		 * @param withdrawnTime value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setWithdrawnTime(String withdrawnTime) {
@@ -697,18 +697,8 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public CvssV3VulnAssessmentRelationshipBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setComment(String comment) {
@@ -717,8 +707,18 @@ public  class CvssV3VulnAssessmentRelationship extends VulnAssessmentRelationshi
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public CvssV3VulnAssessmentRelationshipBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of modifiedTime
-		 * @parameter modifiedTime value to set
+		 * @param modifiedTime value to set
 		 * @return this for chaining
 		**/
 		public CvssV3VulnAssessmentRelationshipBuilder setModifiedTime(String modifiedTime) {

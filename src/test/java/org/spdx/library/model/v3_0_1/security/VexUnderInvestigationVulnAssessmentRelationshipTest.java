@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -268,17 +268,6 @@ public class VexUnderInvestigationVulnAssessmentRelationshipTest extends TestCas
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship#setName}.
-	 */
-	public void testVexUnderInvestigationVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
-		VexUnderInvestigationVulnAssessmentRelationship testVexUnderInvestigationVulnAssessmentRelationship = generator.builderForVexUnderInvestigationVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testVexUnderInvestigationVulnAssessmentRelationship.getName());
-		String newStringValue = "new name value";
-		testVexUnderInvestigationVulnAssessmentRelationship.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexUnderInvestigationVulnAssessmentRelationship.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship#setComment}.
 	 */
 	public void testVexUnderInvestigationVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
@@ -287,6 +276,17 @@ public class VexUnderInvestigationVulnAssessmentRelationshipTest extends TestCas
 		String newStringValue = "new comment value";
 		testVexUnderInvestigationVulnAssessmentRelationship.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testVexUnderInvestigationVulnAssessmentRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexUnderInvestigationVulnAssessmentRelationship#setName}.
+	 */
+	public void testVexUnderInvestigationVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
+		VexUnderInvestigationVulnAssessmentRelationship testVexUnderInvestigationVulnAssessmentRelationship = generator.builderForVexUnderInvestigationVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testVexUnderInvestigationVulnAssessmentRelationship.getName());
+		String newStringValue = "new name value";
+		testVexUnderInvestigationVulnAssessmentRelationship.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexUnderInvestigationVulnAssessmentRelationship.getName());
 	}
 	
 	/**

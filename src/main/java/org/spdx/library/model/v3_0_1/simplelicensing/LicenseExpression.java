@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -192,16 +192,6 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public LicenseExpression setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -209,6 +199,16 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 	 @Override
 	public LicenseExpression setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public LicenseExpression setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -296,7 +296,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addExtension(Extension extension) {
@@ -308,7 +308,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -320,7 +320,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -332,7 +332,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -344,7 +344,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addExternalRef(ExternalRef externalRef) {
@@ -356,7 +356,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -368,7 +368,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a customIdToUri to the initial collection
-		 * @parameter customIdToUri customIdToUri to add
+		 * @param customIdToUri customIdToUri to add
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addCustomIdToUri(DictionaryEntry customIdToUri) {
@@ -380,7 +380,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial customIdToUri collection
-		 * @parameter customIdToUriCollection collection to initialize the customIdToUri
+		 * @param customIdToUriCollection collection to initialize the customIdToUri
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addAllCustomIdToUri(Collection<DictionaryEntry> customIdToUriCollection) {
@@ -392,7 +392,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -404,7 +404,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -416,7 +416,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -426,7 +426,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder setSummary(String summary) {
@@ -436,7 +436,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder setDescription(String description) {
@@ -446,7 +446,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of licenseExpression
-		 * @parameter licenseExpression value to set
+		 * @param licenseExpression value to set
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder setLicenseExpression(String licenseExpression) {
@@ -456,7 +456,7 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		
 		/**
 		 * Sets the initial value of licenseListVersion
-		 * @parameter licenseListVersion value to set
+		 * @param licenseListVersion value to set
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder setLicenseListVersion(String licenseListVersion) {
@@ -465,22 +465,22 @@ public  class LicenseExpression extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public LicenseExpressionBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public LicenseExpressionBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public LicenseExpressionBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

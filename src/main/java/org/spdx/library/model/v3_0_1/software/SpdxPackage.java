@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -397,7 +397,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a contentIdentifier to the initial collection
-		 * @parameter contentIdentifier contentIdentifier to add
+		 * @param contentIdentifier contentIdentifier to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -409,7 +409,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial contentIdentifier collection
-		 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+		 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -421,7 +421,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -433,7 +433,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -445,7 +445,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addExternalRef(ExternalRef externalRef) {
@@ -457,7 +457,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -469,7 +469,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -481,7 +481,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -493,7 +493,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addExtension(Extension extension) {
@@ -505,7 +505,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -517,7 +517,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addOriginatedBy(Agent originatedBy) {
@@ -529,7 +529,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -541,7 +541,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addSupportLevel(SupportType supportLevel) {
@@ -553,7 +553,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -565,7 +565,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a additionalPurpose to the initial collection
-		 * @parameter additionalPurpose additionalPurpose to add
+		 * @param additionalPurpose additionalPurpose to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -577,7 +577,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial additionalPurpose collection
-		 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+		 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -589,7 +589,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a attributionText to the initial collection
-		 * @parameter attributionText attributionText to add
+		 * @param attributionText attributionText to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAttributionText(String attributionText) {
@@ -601,7 +601,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial attributionText collection
-		 * @parameter attributionTextCollection collection to initialize the attributionText
+		 * @param attributionTextCollection collection to initialize the attributionText
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -613,7 +613,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addStandardName(String standardName) {
@@ -625,7 +625,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -637,7 +637,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -647,7 +647,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setSuppliedBy(Agent suppliedBy) {
@@ -657,7 +657,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of primaryPurpose
-		 * @parameter primaryPurpose value to set
+		 * @param primaryPurpose value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -667,7 +667,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setValidUntilTime(String validUntilTime) {
@@ -677,7 +677,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of downloadLocation
-		 * @parameter downloadLocation value to set
+		 * @param downloadLocation value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setDownloadLocation(String downloadLocation) {
@@ -687,7 +687,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setBuiltTime(String builtTime) {
@@ -697,7 +697,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setSummary(String summary) {
@@ -707,7 +707,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of packageVersion
-		 * @parameter packageVersion value to set
+		 * @param packageVersion value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setPackageVersion(String packageVersion) {
@@ -717,7 +717,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setReleaseTime(String releaseTime) {
@@ -727,7 +727,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of copyrightText
-		 * @parameter copyrightText value to set
+		 * @param copyrightText value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setCopyrightText(String copyrightText) {
@@ -737,7 +737,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setComment(String comment) {
@@ -747,7 +747,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of homePage
-		 * @parameter homePage value to set
+		 * @param homePage value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setHomePage(String homePage) {
@@ -757,7 +757,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of sourceInfo
-		 * @parameter sourceInfo value to set
+		 * @param sourceInfo value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setSourceInfo(String sourceInfo) {
@@ -767,7 +767,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setDescription(String description) {
@@ -777,7 +777,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setName(String name) {
@@ -787,7 +787,7 @@ public  class SpdxPackage extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of packageUrl
-		 * @parameter packageUrl value to set
+		 * @param packageUrl value to set
 		 * @return this for chaining
 		**/
 		public SpdxPackageBuilder setPackageUrl(String packageUrl) {

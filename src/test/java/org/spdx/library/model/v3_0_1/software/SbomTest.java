@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -156,17 +156,6 @@ public class SbomTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setName}.
-	 */
-	public void testSbomsetName() throws InvalidSPDXAnalysisException {
-		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSbom.getName());
-		String newStringValue = "new name value";
-		testSbom.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSbom.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setComment}.
 	 */
 	public void testSbomsetComment() throws InvalidSPDXAnalysisException {
@@ -175,6 +164,17 @@ public class SbomTest extends TestCase {
 		String newStringValue = "new comment value";
 		testSbom.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSbom.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setName}.
+	 */
+	public void testSbomsetName() throws InvalidSPDXAnalysisException {
+		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSbom.getName());
+		String newStringValue = "new name value";
+		testSbom.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSbom.getName());
 	}
 	
 	/**

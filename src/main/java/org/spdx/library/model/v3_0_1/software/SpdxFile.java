@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -247,16 +247,6 @@ public  class SpdxFile extends SoftwareArtifact  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public SpdxFile setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -264,6 +254,16 @@ public  class SpdxFile extends SoftwareArtifact  {
 	 @Override
 	public SpdxFile setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public SpdxFile setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -344,7 +344,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a contentIdentifier to the initial collection
-		 * @parameter contentIdentifier contentIdentifier to add
+		 * @param contentIdentifier contentIdentifier to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -356,7 +356,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial contentIdentifier collection
-		 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+		 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -368,7 +368,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addExtension(Extension extension) {
@@ -380,7 +380,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -392,7 +392,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -404,7 +404,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -416,7 +416,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addOriginatedBy(Agent originatedBy) {
@@ -428,7 +428,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -440,7 +440,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addExternalRef(ExternalRef externalRef) {
@@ -452,7 +452,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -464,7 +464,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -476,7 +476,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -488,7 +488,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addSupportLevel(SupportType supportLevel) {
@@ -500,7 +500,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -512,7 +512,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a additionalPurpose to the initial collection
-		 * @parameter additionalPurpose additionalPurpose to add
+		 * @param additionalPurpose additionalPurpose to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -524,7 +524,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial additionalPurpose collection
-		 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+		 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -536,7 +536,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a attributionText to the initial collection
-		 * @parameter attributionText attributionText to add
+		 * @param attributionText attributionText to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAttributionText(String attributionText) {
@@ -548,7 +548,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial attributionText collection
-		 * @parameter attributionTextCollection collection to initialize the attributionText
+		 * @param attributionTextCollection collection to initialize the attributionText
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -560,7 +560,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addStandardName(String standardName) {
@@ -572,7 +572,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -584,7 +584,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -594,7 +594,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setSuppliedBy(Agent suppliedBy) {
@@ -604,7 +604,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of primaryPurpose
-		 * @parameter primaryPurpose value to set
+		 * @param primaryPurpose value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -614,7 +614,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of fileKind
-		 * @parameter fileKind value to set
+		 * @param fileKind value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setFileKind(FileKindType fileKind) {
@@ -624,7 +624,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setValidUntilTime(String validUntilTime) {
@@ -634,7 +634,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setBuiltTime(String builtTime) {
@@ -644,7 +644,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setSummary(String summary) {
@@ -654,7 +654,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setDescription(String description) {
@@ -664,7 +664,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setReleaseTime(String releaseTime) {
@@ -674,7 +674,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of copyrightText
-		 * @parameter copyrightText value to set
+		 * @param copyrightText value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setCopyrightText(String copyrightText) {
@@ -684,7 +684,7 @@ public  class SpdxFile extends SoftwareArtifact  {
 		
 		/**
 		 * Sets the initial value of contentType
-		 * @parameter contentType value to set
+		 * @param contentType value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setContentType(String contentType) {
@@ -693,22 +693,22 @@ public  class SpdxFile extends SoftwareArtifact  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public SpdxFileBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public SpdxFileBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public SpdxFileBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -627,7 +627,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a contentIdentifier to the initial collection
-		 * @parameter contentIdentifier contentIdentifier to add
+		 * @param contentIdentifier contentIdentifier to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addContentIdentifier(ContentIdentifier contentIdentifier) {
@@ -639,7 +639,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial contentIdentifier collection
-		 * @parameter contentIdentifierCollection collection to initialize the contentIdentifier
+		 * @param contentIdentifierCollection collection to initialize the contentIdentifier
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
@@ -651,7 +651,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -663,7 +663,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -675,7 +675,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a hyperparameter to the initial collection
-		 * @parameter hyperparameter hyperparameter to add
+		 * @param hyperparameter hyperparameter to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addHyperparameter(DictionaryEntry hyperparameter) {
@@ -687,7 +687,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial hyperparameter collection
-		 * @parameter hyperparameterCollection collection to initialize the hyperparameter
+		 * @param hyperparameterCollection collection to initialize the hyperparameter
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllHyperparameter(Collection<DictionaryEntry> hyperparameterCollection) {
@@ -699,7 +699,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a metric to the initial collection
-		 * @parameter metric metric to add
+		 * @param metric metric to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addMetric(DictionaryEntry metric) {
@@ -711,7 +711,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial metric collection
-		 * @parameter metricCollection collection to initialize the metric
+		 * @param metricCollection collection to initialize the metric
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllMetric(Collection<DictionaryEntry> metricCollection) {
@@ -723,7 +723,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addExternalRef(ExternalRef externalRef) {
@@ -735,7 +735,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -747,7 +747,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a metricDecisionThreshold to the initial collection
-		 * @parameter metricDecisionThreshold metricDecisionThreshold to add
+		 * @param metricDecisionThreshold metricDecisionThreshold to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addMetricDecisionThreshold(DictionaryEntry metricDecisionThreshold) {
@@ -759,7 +759,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial metricDecisionThreshold collection
-		 * @parameter metricDecisionThresholdCollection collection to initialize the metricDecisionThreshold
+		 * @param metricDecisionThresholdCollection collection to initialize the metricDecisionThreshold
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllMetricDecisionThreshold(Collection<DictionaryEntry> metricDecisionThresholdCollection) {
@@ -771,7 +771,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -783,7 +783,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -795,7 +795,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addExtension(Extension extension) {
@@ -807,7 +807,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -819,7 +819,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a originatedBy to the initial collection
-		 * @parameter originatedBy originatedBy to add
+		 * @param originatedBy originatedBy to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addOriginatedBy(Agent originatedBy) {
@@ -831,7 +831,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial originatedBy collection
-		 * @parameter originatedByCollection collection to initialize the originatedBy
+		 * @param originatedByCollection collection to initialize the originatedBy
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllOriginatedBy(Collection<Agent> originatedByCollection) {
@@ -843,7 +843,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a supportLevel to the initial collection
-		 * @parameter supportLevel supportLevel to add
+		 * @param supportLevel supportLevel to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addSupportLevel(SupportType supportLevel) {
@@ -855,7 +855,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial supportLevel collection
-		 * @parameter supportLevelCollection collection to initialize the supportLevel
+		 * @param supportLevelCollection collection to initialize the supportLevel
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllSupportLevel(Collection<SupportType> supportLevelCollection) {
@@ -867,7 +867,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a additionalPurpose to the initial collection
-		 * @parameter additionalPurpose additionalPurpose to add
+		 * @param additionalPurpose additionalPurpose to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAdditionalPurpose(SoftwarePurpose additionalPurpose) {
@@ -879,7 +879,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial additionalPurpose collection
-		 * @parameter additionalPurposeCollection collection to initialize the additionalPurpose
+		 * @param additionalPurposeCollection collection to initialize the additionalPurpose
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllAdditionalPurpose(Collection<SoftwarePurpose> additionalPurposeCollection) {
@@ -891,7 +891,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a modelDataPreprocessing to the initial collection
-		 * @parameter modelDataPreprocessing modelDataPreprocessing to add
+		 * @param modelDataPreprocessing modelDataPreprocessing to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addModelDataPreprocessing(String modelDataPreprocessing) {
@@ -903,7 +903,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial modelDataPreprocessing collection
-		 * @parameter modelDataPreprocessingCollection collection to initialize the modelDataPreprocessing
+		 * @param modelDataPreprocessingCollection collection to initialize the modelDataPreprocessing
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllModelDataPreprocessing(Collection<String> modelDataPreprocessingCollection) {
@@ -915,7 +915,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a domain to the initial collection
-		 * @parameter domain domain to add
+		 * @param domain domain to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addDomain(String domain) {
@@ -927,7 +927,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial domain collection
-		 * @parameter domainCollection collection to initialize the domain
+		 * @param domainCollection collection to initialize the domain
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllDomain(Collection<String> domainCollection) {
@@ -939,7 +939,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a attributionText to the initial collection
-		 * @parameter attributionText attributionText to add
+		 * @param attributionText attributionText to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAttributionText(String attributionText) {
@@ -951,7 +951,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial attributionText collection
-		 * @parameter attributionTextCollection collection to initialize the attributionText
+		 * @param attributionTextCollection collection to initialize the attributionText
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllAttributionText(Collection<String> attributionTextCollection) {
@@ -963,7 +963,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a typeOfModel to the initial collection
-		 * @parameter typeOfModel typeOfModel to add
+		 * @param typeOfModel typeOfModel to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addTypeOfModel(String typeOfModel) {
@@ -975,7 +975,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial typeOfModel collection
-		 * @parameter typeOfModelCollection collection to initialize the typeOfModel
+		 * @param typeOfModelCollection collection to initialize the typeOfModel
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllTypeOfModel(Collection<String> typeOfModelCollection) {
@@ -987,7 +987,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a standardName to the initial collection
-		 * @parameter standardName standardName to add
+		 * @param standardName standardName to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addStandardName(String standardName) {
@@ -999,7 +999,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardName collection
-		 * @parameter standardNameCollection collection to initialize the standardName
+		 * @param standardNameCollection collection to initialize the standardName
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllStandardName(Collection<String> standardNameCollection) {
@@ -1011,7 +1011,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a standardCompliance to the initial collection
-		 * @parameter standardCompliance standardCompliance to add
+		 * @param standardCompliance standardCompliance to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addStandardCompliance(String standardCompliance) {
@@ -1023,7 +1023,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial standardCompliance collection
-		 * @parameter standardComplianceCollection collection to initialize the standardCompliance
+		 * @param standardComplianceCollection collection to initialize the standardCompliance
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllStandardCompliance(Collection<String> standardComplianceCollection) {
@@ -1035,7 +1035,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds a modelExplainability to the initial collection
-		 * @parameter modelExplainability modelExplainability to add
+		 * @param modelExplainability modelExplainability to add
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addModelExplainability(String modelExplainability) {
@@ -1047,7 +1047,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Adds all elements from a collection to the initial modelExplainability collection
-		 * @parameter modelExplainabilityCollection collection to initialize the modelExplainability
+		 * @param modelExplainabilityCollection collection to initialize the modelExplainability
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder addAllModelExplainability(Collection<String> modelExplainabilityCollection) {
@@ -1059,7 +1059,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -1069,7 +1069,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of energyConsumption
-		 * @parameter energyConsumption value to set
+		 * @param energyConsumption value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setEnergyConsumption(EnergyConsumption energyConsumption) {
@@ -1079,7 +1079,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setSuppliedBy(Agent suppliedBy) {
@@ -1089,7 +1089,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of autonomyType
-		 * @parameter autonomyType value to set
+		 * @param autonomyType value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setAutonomyType(PresenceType autonomyType) {
@@ -1099,7 +1099,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of useSensitivePersonalInformation
-		 * @parameter useSensitivePersonalInformation value to set
+		 * @param useSensitivePersonalInformation value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setUseSensitivePersonalInformation(PresenceType useSensitivePersonalInformation) {
@@ -1109,7 +1109,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of safetyRiskAssessment
-		 * @parameter safetyRiskAssessment value to set
+		 * @param safetyRiskAssessment value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setSafetyRiskAssessment(SafetyRiskAssessmentType safetyRiskAssessment) {
@@ -1119,7 +1119,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of primaryPurpose
-		 * @parameter primaryPurpose value to set
+		 * @param primaryPurpose value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setPrimaryPurpose(SoftwarePurpose primaryPurpose) {
@@ -1129,7 +1129,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of validUntilTime
-		 * @parameter validUntilTime value to set
+		 * @param validUntilTime value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setValidUntilTime(String validUntilTime) {
@@ -1139,7 +1139,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of downloadLocation
-		 * @parameter downloadLocation value to set
+		 * @param downloadLocation value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setDownloadLocation(String downloadLocation) {
@@ -1149,7 +1149,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of builtTime
-		 * @parameter builtTime value to set
+		 * @param builtTime value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setBuiltTime(String builtTime) {
@@ -1159,7 +1159,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setSummary(String summary) {
@@ -1169,7 +1169,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of packageVersion
-		 * @parameter packageVersion value to set
+		 * @param packageVersion value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setPackageVersion(String packageVersion) {
@@ -1179,7 +1179,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of releaseTime
-		 * @parameter releaseTime value to set
+		 * @param releaseTime value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setReleaseTime(String releaseTime) {
@@ -1189,7 +1189,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of copyrightText
-		 * @parameter copyrightText value to set
+		 * @param copyrightText value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setCopyrightText(String copyrightText) {
@@ -1199,7 +1199,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of informationAboutTraining
-		 * @parameter informationAboutTraining value to set
+		 * @param informationAboutTraining value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setInformationAboutTraining(String informationAboutTraining) {
@@ -1209,7 +1209,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setComment(String comment) {
@@ -1219,7 +1219,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of homePage
-		 * @parameter homePage value to set
+		 * @param homePage value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setHomePage(String homePage) {
@@ -1229,7 +1229,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of sourceInfo
-		 * @parameter sourceInfo value to set
+		 * @param sourceInfo value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setSourceInfo(String sourceInfo) {
@@ -1239,7 +1239,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of limitation
-		 * @parameter limitation value to set
+		 * @param limitation value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setLimitation(String limitation) {
@@ -1249,7 +1249,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setDescription(String description) {
@@ -1259,7 +1259,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of name
-		 * @parameter name value to set
+		 * @param name value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setName(String name) {
@@ -1269,7 +1269,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of packageUrl
-		 * @parameter packageUrl value to set
+		 * @param packageUrl value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setPackageUrl(String packageUrl) {
@@ -1279,7 +1279,7 @@ public  class AIPackage extends SpdxPackage  {
 		
 		/**
 		 * Sets the initial value of informationAboutApplication
-		 * @parameter informationAboutApplication value to set
+		 * @param informationAboutApplication value to set
 		 * @return this for chaining
 		**/
 		public AIPackageBuilder setInformationAboutApplication(String informationAboutApplication) {

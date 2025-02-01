@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -162,16 +162,6 @@ public abstract class ElementCollection extends Element  {
 		return this;
 	}	
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public ElementCollection setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -179,6 +169,16 @@ public abstract class ElementCollection extends Element  {
 	 @Override
 	public ElementCollection setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public ElementCollection setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -251,7 +251,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addExtension(Extension extension) {
@@ -263,7 +263,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -275,7 +275,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -287,7 +287,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -299,7 +299,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a rootElement to the initial collection
-		 * @parameter rootElement rootElement to add
+		 * @param rootElement rootElement to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addRootElement(Element rootElement) {
@@ -311,7 +311,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial rootElement collection
-		 * @parameter rootElementCollection collection to initialize the rootElement
+		 * @param rootElementCollection collection to initialize the rootElement
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllRootElement(Collection<Element> rootElementCollection) {
@@ -323,7 +323,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a element to the initial collection
-		 * @parameter element element to add
+		 * @param element element to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addElement(Element element) {
@@ -335,7 +335,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial element collection
-		 * @parameter elementCollection collection to initialize the element
+		 * @param elementCollection collection to initialize the element
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllElement(Collection<Element> elementCollection) {
@@ -347,7 +347,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addExternalRef(ExternalRef externalRef) {
@@ -359,7 +359,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -371,7 +371,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -383,7 +383,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -395,7 +395,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds a profileConformance to the initial collection
-		 * @parameter profileConformance profileConformance to add
+		 * @param profileConformance profileConformance to add
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addProfileConformance(ProfileIdentifierType profileConformance) {
@@ -407,7 +407,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Adds all elements from a collection to the initial profileConformance collection
-		 * @parameter profileConformanceCollection collection to initialize the profileConformance
+		 * @param profileConformanceCollection collection to initialize the profileConformance
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder addAllProfileConformance(Collection<ProfileIdentifierType> profileConformanceCollection) {
@@ -419,7 +419,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -429,7 +429,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder setSummary(String summary) {
@@ -439,7 +439,7 @@ public abstract class ElementCollection extends Element  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder setDescription(String description) {
@@ -448,22 +448,22 @@ public abstract class ElementCollection extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public ElementCollectionBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

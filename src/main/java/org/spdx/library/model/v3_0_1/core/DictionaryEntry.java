@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -209,7 +209,7 @@ public  class DictionaryEntry extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of value
-		 * @parameter value value to set
+		 * @param value value to set
 		 * @return this for chaining
 		**/
 		public DictionaryEntryBuilder setValue(String value) {
@@ -219,7 +219,7 @@ public  class DictionaryEntry extends ModelObjectV3  {
 		
 		/**
 		 * Sets the initial value of key
-		 * @parameter key value to set
+		 * @param key value to set
 		 * @return this for chaining
 		**/
 		public DictionaryEntryBuilder setKey(String key) {

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -145,14 +145,14 @@ public class WithAdditionOperatorTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setSummary}.
 	 */
-	public void testWithAdditionOperatorsetName() throws InvalidSPDXAnalysisException {
+	public void testWithAdditionOperatorsetSummary() throws InvalidSPDXAnalysisException {
 		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testWithAdditionOperator.getName());
-		String newStringValue = "new name value";
-		testWithAdditionOperator.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testWithAdditionOperator.getSummary());
+		String newStringValue = "new summary value";
+		testWithAdditionOperator.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getSummary());
 	}
 	
 	/**
@@ -167,14 +167,14 @@ public class WithAdditionOperatorTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setName}.
 	 */
-	public void testWithAdditionOperatorsetSummary() throws InvalidSPDXAnalysisException {
+	public void testWithAdditionOperatorsetName() throws InvalidSPDXAnalysisException {
 		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testWithAdditionOperator.getSummary());
-		String newStringValue = "new summary value";
-		testWithAdditionOperator.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testWithAdditionOperator.getName());
+		String newStringValue = "new name value";
+		testWithAdditionOperator.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getName());
 	}
 	
 	/**

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -115,13 +115,13 @@ public  class Person extends Agent  {
 		return this;
 	}	
 	/**
-	 * @param name the name to set
+	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public Person setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
+	public Person setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		super.setSummary(summary);
 		return this;
 	}	
 	/**
@@ -135,13 +135,13 @@ public  class Person extends Agent  {
 		return this;
 	}	
 	/**
-	 * @param summary the summary to set
+	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public Person setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		super.setSummary(summary);
+	public Person setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	/**
@@ -215,7 +215,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public PersonBuilder addExternalRef(ExternalRef externalRef) {
@@ -227,7 +227,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public PersonBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -239,7 +239,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public PersonBuilder addExtension(Extension extension) {
@@ -251,7 +251,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public PersonBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -263,7 +263,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public PersonBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -275,7 +275,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public PersonBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -287,7 +287,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public PersonBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -299,7 +299,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public PersonBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -311,7 +311,7 @@ public  class Person extends Agent  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public PersonBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -320,28 +320,8 @@ public  class Person extends Agent  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public PersonBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of comment
-		 * @parameter comment value to set
-		 * @return this for chaining
-		**/
-		public PersonBuilder setComment(String comment) {
-			super.comment = comment;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public PersonBuilder setSummary(String summary) {
@@ -350,8 +330,28 @@ public  class Person extends Agent  {
 		}
 		
 		/**
+		 * Sets the initial value of comment
+		 * @param comment value to set
+		 * @return this for chaining
+		**/
+		public PersonBuilder setComment(String comment) {
+			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public PersonBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public PersonBuilder setDescription(String description) {

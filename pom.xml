@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.spdx</groupId>
@@ -6,11 +5,7 @@
   <version>1.0.0-RC2-SNAPSHOT</version>
   <name>spdx-java-model-3</name>
   <description>Generated java model source code</description>
-  <url>https://github.com/spdx/spdx-java-model-3_0</url>
-  <organization>
-    <name>SPDX</name>
-    <url>http://spdx.org</url>
-  </organization>
+<url>https://github.com/spdx/spdx-java-model-3_0</url>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -27,12 +22,10 @@
       <organizationUrl>http://spdx.org</organizationUrl>
     </developer>
   </developers>
-  <scm>
-    <connection>scm:git:git://github.com/spdx/spdx-java-model-3_0.git</connection>
-    <developerConnection>scm:git:git@github.com:spdx/spdx-java-model-3_0.git</developerConnection>
-    <url>https://github.com/spdx/spdx-java-model-3_0</url>
-    <tag>HEAD</tag>
-  </scm>
+  <organization>
+    <name>SPDX</name>
+    <url>http://spdx.org</url>
+  </organization>
   <distributionManagement>
     <repository>
       <id>ossrh</id>
@@ -40,39 +33,104 @@
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
+  <scm>
+    <url>https://github.com/spdx/spdx-java-model-3_0</url>
+    <connection>scm:git:git://github.com/spdx/spdx-java-model-3_0.git</connection>
+    <developerConnection>scm:git:git@github.com:spdx/spdx-java-model-3_0.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
   <properties>
-    <maven.compiler.target>8</maven.compiler.target>
-    <maven.compiler.source>8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
     <dependency-check-maven.version>8.0.1</dependency-check-maven.version>
   </properties>
+  <profiles>  
+    <profile>
+      <id>test</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-slf4j2-impl</artifactId>
+          <version>2.20.0</version>
+          <scope>test</scope>
+          <exclusions>
+            <exclusion>
+              <groupId>org.slf4j</groupId>
+              <artifactId>slf4j-api</artifactId>
+            </exclusion>
+          </exclusions>
+        </dependency>
+      </dependencies>
+    </profile>
+ 		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+		          <plugin>
+		              <groupId>org.apache.maven.plugins</groupId>
+		              <artifactId>maven-source-plugin</artifactId>
+		              <version>3.2.1</version>
+		              <executions>
+		                <execution>
+		                  <id>attach-sources</id>
+		                  <phase>verify</phase>
+		                  <goals>
+		                    <goal>jar-no-fork</goal>
+		                  </goals>
+		                </execution>
+		              </executions>
+		            </plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>3.1.0</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+								<configuration>
+									<keyname>${gpg.keyname}</keyname>
+									<passphraseServerId>${gpg.keyname}</passphraseServerId>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+  </profiles>
   <dependencies>
-    <dependency>
-      <groupId>org.spdx</groupId>
-      <artifactId>spdx-java-core</artifactId>
-      <version>1.0.0-RC1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>2.0.7</version>
-    </dependency>
-    <dependency>
+  	<dependency>
+  		<groupId>org.spdx</groupId>
+  		<artifactId>spdx-java-core</artifactId>
+  		<version>1.0.0-RC2</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-api</artifactId>
+  		<version>2.0.7</version>
+  	</dependency>
+  	<dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>com.github.mifmif</groupId>
-      <artifactId>generex</artifactId>
-      <version>1.0.2</version>
-      <scope>test</scope>
-    </dependency>
+  	<dependency>
+  		<groupId>com.github.mifmif</groupId>
+  		<artifactId>generex</artifactId>
+  		<version>1.0.2</version>
+  		<scope>test</scope>
+  	</dependency>
   </dependencies>
   <build>
-    <plugins>
+	<plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
@@ -88,44 +146,47 @@
         <version>3.5.0</version>
         <executions>
           <execution>
-            <id>add-source</id>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>add-source</goal>
-            </goals>
-            <configuration>
-              <sources>
-                <source>generated/src/main/java</source>
-              </sources>
-            </configuration>
+			<id>add-source</id>
+			<phase>generate-sources</phase>
+			<goals>
+				<goal>add-source</goal>
+			</goals>
+			<configuration>
+				<sources>
+					<source>generated/src/main/java</source>
+				</sources>
+			</configuration>
           </execution>
         </executions>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.5.0</version>
-        <executions>
-          <execution>
-            <id>attach-javadocs</id>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-            <configuration>
-              <additionalparam>${javadoc.opts}</additionalparam>
-            </configuration>
-          </execution>
-        </executions>
         <configuration>
           <quiet>true</quiet>
           <notimestamp>true</notimestamp>
-          <additionalOptions>-Xdoclint:none</additionalOptions>
+          <doclint>all,-missing</doclint>
         </configuration>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <configuration>
+              <additionalparam>${javadoc.opts}</additionalparam>
+            </configuration>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.3.0</version>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
         <version>3.3.0</version>
         <executions>
@@ -179,6 +240,7 @@
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.1</version>
         <configuration>
@@ -192,71 +254,6 @@
         <artifactId>dependency-check-maven</artifactId>
         <version>${dependency-check-maven.version}</version>
       </plugin>
-    </plugins>
+	</plugins>
   </build>
-  <profiles>
-    <profile>
-      <id>doclint-java8-disable</id>
-      <activation>
-        <jdk>[1.8,)</jdk>
-      </activation>
-      <properties>
-        <javadoc.opts>-Xdoclint:none</javadoc.opts>
-      </properties>
-    </profile>
-    <profile>
-      <id>test</id>
-      <dependencies>
-        <dependency>
-          <groupId>org.apache.logging.log4j</groupId>
-          <artifactId>log4j-slf4j2-impl</artifactId>
-          <version>2.20.0</version>
-          <scope>test</scope>
-          <exclusions>
-            <exclusion>
-              <groupId>org.slf4j</groupId>
-              <artifactId>slf4j-api</artifactId>
-            </exclusion>
-          </exclusions>
-        </dependency>
-      </dependencies>
-    </profile>
-    <profile>
-      <id>release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-source-plugin</artifactId>
-            <version>3.2.1</version>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <plugin>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.1.0</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-                <configuration>
-                  <keyname>${gpg.keyname}</keyname>
-                  <passphraseServerId>${gpg.keyname}</passphraseServerId>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
 </project>

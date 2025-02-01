@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -178,16 +178,6 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		return this;
 	}	
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public CustomLicenseAddition setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -195,6 +185,16 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 	 @Override
 	public CustomLicenseAddition setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public CustomLicenseAddition setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	/**
@@ -272,7 +272,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addExtension(Extension extension) {
@@ -284,7 +284,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -296,7 +296,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -308,7 +308,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -320,7 +320,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addExternalRef(ExternalRef externalRef) {
@@ -332,7 +332,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -344,7 +344,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -356,7 +356,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -368,7 +368,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds a seeAlso to the initial collection
-		 * @parameter seeAlso seeAlso to add
+		 * @param seeAlso seeAlso to add
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addSeeAlso(String seeAlso) {
@@ -380,7 +380,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Adds all elements from a collection to the initial seeAlso collection
-		 * @parameter seeAlsoCollection collection to initialize the seeAlso
+		 * @param seeAlsoCollection collection to initialize the seeAlso
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder addAllSeeAlso(Collection<String> seeAlsoCollection) {
@@ -392,7 +392,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -402,7 +402,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of isDeprecatedAdditionId
-		 * @parameter isDeprecatedAdditionId value to set
+		 * @param isDeprecatedAdditionId value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setIsDeprecatedAdditionId(Boolean isDeprecatedAdditionId) {
@@ -412,7 +412,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setSummary(String summary) {
@@ -422,7 +422,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setDescription(String description) {
@@ -432,7 +432,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of obsoletedBy
-		 * @parameter obsoletedBy value to set
+		 * @param obsoletedBy value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setObsoletedBy(String obsoletedBy) {
@@ -442,7 +442,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of additionText
-		 * @parameter additionText value to set
+		 * @param additionText value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setAdditionText(String additionText) {
@@ -452,7 +452,7 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		
 		/**
 		 * Sets the initial value of licenseXml
-		 * @parameter licenseXml value to set
+		 * @param licenseXml value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setLicenseXml(String licenseXml) {
@@ -461,18 +461,8 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public CustomLicenseAdditionBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setComment(String comment) {
@@ -481,8 +471,18 @@ public  class CustomLicenseAddition extends LicenseAddition  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public CustomLicenseAdditionBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of standardAdditionTemplate
-		 * @parameter standardAdditionTemplate value to set
+		 * @param standardAdditionTemplate value to set
 		 * @return this for chaining
 		**/
 		public CustomLicenseAdditionBuilder setStandardAdditionTemplate(String standardAdditionTemplate) {

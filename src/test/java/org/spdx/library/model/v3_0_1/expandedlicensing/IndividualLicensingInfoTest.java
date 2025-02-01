@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -123,14 +123,14 @@ public class IndividualLicensingInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setSummary}.
 	 */
-	public void testIndividualLicensingInfosetName() throws InvalidSPDXAnalysisException {
+	public void testIndividualLicensingInfosetSummary() throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualLicensingInfo.getName());
-		String newStringValue = "new name value";
-		testIndividualLicensingInfo.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualLicensingInfo.getSummary());
+		String newStringValue = "new summary value";
+		testIndividualLicensingInfo.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getSummary());
 	}
 	
 	/**
@@ -145,14 +145,14 @@ public class IndividualLicensingInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setName}.
 	 */
-	public void testIndividualLicensingInfosetSummary() throws InvalidSPDXAnalysisException {
+	public void testIndividualLicensingInfosetName() throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualLicensingInfo.getSummary());
-		String newStringValue = "new summary value";
-		testIndividualLicensingInfo.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualLicensingInfo.getName());
+		String newStringValue = "new name value";
+		testIndividualLicensingInfo.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getName());
 	}
 	
 	/**

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -122,14 +122,14 @@ public class AnyLicenseInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setSummary}.
 	 */
-	public void testAnyLicenseInfosetName() throws InvalidSPDXAnalysisException {
+	public void testAnyLicenseInfosetSummary() throws InvalidSPDXAnalysisException {
 		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAnyLicenseInfo.getName());
-		String newStringValue = "new name value";
-		testAnyLicenseInfo.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAnyLicenseInfo.getSummary());
+		String newStringValue = "new summary value";
+		testAnyLicenseInfo.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getSummary());
 	}
 	
 	/**
@@ -144,14 +144,14 @@ public class AnyLicenseInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setName}.
 	 */
-	public void testAnyLicenseInfosetSummary() throws InvalidSPDXAnalysisException {
+	public void testAnyLicenseInfosetName() throws InvalidSPDXAnalysisException {
 		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAnyLicenseInfo.getSummary());
-		String newStringValue = "new summary value";
-		testAnyLicenseInfo.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAnyLicenseInfo.getName());
+		String newStringValue = "new name value";
+		testAnyLicenseInfo.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getName());
 	}
 	
 	/**

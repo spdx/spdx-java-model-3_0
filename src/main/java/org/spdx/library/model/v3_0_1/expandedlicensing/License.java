@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -270,16 +270,6 @@ public abstract class License extends ExtendableLicense  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public License setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -287,6 +277,16 @@ public abstract class License extends ExtendableLicense  {
 	 @Override
 	public License setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public License setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 		/**
@@ -425,7 +425,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addExtension(Extension extension) {
@@ -437,7 +437,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -449,7 +449,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -461,7 +461,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -473,7 +473,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addExternalRef(ExternalRef externalRef) {
@@ -485,7 +485,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -497,7 +497,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -509,7 +509,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -521,7 +521,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds a seeAlso to the initial collection
-		 * @parameter seeAlso seeAlso to add
+		 * @param seeAlso seeAlso to add
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addSeeAlso(String seeAlso) {
@@ -533,7 +533,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Adds all elements from a collection to the initial seeAlso collection
-		 * @parameter seeAlsoCollection collection to initialize the seeAlso
+		 * @param seeAlsoCollection collection to initialize the seeAlso
 		 * @return this for chaining
 		**/
 		public LicenseBuilder addAllSeeAlso(Collection<String> seeAlsoCollection) {
@@ -545,7 +545,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -555,7 +555,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of isFsfLibre
-		 * @parameter isFsfLibre value to set
+		 * @param isFsfLibre value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setIsFsfLibre(Boolean isFsfLibre) {
@@ -565,7 +565,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of isDeprecatedLicenseId
-		 * @parameter isDeprecatedLicenseId value to set
+		 * @param isDeprecatedLicenseId value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setIsDeprecatedLicenseId(Boolean isDeprecatedLicenseId) {
@@ -575,7 +575,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of isOsiApproved
-		 * @parameter isOsiApproved value to set
+		 * @param isOsiApproved value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setIsOsiApproved(Boolean isOsiApproved) {
@@ -585,7 +585,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of licenseText
-		 * @parameter licenseText value to set
+		 * @param licenseText value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setLicenseText(String licenseText) {
@@ -595,7 +595,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setSummary(String summary) {
@@ -605,7 +605,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setDescription(String description) {
@@ -615,7 +615,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of standardLicenseTemplate
-		 * @parameter standardLicenseTemplate value to set
+		 * @param standardLicenseTemplate value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setStandardLicenseTemplate(String standardLicenseTemplate) {
@@ -625,7 +625,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of obsoletedBy
-		 * @parameter obsoletedBy value to set
+		 * @param obsoletedBy value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setObsoletedBy(String obsoletedBy) {
@@ -635,7 +635,7 @@ public abstract class License extends ExtendableLicense  {
 		
 		/**
 		 * Sets the initial value of licenseXml
-		 * @parameter licenseXml value to set
+		 * @param licenseXml value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setLicenseXml(String licenseXml) {
@@ -644,18 +644,8 @@ public abstract class License extends ExtendableLicense  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public LicenseBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setComment(String comment) {
@@ -664,8 +654,18 @@ public abstract class License extends ExtendableLicense  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public LicenseBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of standardLicenseHeader
-		 * @parameter standardLicenseHeader value to set
+		 * @param standardLicenseHeader value to set
 		 * @return this for chaining
 		**/
 		public LicenseBuilder setStandardLicenseHeader(String standardLicenseHeader) {

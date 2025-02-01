@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -118,14 +118,14 @@ public class OrganizationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setSummary}.
 	 */
-	public void testOrganizationsetName() throws InvalidSPDXAnalysisException {
+	public void testOrganizationsetSummary() throws InvalidSPDXAnalysisException {
 		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrganization.getName());
-		String newStringValue = "new name value";
-		testOrganization.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrganization.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrganization.getSummary());
+		String newStringValue = "new summary value";
+		testOrganization.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrganization.getSummary());
 	}
 	
 	/**
@@ -140,14 +140,14 @@ public class OrganizationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setName}.
 	 */
-	public void testOrganizationsetSummary() throws InvalidSPDXAnalysisException {
+	public void testOrganizationsetName() throws InvalidSPDXAnalysisException {
 		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrganization.getSummary());
-		String newStringValue = "new summary value";
-		testOrganization.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrganization.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrganization.getName());
+		String newStringValue = "new name value";
+		testOrganization.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrganization.getName());
 	}
 	
 	/**

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -151,16 +151,6 @@ public  class Bundle extends ElementCollection  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public Bundle setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -168,6 +158,16 @@ public  class Bundle extends ElementCollection  {
 	 @Override
 	public Bundle setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public Bundle setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -238,7 +238,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addExtension(Extension extension) {
@@ -250,7 +250,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -262,7 +262,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -274,7 +274,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -286,7 +286,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a rootElement to the initial collection
-		 * @parameter rootElement rootElement to add
+		 * @param rootElement rootElement to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addRootElement(Element rootElement) {
@@ -298,7 +298,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial rootElement collection
-		 * @parameter rootElementCollection collection to initialize the rootElement
+		 * @param rootElementCollection collection to initialize the rootElement
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllRootElement(Collection<Element> rootElementCollection) {
@@ -310,7 +310,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a element to the initial collection
-		 * @parameter element element to add
+		 * @param element element to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addElement(Element element) {
@@ -322,7 +322,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial element collection
-		 * @parameter elementCollection collection to initialize the element
+		 * @param elementCollection collection to initialize the element
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllElement(Collection<Element> elementCollection) {
@@ -334,7 +334,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addExternalRef(ExternalRef externalRef) {
@@ -346,7 +346,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -358,7 +358,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -370,7 +370,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -382,7 +382,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds a profileConformance to the initial collection
-		 * @parameter profileConformance profileConformance to add
+		 * @param profileConformance profileConformance to add
 		 * @return this for chaining
 		**/
 		public BundleBuilder addProfileConformance(ProfileIdentifierType profileConformance) {
@@ -394,7 +394,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Adds all elements from a collection to the initial profileConformance collection
-		 * @parameter profileConformanceCollection collection to initialize the profileConformance
+		 * @param profileConformanceCollection collection to initialize the profileConformance
 		 * @return this for chaining
 		**/
 		public BundleBuilder addAllProfileConformance(Collection<ProfileIdentifierType> profileConformanceCollection) {
@@ -406,7 +406,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public BundleBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -416,7 +416,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public BundleBuilder setSummary(String summary) {
@@ -426,7 +426,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public BundleBuilder setDescription(String description) {
@@ -436,7 +436,7 @@ public  class Bundle extends ElementCollection  {
 		
 		/**
 		 * Sets the initial value of context
-		 * @parameter context value to set
+		 * @param context value to set
 		 * @return this for chaining
 		**/
 		public BundleBuilder setContext(String context) {
@@ -445,22 +445,22 @@ public  class Bundle extends ElementCollection  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public BundleBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public BundleBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public BundleBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

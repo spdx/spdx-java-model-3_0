@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -159,17 +159,17 @@ public class ExternalOrLaterOperator extends OrLaterOperator  implements Individ
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
+	 * @return the summary
 	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param name the name to set
+	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public OrLaterOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+	public OrLaterOperator setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -187,17 +187,17 @@ public class ExternalOrLaterOperator extends OrLaterOperator  implements Individ
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the summary
+	 * @return the name
 	 */
-	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param summary the summary to set
+	 * @param name the name to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public OrLaterOperator setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+	public OrLaterOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

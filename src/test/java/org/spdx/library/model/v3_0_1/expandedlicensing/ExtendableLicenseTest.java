@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -123,14 +123,14 @@ public class ExtendableLicenseTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setSummary}.
 	 */
-	public void testExtendableLicensesetName() throws InvalidSPDXAnalysisException {
+	public void testExtendableLicensesetSummary() throws InvalidSPDXAnalysisException {
 		ExtendableLicense testExtendableLicense = generator.builderForExtendableLicenseTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testExtendableLicense.getName());
-		String newStringValue = "new name value";
-		testExtendableLicense.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testExtendableLicense.getName());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testExtendableLicense.getSummary());
+		String newStringValue = "new summary value";
+		testExtendableLicense.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testExtendableLicense.getSummary());
 	}
 	
 	/**
@@ -145,14 +145,14 @@ public class ExtendableLicenseTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setSummary}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setName}.
 	 */
-	public void testExtendableLicensesetSummary() throws InvalidSPDXAnalysisException {
+	public void testExtendableLicensesetName() throws InvalidSPDXAnalysisException {
 		ExtendableLicense testExtendableLicense = generator.builderForExtendableLicenseTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testExtendableLicense.getSummary());
-		String newStringValue = "new summary value";
-		testExtendableLicense.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testExtendableLicense.getSummary());
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testExtendableLicense.getName());
+		String newStringValue = "new name value";
+		testExtendableLicense.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testExtendableLicense.getName());
 	}
 	
 	/**

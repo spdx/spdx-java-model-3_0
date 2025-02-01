@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -288,16 +288,6 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		return this;
 	}
 	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
@@ -305,6 +295,16 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 	 @Override
 	public VulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 		/**
@@ -437,7 +437,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds a extension to the initial collection
-		 * @parameter extension extension to add
+		 * @param extension extension to add
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addExtension(Extension extension) {
@@ -449,7 +449,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial extension collection
-		 * @parameter extensionCollection collection to initialize the extension
+		 * @param extensionCollection collection to initialize the extension
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
@@ -461,7 +461,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds a verifiedUsing to the initial collection
-		 * @parameter verifiedUsing verifiedUsing to add
+		 * @param verifiedUsing verifiedUsing to add
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addVerifiedUsing(IntegrityMethod verifiedUsing) {
@@ -473,7 +473,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial verifiedUsing collection
-		 * @parameter verifiedUsingCollection collection to initialize the verifiedUsing
+		 * @param verifiedUsingCollection collection to initialize the verifiedUsing
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addAllVerifiedUsing(Collection<IntegrityMethod> verifiedUsingCollection) {
@@ -485,7 +485,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds a to to the initial collection
-		 * @parameter to to to add
+		 * @param to to to add
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addTo(Element to) {
@@ -497,7 +497,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial to collection
-		 * @parameter toCollection collection to initialize the to
+		 * @param toCollection collection to initialize the to
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addAllTo(Collection<Element> toCollection) {
@@ -509,7 +509,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds a externalRef to the initial collection
-		 * @parameter externalRef externalRef to add
+		 * @param externalRef externalRef to add
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addExternalRef(ExternalRef externalRef) {
@@ -521,7 +521,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalRef collection
-		 * @parameter externalRefCollection collection to initialize the externalRef
+		 * @param externalRefCollection collection to initialize the externalRef
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addAllExternalRef(Collection<ExternalRef> externalRefCollection) {
@@ -533,7 +533,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds a externalIdentifier to the initial collection
-		 * @parameter externalIdentifier externalIdentifier to add
+		 * @param externalIdentifier externalIdentifier to add
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addExternalIdentifier(ExternalIdentifier externalIdentifier) {
@@ -545,7 +545,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Adds all elements from a collection to the initial externalIdentifier collection
-		 * @parameter externalIdentifierCollection collection to initialize the externalIdentifier
+		 * @param externalIdentifierCollection collection to initialize the externalIdentifier
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder addAllExternalIdentifier(Collection<ExternalIdentifier> externalIdentifierCollection) {
@@ -557,7 +557,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of from
-		 * @parameter from value to set
+		 * @param from value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setFrom(Element from) {
@@ -567,7 +567,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of creationInfo
-		 * @parameter creationInfo value to set
+		 * @param creationInfo value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setCreationInfo(CreationInfo creationInfo) {
@@ -577,7 +577,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of assessedElement
-		 * @parameter assessedElement value to set
+		 * @param assessedElement value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setAssessedElement(SoftwareArtifact assessedElement) {
@@ -587,7 +587,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of suppliedBy
-		 * @parameter suppliedBy value to set
+		 * @param suppliedBy value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setSuppliedBy(Agent suppliedBy) {
@@ -597,7 +597,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of completeness
-		 * @parameter completeness value to set
+		 * @param completeness value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setCompleteness(RelationshipCompleteness completeness) {
@@ -607,7 +607,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of relationshipType
-		 * @parameter relationshipType value to set
+		 * @param relationshipType value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setRelationshipType(RelationshipType relationshipType) {
@@ -617,7 +617,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of publishedTime
-		 * @parameter publishedTime value to set
+		 * @param publishedTime value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setPublishedTime(String publishedTime) {
@@ -627,7 +627,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of summary
-		 * @parameter summary value to set
+		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setSummary(String summary) {
@@ -637,7 +637,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of description
-		 * @parameter description value to set
+		 * @param description value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setDescription(String description) {
@@ -647,7 +647,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of endTime
-		 * @parameter endTime value to set
+		 * @param endTime value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setEndTime(String endTime) {
@@ -657,7 +657,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of startTime
-		 * @parameter startTime value to set
+		 * @param startTime value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setStartTime(String startTime) {
@@ -667,7 +667,7 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		
 		/**
 		 * Sets the initial value of withdrawnTime
-		 * @parameter withdrawnTime value to set
+		 * @param withdrawnTime value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setWithdrawnTime(String withdrawnTime) {
@@ -676,18 +676,8 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @parameter name value to set
-		 * @return this for chaining
-		**/
-		public VulnAssessmentRelationshipBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
-		 * @parameter comment value to set
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setComment(String comment) {
@@ -696,8 +686,18 @@ public abstract class VulnAssessmentRelationship extends Relationship  {
 		}
 		
 		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public VulnAssessmentRelationshipBuilder setName(String name) {
+			super.name = name;
+			return this;
+		}
+		
+		/**
 		 * Sets the initial value of modifiedTime
-		 * @parameter modifiedTime value to set
+		 * @param modifiedTime value to set
 		 * @return this for chaining
 		**/
 		public VulnAssessmentRelationshipBuilder setModifiedTime(String modifiedTime) {

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2024 Source Auditor Inc.
+ * Copyright (c) 2025 Source Auditor Inc.
  *
  * SPDX-License-Identifier: Apache-2.0
  * 
@@ -172,7 +172,7 @@ public  class CdxPropertiesExtension extends Extension  {
 		
 		/**
 		 * Adds a cdxProperty to the initial collection
-		 * @parameter cdxProperty cdxProperty to add
+		 * @param cdxProperty cdxProperty to add
 		 * @return this for chaining
 		**/
 		public CdxPropertiesExtensionBuilder addCdxProperty(CdxPropertyEntry cdxProperty) {
@@ -184,7 +184,7 @@ public  class CdxPropertiesExtension extends Extension  {
 		
 		/**
 		 * Adds all elements from a collection to the initial cdxProperty collection
-		 * @parameter cdxPropertyCollection collection to initialize the cdxProperty
+		 * @param cdxPropertyCollection collection to initialize the cdxProperty
 		 * @return this for chaining
 		**/
 		public CdxPropertiesExtensionBuilder addAllCdxProperty(Collection<CdxPropertyEntry> cdxPropertyCollection) {
