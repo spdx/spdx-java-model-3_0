@@ -1,6 +1,7 @@
 /**
+ * SPDX-FileCopyrightText: Copyright (c)  Source Auditor Inc.
+ * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
- * Copyright (c) 2024 Source Auditor Inc.
  */
 package org.spdx.library.model.v3_0_1;
 
