@@ -1,21 +1,8 @@
 /**
- * Copyright (c) 2025 Source Auditor Inc.
- *
+ * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
- * 
- *   Licensed under the Apache License, Version 2.0 (the "License");
- *   you may not use this file except in compliance with the License.
- *   You may obtain a copy of the License at
- *
- *       http://www.apache.org/licenses/LICENSE-2.0
- *
- *   Unless required by applicable law or agreed to in writing, software
- *   distributed under the License is distributed on an "AS IS" BASIS,
- *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *   See the License for the specific language governing permissions and
- *   limitations under the License.
  */
- 
 package org.spdx.library.model.v3_0_1.expandedlicensing;
 
 import javax.annotation.Nullable;
@@ -204,11 +191,13 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 	}
 	
 		/**
+	 * Get flatten license set
+	 *
 	 * License sets can contain other conjunctive license sets as members.  Logically,
 	 * the members of these "sub-conjunctive license sets" could be direct members and have the same
 	 * meaning.
 	 * @return all members "flattening out" license sets which are members of this set
-	 * @throws SpdxInvalidTypeException 
+	 * @throws InvalidSPDXAnalysisException
 	 */
 	public List<AnyLicenseInfo> getFlattenedMembers() throws InvalidSPDXAnalysisException {
 		HashSet<AnyLicenseInfo> retval = new HashSet<>();	// Use a set since any duplicated elements would be still considered equal
@@ -327,6 +316,7 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		return true;
 	}
+
 	
 	public static class DisjunctiveLicenseSetBuilder extends AnyLicenseInfoBuilder {
 	
@@ -466,7 +456,7 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Adds a member to the initial collection
+		 * Adds a member to the initial set
 		 * @param member member to add
 		 * @return this for chaining
 		**/
@@ -478,8 +468,8 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Adds all elements from a collection to the initial member collection
-		 * @param memberCollection collection to initialize the member
+		 * Adds all elements from a set to the initial member set
+		 * @param memberSet set to initialize the member
 		 * @return this for chaining
 		**/
 		public DisjunctiveLicenseSetBuilder addAllMember(Set<AnyLicenseInfo> memberSet) {

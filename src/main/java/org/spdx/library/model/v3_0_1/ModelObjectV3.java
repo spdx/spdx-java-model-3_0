@@ -1,6 +1,7 @@
 /**
+ * SPDX-FileCopyrightText: Copyright (c)  Source Auditor Inc.
+ * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
- * Copyright (c) 2024 Source Auditor Inc.
  */
 package org.spdx.library.model.v3_0_1;
 
@@ -145,8 +146,9 @@ import org.spdx.storage.PropertyDescriptor;
 
 
 /**
- * @author Gary O'Neall
+ * Model object for SPDX 3
  *
+ * @author Gary O'Neall
  */
 public abstract class ModelObjectV3 extends CoreModelObject {
 	
@@ -172,7 +174,7 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 	 * @param objectUri
 	 * @param copyManager
 	 * @param create
-	 * @param idPrefix - prefix to be used when generating new SPDX IDs
+	 * @param idPrefix prefix to be used when generating new SPDX IDs
 	 * @throws InvalidSPDXAnalysisException
 	 */
 	public ModelObjectV3(IModelStore modelStore, String objectUri,
@@ -190,7 +192,6 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		super(builder, SpdxConstantsV3.MODEL_SPEC_VERSION);
 	}
 
-	
 	/**
 	 * @param specVersion Version of the SPDX spec to verify against
 	 * @param verifiedElementUris list of all element object URIs which have already been verified - prevents infinite recursion
@@ -295,8 +296,7 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 			throw new SpdxInvalidTypeException("Invalid type for ExtendableLicense property: "+result.get().getClass().toString());
 		}
 	}
-	
-	
+
 	/**
 	 * Converts property values to an ExtendableLicense if possible
 	 * @param propertyDescriptor descriptor for the property
@@ -323,7 +323,7 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 			throw new SpdxInvalidTypeException("Invalid type for LicenseAddition property: "+result.get().getClass().toString());
 		}
 	}
-	
+
 	/**
 	 * Converts property values to an SpdxElement if possible - if individual value, convert to the appropriate SpdxElement
 	 * @param propertyDescriptor Descriptor for the property
@@ -350,7 +350,7 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 			throw new SpdxInvalidTypeException("Invalid type for SpdxElement property: "+result.get().getClass().toString());
 		}
 	}
-	
+
 	/**
 	 * @param propertyDescriptor property descriptor for the object in question
 	 * @return true if the object is "to" part of a relationship
@@ -358,7 +358,7 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 	public boolean isRelatedElement(PropertyDescriptor propertyDescriptor) {
 		return SpdxConstantsV3.PROP_TO.equals(propertyDescriptor);
 	}
-	
+
 		/**
 	 * Create an CdxPropertiesExtensionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CdxPropertiesExtension
@@ -369,7 +369,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CdxPropertiesExtension.CdxPropertiesExtensionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an DatasetPackageBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the DatasetPackage
@@ -380,7 +381,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new DatasetPackage.DatasetPackageBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ExternalIdentifierBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ExternalIdentifier
@@ -391,7 +393,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ExternalIdentifier.ExternalIdentifierBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an DictionaryEntryBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the DictionaryEntry
@@ -402,7 +405,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new DictionaryEntry.DictionaryEntryBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an PositiveIntegerRangeBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the PositiveIntegerRange
@@ -413,7 +417,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new PositiveIntegerRange.PositiveIntegerRangeBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an VexAffectedVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the VexAffectedVulnAssessmentRelationship
@@ -424,7 +429,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new VexAffectedVulnAssessmentRelationship.VexAffectedVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CvssV4VulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CvssV4VulnAssessmentRelationship
@@ -435,7 +441,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CvssV4VulnAssessmentRelationship.CvssV4VulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CustomLicenseAdditionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CustomLicenseAddition
@@ -446,7 +453,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CustomLicenseAddition.CustomLicenseAdditionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an DisjunctiveLicenseSetBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the DisjunctiveLicenseSet
@@ -457,7 +465,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new DisjunctiveLicenseSet.DisjunctiveLicenseSetBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an AIPackageBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the AIPackage
@@ -468,7 +477,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new AIPackage.AIPackageBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SpdxFileBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the SpdxFile
@@ -479,7 +489,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new SpdxFile.SpdxFileBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an PersonBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Person
@@ -490,7 +501,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Person.PersonBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CreationInfoBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CreationInfo
@@ -501,7 +513,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CreationInfo.CreationInfoBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an BundleBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Bundle
@@ -512,7 +525,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Bundle.BundleBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ExploitCatalogVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ExploitCatalogVulnAssessmentRelationship
@@ -523,7 +537,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ExploitCatalogVulnAssessmentRelationship.ExploitCatalogVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an OrganizationBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Organization
@@ -534,7 +549,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Organization.OrganizationBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ExtensionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Extension
@@ -545,7 +561,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Extension.ExtensionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SbomBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Sbom
@@ -556,7 +573,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Sbom.SbomBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an WithAdditionOperatorBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the WithAdditionOperator
@@ -567,7 +585,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new WithAdditionOperator.WithAdditionOperatorBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CdxPropertyEntryBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CdxPropertyEntry
@@ -578,7 +597,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CdxPropertyEntry.CdxPropertyEntryBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an EpssVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the EpssVulnAssessmentRelationship
@@ -589,7 +609,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new EpssVulnAssessmentRelationship.EpssVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an AnnotationBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Annotation
@@ -600,7 +621,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Annotation.AnnotationBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an RelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Relationship
@@ -611,7 +633,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Relationship.RelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an LifecycleScopedRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the LifecycleScopedRelationship
@@ -622,7 +645,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new LifecycleScopedRelationship.LifecycleScopedRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ContentIdentifierBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ContentIdentifier
@@ -633,7 +657,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ContentIdentifier.ContentIdentifierBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an LicenseExpressionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the LicenseExpression
@@ -644,7 +669,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new LicenseExpression.LicenseExpressionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an VexUnderInvestigationVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the VexUnderInvestigationVulnAssessmentRelationship
@@ -655,7 +681,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new VexUnderInvestigationVulnAssessmentRelationship.VexUnderInvestigationVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SimpleLicensingTextBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the SimpleLicensingText
@@ -666,7 +693,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new SimpleLicensingText.SimpleLicensingTextBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ListedLicenseExceptionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ListedLicenseException
@@ -677,7 +705,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ListedLicenseException.ListedLicenseExceptionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an AgentBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Agent
@@ -688,7 +717,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Agent.AgentBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ExternalMapBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ExternalMap
@@ -699,7 +729,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ExternalMap.ExternalMapBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CvssV2VulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CvssV2VulnAssessmentRelationship
@@ -710,7 +741,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CvssV2VulnAssessmentRelationship.CvssV2VulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an VexFixedVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the VexFixedVulnAssessmentRelationship
@@ -721,7 +753,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new VexFixedVulnAssessmentRelationship.VexFixedVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an EnergyConsumptionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the EnergyConsumption
@@ -732,7 +765,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new EnergyConsumption.EnergyConsumptionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an BuildBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Build
@@ -743,7 +777,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Build.BuildBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SnippetBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Snippet
@@ -754,7 +789,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Snippet.SnippetBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SoftwareAgentBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the SoftwareAgent
@@ -765,7 +801,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new SoftwareAgent.SoftwareAgentBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an OrLaterOperatorBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the OrLaterOperator
@@ -776,7 +813,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new OrLaterOperator.OrLaterOperatorBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an VulnerabilityBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Vulnerability
@@ -787,7 +825,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Vulnerability.VulnerabilityBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an VexNotAffectedVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the VexNotAffectedVulnAssessmentRelationship
@@ -798,7 +837,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new VexNotAffectedVulnAssessmentRelationship.VexNotAffectedVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an NamespaceMapBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the NamespaceMap
@@ -809,7 +849,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new NamespaceMap.NamespaceMapBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an PackageVerificationCodeBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the PackageVerificationCode
@@ -820,7 +861,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new PackageVerificationCode.PackageVerificationCodeBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ExternalRefBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ExternalRef
@@ -831,7 +873,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ExternalRef.ExternalRefBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ListedLicenseBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ListedLicense
@@ -842,7 +885,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ListedLicense.ListedLicenseBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ConjunctiveLicenseSetBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ConjunctiveLicenseSet
@@ -853,7 +897,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ConjunctiveLicenseSet.ConjunctiveLicenseSetBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SpdxPackageBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the SpdxPackage
@@ -864,7 +909,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new SpdxPackage.SpdxPackageBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ExtendableLicenseBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the ExtendableLicense
@@ -875,7 +921,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new ExtendableLicense.ExtendableLicenseBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an IndividualElementBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the IndividualElement
@@ -886,7 +933,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new IndividualElement.IndividualElementBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an IndividualLicensingInfoBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the IndividualLicensingInfo
@@ -897,7 +945,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new IndividualLicensingInfo.IndividualLicensingInfoBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an BomBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Bom
@@ -908,7 +957,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Bom.BomBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an AnyLicenseInfoBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the AnyLicenseInfo
@@ -919,7 +969,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new AnyLicenseInfo.AnyLicenseInfoBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SpdxDocumentBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the SpdxDocument
@@ -930,7 +981,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new SpdxDocument.SpdxDocumentBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an SsvcVulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the SsvcVulnAssessmentRelationship
@@ -941,7 +993,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new SsvcVulnAssessmentRelationship.SsvcVulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CvssV3VulnAssessmentRelationshipBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CvssV3VulnAssessmentRelationship
@@ -952,7 +1005,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CvssV3VulnAssessmentRelationship.CvssV3VulnAssessmentRelationshipBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an CustomLicenseBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the CustomLicense
@@ -963,7 +1017,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new CustomLicense.CustomLicenseBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an EnergyConsumptionDescriptionBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the EnergyConsumptionDescription
@@ -974,7 +1029,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new EnergyConsumptionDescription.EnergyConsumptionDescriptionBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an HashBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Hash
@@ -985,7 +1041,8 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Hash.HashBuilder(this, objectUri);
 	}
-	
+
+
 		/**
 	 * Create an ToolBuilder inheriting model, and other information from this object
 	 * @param objectUri - URI or anonymous ID for the Tool
@@ -996,8 +1053,9 @@ public abstract class ModelObjectV3 extends CoreModelObject {
 		Objects.requireNonNull(objectUri, "objectUri can not be null");
 		return new Tool.ToolBuilder(this, objectUri);
 	}
-	
-	
+
+
+
 	public static class ModelObjectV3Builder extends CoreModelObjectBuilder {
 
 		/**
