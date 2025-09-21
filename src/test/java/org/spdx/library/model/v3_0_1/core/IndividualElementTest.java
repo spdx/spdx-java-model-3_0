@@ -104,25 +104,14 @@ public class IndividualElementTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setComment}.
 	 */
-	public void testIndividualElementsetName() throws InvalidSPDXAnalysisException {
+	public void testIndividualElementsetComment() throws InvalidSPDXAnalysisException {
 		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualElement.getName());
-		String newStringValue = "new name value";
-		testIndividualElement.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualElement.getName());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setDescription}.
-	 */
-	public void testIndividualElementsetDescription() throws InvalidSPDXAnalysisException {
-		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testIndividualElement.getDescription());
-		String newStringValue = "new description value";
-		testIndividualElement.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualElement.getDescription());
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testIndividualElement.getComment());
+		String newStringValue = "new comment value";
+		testIndividualElement.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualElement.getComment());
 	}
 	
 	/**
@@ -137,14 +126,25 @@ public class IndividualElementTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setDescription}.
 	 */
-	public void testIndividualElementsetComment() throws InvalidSPDXAnalysisException {
+	public void testIndividualElementsetDescription() throws InvalidSPDXAnalysisException {
 		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testIndividualElement.getComment());
-		String newStringValue = "new comment value";
-		testIndividualElement.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualElement.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testIndividualElement.getDescription());
+		String newStringValue = "new description value";
+		testIndividualElement.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualElement.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.IndividualElement#setName}.
+	 */
+	public void testIndividualElementsetName() throws InvalidSPDXAnalysisException {
+		IndividualElement testIndividualElement = generator.builderForIndividualElementTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualElement.getName());
+		String newStringValue = "new name value";
+		testIndividualElement.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualElement.getName());
 	}
 	
 	/**

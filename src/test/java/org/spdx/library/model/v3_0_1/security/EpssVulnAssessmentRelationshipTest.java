@@ -197,17 +197,6 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setDescription}.
-	 */
-	public void testEpssVulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
-		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testEpssVulnAssessmentRelationship.getDescription());
-		String newStringValue = "new description value";
-		testEpssVulnAssessmentRelationship.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getDescription());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setSummary}.
 	 */
 	public void testEpssVulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
@@ -216,6 +205,17 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new summary value";
 		testEpssVulnAssessmentRelationship.setSummary(newStringValue);
 		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setDescription}.
+	 */
+	public void testEpssVulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
+		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testEpssVulnAssessmentRelationship.getDescription());
+		String newStringValue = "new description value";
+		testEpssVulnAssessmentRelationship.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getDescription());
 	}
 	
 	/**
@@ -252,17 +252,6 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setName}.
-	 */
-	public void testEpssVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
-		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testEpssVulnAssessmentRelationship.getName());
-		String newStringValue = "new name value";
-		testEpssVulnAssessmentRelationship.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setComment}.
 	 */
 	public void testEpssVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
@@ -271,6 +260,17 @@ public class EpssVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new comment value";
 		testEpssVulnAssessmentRelationship.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.EpssVulnAssessmentRelationship#setName}.
+	 */
+	public void testEpssVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
+		EpssVulnAssessmentRelationship testEpssVulnAssessmentRelationship = generator.builderForEpssVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testEpssVulnAssessmentRelationship.getName());
+		String newStringValue = "new name value";
+		testEpssVulnAssessmentRelationship.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testEpssVulnAssessmentRelationship.getName());
 	}
 	
 	/**

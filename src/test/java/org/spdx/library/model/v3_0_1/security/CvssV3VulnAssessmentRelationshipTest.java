@@ -208,17 +208,6 @@ public class CvssV3VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV3VulnAssessmentRelationship#setDescription}.
-	 */
-	public void testCvssV3VulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
-		CvssV3VulnAssessmentRelationship testCvssV3VulnAssessmentRelationship = generator.builderForCvssV3VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testCvssV3VulnAssessmentRelationship.getDescription());
-		String newStringValue = "new description value";
-		testCvssV3VulnAssessmentRelationship.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testCvssV3VulnAssessmentRelationship.getDescription());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV3VulnAssessmentRelationship#setSummary}.
 	 */
 	public void testCvssV3VulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
@@ -227,6 +216,17 @@ public class CvssV3VulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new summary value";
 		testCvssV3VulnAssessmentRelationship.setSummary(newStringValue);
 		assertEquals(Optional.of(newStringValue), testCvssV3VulnAssessmentRelationship.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV3VulnAssessmentRelationship#setDescription}.
+	 */
+	public void testCvssV3VulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
+		CvssV3VulnAssessmentRelationship testCvssV3VulnAssessmentRelationship = generator.builderForCvssV3VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testCvssV3VulnAssessmentRelationship.getDescription());
+		String newStringValue = "new description value";
+		testCvssV3VulnAssessmentRelationship.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testCvssV3VulnAssessmentRelationship.getDescription());
 	}
 	
 	/**
@@ -263,17 +263,6 @@ public class CvssV3VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV3VulnAssessmentRelationship#setName}.
-	 */
-	public void testCvssV3VulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
-		CvssV3VulnAssessmentRelationship testCvssV3VulnAssessmentRelationship = generator.builderForCvssV3VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testCvssV3VulnAssessmentRelationship.getName());
-		String newStringValue = "new name value";
-		testCvssV3VulnAssessmentRelationship.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testCvssV3VulnAssessmentRelationship.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV3VulnAssessmentRelationship#setComment}.
 	 */
 	public void testCvssV3VulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
@@ -282,6 +271,17 @@ public class CvssV3VulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new comment value";
 		testCvssV3VulnAssessmentRelationship.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testCvssV3VulnAssessmentRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV3VulnAssessmentRelationship#setName}.
+	 */
+	public void testCvssV3VulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
+		CvssV3VulnAssessmentRelationship testCvssV3VulnAssessmentRelationship = generator.builderForCvssV3VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testCvssV3VulnAssessmentRelationship.getName());
+		String newStringValue = "new name value";
+		testCvssV3VulnAssessmentRelationship.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testCvssV3VulnAssessmentRelationship.getName());
 	}
 	
 	/**

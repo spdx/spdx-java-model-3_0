@@ -182,20 +182,6 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Build setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the summary
 	 */
 	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
@@ -210,17 +196,17 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
+	 * @return the description
 	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param name the name to set
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public Build setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+	public Build setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -235,6 +221,20 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Build setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Build setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

@@ -109,25 +109,14 @@ public class IndividualLicensingInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setComment}.
 	 */
-	public void testIndividualLicensingInfosetName() throws InvalidSPDXAnalysisException {
+	public void testIndividualLicensingInfosetComment() throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualLicensingInfo.getName());
-		String newStringValue = "new name value";
-		testIndividualLicensingInfo.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getName());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setDescription}.
-	 */
-	public void testIndividualLicensingInfosetDescription() throws InvalidSPDXAnalysisException {
-		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testIndividualLicensingInfo.getDescription());
-		String newStringValue = "new description value";
-		testIndividualLicensingInfo.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getDescription());
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testIndividualLicensingInfo.getComment());
+		String newStringValue = "new comment value";
+		testIndividualLicensingInfo.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getComment());
 	}
 	
 	/**
@@ -142,14 +131,25 @@ public class IndividualLicensingInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setDescription}.
 	 */
-	public void testIndividualLicensingInfosetComment() throws InvalidSPDXAnalysisException {
+	public void testIndividualLicensingInfosetDescription() throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testIndividualLicensingInfo.getComment());
-		String newStringValue = "new comment value";
-		testIndividualLicensingInfo.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testIndividualLicensingInfo.getDescription());
+		String newStringValue = "new description value";
+		testIndividualLicensingInfo.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setName}.
+	 */
+	public void testIndividualLicensingInfosetName() throws InvalidSPDXAnalysisException {
+		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testIndividualLicensingInfo.getName());
+		String newStringValue = "new name value";
+		testIndividualLicensingInfo.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getName());
 	}
 	
 	/**

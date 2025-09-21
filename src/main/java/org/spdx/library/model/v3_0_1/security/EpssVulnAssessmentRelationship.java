@@ -229,17 +229,6 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 		return this;
 	}	
 	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public EpssVulnAssessmentRelationship setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
-		return this;
-	}	
-	/**
 	 * sets the summary
 	 * @param summary the summary to set
 	 * @return this to chain setters
@@ -248,6 +237,17 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 	 @Override
 	public EpssVulnAssessmentRelationship setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
 		super.setSummary(summary);
+		return this;
+	}	
+	/**
+	 * sets the description
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public EpssVulnAssessmentRelationship setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
 		return this;
 	}	
 	/**
@@ -284,17 +284,6 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 		return this;
 	}	
 	/**
-	 * sets the name
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public EpssVulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
 	 * sets the comment
 	 * @param comment the comment to set
 	 * @return this to chain setters
@@ -303,6 +292,17 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 	 @Override
 	public EpssVulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public EpssVulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	/**
@@ -609,22 +609,22 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 		}
 		
 		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public EpssVulnAssessmentRelationshipBuilder setDescription(String description) {
-			super.description = description;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
 		 * @param summary value to set
 		 * @return this for chaining
 		**/
 		public EpssVulnAssessmentRelationshipBuilder setSummary(String summary) {
 			super.summary = summary;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of description
+		 * @param description value to set
+		 * @return this for chaining
+		**/
+		public EpssVulnAssessmentRelationshipBuilder setDescription(String description) {
+			super.description = description;
 			return this;
 		}
 		
@@ -659,22 +659,22 @@ public  class EpssVulnAssessmentRelationship extends VulnAssessmentRelationship 
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
-		 * @return this for chaining
-		**/
-		public EpssVulnAssessmentRelationshipBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of comment
 		 * @param comment value to set
 		 * @return this for chaining
 		**/
 		public EpssVulnAssessmentRelationshipBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public EpssVulnAssessmentRelationshipBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 		

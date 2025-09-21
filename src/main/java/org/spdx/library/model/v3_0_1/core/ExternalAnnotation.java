@@ -157,20 +157,6 @@ public class ExternalAnnotation extends Annotation  implements IndividualUriValu
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Annotation setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the summary
 	 */
 	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
@@ -182,6 +168,20 @@ public class ExternalAnnotation extends Annotation  implements IndividualUriValu
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Annotation setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Annotation setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -213,20 +213,6 @@ public class ExternalAnnotation extends Annotation  implements IndividualUriValu
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Annotation setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the comment
 	 */
 	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
@@ -238,6 +224,20 @@ public class ExternalAnnotation extends Annotation  implements IndividualUriValu
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Annotation setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Annotation setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

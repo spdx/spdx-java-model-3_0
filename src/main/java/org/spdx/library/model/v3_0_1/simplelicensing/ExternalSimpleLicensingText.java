@@ -145,31 +145,17 @@ public class ExternalSimpleLicensingText extends SimpleLicensingText  implements
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
+	 * @return the comment
 	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param name the name to set
+	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public SimpleLicensingText setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public SimpleLicensingText setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+	public SimpleLicensingText setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -187,17 +173,31 @@ public class ExternalSimpleLicensingText extends SimpleLicensingText  implements
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the comment
+	 * @return the description
 	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param comment the comment to set
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public SimpleLicensingText setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+	public SimpleLicensingText setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SimpleLicensingText setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

@@ -142,25 +142,14 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		return this;
 	}
 	/**
-	 * sets the name
-	 * @param name the name to set
+	 * sets the comment
+	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public OrLaterOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public OrLaterOperator setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
+	public OrLaterOperator setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	/**
@@ -175,14 +164,25 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		return this;
 	}	
 	/**
-	 * sets the comment
-	 * @param comment the comment to set
+	 * sets the description
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public OrLaterOperator setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
+	public OrLaterOperator setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
+		return this;
+	}	
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public OrLaterOperator setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -409,22 +409,12 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
+		 * Sets the initial value of comment
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
-		public OrLaterOperatorBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public OrLaterOperatorBuilder setDescription(String description) {
-			super.description = description;
+		public OrLaterOperatorBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 		
@@ -439,12 +429,22 @@ public  class OrLaterOperator extends ExtendableLicense  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @param comment value to set
+		 * Sets the initial value of description
+		 * @param description value to set
 		 * @return this for chaining
 		**/
-		public OrLaterOperatorBuilder setComment(String comment) {
-			super.comment = comment;
+		public OrLaterOperatorBuilder setDescription(String description) {
+			super.description = description;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public OrLaterOperatorBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

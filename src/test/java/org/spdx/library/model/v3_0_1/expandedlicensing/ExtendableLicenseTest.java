@@ -109,25 +109,14 @@ public class ExtendableLicenseTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setComment}.
 	 */
-	public void testExtendableLicensesetName() throws InvalidSPDXAnalysisException {
+	public void testExtendableLicensesetComment() throws InvalidSPDXAnalysisException {
 		ExtendableLicense testExtendableLicense = generator.builderForExtendableLicenseTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testExtendableLicense.getName());
-		String newStringValue = "new name value";
-		testExtendableLicense.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testExtendableLicense.getName());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setDescription}.
-	 */
-	public void testExtendableLicensesetDescription() throws InvalidSPDXAnalysisException {
-		ExtendableLicense testExtendableLicense = generator.builderForExtendableLicenseTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testExtendableLicense.getDescription());
-		String newStringValue = "new description value";
-		testExtendableLicense.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testExtendableLicense.getDescription());
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testExtendableLicense.getComment());
+		String newStringValue = "new comment value";
+		testExtendableLicense.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testExtendableLicense.getComment());
 	}
 	
 	/**
@@ -142,14 +131,25 @@ public class ExtendableLicenseTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setDescription}.
 	 */
-	public void testExtendableLicensesetComment() throws InvalidSPDXAnalysisException {
+	public void testExtendableLicensesetDescription() throws InvalidSPDXAnalysisException {
 		ExtendableLicense testExtendableLicense = generator.builderForExtendableLicenseTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testExtendableLicense.getComment());
-		String newStringValue = "new comment value";
-		testExtendableLicense.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testExtendableLicense.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testExtendableLicense.getDescription());
+		String newStringValue = "new description value";
+		testExtendableLicense.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testExtendableLicense.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ExtendableLicense#setName}.
+	 */
+	public void testExtendableLicensesetName() throws InvalidSPDXAnalysisException {
+		ExtendableLicense testExtendableLicense = generator.builderForExtendableLicenseTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testExtendableLicense.getName());
+		String newStringValue = "new name value";
+		testExtendableLicense.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testExtendableLicense.getName());
 	}
 	
 	/**

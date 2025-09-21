@@ -104,25 +104,14 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setComment}.
 	 */
-	public void testToolsetName() throws InvalidSPDXAnalysisException {
+	public void testToolsetComment() throws InvalidSPDXAnalysisException {
 		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
-		String newStringValue = "new name value";
-		testTool.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getName());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setDescription}.
-	 */
-	public void testToolsetDescription() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testTool.getDescription());
-		String newStringValue = "new description value";
-		testTool.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getDescription());
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testTool.getComment());
+		String newStringValue = "new comment value";
+		testTool.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getComment());
 	}
 	
 	/**
@@ -137,14 +126,25 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setDescription}.
 	 */
-	public void testToolsetComment() throws InvalidSPDXAnalysisException {
+	public void testToolsetDescription() throws InvalidSPDXAnalysisException {
 		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testTool.getComment());
-		String newStringValue = "new comment value";
-		testTool.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testTool.getDescription());
+		String newStringValue = "new description value";
+		testTool.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
+	 */
+	public void testToolsetName() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
+		String newStringValue = "new name value";
+		testTool.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getName());
 	}
 	
 	/**

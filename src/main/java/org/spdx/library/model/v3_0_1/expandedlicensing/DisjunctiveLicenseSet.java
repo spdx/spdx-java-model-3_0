@@ -125,25 +125,14 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
-	 * sets the name
-	 * @param name the name to set
+	 * sets the comment
+	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public DisjunctiveLicenseSet setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public DisjunctiveLicenseSet setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
+	public DisjunctiveLicenseSet setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	/**
@@ -158,14 +147,25 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
-	 * sets the comment
-	 * @param comment the comment to set
+	 * sets the description
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public DisjunctiveLicenseSet setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
+	public DisjunctiveLicenseSet setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
+		return this;
+	}	
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public DisjunctiveLicenseSet setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -503,22 +503,12 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
+		 * Sets the initial value of comment
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
-		public DisjunctiveLicenseSetBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public DisjunctiveLicenseSetBuilder setDescription(String description) {
-			super.description = description;
+		public DisjunctiveLicenseSetBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 		
@@ -533,12 +523,22 @@ public  class DisjunctiveLicenseSet extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @param comment value to set
+		 * Sets the initial value of description
+		 * @param description value to set
 		 * @return this for chaining
 		**/
-		public DisjunctiveLicenseSetBuilder setComment(String comment) {
-			super.comment = comment;
+		public DisjunctiveLicenseSetBuilder setDescription(String description) {
+			super.description = description;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public DisjunctiveLicenseSetBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	
