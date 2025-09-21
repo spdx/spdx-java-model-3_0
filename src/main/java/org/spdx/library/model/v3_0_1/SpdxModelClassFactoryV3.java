@@ -186,6 +186,7 @@ public class SpdxModelClassFactoryV3 {
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_NO_ASSERTION_LICENSE, org.spdx.library.model.v3_0_1.expandedlicensing.NoAssertionLicense.class);
 		typeToClassV3.put(SpdxConstantsV3.EXPANDED_LICENSING_NONE_LICENSE, org.spdx.library.model.v3_0_1.expandedlicensing.NoneLicense.class);
 		typeToClassV3.put(SpdxConstantsV3.CORE_SPDX_ORGANIZATION, org.spdx.library.model.v3_0_1.core.SpdxOrganization.class);
+		typeToClassV3.put(org.spdx.library.model.v3_0_1.simplelicensing.InvalidLicenseExpression.INVALID_LICENSE_EXPRESSION_TYPE, org.spdx.library.model.v3_0_1.simplelicensing.InvalidLicenseExpression.class);
 		
 		SPDX_TYPE_TO_CLASS_V3 = Collections.unmodifiableMap(typeToClassV3);
 		

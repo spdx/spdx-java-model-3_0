@@ -405,22 +405,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockVexVulnAssessmentRelationshipBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockVexVulnAssessmentRelationshipBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -465,22 +465,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockVexVulnAssessmentRelationshipBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockVexVulnAssessmentRelationshipBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -794,22 +794,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockVulnAssessmentRelationshipBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockVulnAssessmentRelationshipBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -844,22 +844,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockVulnAssessmentRelationshipBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockVulnAssessmentRelationshipBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -1092,22 +1092,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -1142,22 +1142,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -1508,22 +1508,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockSoftwareArtifactBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockSoftwareArtifactBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -1548,22 +1548,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockSoftwareArtifactBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockSoftwareArtifactBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 		}
@@ -1722,26 +1722,6 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockElementBuilder setSummary(String summary) {
-				this.summary = summary;
-				return this;
-			}
-			
-			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockElementBuilder setComment(String comment) {
-				this.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
@@ -1758,6 +1738,26 @@ public class TestValuesGenerator {
 			**/
 			public MockElementBuilder setDescription(String description) {
 				this.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockElementBuilder setSummary(String summary) {
+				this.summary = summary;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockElementBuilder setComment(String comment) {
+				this.comment = comment;
 				return this;
 			}
 		}
@@ -1986,16 +1986,6 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockElementCollectionBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
@@ -2006,12 +1996,12 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
+			 * Sets the initial value of summary
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
-			public MockElementCollectionBuilder setComment(String comment) {
-				super.comment = comment;
+			public MockElementCollectionBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -2022,6 +2012,16 @@ public class TestValuesGenerator {
 			**/
 			public MockElementCollectionBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockElementCollectionBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 		}
@@ -2214,22 +2214,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseAdditionBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseAdditionBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -2264,22 +2264,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseAdditionBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseAdditionBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -2549,22 +2549,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockArtifactBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockArtifactBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -2579,22 +2579,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockArtifactBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockArtifactBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 		}
@@ -2848,10 +2848,10 @@ public class TestValuesGenerator {
 	
 	public OrLaterOperatorBuilder builderForOrLaterOperatorTests(String objectUri) throws InvalidSPDXAnalysisException {
 		OrLaterOperatorBuilder retval = new OrLaterOperatorBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setSubjectLicense(builderForLicenseTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2865,13 +2865,13 @@ public class TestValuesGenerator {
 	public SsvcVulnAssessmentRelationshipBuilder builderForSsvcVulnAssessmentRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SsvcVulnAssessmentRelationshipBuilder retval = new SsvcVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setDecisionType(DECISION_TYPE_TEST_VALUE1)
@@ -2891,10 +2891,10 @@ public class TestValuesGenerator {
 	
 	public IndividualLicensingInfoBuilder builderForIndividualLicensingInfoTests(String objectUri) throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfoBuilder retval = new IndividualLicensingInfoBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2916,14 +2916,14 @@ public class TestValuesGenerator {
 		VexVulnAssessmentRelationshipBuilder retval = new MockVexVulnAssessmentRelationship.MockVexVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setVexVersion(VEX_VERSION_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStatusNotes(STATUS_NOTES_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
@@ -2949,10 +2949,10 @@ public class TestValuesGenerator {
 	
 	public SpdxDocumentBuilder builderForSpdxDocumentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SpdxDocumentBuilder retval = new SpdxDocumentBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
 				.setDataLicense(builderForAnyLicenseInfoTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2974,13 +2974,13 @@ public class TestValuesGenerator {
 				.setScore(SCORE_TEST_VALUE)
 				.setVectorString(VECTOR_STRING_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
@@ -2999,10 +2999,10 @@ public class TestValuesGenerator {
 	
 	public ConjunctiveLicenseSetBuilder builderForConjunctiveLicenseSetTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ConjunctiveLicenseSetBuilder retval = new ConjunctiveLicenseSetBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3015,10 +3015,10 @@ public class TestValuesGenerator {
 	
 	public ToolBuilder builderForToolTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ToolBuilder retval = new ToolBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3030,10 +3030,10 @@ public class TestValuesGenerator {
 	
 	public DisjunctiveLicenseSetBuilder builderForDisjunctiveLicenseSetTests(String objectUri) throws InvalidSPDXAnalysisException {
 		DisjunctiveLicenseSetBuilder retval = new DisjunctiveLicenseSetBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3047,13 +3047,13 @@ public class TestValuesGenerator {
 	public VulnAssessmentRelationshipBuilder builderForVulnAssessmentRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		VulnAssessmentRelationshipBuilder retval = new MockVulnAssessmentRelationship.MockVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
@@ -3074,10 +3074,10 @@ public class TestValuesGenerator {
 		BuildBuilder retval = new BuildBuilder(modelStore, objectUri, copyManager)
 				.setBuildId(BUILD_ID_TEST_VALUE)
 				.setBuildEndTime(BUILD_END_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setBuildStartTime(BUILD_START_TIME_TEST_VALUE)
 				.setBuildType(BUILD_TYPE_TEST_VALUE)
 				.addConfigSourceEntrypoint(CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE1)
@@ -3098,11 +3098,11 @@ public class TestValuesGenerator {
 	
 	public BomBuilder builderForBomTests(String objectUri) throws InvalidSPDXAnalysisException {
 		BomBuilder retval = new BomBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setContext(CONTEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3118,10 +3118,10 @@ public class TestValuesGenerator {
 	
 	public PersonBuilder builderForPersonTests(String objectUri) throws InvalidSPDXAnalysisException {
 		PersonBuilder retval = new PersonBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3135,14 +3135,14 @@ public class TestValuesGenerator {
 		VexUnderInvestigationVulnAssessmentRelationshipBuilder retval = new VexUnderInvestigationVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setVexVersion(VEX_VERSION_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStatusNotes(STATUS_NOTES_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
@@ -3178,12 +3178,12 @@ public class TestValuesGenerator {
 	
 	public AnnotationBuilder builderForAnnotationTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AnnotationBuilder retval = new AnnotationBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStatement(STATEMENT_TEST_VALUE)
 				.setContentType(CONTENT_TYPE_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setAnnotationType(ANNOTATION_TYPE_TEST_VALUE1)
 				.setSubject(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3197,12 +3197,12 @@ public class TestValuesGenerator {
 	
 	public LifecycleScopedRelationshipBuilder builderForLifecycleScopedRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		LifecycleScopedRelationshipBuilder retval = new LifecycleScopedRelationshipBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setScope(SCOPE_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
@@ -3221,14 +3221,14 @@ public class TestValuesGenerator {
 		VexFixedVulnAssessmentRelationshipBuilder retval = new VexFixedVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setVexVersion(VEX_VERSION_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStatusNotes(STATUS_NOTES_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
@@ -3251,13 +3251,13 @@ public class TestValuesGenerator {
 				.setIsDeprecatedLicenseId(true)
 				.setIsOsiApproved(true)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStandardLicenseTemplate(STANDARD_LICENSE_TEMPLATE_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardLicenseHeader(STANDARD_LICENSE_HEADER_TEST_VALUE)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
@@ -3272,12 +3272,12 @@ public class TestValuesGenerator {
 	
 	public LicenseExpressionBuilder builderForLicenseExpressionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		LicenseExpressionBuilder retval = new LicenseExpressionBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setLicenseExpression(LICENSE_EXPRESSION_TEST_VALUE)
 				.setLicenseListVersion(LICENSE_LIST_VERSION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3302,12 +3302,12 @@ public class TestValuesGenerator {
 		SoftwareArtifactBuilder retval = new MockSoftwareArtifact.MockSoftwareArtifactBuilder(modelStore, objectUri, copyManager)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
 				.setCopyrightText(COPYRIGHT_TEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
 				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
 				.addStandardName(STANDARD_NAME_TEST_VALUE1)
@@ -3419,12 +3419,12 @@ public class TestValuesGenerator {
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.addStandardName(STANDARD_NAME_TEST_VALUE1)
 				.addStandardName(STANDARD_NAME_TEST_VALUE2)
@@ -3443,10 +3443,10 @@ public class TestValuesGenerator {
 	
 	public ElementBuilder builderForElementTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ElementBuilder retval = new MockElement.MockElementBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3458,10 +3458,10 @@ public class TestValuesGenerator {
 	
 	public ExtendableLicenseBuilder builderForExtendableLicenseTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ExtendableLicenseBuilder retval = new ExtendableLicenseBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3506,13 +3506,13 @@ public class TestValuesGenerator {
 		SpdxFileBuilder retval = new SpdxFileBuilder(modelStore, objectUri, copyManager)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
 				.setCopyrightText(COPYRIGHT_TEXT_TEST_VALUE)
 				.setContentType(CONTENT_TYPE_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
 				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
 				.addStandardName(STANDARD_NAME_TEST_VALUE1)
@@ -3567,10 +3567,10 @@ public class TestValuesGenerator {
 	
 	public ElementCollectionBuilder builderForElementCollectionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ElementCollectionBuilder retval = new MockElementCollection.MockElementCollectionBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3586,10 +3586,10 @@ public class TestValuesGenerator {
 	
 	public WithAdditionOperatorBuilder builderForWithAdditionOperatorTests(String objectUri) throws InvalidSPDXAnalysisException {
 		WithAdditionOperatorBuilder retval = new WithAdditionOperatorBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setSubjectAddition(builderForLicenseAdditionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSubjectExtendableLicense(builderForExtendableLicenseTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3603,11 +3603,11 @@ public class TestValuesGenerator {
 	
 	public BundleBuilder builderForBundleTests(String objectUri) throws InvalidSPDXAnalysisException {
 		BundleBuilder retval = new BundleBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setContext(CONTEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3638,10 +3638,10 @@ public class TestValuesGenerator {
 	
 	public IndividualElementBuilder builderForIndividualElementTests(String objectUri) throws InvalidSPDXAnalysisException {
 		IndividualElementBuilder retval = new IndividualElementBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3657,13 +3657,13 @@ public class TestValuesGenerator {
 				.setIsDeprecatedLicenseId(true)
 				.setIsOsiApproved(true)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStandardLicenseTemplate(STANDARD_LICENSE_TEMPLATE_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardLicenseHeader(STANDARD_LICENSE_HEADER_TEST_VALUE)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
@@ -3678,10 +3678,10 @@ public class TestValuesGenerator {
 	
 	public AnyLicenseInfoBuilder builderForAnyLicenseInfoTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AnyLicenseInfoBuilder retval = new AnyLicenseInfoBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3696,13 +3696,13 @@ public class TestValuesGenerator {
 				.setExploited(true)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setSecurityLocator(SECURITY_LOCATOR_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setCatalogType(CATALOG_TYPE_TEST_VALUE1)
@@ -3722,10 +3722,10 @@ public class TestValuesGenerator {
 	
 	public OrganizationBuilder builderForOrganizationTests(String objectUri) throws InvalidSPDXAnalysisException {
 		OrganizationBuilder retval = new OrganizationBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3737,11 +3737,11 @@ public class TestValuesGenerator {
 	
 	public SbomBuilder builderForSbomTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SbomBuilder retval = new SbomBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setContext(CONTEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
 				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
 				.addSbomType(SBOM_TYPE_TEST_VALUE1)
@@ -3770,13 +3770,13 @@ public class TestValuesGenerator {
 				.setScore(SCORE_TEST_VALUE)
 				.setVectorString(VECTOR_STRING_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setSeverity(SEVERITY_TEST_VALUE1)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
@@ -3806,13 +3806,13 @@ public class TestValuesGenerator {
 	public LicenseAdditionBuilder builderForLicenseAdditionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		LicenseAdditionBuilder retval = new MockLicenseAddition.MockLicenseAdditionBuilder(modelStore, objectUri, copyManager)
 				.setIsDeprecatedAdditionId(true)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setAdditionText(ADDITION_TEXT_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardAdditionTemplate(STANDARD_ADDITION_TEMPLATE_TEST_VALUE)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
@@ -3827,10 +3827,10 @@ public class TestValuesGenerator {
 	
 	public SoftwareAgentBuilder builderForSoftwareAgentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SoftwareAgentBuilder retval = new SoftwareAgentBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3844,11 +3844,11 @@ public class TestValuesGenerator {
 		ArtifactBuilder retval = new MockArtifact.MockArtifactBuilder(modelStore, objectUri, copyManager)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addStandardName(STANDARD_NAME_TEST_VALUE1)
 				.addStandardName(STANDARD_NAME_TEST_VALUE2)
 				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
@@ -3866,10 +3866,10 @@ public class TestValuesGenerator {
 	
 	public AgentBuilder builderForAgentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AgentBuilder retval = new AgentBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3882,10 +3882,10 @@ public class TestValuesGenerator {
 	public SimpleLicensingTextBuilder builderForSimpleLicensingTextTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SimpleLicensingTextBuilder retval = new SimpleLicensingTextBuilder(modelStore, objectUri, copyManager)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3962,13 +3962,13 @@ public class TestValuesGenerator {
 	public CustomLicenseAdditionBuilder builderForCustomLicenseAdditionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		CustomLicenseAdditionBuilder retval = new CustomLicenseAdditionBuilder(modelStore, objectUri, copyManager)
 				.setIsDeprecatedAdditionId(true)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setAdditionText(ADDITION_TEXT_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardAdditionTemplate(STANDARD_ADDITION_TEMPLATE_TEST_VALUE)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
@@ -4032,14 +4032,14 @@ public class TestValuesGenerator {
 				.setIsDeprecatedLicenseId(true)
 				.setIsOsiApproved(true)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStandardLicenseTemplate(STANDARD_LICENSE_TEMPLATE_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setListVersionAdded(LIST_VERSION_ADDED_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setDeprecatedVersion(DEPRECATED_VERSION_TEST_VALUE)
 				.setStandardLicenseHeader(STANDARD_LICENSE_HEADER_TEST_VALUE)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
@@ -4097,12 +4097,12 @@ public class TestValuesGenerator {
 	
 	public RelationshipBuilder builderForRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		RelationshipBuilder retval = new RelationshipBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -4121,13 +4121,13 @@ public class TestValuesGenerator {
 				.setScore(SCORE_TEST_VALUE)
 				.setVectorString(VECTOR_STRING_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setSeverity(SEVERITY_TEST_VALUE1)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
@@ -4148,14 +4148,14 @@ public class TestValuesGenerator {
 	public ListedLicenseExceptionBuilder builderForListedLicenseExceptionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ListedLicenseExceptionBuilder retval = new ListedLicenseExceptionBuilder(modelStore, objectUri, copyManager)
 				.setIsDeprecatedAdditionId(true)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setAdditionText(ADDITION_TEXT_TEST_VALUE)
 				.setListVersionAdded(LIST_VERSION_ADDED_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardAdditionTemplate(STANDARD_ADDITION_TEMPLATE_TEST_VALUE)
 				.setDeprecatedVersion(DEPRECATED_VERSION_TEST_VALUE)
 				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
@@ -4174,13 +4174,13 @@ public class TestValuesGenerator {
 				.setProbability(PROBABILITY_TEST_VALUE)
 				.setPercentile(PERCENTILE_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)

@@ -116,17 +116,6 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setSummary}.
-	 */
-	public void testSpdxDocumentsetSummary() throws InvalidSPDXAnalysisException {
-		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSpdxDocument.getSummary());
-		String newStringValue = "new summary value";
-		testSpdxDocument.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxDocument.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setDescription}.
 	 */
 	public void testSpdxDocumentsetDescription() throws InvalidSPDXAnalysisException {
@@ -138,14 +127,14 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setSummary}.
 	 */
-	public void testSpdxDocumentsetComment() throws InvalidSPDXAnalysisException {
+	public void testSpdxDocumentsetSummary() throws InvalidSPDXAnalysisException {
 		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxDocument.getComment());
-		String newStringValue = "new comment value";
-		testSpdxDocument.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxDocument.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSpdxDocument.getSummary());
+		String newStringValue = "new summary value";
+		testSpdxDocument.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxDocument.getSummary());
 	}
 	
 	/**
@@ -157,6 +146,17 @@ public class SpdxDocumentTest extends TestCase {
 		String newStringValue = "new name value";
 		testSpdxDocument.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSpdxDocument.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setComment}.
+	 */
+	public void testSpdxDocumentsetComment() throws InvalidSPDXAnalysisException {
+		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxDocument.getComment());
+		String newStringValue = "new comment value";
+		testSpdxDocument.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxDocument.getComment());
 	}
 	
 	/**

@@ -104,28 +104,6 @@ public class SoftwareAgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setSummary}.
-	 */
-	public void testSoftwareAgentsetSummary() throws InvalidSPDXAnalysisException {
-		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSoftwareAgent.getSummary());
-		String newStringValue = "new summary value";
-		testSoftwareAgent.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getSummary());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setComment}.
-	 */
-	public void testSoftwareAgentsetComment() throws InvalidSPDXAnalysisException {
-		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSoftwareAgent.getComment());
-		String newStringValue = "new comment value";
-		testSoftwareAgent.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setName}.
 	 */
 	public void testSoftwareAgentsetName() throws InvalidSPDXAnalysisException {
@@ -145,6 +123,28 @@ public class SoftwareAgentTest extends TestCase {
 		String newStringValue = "new description value";
 		testSoftwareAgent.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setSummary}.
+	 */
+	public void testSoftwareAgentsetSummary() throws InvalidSPDXAnalysisException {
+		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSoftwareAgent.getSummary());
+		String newStringValue = "new summary value";
+		testSoftwareAgent.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setComment}.
+	 */
+	public void testSoftwareAgentsetComment() throws InvalidSPDXAnalysisException {
+		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSoftwareAgent.getComment());
+		String newStringValue = "new comment value";
+		testSoftwareAgent.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getComment());
 	}
 	
 	/**

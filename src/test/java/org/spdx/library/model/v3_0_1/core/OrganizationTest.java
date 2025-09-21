@@ -104,28 +104,6 @@ public class OrganizationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setSummary}.
-	 */
-	public void testOrganizationsetSummary() throws InvalidSPDXAnalysisException {
-		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrganization.getSummary());
-		String newStringValue = "new summary value";
-		testOrganization.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrganization.getSummary());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setComment}.
-	 */
-	public void testOrganizationsetComment() throws InvalidSPDXAnalysisException {
-		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testOrganization.getComment());
-		String newStringValue = "new comment value";
-		testOrganization.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrganization.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setName}.
 	 */
 	public void testOrganizationsetName() throws InvalidSPDXAnalysisException {
@@ -145,6 +123,28 @@ public class OrganizationTest extends TestCase {
 		String newStringValue = "new description value";
 		testOrganization.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testOrganization.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setSummary}.
+	 */
+	public void testOrganizationsetSummary() throws InvalidSPDXAnalysisException {
+		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testOrganization.getSummary());
+		String newStringValue = "new summary value";
+		testOrganization.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrganization.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setComment}.
+	 */
+	public void testOrganizationsetComment() throws InvalidSPDXAnalysisException {
+		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testOrganization.getComment());
+		String newStringValue = "new comment value";
+		testOrganization.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrganization.getComment());
 	}
 	
 	/**

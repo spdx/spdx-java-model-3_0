@@ -109,28 +109,6 @@ public class IndividualLicensingInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setSummary}.
-	 */
-	public void testIndividualLicensingInfosetSummary() throws InvalidSPDXAnalysisException {
-		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualLicensingInfo.getSummary());
-		String newStringValue = "new summary value";
-		testIndividualLicensingInfo.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getSummary());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setComment}.
-	 */
-	public void testIndividualLicensingInfosetComment() throws InvalidSPDXAnalysisException {
-		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testIndividualLicensingInfo.getComment());
-		String newStringValue = "new comment value";
-		testIndividualLicensingInfo.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setName}.
 	 */
 	public void testIndividualLicensingInfosetName() throws InvalidSPDXAnalysisException {
@@ -150,6 +128,28 @@ public class IndividualLicensingInfoTest extends TestCase {
 		String newStringValue = "new description value";
 		testIndividualLicensingInfo.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setSummary}.
+	 */
+	public void testIndividualLicensingInfosetSummary() throws InvalidSPDXAnalysisException {
+		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testIndividualLicensingInfo.getSummary());
+		String newStringValue = "new summary value";
+		testIndividualLicensingInfo.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.IndividualLicensingInfo#setComment}.
+	 */
+	public void testIndividualLicensingInfosetComment() throws InvalidSPDXAnalysisException {
+		IndividualLicensingInfo testIndividualLicensingInfo = generator.builderForIndividualLicensingInfoTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testIndividualLicensingInfo.getComment());
+		String newStringValue = "new comment value";
+		testIndividualLicensingInfo.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testIndividualLicensingInfo.getComment());
 	}
 	
 	/**

@@ -133,17 +133,6 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setSummary}.
-	 */
-	public void testBuildsetSummary() throws InvalidSPDXAnalysisException {
-		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBuild.getSummary());
-		String newStringValue = "new summary value";
-		testBuild.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setDescription}.
 	 */
 	public void testBuildsetDescription() throws InvalidSPDXAnalysisException {
@@ -155,14 +144,14 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setSummary}.
 	 */
-	public void testBuildsetComment() throws InvalidSPDXAnalysisException {
+	public void testBuildsetSummary() throws InvalidSPDXAnalysisException {
 		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBuild.getComment());
-		String newStringValue = "new comment value";
-		testBuild.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBuild.getSummary());
+		String newStringValue = "new summary value";
+		testBuild.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getSummary());
 	}
 	
 	/**
@@ -174,6 +163,17 @@ public class BuildTest extends TestCase {
 		String newStringValue = "new name value";
 		testBuild.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBuild.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setComment}.
+	 */
+	public void testBuildsetComment() throws InvalidSPDXAnalysisException {
+		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBuild.getComment());
+		String newStringValue = "new comment value";
+		testBuild.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getComment());
 	}
 	
 	/**

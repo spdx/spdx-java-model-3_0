@@ -109,17 +109,6 @@ public class SbomTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setSummary}.
-	 */
-	public void testSbomsetSummary() throws InvalidSPDXAnalysisException {
-		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSbom.getSummary());
-		String newStringValue = "new summary value";
-		testSbom.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSbom.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setDescription}.
 	 */
 	public void testSbomsetDescription() throws InvalidSPDXAnalysisException {
@@ -128,6 +117,17 @@ public class SbomTest extends TestCase {
 		String newStringValue = "new description value";
 		testSbom.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSbom.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setSummary}.
+	 */
+	public void testSbomsetSummary() throws InvalidSPDXAnalysisException {
+		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSbom.getSummary());
+		String newStringValue = "new summary value";
+		testSbom.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSbom.getSummary());
 	}
 	
 	/**
@@ -142,17 +142,6 @@ public class SbomTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setComment}.
-	 */
-	public void testSbomsetComment() throws InvalidSPDXAnalysisException {
-		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSbom.getComment());
-		String newStringValue = "new comment value";
-		testSbom.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSbom.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setName}.
 	 */
 	public void testSbomsetName() throws InvalidSPDXAnalysisException {
@@ -161,6 +150,17 @@ public class SbomTest extends TestCase {
 		String newStringValue = "new name value";
 		testSbom.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSbom.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setComment}.
+	 */
+	public void testSbomsetComment() throws InvalidSPDXAnalysisException {
+		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSbom.getComment());
+		String newStringValue = "new comment value";
+		testSbom.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSbom.getComment());
 	}
 	
 	/**
