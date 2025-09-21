@@ -119,28 +119,6 @@ public class SimpleLicensingTextTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.SimpleLicensingText#setSummary}.
-	 */
-	public void testSimpleLicensingTextsetSummary() throws InvalidSPDXAnalysisException {
-		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSimpleLicensingText.getSummary());
-		String newStringValue = "new summary value";
-		testSimpleLicensingText.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getSummary());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.SimpleLicensingText#setComment}.
-	 */
-	public void testSimpleLicensingTextsetComment() throws InvalidSPDXAnalysisException {
-		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSimpleLicensingText.getComment());
-		String newStringValue = "new comment value";
-		testSimpleLicensingText.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.SimpleLicensingText#setName}.
 	 */
 	public void testSimpleLicensingTextsetName() throws InvalidSPDXAnalysisException {
@@ -160,6 +138,28 @@ public class SimpleLicensingTextTest extends TestCase {
 		String newStringValue = "new description value";
 		testSimpleLicensingText.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.SimpleLicensingText#setSummary}.
+	 */
+	public void testSimpleLicensingTextsetSummary() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSimpleLicensingText.getSummary());
+		String newStringValue = "new summary value";
+		testSimpleLicensingText.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.SimpleLicensingText#setComment}.
+	 */
+	public void testSimpleLicensingTextsetComment() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSimpleLicensingText.getComment());
+		String newStringValue = "new comment value";
+		testSimpleLicensingText.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getComment());
 	}
 	
 	/**

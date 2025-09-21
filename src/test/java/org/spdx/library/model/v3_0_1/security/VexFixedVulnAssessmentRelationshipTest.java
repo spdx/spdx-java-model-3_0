@@ -188,17 +188,6 @@ public class VexFixedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setSummary}.
-	 */
-	public void testVexFixedVulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
-		VexFixedVulnAssessmentRelationship testVexFixedVulnAssessmentRelationship = generator.builderForVexFixedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testVexFixedVulnAssessmentRelationship.getSummary());
-		String newStringValue = "new summary value";
-		testVexFixedVulnAssessmentRelationship.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setDescription}.
 	 */
 	public void testVexFixedVulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
@@ -207,6 +196,17 @@ public class VexFixedVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new description value";
 		testVexFixedVulnAssessmentRelationship.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setSummary}.
+	 */
+	public void testVexFixedVulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
+		VexFixedVulnAssessmentRelationship testVexFixedVulnAssessmentRelationship = generator.builderForVexFixedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testVexFixedVulnAssessmentRelationship.getSummary());
+		String newStringValue = "new summary value";
+		testVexFixedVulnAssessmentRelationship.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getSummary());
 	}
 	
 	/**
@@ -254,17 +254,6 @@ public class VexFixedVulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setComment}.
-	 */
-	public void testVexFixedVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		VexFixedVulnAssessmentRelationship testVexFixedVulnAssessmentRelationship = generator.builderForVexFixedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexFixedVulnAssessmentRelationship.getComment());
-		String newStringValue = "new comment value";
-		testVexFixedVulnAssessmentRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setName}.
 	 */
 	public void testVexFixedVulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -273,6 +262,17 @@ public class VexFixedVulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new name value";
 		testVexFixedVulnAssessmentRelationship.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexFixedVulnAssessmentRelationship#setComment}.
+	 */
+	public void testVexFixedVulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
+		VexFixedVulnAssessmentRelationship testVexFixedVulnAssessmentRelationship = generator.builderForVexFixedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testVexFixedVulnAssessmentRelationship.getComment());
+		String newStringValue = "new comment value";
+		testVexFixedVulnAssessmentRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testVexFixedVulnAssessmentRelationship.getComment());
 	}
 	
 	/**
