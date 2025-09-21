@@ -133,17 +133,6 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setDescription}.
-	 */
-	public void testBuildsetDescription() throws InvalidSPDXAnalysisException {
-		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testBuild.getDescription());
-		String newStringValue = "new description value";
-		testBuild.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getDescription());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setSummary}.
 	 */
 	public void testBuildsetSummary() throws InvalidSPDXAnalysisException {
@@ -155,14 +144,14 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setName}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setDescription}.
 	 */
-	public void testBuildsetName() throws InvalidSPDXAnalysisException {
+	public void testBuildsetDescription() throws InvalidSPDXAnalysisException {
 		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testBuild.getName());
-		String newStringValue = "new name value";
-		testBuild.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getName());
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testBuild.getDescription());
+		String newStringValue = "new description value";
+		testBuild.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getDescription());
 	}
 	
 	/**
@@ -174,6 +163,17 @@ public class BuildTest extends TestCase {
 		String newStringValue = "new comment value";
 		testBuild.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBuild.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setName}.
+	 */
+	public void testBuildsetName() throws InvalidSPDXAnalysisException {
+		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testBuild.getName());
+		String newStringValue = "new name value";
+		testBuild.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getName());
 	}
 	
 	/**

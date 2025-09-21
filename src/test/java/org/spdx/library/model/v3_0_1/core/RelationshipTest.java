@@ -136,17 +136,6 @@ public class RelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setDescription}.
-	 */
-	public void testRelationshipsetDescription() throws InvalidSPDXAnalysisException {
-		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testRelationship.getDescription());
-		String newStringValue = "new description value";
-		testRelationship.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testRelationship.getDescription());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setSummary}.
 	 */
 	public void testRelationshipsetSummary() throws InvalidSPDXAnalysisException {
@@ -155,6 +144,17 @@ public class RelationshipTest extends TestCase {
 		String newStringValue = "new summary value";
 		testRelationship.setSummary(newStringValue);
 		assertEquals(Optional.of(newStringValue), testRelationship.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setDescription}.
+	 */
+	public void testRelationshipsetDescription() throws InvalidSPDXAnalysisException {
+		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testRelationship.getDescription());
+		String newStringValue = "new description value";
+		testRelationship.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testRelationship.getDescription());
 	}
 	
 	/**
@@ -180,17 +180,6 @@ public class RelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setName}.
-	 */
-	public void testRelationshipsetName() throws InvalidSPDXAnalysisException {
-		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testRelationship.getName());
-		String newStringValue = "new name value";
-		testRelationship.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testRelationship.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setComment}.
 	 */
 	public void testRelationshipsetComment() throws InvalidSPDXAnalysisException {
@@ -199,6 +188,17 @@ public class RelationshipTest extends TestCase {
 		String newStringValue = "new comment value";
 		testRelationship.setComment(newStringValue);
 		assertEquals(Optional.of(newStringValue), testRelationship.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setName}.
+	 */
+	public void testRelationshipsetName() throws InvalidSPDXAnalysisException {
+		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testRelationship.getName());
+		String newStringValue = "new name value";
+		testRelationship.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testRelationship.getName());
 	}
 	
 	/**

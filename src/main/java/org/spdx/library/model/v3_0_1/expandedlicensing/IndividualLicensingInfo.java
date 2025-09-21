@@ -110,25 +110,14 @@ public  class IndividualLicensingInfo extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
-	 * sets the name
-	 * @param name the name to set
+	 * sets the comment
+	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public IndividualLicensingInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
-		return this;
-	}	
-	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public IndividualLicensingInfo setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
+	public IndividualLicensingInfo setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		super.setComment(comment);
 		return this;
 	}	
 	/**
@@ -143,14 +132,25 @@ public  class IndividualLicensingInfo extends AnyLicenseInfo  {
 		return this;
 	}	
 	/**
-	 * sets the comment
-	 * @param comment the comment to set
+	 * sets the description
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public IndividualLicensingInfo setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		super.setComment(comment);
+	public IndividualLicensingInfo setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
+		return this;
+	}	
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public IndividualLicensingInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -322,22 +322,12 @@ public  class IndividualLicensingInfo extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
+		 * Sets the initial value of comment
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
-		public IndividualLicensingInfoBuilder setName(String name) {
-			super.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public IndividualLicensingInfoBuilder setDescription(String description) {
-			super.description = description;
+		public IndividualLicensingInfoBuilder setComment(String comment) {
+			super.comment = comment;
 			return this;
 		}
 		
@@ -352,12 +342,22 @@ public  class IndividualLicensingInfo extends AnyLicenseInfo  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @param comment value to set
+		 * Sets the initial value of description
+		 * @param description value to set
 		 * @return this for chaining
 		**/
-		public IndividualLicensingInfoBuilder setComment(String comment) {
-			super.comment = comment;
+		public IndividualLicensingInfoBuilder setDescription(String description) {
+			super.description = description;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public IndividualLicensingInfoBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

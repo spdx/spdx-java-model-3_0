@@ -218,20 +218,6 @@ public class ExternalSoftwareArtifact extends SoftwareArtifact  implements Indiv
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public SoftwareArtifact setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the summary
 	 */
 	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
@@ -243,6 +229,20 @@ public class ExternalSoftwareArtifact extends SoftwareArtifact  implements Indiv
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public SoftwareArtifact setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SoftwareArtifact setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -274,20 +274,6 @@ public class ExternalSoftwareArtifact extends SoftwareArtifact  implements Indiv
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public SoftwareArtifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the comment
 	 */
 	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
@@ -299,6 +285,20 @@ public class ExternalSoftwareArtifact extends SoftwareArtifact  implements Indiv
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public SoftwareArtifact setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SoftwareArtifact setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

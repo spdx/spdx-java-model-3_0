@@ -105,10 +105,10 @@ public abstract class Element extends ModelObjectV3  {
 		if (Objects.nonNull(builder.creationInfo)) {
 			setCreationInfo(builder.creationInfo);
 		}
-		setName(builder.name);
-		setDescription(builder.description);
-		setSummary(builder.summary);
 		setComment(builder.comment);
+		setSummary(builder.summary);
+		setDescription(builder.description);
+		setName(builder.name);
 	}
 
 	/** (non-Javadoc)
@@ -180,37 +180,20 @@ public abstract class Element extends ModelObjectV3  {
 		return this;
 	}
 		/**
-	 * gets the name
-	 * @return the name
+	 * gets the comment
+	 * @return the comment
 	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_NAME);
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_COMMENT);
 	}
 	/**
-	 * sets the name
-	 * @param name the name to set
+	 * sets the comment
+	 * @param comment the comment to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public Element setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		setPropertyValue(SpdxConstantsV3.PROP_NAME, name);
-		return this;
-	}
-		/**
-	 * gets the description
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_DESCRIPTION);
-	}
-	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Element setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		setPropertyValue(SpdxConstantsV3.PROP_DESCRIPTION, description);
+	public Element setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		setPropertyValue(SpdxConstantsV3.PROP_COMMENT, comment);
 		return this;
 	}
 		/**
@@ -231,20 +214,37 @@ public abstract class Element extends ModelObjectV3  {
 		return this;
 	}
 		/**
-	 * gets the comment
-	 * @return the comment
+	 * gets the description
+	 * @return the description
 	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
-		return getStringPropertyValue(SpdxConstantsV3.PROP_COMMENT);
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_DESCRIPTION);
 	}
 	/**
-	 * sets the comment
-	 * @param comment the comment to set
+	 * sets the description
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public Element setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
-		setPropertyValue(SpdxConstantsV3.PROP_COMMENT, comment);
+	public Element setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		setPropertyValue(SpdxConstantsV3.PROP_DESCRIPTION, description);
+		return this;
+	}
+		/**
+	 * gets the name
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return getStringPropertyValue(SpdxConstantsV3.PROP_NAME);
+	}
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Element setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		setPropertyValue(SpdxConstantsV3.PROP_NAME, name);
 		return this;
 	}
 	
@@ -290,15 +290,9 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		try {
 			@SuppressWarnings("unused")
-			Optional<String> name = getName();
+			Optional<String> comment = getComment();
 		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting name for Element: "+e.getMessage());
-		}
-		try {
-			@SuppressWarnings("unused")
-			Optional<String> description = getDescription();
-		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting description for Element: "+e.getMessage());
+			retval.add("Error getting comment for Element: "+e.getMessage());
 		}
 		try {
 			@SuppressWarnings("unused")
@@ -308,9 +302,15 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		try {
 			@SuppressWarnings("unused")
-			Optional<String> comment = getComment();
+			Optional<String> description = getDescription();
 		} catch (InvalidSPDXAnalysisException e) {
-			retval.add("Error getting comment for Element: "+e.getMessage());
+			retval.add("Error getting description for Element: "+e.getMessage());
+		}
+		try {
+			@SuppressWarnings("unused")
+			Optional<String> name = getName();
+		} catch (InvalidSPDXAnalysisException e) {
+			retval.add("Error getting name for Element: "+e.getMessage());
 		}
 		for (ExternalRef externalRef:externalRefs) {
 			retval.addAll(externalRef.verify(verifiedIds, specVersionForVerify, profiles));
@@ -375,10 +375,10 @@ public abstract class Element extends ModelObjectV3  {
 		protected Collection<IntegrityMethod> verifiedUsings = new ArrayList<>();
 		protected Collection<ExternalIdentifier> externalIdentifiers = new ArrayList<>();
 		protected CreationInfo creationInfo = null;
-		protected String name = null;
-		protected String description = null;
-		protected String summary = null;
 		protected String comment = null;
+		protected String summary = null;
+		protected String description = null;
+		protected String name = null;
 		
 		
 		/**
@@ -488,22 +488,12 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
+		 * Sets the initial value of comment
+		 * @param comment value to set
 		 * @return this for chaining
 		**/
-		public ElementBuilder setName(String name) {
-			this.name = name;
-			return this;
-		}
-		
-		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public ElementBuilder setDescription(String description) {
-			this.description = description;
+		public ElementBuilder setComment(String comment) {
+			this.comment = comment;
 			return this;
 		}
 		
@@ -518,12 +508,22 @@ public abstract class Element extends ModelObjectV3  {
 		}
 		
 		/**
-		 * Sets the initial value of comment
-		 * @param comment value to set
+		 * Sets the initial value of description
+		 * @param description value to set
 		 * @return this for chaining
 		**/
-		public ElementBuilder setComment(String comment) {
-			this.comment = comment;
+		public ElementBuilder setDescription(String description) {
+			this.description = description;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public ElementBuilder setName(String name) {
+			this.name = name;
 			return this;
 		}
 	

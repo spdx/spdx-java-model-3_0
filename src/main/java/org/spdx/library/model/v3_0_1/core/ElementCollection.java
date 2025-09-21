@@ -143,17 +143,6 @@ public abstract class ElementCollection extends Element  {
 		return this;
 	}	
 	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public ElementCollection setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
-		return this;
-	}	
-	/**
 	 * sets the summary
 	 * @param summary the summary to set
 	 * @return this to chain setters
@@ -165,14 +154,14 @@ public abstract class ElementCollection extends Element  {
 		return this;
 	}	
 	/**
-	 * sets the name
-	 * @param name the name to set
+	 * sets the description
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public ElementCollection setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
+	public ElementCollection setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
 		return this;
 	}	
 	/**
@@ -184,6 +173,17 @@ public abstract class ElementCollection extends Element  {
 	 @Override
 	public ElementCollection setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public ElementCollection setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -436,16 +436,6 @@ public abstract class ElementCollection extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public ElementCollectionBuilder setDescription(String description) {
-			super.description = description;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
 		 * @param summary value to set
 		 * @return this for chaining
@@ -456,12 +446,12 @@ public abstract class ElementCollection extends Element  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
+		 * Sets the initial value of description
+		 * @param description value to set
 		 * @return this for chaining
 		**/
-		public ElementCollectionBuilder setName(String name) {
-			super.name = name;
+		public ElementCollectionBuilder setDescription(String description) {
+			super.description = description;
 			return this;
 		}
 		
@@ -472,6 +462,16 @@ public abstract class ElementCollection extends Element  {
 		**/
 		public ElementCollectionBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public ElementCollectionBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

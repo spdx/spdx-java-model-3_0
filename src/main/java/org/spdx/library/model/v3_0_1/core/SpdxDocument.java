@@ -159,17 +159,6 @@ public  class SpdxDocument extends ElementCollection  {
 		return this;
 	}
 	/**
-	 * sets the description
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	 @Override
-	public SpdxDocument setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		super.setDescription(description);
-		return this;
-	}	
-	/**
 	 * sets the summary
 	 * @param summary the summary to set
 	 * @return this to chain setters
@@ -181,14 +170,14 @@ public  class SpdxDocument extends ElementCollection  {
 		return this;
 	}	
 	/**
-	 * sets the name
-	 * @param name the name to set
+	 * sets the description
+	 * @param description the description to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	 @Override
-	public SpdxDocument setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		super.setName(name);
+	public SpdxDocument setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
+		super.setDescription(description);
 		return this;
 	}	
 	/**
@@ -200,6 +189,17 @@ public  class SpdxDocument extends ElementCollection  {
 	 @Override
 	public SpdxDocument setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		super.setComment(comment);
+		return this;
+	}	
+	/**
+	 * sets the name
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	 @Override
+	public SpdxDocument setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		super.setName(name);
 		return this;
 	}	
 	
@@ -519,16 +519,6 @@ public  class SpdxDocument extends ElementCollection  {
 		}
 		
 		/**
-		 * Sets the initial value of description
-		 * @param description value to set
-		 * @return this for chaining
-		**/
-		public SpdxDocumentBuilder setDescription(String description) {
-			super.description = description;
-			return this;
-		}
-		
-		/**
 		 * Sets the initial value of summary
 		 * @param summary value to set
 		 * @return this for chaining
@@ -539,12 +529,12 @@ public  class SpdxDocument extends ElementCollection  {
 		}
 		
 		/**
-		 * Sets the initial value of name
-		 * @param name value to set
+		 * Sets the initial value of description
+		 * @param description value to set
 		 * @return this for chaining
 		**/
-		public SpdxDocumentBuilder setName(String name) {
-			super.name = name;
+		public SpdxDocumentBuilder setDescription(String description) {
+			super.description = description;
 			return this;
 		}
 		
@@ -555,6 +545,16 @@ public  class SpdxDocument extends ElementCollection  {
 		**/
 		public SpdxDocumentBuilder setComment(String comment) {
 			super.comment = comment;
+			return this;
+		}
+		
+		/**
+		 * Sets the initial value of name
+		 * @param name value to set
+		 * @return this for chaining
+		**/
+		public SpdxDocumentBuilder setName(String name) {
+			super.name = name;
 			return this;
 		}
 	

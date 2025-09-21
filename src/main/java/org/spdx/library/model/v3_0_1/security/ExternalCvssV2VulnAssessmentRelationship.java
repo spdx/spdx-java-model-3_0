@@ -259,20 +259,6 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public CvssV2VulnAssessmentRelationship setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the summary
 	 */
 	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
@@ -284,6 +270,20 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public CvssV2VulnAssessmentRelationship setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public CvssV2VulnAssessmentRelationship setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -329,20 +329,6 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public CvssV2VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the comment
 	 */
 	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
@@ -354,6 +340,20 @@ public class ExternalCvssV2VulnAssessmentRelationship extends CvssV2VulnAssessme
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public CvssV2VulnAssessmentRelationship setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public CvssV2VulnAssessmentRelationship setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
