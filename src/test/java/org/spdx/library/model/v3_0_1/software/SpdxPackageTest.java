@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -118,6 +118,17 @@ public class SpdxPackageTest extends TestCase {
 //		assertEquals(Optional.of(TEST_VALUE), testSpdxPackage.getSuppliedBy());
 //		testSpdxPackage.setSuppliedBy(NEW_TEST_VALUE);
 //		assertEquals(Optional.of(NEW_TEST_VALUE), testSpdxPackage.getSuppliedBy());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxPackage#setExtension}.
+	 */
+	public void testSpdxPackagesetExtension() throws InvalidSPDXAnalysisException {
+		SpdxPackage testSpdxPackage = generator.builderForSpdxPackageTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSpdxPackage.getExtension());
+//		testSpdxPackage.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSpdxPackage.getExtension());
 		//TODO: Implement
 	}
 	
@@ -319,18 +330,6 @@ public class SpdxPackageTest extends TestCase {
 //		testSpdxPackage.getExternalIdentifiers().clear();
 //		testSpdxPackage.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSpdxPackage.getExternalIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxPackage#getExtension}.
-	 */
-	public void testSpdxPackagegetExtensions() throws InvalidSPDXAnalysisException {
-		SpdxPackage testSpdxPackage = generator.builderForSpdxPackageTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSpdxPackage.getExtensions())));
-//		testSpdxPackage.getExtensions().clear();
-//		testSpdxPackage.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSpdxPackage.getExtensions())));
 		//TODO: Implement
 	}
 	

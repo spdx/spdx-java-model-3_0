@@ -209,29 +209,6 @@ public class TestValuesGenerator {
 			}
 			
 				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockVexVulnAssessmentRelationshipBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockVexVulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
-				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
@@ -335,6 +312,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockVexVulnAssessmentRelationshipBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
@@ -405,22 +392,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockVexVulnAssessmentRelationshipBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockVexVulnAssessmentRelationshipBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -465,22 +452,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockVexVulnAssessmentRelationshipBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockVexVulnAssessmentRelationshipBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockVexVulnAssessmentRelationshipBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -608,29 +595,6 @@ public class TestValuesGenerator {
 			}
 			
 				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockVulnAssessmentRelationshipBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockVulnAssessmentRelationshipBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
-				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
@@ -734,6 +698,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockVulnAssessmentRelationshipBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
@@ -794,22 +768,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockVulnAssessmentRelationshipBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockVulnAssessmentRelationshipBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -844,22 +818,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockVulnAssessmentRelationshipBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockVulnAssessmentRelationshipBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockVulnAssessmentRelationshipBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -924,29 +898,6 @@ public class TestValuesGenerator {
 				return new MockLicense(this);
 			}
 			
-				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockLicenseBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockLicenseBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
@@ -1042,6 +993,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
@@ -1092,22 +1053,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -1142,22 +1103,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -1242,29 +1203,6 @@ public class TestValuesGenerator {
 			public MockSoftwareArtifactBuilder addAllContentIdentifier(Collection<ContentIdentifier> contentIdentifierCollection) {
 				if (Objects.nonNull(contentIdentifierCollection)) {
 					contentIdentifiers.addAll(contentIdentifierCollection);
-				}
-				return this;
-			}
-				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockSoftwareArtifactBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockSoftwareArtifactBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
 				}
 				return this;
 			}
@@ -1458,6 +1396,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockSoftwareArtifactBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
@@ -1508,22 +1456,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockSoftwareArtifactBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockSoftwareArtifactBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -1548,22 +1496,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockSoftwareArtifactBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockSoftwareArtifactBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockSoftwareArtifactBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 		}
@@ -1642,29 +1590,6 @@ public class TestValuesGenerator {
 				return this;
 			}
 				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockElementBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockElementBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
-				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
 			 * @return this for chaining
@@ -1712,12 +1637,42 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockElementBuilder setExtension(Extension extension) {
+				this.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockElementBuilder setCreationInfo(CreationInfo creationInfo) {
 				this.creationInfo = creationInfo;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of name
+			 * @param name value to set
+			 * @return this for chaining
+			**/
+			public MockElementBuilder setName(String name) {
+				this.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of description
+			 * @param description value to set
+			 * @return this for chaining
+			**/
+			public MockElementBuilder setDescription(String description) {
+				this.description = description;
 				return this;
 			}
 			
@@ -1738,26 +1693,6 @@ public class TestValuesGenerator {
 			**/
 			public MockElementBuilder setSummary(String summary) {
 				this.summary = summary;
-				return this;
-			}
-			
-			/**
-			 * Sets the initial value of description
-			 * @param description value to set
-			 * @return this for chaining
-			**/
-			public MockElementBuilder setDescription(String description) {
-				this.description = description;
-				return this;
-			}
-			
-			/**
-			 * Sets the initial value of name
-			 * @param name value to set
-			 * @return this for chaining
-			**/
-			public MockElementBuilder setName(String name) {
-				this.name = name;
 				return this;
 			}
 		}
@@ -1812,29 +1747,6 @@ public class TestValuesGenerator {
 				return new MockElementCollection(this);
 			}
 			
-				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockElementCollectionBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockElementCollectionBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
@@ -1976,22 +1888,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockElementCollectionBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
 			**/
 			public MockElementCollectionBuilder setCreationInfo(CreationInfo creationInfo) {
 				super.creationInfo = creationInfo;
-				return this;
-			}
-			
-			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockElementCollectionBuilder setSummary(String summary) {
-				super.summary = summary;
 				return this;
 			}
 			
@@ -2006,12 +1918,12 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
+			 * Sets the initial value of summary
+			 * @param summary value to set
 			 * @return this for chaining
 			**/
-			public MockElementCollectionBuilder setComment(String comment) {
-				super.comment = comment;
+			public MockElementCollectionBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -2022,6 +1934,16 @@ public class TestValuesGenerator {
 			**/
 			public MockElementCollectionBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockElementCollectionBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 		}
@@ -2076,29 +1998,6 @@ public class TestValuesGenerator {
 				return new MockLicenseAddition(this);
 			}
 			
-				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockLicenseAdditionBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockLicenseAdditionBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
@@ -2194,6 +2093,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseAdditionBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
@@ -2214,22 +2123,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseAdditionBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseAdditionBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -2264,22 +2173,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockLicenseAdditionBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockLicenseAdditionBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockLicenseAdditionBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 			
@@ -2344,29 +2253,6 @@ public class TestValuesGenerator {
 				return new MockArtifact(this);
 			}
 			
-				/**
-			 * Adds a extension to the initial collection
-			 * @param extension extension to add
-			 * @return this for chaining
-			**/
-			public MockArtifactBuilder addExtension(Extension extension) {
-				if (Objects.nonNull(extension)) {
-					super.extensions.add(extension);
-				}
-				return this;
-			}
-			
-			/**
-			 * Adds all elements from a collection to the initial extension collection
-			 * @param extensionCollection collection to initialize the extension
-			 * @return this for chaining
-			**/
-			public MockArtifactBuilder addAllExtension(Collection<Extension> extensionCollection) {
-				if (Objects.nonNull(extensionCollection)) {
-					super.extensions.addAll(extensionCollection);
-				}
-				return this;
-			}
 				/**
 			 * Adds a verifiedUsing to the initial collection
 			 * @param verifiedUsing verifiedUsing to add
@@ -2509,6 +2395,16 @@ public class TestValuesGenerator {
 			}
 			
 			/**
+			 * Sets the initial value of extension
+			 * @param extension value to set
+			 * @return this for chaining
+			**/
+			public MockArtifactBuilder setExtension(Extension extension) {
+				super.extension = extension;
+				return this;
+			}
+			
+			/**
 			 * Sets the initial value of creationInfo
 			 * @param creationInfo value to set
 			 * @return this for chaining
@@ -2549,22 +2445,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of summary
-			 * @param summary value to set
-			 * @return this for chaining
-			**/
-			public MockArtifactBuilder setSummary(String summary) {
-				super.summary = summary;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of description
 			 * @param description value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setDescription(String description) {
 				super.description = description;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of summary
+			 * @param summary value to set
+			 * @return this for chaining
+			**/
+			public MockArtifactBuilder setSummary(String summary) {
+				super.summary = summary;
 				return this;
 			}
 			
@@ -2579,22 +2475,22 @@ public class TestValuesGenerator {
 			}
 			
 			/**
-			 * Sets the initial value of comment
-			 * @param comment value to set
-			 * @return this for chaining
-			**/
-			public MockArtifactBuilder setComment(String comment) {
-				super.comment = comment;
-				return this;
-			}
-			
-			/**
 			 * Sets the initial value of name
 			 * @param name value to set
 			 * @return this for chaining
 			**/
 			public MockArtifactBuilder setName(String name) {
 				super.name = name;
+				return this;
+			}
+			
+			/**
+			 * Sets the initial value of comment
+			 * @param comment value to set
+			 * @return this for chaining
+			**/
+			public MockArtifactBuilder setComment(String comment) {
+				super.comment = comment;
 				return this;
 			}
 		}
@@ -2714,106 +2610,106 @@ public class TestValuesGenerator {
 	public static final SsvcDecisionType DECISION_TYPE_TEST_VALUE2 = SsvcDecisionType.values()[1];
 	public static final PresenceType HAS_SENSITIVE_PERSONAL_INFORMATION_TEST_VALUE1 = PresenceType.values()[0];
 	public static final PresenceType HAS_SENSITIVE_PERSONAL_INFORMATION_TEST_VALUE2 = PresenceType.values()[1];
-	public static final String DOMAIN_TEST_VALUE1 = "test 1 domain";
-	public static final String DOMAIN_TEST_VALUE2 = "test 2 domain";
-	public static final String DOMAIN_TEST_VALUE3 = "test 3 domain";
-	public static final List<String> DOMAIN_TEST_LIST1 = Arrays.asList(new String[] { DOMAIN_TEST_VALUE1, DOMAIN_TEST_VALUE2 });
-	public static final List<String> DOMAIN_TEST_LIST2 = Arrays.asList(new String[] { DOMAIN_TEST_VALUE3 });
-	public static final String STANDARD_NAME_TEST_VALUE1 = "test 1 standardName";
-	public static final String STANDARD_NAME_TEST_VALUE2 = "test 2 standardName";
-	public static final String STANDARD_NAME_TEST_VALUE3 = "test 3 standardName";
-	public static final List<String> STANDARD_NAME_TEST_LIST1 = Arrays.asList(new String[] { STANDARD_NAME_TEST_VALUE1, STANDARD_NAME_TEST_VALUE2 });
-	public static final List<String> STANDARD_NAME_TEST_LIST2 = Arrays.asList(new String[] { STANDARD_NAME_TEST_VALUE3 });
-	public static final String ATTRIBUTION_TEXT_TEST_VALUE1 = "test 1 attributionText";
-	public static final String ATTRIBUTION_TEXT_TEST_VALUE2 = "test 2 attributionText";
-	public static final String ATTRIBUTION_TEXT_TEST_VALUE3 = "test 3 attributionText";
-	public static final List<String> ATTRIBUTION_TEXT_TEST_LIST1 = Arrays.asList(new String[] { ATTRIBUTION_TEXT_TEST_VALUE1, ATTRIBUTION_TEXT_TEST_VALUE2 });
-	public static final List<String> ATTRIBUTION_TEXT_TEST_LIST2 = Arrays.asList(new String[] { ATTRIBUTION_TEXT_TEST_VALUE3 });
-	public static final String KNOWN_BIAS_TEST_VALUE1 = "test 1 knownBias";
-	public static final String KNOWN_BIAS_TEST_VALUE2 = "test 2 knownBias";
-	public static final String KNOWN_BIAS_TEST_VALUE3 = "test 3 knownBias";
-	public static final List<String> KNOWN_BIAS_TEST_LIST1 = Arrays.asList(new String[] { KNOWN_BIAS_TEST_VALUE1, KNOWN_BIAS_TEST_VALUE2 });
-	public static final List<String> KNOWN_BIAS_TEST_LIST2 = Arrays.asList(new String[] { KNOWN_BIAS_TEST_VALUE3 });
-	public static final String SEE_ALSO_TEST_VALUE1 = "test 1 seeAlso";
-	public static final String SEE_ALSO_TEST_VALUE2 = "test 2 seeAlso";
-	public static final String SEE_ALSO_TEST_VALUE3 = "test 3 seeAlso";
-	public static final List<String> SEE_ALSO_TEST_LIST1 = Arrays.asList(new String[] { SEE_ALSO_TEST_VALUE1, SEE_ALSO_TEST_VALUE2 });
-	public static final List<String> SEE_ALSO_TEST_LIST2 = Arrays.asList(new String[] { SEE_ALSO_TEST_VALUE3 });
-	public static final String STANDARD_COMPLIANCE_TEST_VALUE1 = "test 1 standardCompliance";
-	public static final String STANDARD_COMPLIANCE_TEST_VALUE2 = "test 2 standardCompliance";
-	public static final String STANDARD_COMPLIANCE_TEST_VALUE3 = "test 3 standardCompliance";
-	public static final List<String> STANDARD_COMPLIANCE_TEST_LIST1 = Arrays.asList(new String[] { STANDARD_COMPLIANCE_TEST_VALUE1, STANDARD_COMPLIANCE_TEST_VALUE2 });
-	public static final List<String> STANDARD_COMPLIANCE_TEST_LIST2 = Arrays.asList(new String[] { STANDARD_COMPLIANCE_TEST_VALUE3 });
-	public static final String IDENTIFIER_LOCATOR_TEST_VALUE1 = "test 1 identifierLocator";
-	public static final String IDENTIFIER_LOCATOR_TEST_VALUE2 = "test 2 identifierLocator";
-	public static final String IDENTIFIER_LOCATOR_TEST_VALUE3 = "test 3 identifierLocator";
-	public static final List<String> IDENTIFIER_LOCATOR_TEST_LIST1 = Arrays.asList(new String[] { IDENTIFIER_LOCATOR_TEST_VALUE1, IDENTIFIER_LOCATOR_TEST_VALUE2 });
-	public static final List<String> IDENTIFIER_LOCATOR_TEST_LIST2 = Arrays.asList(new String[] { IDENTIFIER_LOCATOR_TEST_VALUE3 });
-	public static final String CONFIG_SOURCE_URI_TEST_VALUE1 = "test 1 configSourceUri";
-	public static final String CONFIG_SOURCE_URI_TEST_VALUE2 = "test 2 configSourceUri";
-	public static final String CONFIG_SOURCE_URI_TEST_VALUE3 = "test 3 configSourceUri";
-	public static final List<String> CONFIG_SOURCE_URI_TEST_LIST1 = Arrays.asList(new String[] { CONFIG_SOURCE_URI_TEST_VALUE1, CONFIG_SOURCE_URI_TEST_VALUE2 });
-	public static final List<String> CONFIG_SOURCE_URI_TEST_LIST2 = Arrays.asList(new String[] { CONFIG_SOURCE_URI_TEST_VALUE3 });
-	public static final String LOCATOR_TEST_VALUE1 = "test 1 locator";
-	public static final String LOCATOR_TEST_VALUE2 = "test 2 locator";
-	public static final String LOCATOR_TEST_VALUE3 = "test 3 locator";
-	public static final List<String> LOCATOR_TEST_LIST1 = Arrays.asList(new String[] { LOCATOR_TEST_VALUE1, LOCATOR_TEST_VALUE2 });
-	public static final List<String> LOCATOR_TEST_LIST2 = Arrays.asList(new String[] { LOCATOR_TEST_VALUE3 });
-	public static final String MODEL_DATA_PREPROCESSING_TEST_VALUE1 = "test 1 modelDataPreprocessing";
-	public static final String MODEL_DATA_PREPROCESSING_TEST_VALUE2 = "test 2 modelDataPreprocessing";
-	public static final String MODEL_DATA_PREPROCESSING_TEST_VALUE3 = "test 3 modelDataPreprocessing";
-	public static final List<String> MODEL_DATA_PREPROCESSING_TEST_LIST1 = Arrays.asList(new String[] { MODEL_DATA_PREPROCESSING_TEST_VALUE1, MODEL_DATA_PREPROCESSING_TEST_VALUE2 });
-	public static final List<String> MODEL_DATA_PREPROCESSING_TEST_LIST2 = Arrays.asList(new String[] { MODEL_DATA_PREPROCESSING_TEST_VALUE3 });
-	public static final String PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE1 = "test 1 packageVerificationCodeExcludedFile";
-	public static final String PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE2 = "test 2 packageVerificationCodeExcludedFile";
-	public static final String PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE3 = "test 3 packageVerificationCodeExcludedFile";
-	public static final List<String> PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_LIST1 = Arrays.asList(new String[] { PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE1, PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE2 });
-	public static final List<String> PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_LIST2 = Arrays.asList(new String[] { PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE3 });
-	public static final String DATA_PREPROCESSING_TEST_VALUE1 = "test 1 dataPreprocessing";
-	public static final String DATA_PREPROCESSING_TEST_VALUE2 = "test 2 dataPreprocessing";
-	public static final String DATA_PREPROCESSING_TEST_VALUE3 = "test 3 dataPreprocessing";
-	public static final List<String> DATA_PREPROCESSING_TEST_LIST1 = Arrays.asList(new String[] { DATA_PREPROCESSING_TEST_VALUE1, DATA_PREPROCESSING_TEST_VALUE2 });
-	public static final List<String> DATA_PREPROCESSING_TEST_LIST2 = Arrays.asList(new String[] { DATA_PREPROCESSING_TEST_VALUE3 });
-	public static final String CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE1 = "test 1 configSourceEntrypoint";
-	public static final String CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE2 = "test 2 configSourceEntrypoint";
-	public static final String CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE3 = "test 3 configSourceEntrypoint";
-	public static final List<String> CONFIG_SOURCE_ENTRYPOINT_TEST_LIST1 = Arrays.asList(new String[] { CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE1, CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE2 });
-	public static final List<String> CONFIG_SOURCE_ENTRYPOINT_TEST_LIST2 = Arrays.asList(new String[] { CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE3 });
-	public static final String MODEL_EXPLAINABILITY_TEST_VALUE1 = "test 1 modelExplainability";
-	public static final String MODEL_EXPLAINABILITY_TEST_VALUE2 = "test 2 modelExplainability";
-	public static final String MODEL_EXPLAINABILITY_TEST_VALUE3 = "test 3 modelExplainability";
-	public static final List<String> MODEL_EXPLAINABILITY_TEST_LIST1 = Arrays.asList(new String[] { MODEL_EXPLAINABILITY_TEST_VALUE1, MODEL_EXPLAINABILITY_TEST_VALUE2 });
-	public static final List<String> MODEL_EXPLAINABILITY_TEST_LIST2 = Arrays.asList(new String[] { MODEL_EXPLAINABILITY_TEST_VALUE3 });
-	public static final String TYPE_OF_MODEL_TEST_VALUE1 = "test 1 typeOfModel";
-	public static final String TYPE_OF_MODEL_TEST_VALUE2 = "test 2 typeOfModel";
-	public static final String TYPE_OF_MODEL_TEST_VALUE3 = "test 3 typeOfModel";
-	public static final List<String> TYPE_OF_MODEL_TEST_LIST1 = Arrays.asList(new String[] { TYPE_OF_MODEL_TEST_VALUE1, TYPE_OF_MODEL_TEST_VALUE2 });
-	public static final List<String> TYPE_OF_MODEL_TEST_LIST2 = Arrays.asList(new String[] { TYPE_OF_MODEL_TEST_VALUE3 });
-	public static final String ANONYMIZATION_METHOD_USED_TEST_VALUE1 = "test 1 anonymizationMethodUsed";
-	public static final String ANONYMIZATION_METHOD_USED_TEST_VALUE2 = "test 2 anonymizationMethodUsed";
-	public static final String ANONYMIZATION_METHOD_USED_TEST_VALUE3 = "test 3 anonymizationMethodUsed";
-	public static final List<String> ANONYMIZATION_METHOD_USED_TEST_LIST1 = Arrays.asList(new String[] { ANONYMIZATION_METHOD_USED_TEST_VALUE1, ANONYMIZATION_METHOD_USED_TEST_VALUE2 });
-	public static final List<String> ANONYMIZATION_METHOD_USED_TEST_LIST2 = Arrays.asList(new String[] { ANONYMIZATION_METHOD_USED_TEST_VALUE3 });
-	public static final SoftwarePurpose ADDITIONAL_PURPOSE_TEST_VALUE1 = SoftwarePurpose.values()[0];
-	public static final SoftwarePurpose ADDITIONAL_PURPOSE_TEST_VALUE2 = SoftwarePurpose.values()[1];
-	public static final List<SoftwarePurpose> ADDITIONAL_PURPOSE_TEST_LIST1 = Arrays.asList(new SoftwarePurpose[] { ADDITIONAL_PURPOSE_TEST_VALUE1, ADDITIONAL_PURPOSE_TEST_VALUE2 });
-	public static final List<SoftwarePurpose> ADDITIONAL_PURPOSE_TEST_LIST2 = Arrays.asList(new SoftwarePurpose[] { ADDITIONAL_PURPOSE_TEST_VALUE1 });
-	public static final DatasetType DATASET_TYPE_TEST_VALUE1 = DatasetType.values()[0];
-	public static final DatasetType DATASET_TYPE_TEST_VALUE2 = DatasetType.values()[1];
-	public static final List<DatasetType> DATASET_TYPE_TEST_LIST1 = Arrays.asList(new DatasetType[] { DATASET_TYPE_TEST_VALUE1, DATASET_TYPE_TEST_VALUE2 });
-	public static final List<DatasetType> DATASET_TYPE_TEST_LIST2 = Arrays.asList(new DatasetType[] { DATASET_TYPE_TEST_VALUE1 });
-	public static final ProfileIdentifierType PROFILE_CONFORMANCE_TEST_VALUE1 = ProfileIdentifierType.values()[0];
-	public static final ProfileIdentifierType PROFILE_CONFORMANCE_TEST_VALUE2 = ProfileIdentifierType.values()[1];
-	public static final List<ProfileIdentifierType> PROFILE_CONFORMANCE_TEST_LIST1 = Arrays.asList(new ProfileIdentifierType[] { PROFILE_CONFORMANCE_TEST_VALUE1, PROFILE_CONFORMANCE_TEST_VALUE2 });
-	public static final List<ProfileIdentifierType> PROFILE_CONFORMANCE_TEST_LIST2 = Arrays.asList(new ProfileIdentifierType[] { PROFILE_CONFORMANCE_TEST_VALUE1 });
-	public static final SupportType SUPPORT_LEVEL_TEST_VALUE1 = SupportType.values()[0];
-	public static final SupportType SUPPORT_LEVEL_TEST_VALUE2 = SupportType.values()[1];
-	public static final List<SupportType> SUPPORT_LEVEL_TEST_LIST1 = Arrays.asList(new SupportType[] { SUPPORT_LEVEL_TEST_VALUE1, SUPPORT_LEVEL_TEST_VALUE2 });
-	public static final List<SupportType> SUPPORT_LEVEL_TEST_LIST2 = Arrays.asList(new SupportType[] { SUPPORT_LEVEL_TEST_VALUE1 });
-	public static final SbomType SBOM_TYPE_TEST_VALUE1 = SbomType.values()[0];
-	public static final SbomType SBOM_TYPE_TEST_VALUE2 = SbomType.values()[1];
-	public static final List<SbomType> SBOM_TYPE_TEST_LIST1 = Arrays.asList(new SbomType[] { SBOM_TYPE_TEST_VALUE1, SBOM_TYPE_TEST_VALUE2 });
-	public static final List<SbomType> SBOM_TYPE_TEST_LIST2 = Arrays.asList(new SbomType[] { SBOM_TYPE_TEST_VALUE1 });
+	public static final String DOMAIN_COL_TEST_VALUE1 = "test 1 domain";
+	public static final String DOMAIN_COL_TEST_VALUE2 = "test 2 domain";
+	public static final String DOMAIN_COL_TEST_VALUE3 = "test 3 domain";
+	public static final List<String> DOMAIN_TEST_LIST1 = Arrays.asList(new String[] { DOMAIN_COL_TEST_VALUE1, DOMAIN_COL_TEST_VALUE2 });
+	public static final List<String> DOMAIN_TEST_LIST2 = Arrays.asList(new String[] { DOMAIN_COL_TEST_VALUE3 });
+	public static final String STANDARD_NAME_COL_TEST_VALUE1 = "test 1 standardName";
+	public static final String STANDARD_NAME_COL_TEST_VALUE2 = "test 2 standardName";
+	public static final String STANDARD_NAME_COL_TEST_VALUE3 = "test 3 standardName";
+	public static final List<String> STANDARD_NAME_TEST_LIST1 = Arrays.asList(new String[] { STANDARD_NAME_COL_TEST_VALUE1, STANDARD_NAME_COL_TEST_VALUE2 });
+	public static final List<String> STANDARD_NAME_TEST_LIST2 = Arrays.asList(new String[] { STANDARD_NAME_COL_TEST_VALUE3 });
+	public static final String ATTRIBUTION_TEXT_COL_TEST_VALUE1 = "test 1 attributionText";
+	public static final String ATTRIBUTION_TEXT_COL_TEST_VALUE2 = "test 2 attributionText";
+	public static final String ATTRIBUTION_TEXT_COL_TEST_VALUE3 = "test 3 attributionText";
+	public static final List<String> ATTRIBUTION_TEXT_TEST_LIST1 = Arrays.asList(new String[] { ATTRIBUTION_TEXT_COL_TEST_VALUE1, ATTRIBUTION_TEXT_COL_TEST_VALUE2 });
+	public static final List<String> ATTRIBUTION_TEXT_TEST_LIST2 = Arrays.asList(new String[] { ATTRIBUTION_TEXT_COL_TEST_VALUE3 });
+	public static final String KNOWN_BIAS_COL_TEST_VALUE1 = "test 1 knownBias";
+	public static final String KNOWN_BIAS_COL_TEST_VALUE2 = "test 2 knownBias";
+	public static final String KNOWN_BIAS_COL_TEST_VALUE3 = "test 3 knownBias";
+	public static final List<String> KNOWN_BIAS_TEST_LIST1 = Arrays.asList(new String[] { KNOWN_BIAS_COL_TEST_VALUE1, KNOWN_BIAS_COL_TEST_VALUE2 });
+	public static final List<String> KNOWN_BIAS_TEST_LIST2 = Arrays.asList(new String[] { KNOWN_BIAS_COL_TEST_VALUE3 });
+	public static final String SEE_ALSO_COL_TEST_VALUE1 = "test 1 seeAlso";
+	public static final String SEE_ALSO_COL_TEST_VALUE2 = "test 2 seeAlso";
+	public static final String SEE_ALSO_COL_TEST_VALUE3 = "test 3 seeAlso";
+	public static final List<String> SEE_ALSO_TEST_LIST1 = Arrays.asList(new String[] { SEE_ALSO_COL_TEST_VALUE1, SEE_ALSO_COL_TEST_VALUE2 });
+	public static final List<String> SEE_ALSO_TEST_LIST2 = Arrays.asList(new String[] { SEE_ALSO_COL_TEST_VALUE3 });
+	public static final String STANDARD_COMPLIANCE_COL_TEST_VALUE1 = "test 1 standardCompliance";
+	public static final String STANDARD_COMPLIANCE_COL_TEST_VALUE2 = "test 2 standardCompliance";
+	public static final String STANDARD_COMPLIANCE_COL_TEST_VALUE3 = "test 3 standardCompliance";
+	public static final List<String> STANDARD_COMPLIANCE_TEST_LIST1 = Arrays.asList(new String[] { STANDARD_COMPLIANCE_COL_TEST_VALUE1, STANDARD_COMPLIANCE_COL_TEST_VALUE2 });
+	public static final List<String> STANDARD_COMPLIANCE_TEST_LIST2 = Arrays.asList(new String[] { STANDARD_COMPLIANCE_COL_TEST_VALUE3 });
+	public static final String IDENTIFIER_LOCATOR_COL_TEST_VALUE1 = "test 1 identifierLocator";
+	public static final String IDENTIFIER_LOCATOR_COL_TEST_VALUE2 = "test 2 identifierLocator";
+	public static final String IDENTIFIER_LOCATOR_COL_TEST_VALUE3 = "test 3 identifierLocator";
+	public static final List<String> IDENTIFIER_LOCATOR_TEST_LIST1 = Arrays.asList(new String[] { IDENTIFIER_LOCATOR_COL_TEST_VALUE1, IDENTIFIER_LOCATOR_COL_TEST_VALUE2 });
+	public static final List<String> IDENTIFIER_LOCATOR_TEST_LIST2 = Arrays.asList(new String[] { IDENTIFIER_LOCATOR_COL_TEST_VALUE3 });
+	public static final String CONFIG_SOURCE_URI_COL_TEST_VALUE1 = "test 1 configSourceUri";
+	public static final String CONFIG_SOURCE_URI_COL_TEST_VALUE2 = "test 2 configSourceUri";
+	public static final String CONFIG_SOURCE_URI_COL_TEST_VALUE3 = "test 3 configSourceUri";
+	public static final List<String> CONFIG_SOURCE_URI_TEST_LIST1 = Arrays.asList(new String[] { CONFIG_SOURCE_URI_COL_TEST_VALUE1, CONFIG_SOURCE_URI_COL_TEST_VALUE2 });
+	public static final List<String> CONFIG_SOURCE_URI_TEST_LIST2 = Arrays.asList(new String[] { CONFIG_SOURCE_URI_COL_TEST_VALUE3 });
+	public static final String LOCATOR_COL_TEST_VALUE1 = "test 1 locator";
+	public static final String LOCATOR_COL_TEST_VALUE2 = "test 2 locator";
+	public static final String LOCATOR_COL_TEST_VALUE3 = "test 3 locator";
+	public static final List<String> LOCATOR_TEST_LIST1 = Arrays.asList(new String[] { LOCATOR_COL_TEST_VALUE1, LOCATOR_COL_TEST_VALUE2 });
+	public static final List<String> LOCATOR_TEST_LIST2 = Arrays.asList(new String[] { LOCATOR_COL_TEST_VALUE3 });
+	public static final String MODEL_DATA_PREPROCESSING_COL_TEST_VALUE1 = "test 1 modelDataPreprocessing";
+	public static final String MODEL_DATA_PREPROCESSING_COL_TEST_VALUE2 = "test 2 modelDataPreprocessing";
+	public static final String MODEL_DATA_PREPROCESSING_COL_TEST_VALUE3 = "test 3 modelDataPreprocessing";
+	public static final List<String> MODEL_DATA_PREPROCESSING_TEST_LIST1 = Arrays.asList(new String[] { MODEL_DATA_PREPROCESSING_COL_TEST_VALUE1, MODEL_DATA_PREPROCESSING_COL_TEST_VALUE2 });
+	public static final List<String> MODEL_DATA_PREPROCESSING_TEST_LIST2 = Arrays.asList(new String[] { MODEL_DATA_PREPROCESSING_COL_TEST_VALUE3 });
+	public static final String PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE1 = "test 1 packageVerificationCodeExcludedFile";
+	public static final String PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE2 = "test 2 packageVerificationCodeExcludedFile";
+	public static final String PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE3 = "test 3 packageVerificationCodeExcludedFile";
+	public static final List<String> PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_LIST1 = Arrays.asList(new String[] { PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE1, PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE2 });
+	public static final List<String> PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_LIST2 = Arrays.asList(new String[] { PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE3 });
+	public static final String DATA_PREPROCESSING_COL_TEST_VALUE1 = "test 1 dataPreprocessing";
+	public static final String DATA_PREPROCESSING_COL_TEST_VALUE2 = "test 2 dataPreprocessing";
+	public static final String DATA_PREPROCESSING_COL_TEST_VALUE3 = "test 3 dataPreprocessing";
+	public static final List<String> DATA_PREPROCESSING_TEST_LIST1 = Arrays.asList(new String[] { DATA_PREPROCESSING_COL_TEST_VALUE1, DATA_PREPROCESSING_COL_TEST_VALUE2 });
+	public static final List<String> DATA_PREPROCESSING_TEST_LIST2 = Arrays.asList(new String[] { DATA_PREPROCESSING_COL_TEST_VALUE3 });
+	public static final String CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE1 = "test 1 configSourceEntrypoint";
+	public static final String CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE2 = "test 2 configSourceEntrypoint";
+	public static final String CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE3 = "test 3 configSourceEntrypoint";
+	public static final List<String> CONFIG_SOURCE_ENTRYPOINT_TEST_LIST1 = Arrays.asList(new String[] { CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE1, CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE2 });
+	public static final List<String> CONFIG_SOURCE_ENTRYPOINT_TEST_LIST2 = Arrays.asList(new String[] { CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE3 });
+	public static final String MODEL_EXPLAINABILITY_COL_TEST_VALUE1 = "test 1 modelExplainability";
+	public static final String MODEL_EXPLAINABILITY_COL_TEST_VALUE2 = "test 2 modelExplainability";
+	public static final String MODEL_EXPLAINABILITY_COL_TEST_VALUE3 = "test 3 modelExplainability";
+	public static final List<String> MODEL_EXPLAINABILITY_TEST_LIST1 = Arrays.asList(new String[] { MODEL_EXPLAINABILITY_COL_TEST_VALUE1, MODEL_EXPLAINABILITY_COL_TEST_VALUE2 });
+	public static final List<String> MODEL_EXPLAINABILITY_TEST_LIST2 = Arrays.asList(new String[] { MODEL_EXPLAINABILITY_COL_TEST_VALUE3 });
+	public static final String TYPE_OF_MODEL_COL_TEST_VALUE1 = "test 1 typeOfModel";
+	public static final String TYPE_OF_MODEL_COL_TEST_VALUE2 = "test 2 typeOfModel";
+	public static final String TYPE_OF_MODEL_COL_TEST_VALUE3 = "test 3 typeOfModel";
+	public static final List<String> TYPE_OF_MODEL_TEST_LIST1 = Arrays.asList(new String[] { TYPE_OF_MODEL_COL_TEST_VALUE1, TYPE_OF_MODEL_COL_TEST_VALUE2 });
+	public static final List<String> TYPE_OF_MODEL_TEST_LIST2 = Arrays.asList(new String[] { TYPE_OF_MODEL_COL_TEST_VALUE3 });
+	public static final String ANONYMIZATION_METHOD_USED_COL_TEST_VALUE1 = "test 1 anonymizationMethodUsed";
+	public static final String ANONYMIZATION_METHOD_USED_COL_TEST_VALUE2 = "test 2 anonymizationMethodUsed";
+	public static final String ANONYMIZATION_METHOD_USED_COL_TEST_VALUE3 = "test 3 anonymizationMethodUsed";
+	public static final List<String> ANONYMIZATION_METHOD_USED_TEST_LIST1 = Arrays.asList(new String[] { ANONYMIZATION_METHOD_USED_COL_TEST_VALUE1, ANONYMIZATION_METHOD_USED_COL_TEST_VALUE2 });
+	public static final List<String> ANONYMIZATION_METHOD_USED_TEST_LIST2 = Arrays.asList(new String[] { ANONYMIZATION_METHOD_USED_COL_TEST_VALUE3 });
+	public static final SoftwarePurpose ADDITIONAL_PURPOSE_COL_TEST_VALUE1 = SoftwarePurpose.values()[0];
+	public static final SoftwarePurpose ADDITIONAL_PURPOSE_COL_TEST_VALUE2 = SoftwarePurpose.values()[1];
+	public static final List<SoftwarePurpose> ADDITIONAL_PURPOSE_TEST_LIST1 = Arrays.asList(new SoftwarePurpose[] { ADDITIONAL_PURPOSE_COL_TEST_VALUE1, ADDITIONAL_PURPOSE_COL_TEST_VALUE2 });
+	public static final List<SoftwarePurpose> ADDITIONAL_PURPOSE_TEST_LIST2 = Arrays.asList(new SoftwarePurpose[] { ADDITIONAL_PURPOSE_COL_TEST_VALUE1 });
+	public static final DatasetType DATASET_TYPE_COL_TEST_VALUE1 = DatasetType.values()[0];
+	public static final DatasetType DATASET_TYPE_COL_TEST_VALUE2 = DatasetType.values()[1];
+	public static final List<DatasetType> DATASET_TYPE_TEST_LIST1 = Arrays.asList(new DatasetType[] { DATASET_TYPE_COL_TEST_VALUE1, DATASET_TYPE_COL_TEST_VALUE2 });
+	public static final List<DatasetType> DATASET_TYPE_TEST_LIST2 = Arrays.asList(new DatasetType[] { DATASET_TYPE_COL_TEST_VALUE1 });
+	public static final ProfileIdentifierType PROFILE_CONFORMANCE_COL_TEST_VALUE1 = ProfileIdentifierType.values()[0];
+	public static final ProfileIdentifierType PROFILE_CONFORMANCE_COL_TEST_VALUE2 = ProfileIdentifierType.values()[1];
+	public static final List<ProfileIdentifierType> PROFILE_CONFORMANCE_TEST_LIST1 = Arrays.asList(new ProfileIdentifierType[] { PROFILE_CONFORMANCE_COL_TEST_VALUE1, PROFILE_CONFORMANCE_COL_TEST_VALUE2 });
+	public static final List<ProfileIdentifierType> PROFILE_CONFORMANCE_TEST_LIST2 = Arrays.asList(new ProfileIdentifierType[] { PROFILE_CONFORMANCE_COL_TEST_VALUE1 });
+	public static final SupportType SUPPORT_LEVEL_COL_TEST_VALUE1 = SupportType.values()[0];
+	public static final SupportType SUPPORT_LEVEL_COL_TEST_VALUE2 = SupportType.values()[1];
+	public static final List<SupportType> SUPPORT_LEVEL_TEST_LIST1 = Arrays.asList(new SupportType[] { SUPPORT_LEVEL_COL_TEST_VALUE1, SUPPORT_LEVEL_COL_TEST_VALUE2 });
+	public static final List<SupportType> SUPPORT_LEVEL_TEST_LIST2 = Arrays.asList(new SupportType[] { SUPPORT_LEVEL_COL_TEST_VALUE1 });
+	public static final SbomType SBOM_TYPE_COL_TEST_VALUE1 = SbomType.values()[0];
+	public static final SbomType SBOM_TYPE_COL_TEST_VALUE2 = SbomType.values()[1];
+	public static final List<SbomType> SBOM_TYPE_TEST_LIST1 = Arrays.asList(new SbomType[] { SBOM_TYPE_COL_TEST_VALUE1, SBOM_TYPE_COL_TEST_VALUE2 });
+	public static final List<SbomType> SBOM_TYPE_TEST_LIST2 = Arrays.asList(new SbomType[] { SBOM_TYPE_COL_TEST_VALUE1 });
 	
 	private IModelStore modelStore;
 	private IModelCopyManager copyManager;
@@ -2822,7 +2718,7 @@ public class TestValuesGenerator {
 	public TestValuesGenerator(IModelStore modelStore, IModelCopyManager copyManager) throws InvalidSPDXAnalysisException {
 		this.modelStore = modelStore;
 		this.copyManager = copyManager;
-		if (!ModelRegistry.getModelRegistry().containsSpecVersion("3.0.1")) {
+		if (!ModelRegistry.getModelRegistry().containsSpecVersion("v3_0_1")) {
 			ModelRegistry.getModelRegistry().registerModel(new TestSpdxModelInfo());
 		}
 		creationInfo = new CreationInfo.CreationInfoBuilder(modelStore, modelStore.getNextId(IdType.Anonymous), copyManager)
@@ -2848,13 +2744,13 @@ public class TestValuesGenerator {
 	
 	public OrLaterOperatorBuilder builderForOrLaterOperatorTests(String objectUri) throws InvalidSPDXAnalysisException {
 		OrLaterOperatorBuilder retval = new OrLaterOperatorBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSubjectLicense(builderForLicenseTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -2865,21 +2761,21 @@ public class TestValuesGenerator {
 	public SsvcVulnAssessmentRelationshipBuilder builderForSsvcVulnAssessmentRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SsvcVulnAssessmentRelationshipBuilder retval = new SsvcVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setDecisionType(DECISION_TYPE_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2891,12 +2787,12 @@ public class TestValuesGenerator {
 	
 	public IndividualLicensingInfoBuilder builderForIndividualLicensingInfoTests(String objectUri) throws InvalidSPDXAnalysisException {
 		IndividualLicensingInfoBuilder retval = new IndividualLicensingInfoBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -2916,21 +2812,21 @@ public class TestValuesGenerator {
 		VexVulnAssessmentRelationshipBuilder retval = new MockVexVulnAssessmentRelationship.MockVexVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setVexVersion(VEX_VERSION_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStatusNotes(STATUS_NOTES_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2949,14 +2845,14 @@ public class TestValuesGenerator {
 	
 	public SpdxDocumentBuilder builderForSpdxDocumentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SpdxDocumentBuilder retval = new SpdxDocumentBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
+				.setComment(COMMENT_TEST_VALUE)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE1)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setDataLicense(builderForAnyLicenseInfoTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addRootElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2974,20 +2870,20 @@ public class TestValuesGenerator {
 				.setScore(SCORE_TEST_VALUE)
 				.setVectorString(VECTOR_STRING_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -2999,12 +2895,12 @@ public class TestValuesGenerator {
 	
 	public ConjunctiveLicenseSetBuilder builderForConjunctiveLicenseSetTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ConjunctiveLicenseSetBuilder retval = new ConjunctiveLicenseSetBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addMember(builderForAnyLicenseInfoTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3015,12 +2911,12 @@ public class TestValuesGenerator {
 	
 	public ToolBuilder builderForToolTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ToolBuilder retval = new ToolBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3030,12 +2926,12 @@ public class TestValuesGenerator {
 	
 	public DisjunctiveLicenseSetBuilder builderForDisjunctiveLicenseSetTests(String objectUri) throws InvalidSPDXAnalysisException {
 		DisjunctiveLicenseSetBuilder retval = new DisjunctiveLicenseSetBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addMember(builderForAnyLicenseInfoTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3047,20 +2943,20 @@ public class TestValuesGenerator {
 	public VulnAssessmentRelationshipBuilder builderForVulnAssessmentRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		VulnAssessmentRelationshipBuilder retval = new MockVulnAssessmentRelationship.MockVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3074,18 +2970,18 @@ public class TestValuesGenerator {
 		BuildBuilder retval = new BuildBuilder(modelStore, objectUri, copyManager)
 				.setBuildId(BUILD_ID_TEST_VALUE)
 				.setBuildEndTime(BUILD_END_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setBuildStartTime(BUILD_START_TIME_TEST_VALUE)
 				.setBuildType(BUILD_TYPE_TEST_VALUE)
-				.addConfigSourceEntrypoint(CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE1)
-				.addConfigSourceEntrypoint(CONFIG_SOURCE_ENTRYPOINT_TEST_VALUE2)
-				.addConfigSourceUri(CONFIG_SOURCE_URI_TEST_VALUE1)
-				.addConfigSourceUri(CONFIG_SOURCE_URI_TEST_VALUE2)
+				.addConfigSourceEntrypoint(CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE1)
+				.addConfigSourceEntrypoint(CONFIG_SOURCE_ENTRYPOINT_COL_TEST_VALUE2)
+				.addConfigSourceUri(CONFIG_SOURCE_URI_COL_TEST_VALUE1)
+				.addConfigSourceUri(CONFIG_SOURCE_URI_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addEnvironment(builderForDictionaryEntryTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addConfigSourceDigest(builderForHashTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3098,14 +2994,14 @@ public class TestValuesGenerator {
 	
 	public BomBuilder builderForBomTests(String objectUri) throws InvalidSPDXAnalysisException {
 		BomBuilder retval = new BomBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setContext(CONTEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setComment(COMMENT_TEST_VALUE)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE1)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addRootElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3118,12 +3014,12 @@ public class TestValuesGenerator {
 	
 	public PersonBuilder builderForPersonTests(String objectUri) throws InvalidSPDXAnalysisException {
 		PersonBuilder retval = new PersonBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3135,21 +3031,21 @@ public class TestValuesGenerator {
 		VexUnderInvestigationVulnAssessmentRelationshipBuilder retval = new VexUnderInvestigationVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setVexVersion(VEX_VERSION_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStatusNotes(STATUS_NOTES_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3178,15 +3074,15 @@ public class TestValuesGenerator {
 	
 	public AnnotationBuilder builderForAnnotationTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AnnotationBuilder retval = new AnnotationBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStatement(STATEMENT_TEST_VALUE)
 				.setContentType(CONTENT_TYPE_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setAnnotationType(ANNOTATION_TYPE_TEST_VALUE1)
 				.setSubject(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3197,17 +3093,17 @@ public class TestValuesGenerator {
 	
 	public LifecycleScopedRelationshipBuilder builderForLifecycleScopedRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		LifecycleScopedRelationshipBuilder retval = new LifecycleScopedRelationshipBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setScope(SCOPE_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3221,21 +3117,21 @@ public class TestValuesGenerator {
 		VexFixedVulnAssessmentRelationshipBuilder retval = new VexFixedVulnAssessmentRelationshipBuilder(modelStore, objectUri, copyManager)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setVexVersion(VEX_VERSION_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStatusNotes(STATUS_NOTES_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3251,17 +3147,17 @@ public class TestValuesGenerator {
 				.setIsDeprecatedLicenseId(true)
 				.setIsOsiApproved(true)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStandardLicenseTemplate(STANDARD_LICENSE_TEMPLATE_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardLicenseHeader(STANDARD_LICENSE_HEADER_TEST_VALUE)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE1)
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3272,13 +3168,13 @@ public class TestValuesGenerator {
 	
 	public LicenseExpressionBuilder builderForLicenseExpressionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		LicenseExpressionBuilder retval = new LicenseExpressionBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setLicenseExpression(LICENSE_EXPRESSION_TEST_VALUE)
 				.setLicenseListVersion(LICENSE_LIST_VERSION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setComment(COMMENT_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addCustomIdToUri(builderForDictionaryEntryTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3302,24 +3198,24 @@ public class TestValuesGenerator {
 		SoftwareArtifactBuilder retval = new MockSoftwareArtifact.MockSoftwareArtifactBuilder(modelStore, objectUri, copyManager)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
 				.setCopyrightText(COPYRIGHT_TEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
+				.setComment(COMMENT_TEST_VALUE)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE1)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
 				.setPrimaryPurpose(PRIMARY_PURPOSE_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE1)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE1)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addContentIdentifier(builderForContentIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3347,30 +3243,31 @@ public class TestValuesGenerator {
 				.setName(NAME_TEST_VALUE)
 				.setPackageUrl(PACKAGE_URL_TEST_VALUE)
 				.setInformationAboutApplication(INFORMATION_ABOUT_APPLICATION_TEST_VALUE)
-				.addModelDataPreprocessing(MODEL_DATA_PREPROCESSING_TEST_VALUE1)
-				.addModelDataPreprocessing(MODEL_DATA_PREPROCESSING_TEST_VALUE2)
-				.addDomain(DOMAIN_TEST_VALUE1)
-				.addDomain(DOMAIN_TEST_VALUE2)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
-				.addTypeOfModel(TYPE_OF_MODEL_TEST_VALUE1)
-				.addTypeOfModel(TYPE_OF_MODEL_TEST_VALUE2)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
-				.addStandardCompliance(STANDARD_COMPLIANCE_TEST_VALUE1)
-				.addStandardCompliance(STANDARD_COMPLIANCE_TEST_VALUE2)
-				.addModelExplainability(MODEL_EXPLAINABILITY_TEST_VALUE1)
-				.addModelExplainability(MODEL_EXPLAINABILITY_TEST_VALUE2)
+				.addModelDataPreprocessing(MODEL_DATA_PREPROCESSING_COL_TEST_VALUE1)
+				.addModelDataPreprocessing(MODEL_DATA_PREPROCESSING_COL_TEST_VALUE2)
+				.addDomain(DOMAIN_COL_TEST_VALUE1)
+				.addDomain(DOMAIN_COL_TEST_VALUE2)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE1)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE2)
+				.addTypeOfModel(TYPE_OF_MODEL_COL_TEST_VALUE1)
+				.addTypeOfModel(TYPE_OF_MODEL_COL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
+				.addStandardCompliance(STANDARD_COMPLIANCE_COL_TEST_VALUE1)
+				.addStandardCompliance(STANDARD_COMPLIANCE_COL_TEST_VALUE2)
+				.addModelExplainability(MODEL_EXPLAINABILITY_COL_TEST_VALUE1)
+				.addModelExplainability(MODEL_EXPLAINABILITY_COL_TEST_VALUE2)
 				.setAutonomyType(AUTONOMY_TYPE_TEST_VALUE1)
 				.setUseSensitivePersonalInformation(USE_SENSITIVE_PERSONAL_INFORMATION_TEST_VALUE1)
 				.setSafetyRiskAssessment(SAFETY_RISK_ASSESSMENT_TEST_VALUE1)
 				.setPrimaryPurpose(PRIMARY_PURPOSE_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE1)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE1)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE2)
 				.setEnergyConsumption(builderForEnergyConsumptionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addContentIdentifier(builderForContentIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addHyperparameter(builderForDictionaryEntryTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3378,7 +3275,6 @@ public class TestValuesGenerator {
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addMetricDecisionThreshold(builderForDictionaryEntryTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
 		retval.setCreationInfo(creationInfo);
@@ -3407,8 +3303,8 @@ public class TestValuesGenerator {
 				.setIdentifier(IDENTIFIER_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setIssuingAuthority(ISSUING_AUTHORITY_TEST_VALUE)
-				.addIdentifierLocator(IDENTIFIER_LOCATOR_TEST_VALUE1)
-				.addIdentifierLocator(IDENTIFIER_LOCATOR_TEST_VALUE2)
+				.addIdentifierLocator(IDENTIFIER_LOCATOR_COL_TEST_VALUE1)
+				.addIdentifierLocator(IDENTIFIER_LOCATOR_COL_TEST_VALUE2)
 				.setExternalIdentifierType(EXTERNAL_IDENTIFIER_TYPE_TEST_VALUE1)
 				;
 		return retval;
@@ -3419,19 +3315,19 @@ public class TestValuesGenerator {
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3443,12 +3339,12 @@ public class TestValuesGenerator {
 	
 	public ElementBuilder builderForElementTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ElementBuilder retval = new MockElement.MockElementBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3458,12 +3354,12 @@ public class TestValuesGenerator {
 	
 	public ExtendableLicenseBuilder builderForExtendableLicenseTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ExtendableLicenseBuilder retval = new ExtendableLicenseBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3491,12 +3387,12 @@ public class TestValuesGenerator {
 				.setJustificationType(JUSTIFICATION_TYPE_TEST_VALUE1)
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
 		retval.setCreationInfo(creationInfo);
 		return retval;
@@ -3506,26 +3402,26 @@ public class TestValuesGenerator {
 		SpdxFileBuilder retval = new SpdxFileBuilder(modelStore, objectUri, copyManager)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
 				.setCopyrightText(COPYRIGHT_TEXT_TEST_VALUE)
 				.setContentType(CONTENT_TYPE_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
+				.setComment(COMMENT_TEST_VALUE)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE1)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
 				.setPrimaryPurpose(PRIMARY_PURPOSE_TEST_VALUE1)
 				.setFileKind(FILE_KIND_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE1)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE1)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addContentIdentifier(builderForContentIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3554,12 +3450,12 @@ public class TestValuesGenerator {
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
 		retval.setCreationInfo(creationInfo);
 		return retval;
@@ -3567,13 +3463,13 @@ public class TestValuesGenerator {
 	
 	public ElementCollectionBuilder builderForElementCollectionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ElementCollectionBuilder retval = new MockElementCollection.MockElementCollectionBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setComment(COMMENT_TEST_VALUE)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE1)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addRootElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3586,14 +3482,14 @@ public class TestValuesGenerator {
 	
 	public WithAdditionOperatorBuilder builderForWithAdditionOperatorTests(String objectUri) throws InvalidSPDXAnalysisException {
 		WithAdditionOperatorBuilder retval = new WithAdditionOperatorBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSubjectAddition(builderForLicenseAdditionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSubjectExtendableLicense(builderForExtendableLicenseTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3603,14 +3499,14 @@ public class TestValuesGenerator {
 	
 	public BundleBuilder builderForBundleTests(String objectUri) throws InvalidSPDXAnalysisException {
 		BundleBuilder retval = new BundleBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setContext(CONTEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setComment(COMMENT_TEST_VALUE)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE1)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addRootElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3638,12 +3534,12 @@ public class TestValuesGenerator {
 	
 	public IndividualElementBuilder builderForIndividualElementTests(String objectUri) throws InvalidSPDXAnalysisException {
 		IndividualElementBuilder retval = new IndividualElementBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3657,17 +3553,17 @@ public class TestValuesGenerator {
 				.setIsDeprecatedLicenseId(true)
 				.setIsOsiApproved(true)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStandardLicenseTemplate(STANDARD_LICENSE_TEMPLATE_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardLicenseHeader(STANDARD_LICENSE_HEADER_TEST_VALUE)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE1)
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3678,12 +3574,12 @@ public class TestValuesGenerator {
 	
 	public AnyLicenseInfoBuilder builderForAnyLicenseInfoTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AnyLicenseInfoBuilder retval = new AnyLicenseInfoBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3696,21 +3592,21 @@ public class TestValuesGenerator {
 				.setExploited(true)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
 				.setSecurityLocator(SECURITY_LOCATOR_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setCatalogType(CATALOG_TYPE_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3722,12 +3618,12 @@ public class TestValuesGenerator {
 	
 	public OrganizationBuilder builderForOrganizationTests(String objectUri) throws InvalidSPDXAnalysisException {
 		OrganizationBuilder retval = new OrganizationBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3737,16 +3633,16 @@ public class TestValuesGenerator {
 	
 	public SbomBuilder builderForSbomTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SbomBuilder retval = new SbomBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setContext(CONTEXT_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE1)
-				.addProfileConformance(PROFILE_CONFORMANCE_TEST_VALUE2)
-				.addSbomType(SBOM_TYPE_TEST_VALUE1)
-				.addSbomType(SBOM_TYPE_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setComment(COMMENT_TEST_VALUE)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE1)
+				.addProfileConformance(PROFILE_CONFORMANCE_COL_TEST_VALUE2)
+				.addSbomType(SBOM_TYPE_COL_TEST_VALUE1)
+				.addSbomType(SBOM_TYPE_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addRootElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addElement(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3770,21 +3666,21 @@ public class TestValuesGenerator {
 				.setScore(SCORE_TEST_VALUE)
 				.setVectorString(VECTOR_STRING_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setSeverity(SEVERITY_TEST_VALUE1)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3806,17 +3702,17 @@ public class TestValuesGenerator {
 	public LicenseAdditionBuilder builderForLicenseAdditionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		LicenseAdditionBuilder retval = new MockLicenseAddition.MockLicenseAdditionBuilder(modelStore, objectUri, copyManager)
 				.setIsDeprecatedAdditionId(true)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setAdditionText(ADDITION_TEXT_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardAdditionTemplate(STANDARD_ADDITION_TEMPLATE_TEST_VALUE)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE1)
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3827,12 +3723,12 @@ public class TestValuesGenerator {
 	
 	public SoftwareAgentBuilder builderForSoftwareAgentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SoftwareAgentBuilder retval = new SoftwareAgentBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3844,17 +3740,17 @@ public class TestValuesGenerator {
 		ArtifactBuilder retval = new MockArtifact.MockArtifactBuilder(modelStore, objectUri, copyManager)
 				.setValidUntilTime(VALID_UNTIL_TIME_TEST_VALUE)
 				.setBuiltTime(BUILT_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setReleaseTime(RELEASE_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
+				.setComment(COMMENT_TEST_VALUE)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3866,12 +3762,12 @@ public class TestValuesGenerator {
 	
 	public AgentBuilder builderForAgentTests(String objectUri) throws InvalidSPDXAnalysisException {
 		AgentBuilder retval = new AgentBuilder(modelStore, objectUri, copyManager)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3882,12 +3778,12 @@ public class TestValuesGenerator {
 	public SimpleLicensingTextBuilder builderForSimpleLicensingTextTests(String objectUri) throws InvalidSPDXAnalysisException {
 		SimpleLicensingTextBuilder retval = new SimpleLicensingTextBuilder(modelStore, objectUri, copyManager)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
+				.setName(NAME_TEST_VALUE)
+				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
 				.setSummary(SUMMARY_TEST_VALUE)
-				.setDescription(DESCRIPTION_TEST_VALUE)
-				.setName(NAME_TEST_VALUE)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
@@ -3915,33 +3811,33 @@ public class TestValuesGenerator {
 				.setDatasetUpdateMechanism(DATASET_UPDATE_MECHANISM_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setPackageUrl(PACKAGE_URL_TEST_VALUE)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
-				.addAnonymizationMethodUsed(ANONYMIZATION_METHOD_USED_TEST_VALUE1)
-				.addAnonymizationMethodUsed(ANONYMIZATION_METHOD_USED_TEST_VALUE2)
-				.addKnownBias(KNOWN_BIAS_TEST_VALUE1)
-				.addKnownBias(KNOWN_BIAS_TEST_VALUE2)
-				.addDataPreprocessing(DATA_PREPROCESSING_TEST_VALUE1)
-				.addDataPreprocessing(DATA_PREPROCESSING_TEST_VALUE2)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE1)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
+				.addAnonymizationMethodUsed(ANONYMIZATION_METHOD_USED_COL_TEST_VALUE1)
+				.addAnonymizationMethodUsed(ANONYMIZATION_METHOD_USED_COL_TEST_VALUE2)
+				.addKnownBias(KNOWN_BIAS_COL_TEST_VALUE1)
+				.addKnownBias(KNOWN_BIAS_COL_TEST_VALUE2)
+				.addDataPreprocessing(DATA_PREPROCESSING_COL_TEST_VALUE1)
+				.addDataPreprocessing(DATA_PREPROCESSING_COL_TEST_VALUE2)
 				.setDatasetAvailability(DATASET_AVAILABILITY_TEST_VALUE1)
 				.setConfidentialityLevel(CONFIDENTIALITY_LEVEL_TEST_VALUE1)
 				.setHasSensitivePersonalInformation(HAS_SENSITIVE_PERSONAL_INFORMATION_TEST_VALUE1)
 				.setPrimaryPurpose(PRIMARY_PURPOSE_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE1)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE2)
-				.addDatasetType(DATASET_TYPE_TEST_VALUE1)
-				.addDatasetType(DATASET_TYPE_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE1)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE2)
+				.addDatasetType(DATASET_TYPE_COL_TEST_VALUE1)
+				.addDatasetType(DATASET_TYPE_COL_TEST_VALUE2)
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addContentIdentifier(builderForContentIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addSensor(builderForDictionaryEntryTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
 		retval.setCreationInfo(creationInfo);
@@ -3952,8 +3848,8 @@ public class TestValuesGenerator {
 		ExternalRefBuilder retval = new ExternalRefBuilder(modelStore, objectUri, copyManager)
 				.setContentType(CONTENT_TYPE_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.addLocator(LOCATOR_TEST_VALUE1)
-				.addLocator(LOCATOR_TEST_VALUE2)
+				.addLocator(LOCATOR_COL_TEST_VALUE1)
+				.addLocator(LOCATOR_COL_TEST_VALUE2)
 				.setExternalRefType(EXTERNAL_REF_TYPE_TEST_VALUE1)
 				;
 		return retval;
@@ -3962,17 +3858,17 @@ public class TestValuesGenerator {
 	public CustomLicenseAdditionBuilder builderForCustomLicenseAdditionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		CustomLicenseAdditionBuilder retval = new CustomLicenseAdditionBuilder(modelStore, objectUri, copyManager)
 				.setIsDeprecatedAdditionId(true)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setAdditionText(ADDITION_TEXT_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardAdditionTemplate(STANDARD_ADDITION_TEMPLATE_TEST_VALUE)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE1)
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -3985,8 +3881,8 @@ public class TestValuesGenerator {
 		PackageVerificationCodeBuilder retval = new PackageVerificationCodeBuilder(modelStore, objectUri, copyManager)
 				.setHashValue(HASH_VALUE_TEST_VALUE)
 				.setComment(COMMENT_TEST_VALUE)
-				.addPackageVerificationCodeExcludedFile(PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE1)
-				.addPackageVerificationCodeExcludedFile(PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_TEST_VALUE2)
+				.addPackageVerificationCodeExcludedFile(PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE1)
+				.addPackageVerificationCodeExcludedFile(PACKAGE_VERIFICATION_CODE_EXCLUDED_FILE_COL_TEST_VALUE2)
 				.setAlgorithm(ALGORITHM_TEST_VALUE1)
 				;
 		return retval;
@@ -4002,16 +3898,17 @@ public class TestValuesGenerator {
 				.setComment(COMMENT_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE1)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
 				.setPrimaryPurpose(PRIMARY_PURPOSE_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE1)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE1)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE2)
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setLineRange(builderForPositiveIntegerRangeTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setByteRange(builderForPositiveIntegerRangeTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSnippetFromFile(builderForSpdxFileTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -4019,7 +3916,6 @@ public class TestValuesGenerator {
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
 		retval.setCreationInfo(creationInfo);
@@ -4032,19 +3928,19 @@ public class TestValuesGenerator {
 				.setIsDeprecatedLicenseId(true)
 				.setIsOsiApproved(true)
 				.setLicenseText(LICENSE_TEXT_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setStandardLicenseTemplate(STANDARD_LICENSE_TEMPLATE_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setListVersionAdded(LIST_VERSION_ADDED_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setDeprecatedVersion(DEPRECATED_VERSION_TEST_VALUE)
 				.setStandardLicenseHeader(STANDARD_LICENSE_HEADER_TEST_VALUE)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE1)
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -4068,21 +3964,21 @@ public class TestValuesGenerator {
 				.setDescription(DESCRIPTION_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
 				.setPackageUrl(PACKAGE_URL_TEST_VALUE)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE1)
-				.addAttributionText(ATTRIBUTION_TEXT_TEST_VALUE2)
-				.addStandardName(STANDARD_NAME_TEST_VALUE1)
-				.addStandardName(STANDARD_NAME_TEST_VALUE2)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE1)
+				.addAttributionText(ATTRIBUTION_TEXT_COL_TEST_VALUE2)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE1)
+				.addStandardName(STANDARD_NAME_COL_TEST_VALUE2)
 				.setPrimaryPurpose(PRIMARY_PURPOSE_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE1)
-				.addSupportLevel(SUPPORT_LEVEL_TEST_VALUE2)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE1)
-				.addAdditionalPurpose(ADDITIONAL_PURPOSE_TEST_VALUE2)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE1)
+				.addSupportLevel(SUPPORT_LEVEL_COL_TEST_VALUE2)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE1)
+				.addAdditionalPurpose(ADDITIONAL_PURPOSE_COL_TEST_VALUE2)
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addContentIdentifier(builderForContentIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addOriginatedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
 				;
 		retval.setCreationInfo(creationInfo);
@@ -4097,16 +3993,16 @@ public class TestValuesGenerator {
 	
 	public RelationshipBuilder builderForRelationshipTests(String objectUri) throws InvalidSPDXAnalysisException {
 		RelationshipBuilder retval = new RelationshipBuilder(modelStore, objectUri, copyManager)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -4121,21 +4017,21 @@ public class TestValuesGenerator {
 				.setScore(SCORE_TEST_VALUE)
 				.setVectorString(VECTOR_STRING_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setSeverity(SEVERITY_TEST_VALUE1)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -4148,19 +4044,19 @@ public class TestValuesGenerator {
 	public ListedLicenseExceptionBuilder builderForListedLicenseExceptionTests(String objectUri) throws InvalidSPDXAnalysisException {
 		ListedLicenseExceptionBuilder retval = new ListedLicenseExceptionBuilder(modelStore, objectUri, copyManager)
 				.setIsDeprecatedAdditionId(true)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setObsoletedBy(OBSOLETED_BY_TEST_VALUE)
 				.setAdditionText(ADDITION_TEXT_TEST_VALUE)
 				.setListVersionAdded(LIST_VERSION_ADDED_TEST_VALUE)
 				.setLicenseXml(LICENSE_XML_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setStandardAdditionTemplate(STANDARD_ADDITION_TEMPLATE_TEST_VALUE)
 				.setDeprecatedVersion(DEPRECATED_VERSION_TEST_VALUE)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE1)
-				.addSeeAlso(SEE_ALSO_TEST_VALUE2)
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE1)
+				.addSeeAlso(SEE_ALSO_COL_TEST_VALUE2)
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalIdentifier(builderForExternalIdentifierTests(modelStore.getNextId(IdType.SpdxId)).build())
@@ -4174,20 +4070,20 @@ public class TestValuesGenerator {
 				.setProbability(PROBABILITY_TEST_VALUE)
 				.setPercentile(PERCENTILE_TEST_VALUE)
 				.setPublishedTime(PUBLISHED_TIME_TEST_VALUE)
-				.setSummary(SUMMARY_TEST_VALUE)
 				.setDescription(DESCRIPTION_TEST_VALUE)
+				.setSummary(SUMMARY_TEST_VALUE)
 				.setEndTime(END_TIME_TEST_VALUE)
 				.setStartTime(START_TIME_TEST_VALUE)
 				.setWithdrawnTime(WITHDRAWN_TIME_TEST_VALUE)
-				.setComment(COMMENT_TEST_VALUE)
 				.setName(NAME_TEST_VALUE)
+				.setComment(COMMENT_TEST_VALUE)
 				.setModifiedTime(MODIFIED_TIME_TEST_VALUE)
 				.setCompleteness(COMPLETENESS_TEST_VALUE1)
 				.setRelationshipType(RELATIONSHIP_TYPE_TEST_VALUE1)
 				.setFrom(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
+				.setExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setAssessedElement(builderForSoftwareArtifactTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.setSuppliedBy(builderForAgentTests(modelStore.getNextId(IdType.SpdxId)).build())
-				.addExtension(builderForExtensionTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addVerifiedUsing(builderForIntegrityMethodTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addTo(builderForElementTests(modelStore.getNextId(IdType.SpdxId)).build())
 				.addExternalRef(builderForExternalRefTests(modelStore.getNextId(IdType.SpdxId)).build())

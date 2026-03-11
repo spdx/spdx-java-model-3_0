@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -98,6 +98,17 @@ public class WithAdditionOperatorTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setExtension}.
+	 */
+	public void testWithAdditionOperatorsetExtension() throws InvalidSPDXAnalysisException {
+		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testWithAdditionOperator.getExtension());
+//		testWithAdditionOperator.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testWithAdditionOperator.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setCreationInfo}.
 	 */
 	public void testWithAdditionOperatorsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -131,6 +142,28 @@ public class WithAdditionOperatorTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setName}.
+	 */
+	public void testWithAdditionOperatorsetName() throws InvalidSPDXAnalysisException {
+		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testWithAdditionOperator.getName());
+		String newStringValue = "new name value";
+		testWithAdditionOperator.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setDescription}.
+	 */
+	public void testWithAdditionOperatorsetDescription() throws InvalidSPDXAnalysisException {
+		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testWithAdditionOperator.getDescription());
+		String newStringValue = "new description value";
+		testWithAdditionOperator.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getDescription());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setComment}.
 	 */
 	public void testWithAdditionOperatorsetComment() throws InvalidSPDXAnalysisException {
@@ -153,28 +186,6 @@ public class WithAdditionOperatorTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setDescription}.
-	 */
-	public void testWithAdditionOperatorsetDescription() throws InvalidSPDXAnalysisException {
-		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testWithAdditionOperator.getDescription());
-		String newStringValue = "new description value";
-		testWithAdditionOperator.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#setName}.
-	 */
-	public void testWithAdditionOperatorsetName() throws InvalidSPDXAnalysisException {
-		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testWithAdditionOperator.getName());
-		String newStringValue = "new name value";
-		testWithAdditionOperator.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testWithAdditionOperator.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#getExternalRef}.
 	 */
 	public void testWithAdditionOperatorgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -183,18 +194,6 @@ public class WithAdditionOperatorTest extends TestCase {
 //		testWithAdditionOperator.getExternalRefs().clear();
 //		testWithAdditionOperator.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testWithAdditionOperator.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.WithAdditionOperator#getExtension}.
-	 */
-	public void testWithAdditionOperatorgetExtensions() throws InvalidSPDXAnalysisException {
-		WithAdditionOperator testWithAdditionOperator = generator.builderForWithAdditionOperatorTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testWithAdditionOperator.getExtensions())));
-//		testWithAdditionOperator.getExtensions().clear();
-//		testWithAdditionOperator.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testWithAdditionOperator.getExtensions())));
 		//TODO: Implement
 	}
 	

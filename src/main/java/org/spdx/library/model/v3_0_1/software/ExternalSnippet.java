@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -52,7 +52,6 @@ public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 	Collection<IntegrityMethod> verifiedUsings = Collections.emptyList();
 	Collection<ExternalRef> externalRefs = Collections.emptyList();
 	Collection<ExternalIdentifier> externalIdentifiers = Collections.emptyList();
-	Collection<Extension> extensions = Collections.emptyList();
 	Collection<Agent> originatedBys = Collections.emptyList();
 	Collection<String> attributionTexts = Collections.emptyList();
 	Collection<String> standardNames = Collections.emptyList();
@@ -124,9 +123,6 @@ public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 	public Collection<ExternalIdentifier> getExternalIdentifiers() {
 		return externalIdentifiers;
 	}
-	public Collection<Extension> getExtensions() {
-		return extensions;
-	}
 	public Collection<Agent> getOriginatedBys() {
 		return originatedBys;
 	}
@@ -172,6 +168,22 @@ public class ExternalSnippet extends Snippet  implements IndividualUriValue {
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Snippet setSuppliedBy(@Nullable Agent suppliedBy) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Snippet setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -134,6 +134,17 @@ public class AIPackageTest extends TestCase {
 //		assertEquals(Optional.of(TEST_VALUE), testAIPackage.getSuppliedBy());
 //		testAIPackage.setSuppliedBy(NEW_TEST_VALUE);
 //		assertEquals(Optional.of(NEW_TEST_VALUE), testAIPackage.getSuppliedBy());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.ai.AIPackage#setExtension}.
+	 */
+	public void testAIPackagesetExtension() throws InvalidSPDXAnalysisException {
+		AIPackage testAIPackage = generator.builderForAIPackageTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testAIPackage.getExtension());
+//		testAIPackage.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testAIPackage.getExtension());
 		//TODO: Implement
 	}
 	
@@ -434,18 +445,6 @@ public class AIPackageTest extends TestCase {
 //		testAIPackage.getExternalIdentifiers().clear();
 //		testAIPackage.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAIPackage.getExternalIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.ai.AIPackage#getExtension}.
-	 */
-	public void testAIPackagegetExtensions() throws InvalidSPDXAnalysisException {
-		AIPackage testAIPackage = generator.builderForAIPackageTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testAIPackage.getExtensions())));
-//		testAIPackage.getExtensions().clear();
-//		testAIPackage.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAIPackage.getExtensions())));
 		//TODO: Implement
 	}
 	

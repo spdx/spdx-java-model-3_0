@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -131,6 +131,17 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 //		assertEquals(TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getFrom());
 //		testVexAffectedVulnAssessmentRelationship.setFrom(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testVexAffectedVulnAssessmentRelationship.getFrom());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#setExtension}.
+	 */
+	public void testVexAffectedVulnAssessmentRelationshipsetExtension() throws InvalidSPDXAnalysisException {
+		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getExtension());
+//		testVexAffectedVulnAssessmentRelationship.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testVexAffectedVulnAssessmentRelationship.getExtension());
 		//TODO: Implement
 	}
 	
@@ -353,18 +364,6 @@ public class VexAffectedVulnAssessmentRelationshipTest extends TestCase {
 //		testVexAffectedVulnAssessmentRelationship.getExternalIdentifiers().clear();
 //		testVexAffectedVulnAssessmentRelationship.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExternalIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexAffectedVulnAssessmentRelationship#getExtension}.
-	 */
-	public void testVexAffectedVulnAssessmentRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
-		VexAffectedVulnAssessmentRelationship testVexAffectedVulnAssessmentRelationship = generator.builderForVexAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExtensions())));
-//		testVexAffectedVulnAssessmentRelationship.getExtensions().clear();
-//		testVexAffectedVulnAssessmentRelationship.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testVexAffectedVulnAssessmentRelationship.getExtensions())));
 		//TODO: Implement
 	}
 }

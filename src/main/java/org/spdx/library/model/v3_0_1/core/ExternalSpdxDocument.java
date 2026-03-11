@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -41,7 +41,6 @@ import org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo;
  */
 public class ExternalSpdxDocument extends SpdxDocument  implements IndividualUriValue {
 
-	Collection<Extension> extensions = Collections.emptyList();
 	Collection<IntegrityMethod> verifiedUsings = Collections.emptyList();
 	Collection<Element> rootElements = Collections.emptyList();
 	Collection<Element> elements = Collections.emptyList();
@@ -104,9 +103,6 @@ public class ExternalSpdxDocument extends SpdxDocument  implements IndividualUri
 	}
 	
 	// Getters and Setters
-	public Collection<Extension> getExtensions() {
-		return extensions;
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return verifiedUsings;
 	}
@@ -132,6 +128,22 @@ public class ExternalSpdxDocument extends SpdxDocument  implements IndividualUri
 		return profileConformances;
 	}
 	
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SpdxDocument setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
 	/**
 	 * @return the creationInfo
 	 */
@@ -164,20 +176,6 @@ public class ExternalSpdxDocument extends SpdxDocument  implements IndividualUri
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the summary
-	 */
-	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public SpdxDocument setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the description
 	 */
 	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
@@ -192,17 +190,17 @@ public class ExternalSpdxDocument extends SpdxDocument  implements IndividualUri
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the comment
+	 * @return the summary
 	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param comment the comment to set
+	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public SpdxDocument setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+	public SpdxDocument setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -217,6 +215,20 @@ public class ExternalSpdxDocument extends SpdxDocument  implements IndividualUri
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public SpdxDocument setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SpdxDocument setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -98,6 +98,17 @@ public class SbomTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setExtension}.
+	 */
+	public void testSbomsetExtension() throws InvalidSPDXAnalysisException {
+		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSbom.getExtension());
+//		testSbom.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSbom.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setCreationInfo}.
 	 */
 	public void testSbomsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -106,17 +117,6 @@ public class SbomTest extends TestCase {
 //		testSbom.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testSbom.getCreationInfo());
 		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setSummary}.
-	 */
-	public void testSbomsetSummary() throws InvalidSPDXAnalysisException {
-		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSbom.getSummary());
-		String newStringValue = "new summary value";
-		testSbom.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSbom.getSummary());
 	}
 	
 	/**
@@ -131,6 +131,17 @@ public class SbomTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setSummary}.
+	 */
+	public void testSbomsetSummary() throws InvalidSPDXAnalysisException {
+		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSbom.getSummary());
+		String newStringValue = "new summary value";
+		testSbom.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSbom.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setContext}.
 	 */
 	public void testSbomsetContext() throws InvalidSPDXAnalysisException {
@@ -139,17 +150,6 @@ public class SbomTest extends TestCase {
 		String newStringValue = "new context value";
 		testSbom.setContext(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSbom.getContext());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setComment}.
-	 */
-	public void testSbomsetComment() throws InvalidSPDXAnalysisException {
-		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSbom.getComment());
-		String newStringValue = "new comment value";
-		testSbom.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSbom.getComment());
 	}
 	
 	/**
@@ -164,15 +164,14 @@ public class SbomTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Sbom#setComment}.
 	 */
-	public void testSbomgetExtensions() throws InvalidSPDXAnalysisException {
+	public void testSbomsetComment() throws InvalidSPDXAnalysisException {
 		Sbom testSbom = generator.builderForSbomTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSbom.getExtensions())));
-//		testSbom.getExtensions().clear();
-//		testSbom.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSbom.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSbom.getComment());
+		String newStringValue = "new comment value";
+		testSbom.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSbom.getComment());
 	}
 	
 	/**

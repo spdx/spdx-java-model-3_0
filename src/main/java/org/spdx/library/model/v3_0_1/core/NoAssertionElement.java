@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -60,9 +60,6 @@ public class NoAssertionElement extends IndividualElement implements IndividualU
 	public Collection<ExternalRef> getExternalRefs() {
 		return new ArrayList<ExternalRef>();
 	}
-	public Collection<Extension> getExtensions() {
-		return new ArrayList<Extension>();
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return new ArrayList<IntegrityMethod>();
 	}
@@ -70,6 +67,22 @@ public class NoAssertionElement extends IndividualElement implements IndividualU
 		return new ArrayList<ExternalIdentifier>();
 	}
 	
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoAssertionElement setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
 	/**
 	 * @return the creationInfo
 	 */
@@ -84,6 +97,34 @@ public class NoAssertionElement extends IndividualElement implements IndividualU
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public NoAssertionElement setCreationInfo(@Nullable CreationInfo creationInfo) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoAssertionElement setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoAssertionElement setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 		/**
@@ -112,34 +153,6 @@ public class NoAssertionElement extends IndividualElement implements IndividualU
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public NoAssertionElement setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public NoAssertionElement setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public NoAssertionElement setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 	

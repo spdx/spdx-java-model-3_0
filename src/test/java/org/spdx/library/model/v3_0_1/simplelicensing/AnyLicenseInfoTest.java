@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -97,6 +97,17 @@ public class AnyLicenseInfoTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setExtension}.
+	 */
+	public void testAnyLicenseInfosetExtension() throws InvalidSPDXAnalysisException {
+		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testAnyLicenseInfo.getExtension());
+//		testAnyLicenseInfo.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testAnyLicenseInfo.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setCreationInfo}.
 	 */
 	public void testAnyLicenseInfosetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -105,6 +116,28 @@ public class AnyLicenseInfoTest extends TestCase {
 //		testAnyLicenseInfo.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testAnyLicenseInfo.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setName}.
+	 */
+	public void testAnyLicenseInfosetName() throws InvalidSPDXAnalysisException {
+		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAnyLicenseInfo.getName());
+		String newStringValue = "new name value";
+		testAnyLicenseInfo.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setDescription}.
+	 */
+	public void testAnyLicenseInfosetDescription() throws InvalidSPDXAnalysisException {
+		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testAnyLicenseInfo.getDescription());
+		String newStringValue = "new description value";
+		testAnyLicenseInfo.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getDescription());
 	}
 	
 	/**
@@ -130,28 +163,6 @@ public class AnyLicenseInfoTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setDescription}.
-	 */
-	public void testAnyLicenseInfosetDescription() throws InvalidSPDXAnalysisException {
-		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testAnyLicenseInfo.getDescription());
-		String newStringValue = "new description value";
-		testAnyLicenseInfo.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#setName}.
-	 */
-	public void testAnyLicenseInfosetName() throws InvalidSPDXAnalysisException {
-		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAnyLicenseInfo.getName());
-		String newStringValue = "new name value";
-		testAnyLicenseInfo.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnyLicenseInfo.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#getExternalRef}.
 	 */
 	public void testAnyLicenseInfogetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -160,18 +171,6 @@ public class AnyLicenseInfoTest extends TestCase {
 //		testAnyLicenseInfo.getExternalRefs().clear();
 //		testAnyLicenseInfo.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAnyLicenseInfo.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.simplelicensing.AnyLicenseInfo#getExtension}.
-	 */
-	public void testAnyLicenseInfogetExtensions() throws InvalidSPDXAnalysisException {
-		AnyLicenseInfo testAnyLicenseInfo = generator.builderForAnyLicenseInfoTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testAnyLicenseInfo.getExtensions())));
-//		testAnyLicenseInfo.getExtensions().clear();
-//		testAnyLicenseInfo.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAnyLicenseInfo.getExtensions())));
 		//TODO: Implement
 	}
 	

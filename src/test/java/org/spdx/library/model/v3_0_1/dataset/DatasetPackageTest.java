@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -123,6 +123,17 @@ public class DatasetPackageTest extends TestCase {
 //		assertEquals(Optional.of(TEST_VALUE), testDatasetPackage.getSuppliedBy());
 //		testDatasetPackage.setSuppliedBy(NEW_TEST_VALUE);
 //		assertEquals(Optional.of(NEW_TEST_VALUE), testDatasetPackage.getSuppliedBy());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.dataset.DatasetPackage#setExtension}.
+	 */
+	public void testDatasetPackagesetExtension() throws InvalidSPDXAnalysisException {
+		DatasetPackage testDatasetPackage = generator.builderForDatasetPackageTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testDatasetPackage.getExtension());
+//		testDatasetPackage.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testDatasetPackage.getExtension());
 		//TODO: Implement
 	}
 	
@@ -420,18 +431,6 @@ public class DatasetPackageTest extends TestCase {
 //		testDatasetPackage.getExternalIdentifiers().clear();
 //		testDatasetPackage.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testDatasetPackage.getExternalIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.dataset.DatasetPackage#getExtension}.
-	 */
-	public void testDatasetPackagegetExtensions() throws InvalidSPDXAnalysisException {
-		DatasetPackage testDatasetPackage = generator.builderForDatasetPackageTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testDatasetPackage.getExtensions())));
-//		testDatasetPackage.getExtensions().clear();
-//		testDatasetPackage.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testDatasetPackage.getExtensions())));
 		//TODO: Implement
 	}
 	

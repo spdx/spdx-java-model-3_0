@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -93,6 +93,17 @@ public class BomTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setExtension}.
+	 */
+	public void testBomsetExtension() throws InvalidSPDXAnalysisException {
+		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testBom.getExtension());
+//		testBom.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testBom.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setCreationInfo}.
 	 */
 	public void testBomsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -101,17 +112,6 @@ public class BomTest extends TestCase {
 //		testBom.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testBom.getCreationInfo());
 		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setSummary}.
-	 */
-	public void testBomsetSummary() throws InvalidSPDXAnalysisException {
-		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBom.getSummary());
-		String newStringValue = "new summary value";
-		testBom.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBom.getSummary());
 	}
 	
 	/**
@@ -126,6 +126,17 @@ public class BomTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setSummary}.
+	 */
+	public void testBomsetSummary() throws InvalidSPDXAnalysisException {
+		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBom.getSummary());
+		String newStringValue = "new summary value";
+		testBom.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBom.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setContext}.
 	 */
 	public void testBomsetContext() throws InvalidSPDXAnalysisException {
@@ -134,17 +145,6 @@ public class BomTest extends TestCase {
 		String newStringValue = "new context value";
 		testBom.setContext(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBom.getContext());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setComment}.
-	 */
-	public void testBomsetComment() throws InvalidSPDXAnalysisException {
-		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBom.getComment());
-		String newStringValue = "new comment value";
-		testBom.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBom.getComment());
 	}
 	
 	/**
@@ -159,15 +159,14 @@ public class BomTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bom#setComment}.
 	 */
-	public void testBomgetExtensions() throws InvalidSPDXAnalysisException {
+	public void testBomsetComment() throws InvalidSPDXAnalysisException {
 		Bom testBom = generator.builderForBomTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testBom.getExtensions())));
-//		testBom.getExtensions().clear();
-//		testBom.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testBom.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBom.getComment());
+		String newStringValue = "new comment value";
+		testBom.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBom.getComment());
 	}
 	
 	/**

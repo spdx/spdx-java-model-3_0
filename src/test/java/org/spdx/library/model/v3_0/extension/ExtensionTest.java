@@ -1,0 +1,87 @@
+/**
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
+ * SPDX-FileType: SOURCE
+ * SPDX-License-Identifier: Apache-2.0
+ */
+package org.spdx.library.model.v3_0.extension;
+
+import javax.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.spdx.core.CoreModelObject;
+import org.spdx.core.DefaultModelStore;
+import org.spdx.core.InvalidSPDXAnalysisException;
+import org.spdx.core.IModelCopyManager;
+import org.spdx.core.IndividualUriValue;
+import org.spdx.library.model.v3_0.ModelObjectV3;
+import org.spdx.storage.IModelStore;
+import org.spdx.storage.IModelStore.IdType;
+import org.spdx.storage.IModelStore.IModelStoreLock;
+
+import java.util.Arrays;
+import junit.framework.TestCase;
+import org.spdx.core.ModelRegistry;
+import org.spdx.library.model.v3_0.MockCopyManager;
+import org.spdx.library.model.v3_0.MockModelStore;
+import org.spdx.library.model.v3_0.SpdxModelInfoV3_0;
+import org.spdx.library.model.v3_0.TestValuesGenerator;
+import org.spdx.library.model.v3_0.UnitTestHelper;
+import org.spdx.library.model.v3_0.core.Agent.AgentBuilder;
+import org.spdx.library.model.v3_0.core.ProfileIdentifierType;
+import org.spdx.library.model.v3_0.extension.Extension.ExtensionBuilder;
+
+/**
+ * GENERATED FILE - DO NOT MODIFY
+ */
+public class ExtensionTest extends TestCase {
+
+	static final String TEST_OBJECT_URI = "https://test.uri/testuri";
+	
+	TestValuesGenerator generator;
+	
+	protected void setUp() throws Exception {
+		super.setUp();
+		generator = new TestValuesGenerator(new MockModelStore(), new MockCopyManager());
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0.extension.Extension#verify()}.
+	 * @throws InvalidSPDXAnalysisException on errors
+	 */
+	public void testVerify() throws InvalidSPDXAnalysisException {
+		Extension testExtension = generator.builderForExtensionTests(TEST_OBJECT_URI).build();
+		List<String> result = testExtension.verify();
+		assertTrue(result.isEmpty());
+		// TODO - add negative tests
+	}
+
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0.extension.Extension#getType()}.
+	 */
+	public void testGetType() throws InvalidSPDXAnalysisException {
+		Extension testExtension = generator.builderForExtensionTests(TEST_OBJECT_URI).build();
+		assertEquals("Extension.Extension", testExtension.getType());
+	}
+
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0.extension.Extension#Element(org.spdx.library.model.v3_0.extension.Extension.ExtensionBuilder)}.
+	 */
+	public void testExtensionExtensionBuilder() throws InvalidSPDXAnalysisException {
+		generator.builderForExtensionTests(TEST_OBJECT_URI).build();
+	}
+	
+	public void testEquivalent() throws InvalidSPDXAnalysisException {
+		Extension testExtension = generator.builderForExtensionTests(TEST_OBJECT_URI).build();
+		Extension test2Extension = generator.builderForExtensionTests("https://testObject2").build();
+		assertTrue(testExtension.equivalent(test2Extension));
+		assertTrue(test2Extension.equivalent(testExtension));
+		// TODO change some parameters for negative tests
+	}
+}

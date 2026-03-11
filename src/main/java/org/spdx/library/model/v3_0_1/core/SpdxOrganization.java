@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -59,9 +59,6 @@ public class SpdxOrganization extends Organization implements IndividualUriValue
 	public Collection<ExternalRef> getExternalRefs() {
 		return new ArrayList<ExternalRef>();
 	}
-	public Collection<Extension> getExtensions() {
-		return new ArrayList<Extension>();
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return new ArrayList<IntegrityMethod>();
 	}
@@ -69,6 +66,22 @@ public class SpdxOrganization extends Organization implements IndividualUriValue
 		return new ArrayList<ExternalIdentifier>();
 	}
 	
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SpdxOrganization setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
 	/**
 	 * @return the creationInfo
 	 */
@@ -83,6 +96,34 @@ public class SpdxOrganization extends Organization implements IndividualUriValue
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public SpdxOrganization setCreationInfo(@Nullable CreationInfo creationInfo) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SpdxOrganization setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public SpdxOrganization setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 		/**
@@ -111,34 +152,6 @@ public class SpdxOrganization extends Organization implements IndividualUriValue
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public SpdxOrganization setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public SpdxOrganization setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public SpdxOrganization setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 	

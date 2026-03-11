@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -100,6 +100,17 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setExtension}.
+	 */
+	public void testBuildsetExtension() throws InvalidSPDXAnalysisException {
+		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testBuild.getExtension());
+//		testBuild.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testBuild.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setCreationInfo}.
 	 */
 	public void testBuildsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -133,17 +144,6 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setSummary}.
-	 */
-	public void testBuildsetSummary() throws InvalidSPDXAnalysisException {
-		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBuild.getSummary());
-		String newStringValue = "new summary value";
-		testBuild.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setDescription}.
 	 */
 	public void testBuildsetDescription() throws InvalidSPDXAnalysisException {
@@ -155,14 +155,14 @@ public class BuildTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setSummary}.
 	 */
-	public void testBuildsetComment() throws InvalidSPDXAnalysisException {
+	public void testBuildsetSummary() throws InvalidSPDXAnalysisException {
 		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBuild.getComment());
-		String newStringValue = "new comment value";
-		testBuild.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBuild.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBuild.getSummary());
+		String newStringValue = "new summary value";
+		testBuild.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getSummary());
 	}
 	
 	/**
@@ -174,6 +174,17 @@ public class BuildTest extends TestCase {
 		String newStringValue = "new name value";
 		testBuild.setName(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBuild.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#setComment}.
+	 */
+	public void testBuildsetComment() throws InvalidSPDXAnalysisException {
+		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBuild.getComment());
+		String newStringValue = "new comment value";
+		testBuild.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBuild.getComment());
 	}
 	
 	/**
@@ -207,18 +218,6 @@ public class BuildTest extends TestCase {
 //		testBuild.getEnvironments().clear();
 //		testBuild.getEnvironments().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testBuild.getEnvironments())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.build.Build#getExtension}.
-	 */
-	public void testBuildgetExtensions() throws InvalidSPDXAnalysisException {
-		Build testBuild = generator.builderForBuildTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testBuild.getExtensions())));
-//		testBuild.getExtensions().clear();
-//		testBuild.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testBuild.getExtensions())));
 		//TODO: Implement
 	}
 	

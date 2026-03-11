@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -105,6 +105,17 @@ public class LifecycleScopedRelationshipTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setExtension}.
+	 */
+	public void testLifecycleScopedRelationshipsetExtension() throws InvalidSPDXAnalysisException {
+		LifecycleScopedRelationship testLifecycleScopedRelationship = generator.builderForLifecycleScopedRelationshipTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testLifecycleScopedRelationship.getExtension());
+//		testLifecycleScopedRelationship.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testLifecycleScopedRelationship.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setCreationInfo}.
 	 */
 	public void testLifecycleScopedRelationshipsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -146,17 +157,6 @@ public class LifecycleScopedRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setSummary}.
-	 */
-	public void testLifecycleScopedRelationshipsetSummary() throws InvalidSPDXAnalysisException {
-		LifecycleScopedRelationship testLifecycleScopedRelationship = generator.builderForLifecycleScopedRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testLifecycleScopedRelationship.getSummary());
-		String newStringValue = "new summary value";
-		testLifecycleScopedRelationship.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testLifecycleScopedRelationship.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setDescription}.
 	 */
 	public void testLifecycleScopedRelationshipsetDescription() throws InvalidSPDXAnalysisException {
@@ -165,6 +165,17 @@ public class LifecycleScopedRelationshipTest extends TestCase {
 		String newStringValue = "new description value";
 		testLifecycleScopedRelationship.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testLifecycleScopedRelationship.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setSummary}.
+	 */
+	public void testLifecycleScopedRelationshipsetSummary() throws InvalidSPDXAnalysisException {
+		LifecycleScopedRelationship testLifecycleScopedRelationship = generator.builderForLifecycleScopedRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testLifecycleScopedRelationship.getSummary());
+		String newStringValue = "new summary value";
+		testLifecycleScopedRelationship.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testLifecycleScopedRelationship.getSummary());
 	}
 	
 	/**
@@ -190,17 +201,6 @@ public class LifecycleScopedRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setComment}.
-	 */
-	public void testLifecycleScopedRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		LifecycleScopedRelationship testLifecycleScopedRelationship = generator.builderForLifecycleScopedRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testLifecycleScopedRelationship.getComment());
-		String newStringValue = "new comment value";
-		testLifecycleScopedRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testLifecycleScopedRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setName}.
 	 */
 	public void testLifecycleScopedRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -212,15 +212,14 @@ public class LifecycleScopedRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.LifecycleScopedRelationship#setComment}.
 	 */
-	public void testLifecycleScopedRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
+	public void testLifecycleScopedRelationshipsetComment() throws InvalidSPDXAnalysisException {
 		LifecycleScopedRelationship testLifecycleScopedRelationship = generator.builderForLifecycleScopedRelationshipTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testLifecycleScopedRelationship.getExtensions())));
-//		testLifecycleScopedRelationship.getExtensions().clear();
-//		testLifecycleScopedRelationship.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testLifecycleScopedRelationship.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testLifecycleScopedRelationship.getComment());
+		String newStringValue = "new comment value";
+		testLifecycleScopedRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testLifecycleScopedRelationship.getComment());
 	}
 	
 	/**

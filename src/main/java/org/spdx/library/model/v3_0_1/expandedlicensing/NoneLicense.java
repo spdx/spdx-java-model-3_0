@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -64,9 +64,6 @@ public class NoneLicense extends IndividualLicensingInfo implements IndividualUr
 	public Collection<ExternalRef> getExternalRefs() {
 		return new ArrayList<ExternalRef>();
 	}
-	public Collection<Extension> getExtensions() {
-		return new ArrayList<Extension>();
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return new ArrayList<IntegrityMethod>();
 	}
@@ -74,6 +71,22 @@ public class NoneLicense extends IndividualLicensingInfo implements IndividualUr
 		return new ArrayList<ExternalIdentifier>();
 	}
 	
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoneLicense setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
 	/**
 	 * @return the creationInfo
 	 */
@@ -88,6 +101,34 @@ public class NoneLicense extends IndividualLicensingInfo implements IndividualUr
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public NoneLicense setCreationInfo(@Nullable CreationInfo creationInfo) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoneLicense setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public NoneLicense setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 		/**
@@ -116,34 +157,6 @@ public class NoneLicense extends IndividualLicensingInfo implements IndividualUr
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public NoneLicense setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public NoneLicense setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
-	}
-		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public NoneLicense setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("Can not set or modify a property of an Individual type");
 	}
 	

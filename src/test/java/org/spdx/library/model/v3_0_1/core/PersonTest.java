@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -93,6 +93,17 @@ public class PersonTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setExtension}.
+	 */
+	public void testPersonsetExtension() throws InvalidSPDXAnalysisException {
+		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testPerson.getExtension());
+//		testPerson.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testPerson.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setCreationInfo}.
 	 */
 	public void testPersonsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -101,6 +112,28 @@ public class PersonTest extends TestCase {
 //		testPerson.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testPerson.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setName}.
+	 */
+	public void testPersonsetName() throws InvalidSPDXAnalysisException {
+		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testPerson.getName());
+		String newStringValue = "new name value";
+		testPerson.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testPerson.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setDescription}.
+	 */
+	public void testPersonsetDescription() throws InvalidSPDXAnalysisException {
+		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testPerson.getDescription());
+		String newStringValue = "new description value";
+		testPerson.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testPerson.getDescription());
 	}
 	
 	/**
@@ -126,28 +159,6 @@ public class PersonTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setDescription}.
-	 */
-	public void testPersonsetDescription() throws InvalidSPDXAnalysisException {
-		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testPerson.getDescription());
-		String newStringValue = "new description value";
-		testPerson.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testPerson.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#setName}.
-	 */
-	public void testPersonsetName() throws InvalidSPDXAnalysisException {
-		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testPerson.getName());
-		String newStringValue = "new name value";
-		testPerson.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testPerson.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#getExternalRef}.
 	 */
 	public void testPersongetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -156,18 +167,6 @@ public class PersonTest extends TestCase {
 //		testPerson.getExternalRefs().clear();
 //		testPerson.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testPerson.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Person#getExtension}.
-	 */
-	public void testPersongetExtensions() throws InvalidSPDXAnalysisException {
-		Person testPerson = generator.builderForPersonTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testPerson.getExtensions())));
-//		testPerson.getExtensions().clear();
-//		testPerson.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testPerson.getExtensions())));
 		//TODO: Implement
 	}
 	

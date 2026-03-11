@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -119,6 +119,17 @@ public class SnippetTest extends TestCase {
 //		assertEquals(Optional.of(TEST_VALUE), testSnippet.getSuppliedBy());
 //		testSnippet.setSuppliedBy(NEW_TEST_VALUE);
 //		assertEquals(Optional.of(NEW_TEST_VALUE), testSnippet.getSuppliedBy());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#setExtension}.
+	 */
+	public void testSnippetsetExtension() throws InvalidSPDXAnalysisException {
+		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSnippet.getExtension());
+//		testSnippet.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSnippet.getExtension());
 		//TODO: Implement
 	}
 	
@@ -298,18 +309,6 @@ public class SnippetTest extends TestCase {
 //		testSnippet.getExternalIdentifiers().clear();
 //		testSnippet.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getExternalIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.Snippet#getExtension}.
-	 */
-	public void testSnippetgetExtensions() throws InvalidSPDXAnalysisException {
-		Snippet testSnippet = generator.builderForSnippetTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSnippet.getExtensions())));
-//		testSnippet.getExtensions().clear();
-//		testSnippet.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSnippet.getExtensions())));
 		//TODO: Implement
 	}
 	

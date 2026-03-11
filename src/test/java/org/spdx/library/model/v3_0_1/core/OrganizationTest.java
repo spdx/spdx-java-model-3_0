@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -93,6 +93,17 @@ public class OrganizationTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setExtension}.
+	 */
+	public void testOrganizationsetExtension() throws InvalidSPDXAnalysisException {
+		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testOrganization.getExtension());
+//		testOrganization.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testOrganization.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setCreationInfo}.
 	 */
 	public void testOrganizationsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -101,6 +112,28 @@ public class OrganizationTest extends TestCase {
 //		testOrganization.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testOrganization.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setName}.
+	 */
+	public void testOrganizationsetName() throws InvalidSPDXAnalysisException {
+		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrganization.getName());
+		String newStringValue = "new name value";
+		testOrganization.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrganization.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setDescription}.
+	 */
+	public void testOrganizationsetDescription() throws InvalidSPDXAnalysisException {
+		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testOrganization.getDescription());
+		String newStringValue = "new description value";
+		testOrganization.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrganization.getDescription());
 	}
 	
 	/**
@@ -126,28 +159,6 @@ public class OrganizationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setDescription}.
-	 */
-	public void testOrganizationsetDescription() throws InvalidSPDXAnalysisException {
-		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testOrganization.getDescription());
-		String newStringValue = "new description value";
-		testOrganization.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrganization.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#setName}.
-	 */
-	public void testOrganizationsetName() throws InvalidSPDXAnalysisException {
-		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrganization.getName());
-		String newStringValue = "new name value";
-		testOrganization.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrganization.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#getExternalRef}.
 	 */
 	public void testOrganizationgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -156,18 +167,6 @@ public class OrganizationTest extends TestCase {
 //		testOrganization.getExternalRefs().clear();
 //		testOrganization.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testOrganization.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Organization#getExtension}.
-	 */
-	public void testOrganizationgetExtensions() throws InvalidSPDXAnalysisException {
-		Organization testOrganization = generator.builderForOrganizationTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testOrganization.getExtensions())));
-//		testOrganization.getExtensions().clear();
-//		testOrganization.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testOrganization.getExtensions())));
 		//TODO: Implement
 	}
 	

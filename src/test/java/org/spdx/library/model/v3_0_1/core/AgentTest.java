@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -92,6 +92,17 @@ public class AgentTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setExtension}.
+	 */
+	public void testAgentsetExtension() throws InvalidSPDXAnalysisException {
+		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testAgent.getExtension());
+//		testAgent.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testAgent.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setCreationInfo}.
 	 */
 	public void testAgentsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -100,6 +111,28 @@ public class AgentTest extends TestCase {
 //		testAgent.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testAgent.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setName}.
+	 */
+	public void testAgentsetName() throws InvalidSPDXAnalysisException {
+		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAgent.getName());
+		String newStringValue = "new name value";
+		testAgent.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAgent.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setDescription}.
+	 */
+	public void testAgentsetDescription() throws InvalidSPDXAnalysisException {
+		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testAgent.getDescription());
+		String newStringValue = "new description value";
+		testAgent.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAgent.getDescription());
 	}
 	
 	/**
@@ -125,28 +158,6 @@ public class AgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setDescription}.
-	 */
-	public void testAgentsetDescription() throws InvalidSPDXAnalysisException {
-		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testAgent.getDescription());
-		String newStringValue = "new description value";
-		testAgent.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAgent.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#setName}.
-	 */
-	public void testAgentsetName() throws InvalidSPDXAnalysisException {
-		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testAgent.getName());
-		String newStringValue = "new name value";
-		testAgent.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAgent.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#getExternalRef}.
 	 */
 	public void testAgentgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -155,18 +166,6 @@ public class AgentTest extends TestCase {
 //		testAgent.getExternalRefs().clear();
 //		testAgent.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAgent.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Agent#getExtension}.
-	 */
-	public void testAgentgetExtensions() throws InvalidSPDXAnalysisException {
-		Agent testAgent = generator.builderForAgentTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testAgent.getExtensions())));
-//		testAgent.getExtensions().clear();
-//		testAgent.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAgent.getExtensions())));
 		//TODO: Implement
 	}
 	

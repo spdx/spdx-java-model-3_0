@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -93,6 +93,17 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setExtension}.
+	 */
+	public void testToolsetExtension() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testTool.getExtension());
+//		testTool.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testTool.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setCreationInfo}.
 	 */
 	public void testToolsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -101,6 +112,28 @@ public class ToolTest extends TestCase {
 //		testTool.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testTool.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
+	 */
+	public void testToolsetName() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
+		String newStringValue = "new name value";
+		testTool.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setDescription}.
+	 */
+	public void testToolsetDescription() throws InvalidSPDXAnalysisException {
+		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testTool.getDescription());
+		String newStringValue = "new description value";
+		testTool.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testTool.getDescription());
 	}
 	
 	/**
@@ -126,28 +159,6 @@ public class ToolTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setDescription}.
-	 */
-	public void testToolsetDescription() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testTool.getDescription());
-		String newStringValue = "new description value";
-		testTool.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#setName}.
-	 */
-	public void testToolsetName() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testTool.getName());
-		String newStringValue = "new name value";
-		testTool.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testTool.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#getExternalRef}.
 	 */
 	public void testToolgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -156,18 +167,6 @@ public class ToolTest extends TestCase {
 //		testTool.getExternalRefs().clear();
 //		testTool.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testTool.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Tool#getExtension}.
-	 */
-	public void testToolgetExtensions() throws InvalidSPDXAnalysisException {
-		Tool testTool = generator.builderForToolTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testTool.getExtensions())));
-//		testTool.getExtensions().clear();
-//		testTool.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testTool.getExtensions())));
 		//TODO: Implement
 	}
 	

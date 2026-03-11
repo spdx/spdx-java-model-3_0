@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -100,6 +100,17 @@ public class ConjunctiveLicenseSetTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setExtension}.
+	 */
+	public void testConjunctiveLicenseSetsetExtension() throws InvalidSPDXAnalysisException {
+		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testConjunctiveLicenseSet.getExtension());
+//		testConjunctiveLicenseSet.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testConjunctiveLicenseSet.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setCreationInfo}.
 	 */
 	public void testConjunctiveLicenseSetsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -108,6 +119,28 @@ public class ConjunctiveLicenseSetTest extends TestCase {
 //		testConjunctiveLicenseSet.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testConjunctiveLicenseSet.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setName}.
+	 */
+	public void testConjunctiveLicenseSetsetName() throws InvalidSPDXAnalysisException {
+		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testConjunctiveLicenseSet.getName());
+		String newStringValue = "new name value";
+		testConjunctiveLicenseSet.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setDescription}.
+	 */
+	public void testConjunctiveLicenseSetsetDescription() throws InvalidSPDXAnalysisException {
+		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testConjunctiveLicenseSet.getDescription());
+		String newStringValue = "new description value";
+		testConjunctiveLicenseSet.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getDescription());
 	}
 	
 	/**
@@ -133,28 +166,6 @@ public class ConjunctiveLicenseSetTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setDescription}.
-	 */
-	public void testConjunctiveLicenseSetsetDescription() throws InvalidSPDXAnalysisException {
-		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testConjunctiveLicenseSet.getDescription());
-		String newStringValue = "new description value";
-		testConjunctiveLicenseSet.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#setName}.
-	 */
-	public void testConjunctiveLicenseSetsetName() throws InvalidSPDXAnalysisException {
-		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testConjunctiveLicenseSet.getName());
-		String newStringValue = "new name value";
-		testConjunctiveLicenseSet.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testConjunctiveLicenseSet.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#getExternalRef}.
 	 */
 	public void testConjunctiveLicenseSetgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -163,18 +174,6 @@ public class ConjunctiveLicenseSetTest extends TestCase {
 //		testConjunctiveLicenseSet.getExternalRefs().clear();
 //		testConjunctiveLicenseSet.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testConjunctiveLicenseSet.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.ConjunctiveLicenseSet#getExtension}.
-	 */
-	public void testConjunctiveLicenseSetgetExtensions() throws InvalidSPDXAnalysisException {
-		ConjunctiveLicenseSet testConjunctiveLicenseSet = generator.builderForConjunctiveLicenseSetTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testConjunctiveLicenseSet.getExtensions())));
-//		testConjunctiveLicenseSet.getExtensions().clear();
-//		testConjunctiveLicenseSet.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testConjunctiveLicenseSet.getExtensions())));
 		//TODO: Implement
 	}
 	

@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -131,6 +131,17 @@ public class VexNotAffectedVulnAssessmentRelationshipTest extends TestCase {
 //		assertEquals(TEST_VALUE, testVexNotAffectedVulnAssessmentRelationship.getFrom());
 //		testVexNotAffectedVulnAssessmentRelationship.setFrom(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testVexNotAffectedVulnAssessmentRelationship.getFrom());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexNotAffectedVulnAssessmentRelationship#setExtension}.
+	 */
+	public void testVexNotAffectedVulnAssessmentRelationshipsetExtension() throws InvalidSPDXAnalysisException {
+		VexNotAffectedVulnAssessmentRelationship testVexNotAffectedVulnAssessmentRelationship = generator.builderForVexNotAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testVexNotAffectedVulnAssessmentRelationship.getExtension());
+//		testVexNotAffectedVulnAssessmentRelationship.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testVexNotAffectedVulnAssessmentRelationship.getExtension());
 		//TODO: Implement
 	}
 	
@@ -363,18 +374,6 @@ public class VexNotAffectedVulnAssessmentRelationshipTest extends TestCase {
 //		testVexNotAffectedVulnAssessmentRelationship.getExternalIdentifiers().clear();
 //		testVexNotAffectedVulnAssessmentRelationship.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testVexNotAffectedVulnAssessmentRelationship.getExternalIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.VexNotAffectedVulnAssessmentRelationship#getExtension}.
-	 */
-	public void testVexNotAffectedVulnAssessmentRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
-		VexNotAffectedVulnAssessmentRelationship testVexNotAffectedVulnAssessmentRelationship = generator.builderForVexNotAffectedVulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testVexNotAffectedVulnAssessmentRelationship.getExtensions())));
-//		testVexNotAffectedVulnAssessmentRelationship.getExtensions().clear();
-//		testVexNotAffectedVulnAssessmentRelationship.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testVexNotAffectedVulnAssessmentRelationship.getExtensions())));
 		//TODO: Implement
 	}
 }

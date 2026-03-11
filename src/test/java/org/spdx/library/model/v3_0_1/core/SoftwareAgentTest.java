@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -93,6 +93,17 @@ public class SoftwareAgentTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setExtension}.
+	 */
+	public void testSoftwareAgentsetExtension() throws InvalidSPDXAnalysisException {
+		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSoftwareAgent.getExtension());
+//		testSoftwareAgent.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSoftwareAgent.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setCreationInfo}.
 	 */
 	public void testSoftwareAgentsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -101,6 +112,28 @@ public class SoftwareAgentTest extends TestCase {
 //		testSoftwareAgent.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testSoftwareAgent.getCreationInfo());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setName}.
+	 */
+	public void testSoftwareAgentsetName() throws InvalidSPDXAnalysisException {
+		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSoftwareAgent.getName());
+		String newStringValue = "new name value";
+		testSoftwareAgent.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setDescription}.
+	 */
+	public void testSoftwareAgentsetDescription() throws InvalidSPDXAnalysisException {
+		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testSoftwareAgent.getDescription());
+		String newStringValue = "new description value";
+		testSoftwareAgent.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getDescription());
 	}
 	
 	/**
@@ -126,28 +159,6 @@ public class SoftwareAgentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setDescription}.
-	 */
-	public void testSoftwareAgentsetDescription() throws InvalidSPDXAnalysisException {
-		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testSoftwareAgent.getDescription());
-		String newStringValue = "new description value";
-		testSoftwareAgent.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#setName}.
-	 */
-	public void testSoftwareAgentsetName() throws InvalidSPDXAnalysisException {
-		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSoftwareAgent.getName());
-		String newStringValue = "new name value";
-		testSoftwareAgent.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSoftwareAgent.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#getExternalRef}.
 	 */
 	public void testSoftwareAgentgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -156,18 +167,6 @@ public class SoftwareAgentTest extends TestCase {
 //		testSoftwareAgent.getExternalRefs().clear();
 //		testSoftwareAgent.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSoftwareAgent.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SoftwareAgent#getExtension}.
-	 */
-	public void testSoftwareAgentgetExtensions() throws InvalidSPDXAnalysisException {
-		SoftwareAgent testSoftwareAgent = generator.builderForSoftwareAgentTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSoftwareAgent.getExtensions())));
-//		testSoftwareAgent.getExtensions().clear();
-//		testSoftwareAgent.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSoftwareAgent.getExtensions())));
 		//TODO: Implement
 	}
 	

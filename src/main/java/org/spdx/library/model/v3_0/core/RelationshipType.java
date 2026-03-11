@@ -1,0 +1,94 @@
+/**
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
+ * SPDX-FileType: SOURCE
+ * SPDX-License-Identifier: Apache-2.0
+ */
+package org.spdx.library.model.v3_0.core;
+
+import org.spdx.core.IndividualUriValue;
+
+/**
+ * Information about the relationship between two Elements. 
+ */
+public enum RelationshipType implements IndividualUriValue {
+
+	INVOKED_BY("invokedBy"),
+	AVAILABLE_FROM("availableFrom"),
+	COPIED_TO("copiedTo"),
+	HAS_DEPENDENCY_MANIFEST("hasDependencyManifest"),
+	DELEGATED_TO("delegatedTo"),
+	REPUBLISHED_BY("republishedBy"),
+	HAS_INPUT("hasInput"),
+	MODIFIED_BY("modifiedBy"),
+	HAS_DATA_FILE("hasDataFile"),
+	PACKAGED_BY("packagedBy"),
+	HAS_TEST_CASE("hasTestCase"),
+	HAS_DECLARED_LICENSE("hasDeclaredLicense"),
+	PUBLISHED_BY("publishedBy"),
+	HAS_PREREQUISITE("hasPrerequisite"),
+	TRAINED_ON("trainedOn"),
+	HAS_ASSESSMENT_FOR("hasAssessmentFor"),
+	HAS_METADATA("hasMetadata"),
+	HAS_ASSOCIATED_VULNERABILITY("hasAssociatedVulnerability"),
+	CONTAINS("contains"),
+	HAS_OPTIONAL_COMPONENT("hasOptionalComponent"),
+	HAS_VARIANT("hasVariant"),
+	HAS_TEST("hasTest"),
+	SERIALIZED_IN_ARTIFACT("serializedInArtifact"),
+	FIXED_BY("fixedBy"),
+	HAS_CONCLUDED_LICENSE("hasConcludedLicense"),
+	DEPENDS_ON("dependsOn"),
+	CONFIGURES("configures"),
+	EXPANDS_TO("expandsTo"),
+	HAS_SPECIFICATION("hasSpecification"),
+	FOUND_BY("foundBy"),
+	TESTED_ON("testedOn"),
+	DESCRIBES("describes"),
+	DOES_NOT_AFFECT("doesNotAffect"),
+	HAS_HOST("hasHost"),
+	HAS_REQUIREMENT("hasRequirement"),
+	AMENDED_BY("amendedBy"),
+	HAS_EXAMPLE("hasExample"),
+	HAS_DYNAMIC_LINK("hasDynamicLink"),
+	HAS_EVIDENCE("hasEvidence"),
+	USES_TOOL("usesTool"),
+	DESCENDANT_OF("descendantOf"),
+	AFFECTS("affects"),
+	HAS_DELETED_FILE("hasDeletedFile"),
+	HAS_PROVIDED_DEPENDENCY("hasProvidedDependency"),
+	HAS_STATIC_LINK("hasStaticLink"),
+	OTHER("other"),
+	HAS_DISTRIBUTION_ARTIFACT("hasDistributionArtifact"),
+	GENERATES("generates"),
+	EXPLOIT_CREATED_BY("exploitCreatedBy"),
+	PATCHED_BY("patchedBy"),
+	REPORTED_BY("reportedBy"),
+	UNDER_INVESTIGATION_FOR("underInvestigationFor"),
+	ANCESTOR_OF("ancestorOf"),
+	HAS_OPTIONAL_DEPENDENCY("hasOptionalDependency"),
+	HAS_ADDED_FILE("hasAddedFile"),
+	COORDINATED_BY("coordinatedBy"),
+	HAS_DOCUMENTATION("hasDocumentation"),
+	FIXED_IN("fixedIn"),
+	HAS_OUTPUT("hasOutput");
+	
+	private String longName;
+	
+	private RelationshipType(String longName) {
+		this.longName = longName;
+	}
+	
+	@Override
+	public String getIndividualURI() {
+		return getNameSpace() + "/" + getLongName();
+	}
+	
+	public String getLongName() {
+		return longName;
+	}
+	
+	public String getNameSpace() {
+		return "https://spdx.org/rdf/3.0.1/terms/Core/RelationshipType";
+	}
+}
+

@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -113,6 +113,17 @@ public class CvssV4VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setExtension}.
+	 */
+	public void testCvssV4VulnAssessmentRelationshipsetExtension() throws InvalidSPDXAnalysisException {
+		CvssV4VulnAssessmentRelationship testCvssV4VulnAssessmentRelationship = generator.builderForCvssV4VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testCvssV4VulnAssessmentRelationship.getExtension());
+//		testCvssV4VulnAssessmentRelationship.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testCvssV4VulnAssessmentRelationship.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setCreationInfo}.
 	 */
 	public void testCvssV4VulnAssessmentRelationshipsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -208,17 +219,6 @@ public class CvssV4VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setSummary}.
-	 */
-	public void testCvssV4VulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
-		CvssV4VulnAssessmentRelationship testCvssV4VulnAssessmentRelationship = generator.builderForCvssV4VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testCvssV4VulnAssessmentRelationship.getSummary());
-		String newStringValue = "new summary value";
-		testCvssV4VulnAssessmentRelationship.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testCvssV4VulnAssessmentRelationship.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setDescription}.
 	 */
 	public void testCvssV4VulnAssessmentRelationshipsetDescription() throws InvalidSPDXAnalysisException {
@@ -227,6 +227,17 @@ public class CvssV4VulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = "new description value";
 		testCvssV4VulnAssessmentRelationship.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testCvssV4VulnAssessmentRelationship.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setSummary}.
+	 */
+	public void testCvssV4VulnAssessmentRelationshipsetSummary() throws InvalidSPDXAnalysisException {
+		CvssV4VulnAssessmentRelationship testCvssV4VulnAssessmentRelationship = generator.builderForCvssV4VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testCvssV4VulnAssessmentRelationship.getSummary());
+		String newStringValue = "new summary value";
+		testCvssV4VulnAssessmentRelationship.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testCvssV4VulnAssessmentRelationship.getSummary());
 	}
 	
 	/**
@@ -263,17 +274,6 @@ public class CvssV4VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setComment}.
-	 */
-	public void testCvssV4VulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		CvssV4VulnAssessmentRelationship testCvssV4VulnAssessmentRelationship = generator.builderForCvssV4VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testCvssV4VulnAssessmentRelationship.getComment());
-		String newStringValue = "new comment value";
-		testCvssV4VulnAssessmentRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testCvssV4VulnAssessmentRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setName}.
 	 */
 	public void testCvssV4VulnAssessmentRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -285,6 +285,17 @@ public class CvssV4VulnAssessmentRelationshipTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setComment}.
+	 */
+	public void testCvssV4VulnAssessmentRelationshipsetComment() throws InvalidSPDXAnalysisException {
+		CvssV4VulnAssessmentRelationship testCvssV4VulnAssessmentRelationship = generator.builderForCvssV4VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testCvssV4VulnAssessmentRelationship.getComment());
+		String newStringValue = "new comment value";
+		testCvssV4VulnAssessmentRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testCvssV4VulnAssessmentRelationship.getComment());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#setModifiedTime}.
 	 */
 	public void testCvssV4VulnAssessmentRelationshipsetModifiedTime() throws InvalidSPDXAnalysisException {
@@ -293,18 +304,6 @@ public class CvssV4VulnAssessmentRelationshipTest extends TestCase {
 		String newStringValue = UnitTestHelper.genRandPattern("^\\d\\d\\d\\d-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\dZ$");
 		testCvssV4VulnAssessmentRelationship.setModifiedTime(newStringValue);
 		assertEquals(Optional.of(newStringValue), testCvssV4VulnAssessmentRelationship.getModifiedTime());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.security.CvssV4VulnAssessmentRelationship#getExtension}.
-	 */
-	public void testCvssV4VulnAssessmentRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
-		CvssV4VulnAssessmentRelationship testCvssV4VulnAssessmentRelationship = generator.builderForCvssV4VulnAssessmentRelationshipTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testCvssV4VulnAssessmentRelationship.getExtensions())));
-//		testCvssV4VulnAssessmentRelationship.getExtensions().clear();
-//		testCvssV4VulnAssessmentRelationship.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testCvssV4VulnAssessmentRelationship.getExtensions())));
-		//TODO: Implement
 	}
 	
 	/**

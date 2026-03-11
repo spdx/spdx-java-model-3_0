@@ -33,7 +33,7 @@ public class SpdxModelInfoV3_0 implements ISpdxModelInfo {
 
 	@Override
 	public List<String> getSpecVersions() {
-		return Arrays.asList(new String[] {"SPDX-3.0", "3.0.1"});
+		return Arrays.asList(new String[] {"v3_0_1"});
 	}
 
 	@Override

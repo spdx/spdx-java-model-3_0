@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -105,6 +105,17 @@ public class RelationshipTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setExtension}.
+	 */
+	public void testRelationshipsetExtension() throws InvalidSPDXAnalysisException {
+		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testRelationship.getExtension());
+//		testRelationship.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testRelationship.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setCreationInfo}.
 	 */
 	public void testRelationshipsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -136,17 +147,6 @@ public class RelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setSummary}.
-	 */
-	public void testRelationshipsetSummary() throws InvalidSPDXAnalysisException {
-		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testRelationship.getSummary());
-		String newStringValue = "new summary value";
-		testRelationship.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testRelationship.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setDescription}.
 	 */
 	public void testRelationshipsetDescription() throws InvalidSPDXAnalysisException {
@@ -155,6 +155,17 @@ public class RelationshipTest extends TestCase {
 		String newStringValue = "new description value";
 		testRelationship.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testRelationship.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setSummary}.
+	 */
+	public void testRelationshipsetSummary() throws InvalidSPDXAnalysisException {
+		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testRelationship.getSummary());
+		String newStringValue = "new summary value";
+		testRelationship.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testRelationship.getSummary());
 	}
 	
 	/**
@@ -180,17 +191,6 @@ public class RelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setComment}.
-	 */
-	public void testRelationshipsetComment() throws InvalidSPDXAnalysisException {
-		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testRelationship.getComment());
-		String newStringValue = "new comment value";
-		testRelationship.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testRelationship.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setName}.
 	 */
 	public void testRelationshipsetName() throws InvalidSPDXAnalysisException {
@@ -202,15 +202,14 @@ public class RelationshipTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Relationship#setComment}.
 	 */
-	public void testRelationshipgetExtensions() throws InvalidSPDXAnalysisException {
+	public void testRelationshipsetComment() throws InvalidSPDXAnalysisException {
 		Relationship testRelationship = generator.builderForRelationshipTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testRelationship.getExtensions())));
-//		testRelationship.getExtensions().clear();
-//		testRelationship.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testRelationship.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testRelationship.getComment());
+		String newStringValue = "new comment value";
+		testRelationship.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testRelationship.getComment());
 	}
 	
 	/**

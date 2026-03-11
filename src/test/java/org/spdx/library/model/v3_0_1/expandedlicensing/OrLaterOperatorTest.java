@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -97,6 +97,17 @@ public class OrLaterOperatorTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setExtension}.
+	 */
+	public void testOrLaterOperatorsetExtension() throws InvalidSPDXAnalysisException {
+		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testOrLaterOperator.getExtension());
+//		testOrLaterOperator.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testOrLaterOperator.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setCreationInfo}.
 	 */
 	public void testOrLaterOperatorsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -116,6 +127,28 @@ public class OrLaterOperatorTest extends TestCase {
 //		testOrLaterOperator.setSubjectLicense(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testOrLaterOperator.getSubjectLicense());
 		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setName}.
+	 */
+	public void testOrLaterOperatorsetName() throws InvalidSPDXAnalysisException {
+		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrLaterOperator.getName());
+		String newStringValue = "new name value";
+		testOrLaterOperator.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setDescription}.
+	 */
+	public void testOrLaterOperatorsetDescription() throws InvalidSPDXAnalysisException {
+		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testOrLaterOperator.getDescription());
+		String newStringValue = "new description value";
+		testOrLaterOperator.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getDescription());
 	}
 	
 	/**
@@ -141,28 +174,6 @@ public class OrLaterOperatorTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setDescription}.
-	 */
-	public void testOrLaterOperatorsetDescription() throws InvalidSPDXAnalysisException {
-		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testOrLaterOperator.getDescription());
-		String newStringValue = "new description value";
-		testOrLaterOperator.setDescription(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getDescription());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#setName}.
-	 */
-	public void testOrLaterOperatorsetName() throws InvalidSPDXAnalysisException {
-		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testOrLaterOperator.getName());
-		String newStringValue = "new name value";
-		testOrLaterOperator.setName(newStringValue);
-		assertEquals(Optional.of(newStringValue), testOrLaterOperator.getName());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#getExternalRef}.
 	 */
 	public void testOrLaterOperatorgetExternalRefs() throws InvalidSPDXAnalysisException {
@@ -171,18 +182,6 @@ public class OrLaterOperatorTest extends TestCase {
 //		testOrLaterOperator.getExternalRefs().clear();
 //		testOrLaterOperator.getExternalRefs().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testOrLaterOperator.getExternalRefs())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.expandedlicensing.OrLaterOperator#getExtension}.
-	 */
-	public void testOrLaterOperatorgetExtensions() throws InvalidSPDXAnalysisException {
-		OrLaterOperator testOrLaterOperator = generator.builderForOrLaterOperatorTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testOrLaterOperator.getExtensions())));
-//		testOrLaterOperator.getExtensions().clear();
-//		testOrLaterOperator.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testOrLaterOperator.getExtensions())));
 		//TODO: Implement
 	}
 	

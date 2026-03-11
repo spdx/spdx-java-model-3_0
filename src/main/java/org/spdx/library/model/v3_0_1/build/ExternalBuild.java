@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -48,7 +48,6 @@ import org.spdx.library.model.v3_0_1.extension.Extension;
 public class ExternalBuild extends Build  implements IndividualUriValue {
 
 	Collection<DictionaryEntry> environments = Collections.emptyList();
-	Collection<Extension> extensions = Collections.emptyList();
 	Collection<IntegrityMethod> verifiedUsings = Collections.emptyList();
 	Collection<ExternalRef> externalRefs = Collections.emptyList();
 	Collection<Hash> configSourceDigests = Collections.emptyList();
@@ -113,9 +112,6 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 	public Collection<DictionaryEntry> getEnvironments() {
 		return environments;
 	}
-	public Collection<Extension> getExtensions() {
-		return extensions;
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return verifiedUsings;
 	}
@@ -138,6 +134,22 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 		return configSourceUris;
 	}
 	
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Build setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
 	/**
 	 * @return the creationInfo
 	 */
@@ -182,20 +194,6 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the summary
-	 */
-	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param summary the summary to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public Build setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
 	 * @return the description
 	 */
 	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
@@ -210,17 +208,17 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
-	 * @return the comment
+	 * @return the summary
 	 */
-	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+	public Optional<String> getSummary() throws InvalidSPDXAnalysisException {
 		return Optional.empty();
 	}
 	/**
-	 * @param comment the comment to set
+	 * @param summary the summary to set
 	 * @return this to chain setters
 	 * @throws InvalidSPDXAnalysisException 
 	 */
-	public Build setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
+	public Build setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -235,6 +233,20 @@ public class ExternalBuild extends Build  implements IndividualUriValue {
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public Build setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the comment
+	 */
+	public Optional<String> getComment() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param comment the comment to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public Build setComment(@Nullable String comment) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**

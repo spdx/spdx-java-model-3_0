@@ -192,7 +192,7 @@ public class SpdxConstantsV3 {
 	public static final PropertyDescriptor PROP_IMPACT_STATEMENT = new PropertyDescriptor("impactStatement", SECURITY_NAMESPACE);
 	public static final PropertyDescriptor PROP_IMPACT_STATEMENT_TIME = new PropertyDescriptor("impactStatementTime", SECURITY_NAMESPACE);
 	public static final PropertyDescriptor PROP_JUSTIFICATION_TYPE = new PropertyDescriptor("justificationType", SECURITY_NAMESPACE);
-	public static final PropertyDescriptor PROP_SECURITY_LOCATOR = new PropertyDescriptor("SecurityLocator", SECURITY_NAMESPACE);
+	public static final PropertyDescriptor PROP_SECURITY_LOCATOR = new PropertyDescriptor("locator", SECURITY_NAMESPACE);
 	public static final PropertyDescriptor PROP_MODIFIED_TIME = new PropertyDescriptor("modifiedTime", SECURITY_NAMESPACE);
 	public static final PropertyDescriptor PROP_PERCENTILE = new PropertyDescriptor("percentile", SECURITY_NAMESPACE);
 	public static final PropertyDescriptor PROP_PROBABILITY = new PropertyDescriptor("probability", SECURITY_NAMESPACE);

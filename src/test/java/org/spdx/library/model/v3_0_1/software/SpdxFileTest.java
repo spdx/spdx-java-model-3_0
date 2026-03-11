@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -100,6 +100,17 @@ public class SpdxFileTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setExtension}.
+	 */
+	public void testSpdxFilesetExtension() throws InvalidSPDXAnalysisException {
+		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSpdxFile.getExtension());
+//		testSpdxFile.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSpdxFile.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setCreationInfo}.
 	 */
 	public void testSpdxFilesetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -164,17 +175,6 @@ public class SpdxFileTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setSummary}.
-	 */
-	public void testSpdxFilesetSummary() throws InvalidSPDXAnalysisException {
-		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSpdxFile.getSummary());
-		String newStringValue = "new summary value";
-		testSpdxFile.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxFile.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setDescription}.
 	 */
 	public void testSpdxFilesetDescription() throws InvalidSPDXAnalysisException {
@@ -183,6 +183,17 @@ public class SpdxFileTest extends TestCase {
 		String newStringValue = "new description value";
 		testSpdxFile.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testSpdxFile.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setSummary}.
+	 */
+	public void testSpdxFilesetSummary() throws InvalidSPDXAnalysisException {
+		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSpdxFile.getSummary());
+		String newStringValue = "new summary value";
+		testSpdxFile.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxFile.getSummary());
 	}
 	
 	/**
@@ -219,17 +230,6 @@ public class SpdxFileTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setComment}.
-	 */
-	public void testSpdxFilesetComment() throws InvalidSPDXAnalysisException {
-		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxFile.getComment());
-		String newStringValue = "new comment value";
-		testSpdxFile.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxFile.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setName}.
 	 */
 	public void testSpdxFilesetName() throws InvalidSPDXAnalysisException {
@@ -241,6 +241,17 @@ public class SpdxFileTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#setComment}.
+	 */
+	public void testSpdxFilesetComment() throws InvalidSPDXAnalysisException {
+		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxFile.getComment());
+		String newStringValue = "new comment value";
+		testSpdxFile.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxFile.getComment());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#getContentIdentifier}.
 	 */
 	public void testSpdxFilegetContentIdentifiers() throws InvalidSPDXAnalysisException {
@@ -249,18 +260,6 @@ public class SpdxFileTest extends TestCase {
 //		testSpdxFile.getContentIdentifiers().clear();
 //		testSpdxFile.getContentIdentifiers().addAll(NEW_TEST_VALUE);
 //		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSpdxFile.getContentIdentifiers())));
-		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.software.SpdxFile#getExtension}.
-	 */
-	public void testSpdxFilegetExtensions() throws InvalidSPDXAnalysisException {
-		SpdxFile testSpdxFile = generator.builderForSpdxFileTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSpdxFile.getExtensions())));
-//		testSpdxFile.getExtensions().clear();
-//		testSpdxFile.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSpdxFile.getExtensions())));
 		//TODO: Implement
 	}
 	

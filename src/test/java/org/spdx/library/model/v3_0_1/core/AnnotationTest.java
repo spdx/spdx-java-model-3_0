@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -105,6 +105,17 @@ public class AnnotationTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setExtension}.
+	 */
+	public void testAnnotationsetExtension() throws InvalidSPDXAnalysisException {
+		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testAnnotation.getExtension());
+//		testAnnotation.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testAnnotation.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setCreationInfo}.
 	 */
 	public void testAnnotationsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -126,17 +137,6 @@ public class AnnotationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setSummary}.
-	 */
-	public void testAnnotationsetSummary() throws InvalidSPDXAnalysisException {
-		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAnnotation.getSummary());
-		String newStringValue = "new summary value";
-		testAnnotation.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnnotation.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setDescription}.
 	 */
 	public void testAnnotationsetDescription() throws InvalidSPDXAnalysisException {
@@ -145,6 +145,17 @@ public class AnnotationTest extends TestCase {
 		String newStringValue = "new description value";
 		testAnnotation.setDescription(newStringValue);
 		assertEquals(Optional.of(newStringValue), testAnnotation.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setSummary}.
+	 */
+	public void testAnnotationsetSummary() throws InvalidSPDXAnalysisException {
+		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testAnnotation.getSummary());
+		String newStringValue = "new summary value";
+		testAnnotation.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnnotation.getSummary());
 	}
 	
 	/**
@@ -170,17 +181,6 @@ public class AnnotationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setComment}.
-	 */
-	public void testAnnotationsetComment() throws InvalidSPDXAnalysisException {
-		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testAnnotation.getComment());
-		String newStringValue = "new comment value";
-		testAnnotation.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testAnnotation.getComment());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setName}.
 	 */
 	public void testAnnotationsetName() throws InvalidSPDXAnalysisException {
@@ -192,15 +192,14 @@ public class AnnotationTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Annotation#setComment}.
 	 */
-	public void testAnnotationgetExtensions() throws InvalidSPDXAnalysisException {
+	public void testAnnotationsetComment() throws InvalidSPDXAnalysisException {
 		Annotation testAnnotation = generator.builderForAnnotationTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testAnnotation.getExtensions())));
-//		testAnnotation.getExtensions().clear();
-//		testAnnotation.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testAnnotation.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testAnnotation.getComment());
+		String newStringValue = "new comment value";
+		testAnnotation.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testAnnotation.getComment());
 	}
 	
 	/**

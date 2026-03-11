@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -94,6 +94,17 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setExtension}.
+	 */
+	public void testSpdxDocumentsetExtension() throws InvalidSPDXAnalysisException {
+		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSpdxDocument.getExtension());
+//		testSpdxDocument.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSpdxDocument.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setCreationInfo}.
 	 */
 	public void testSpdxDocumentsetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -116,17 +127,6 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setSummary}.
-	 */
-	public void testSpdxDocumentsetSummary() throws InvalidSPDXAnalysisException {
-		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSpdxDocument.getSummary());
-		String newStringValue = "new summary value";
-		testSpdxDocument.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxDocument.getSummary());
-	}
-	
-	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setDescription}.
 	 */
 	public void testSpdxDocumentsetDescription() throws InvalidSPDXAnalysisException {
@@ -138,14 +138,14 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setComment}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setSummary}.
 	 */
-	public void testSpdxDocumentsetComment() throws InvalidSPDXAnalysisException {
+	public void testSpdxDocumentsetSummary() throws InvalidSPDXAnalysisException {
 		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxDocument.getComment());
-		String newStringValue = "new comment value";
-		testSpdxDocument.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testSpdxDocument.getComment());
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSpdxDocument.getSummary());
+		String newStringValue = "new summary value";
+		testSpdxDocument.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxDocument.getSummary());
 	}
 	
 	/**
@@ -160,15 +160,14 @@ public class SpdxDocumentTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.SpdxDocument#setComment}.
 	 */
-	public void testSpdxDocumentgetExtensions() throws InvalidSPDXAnalysisException {
+	public void testSpdxDocumentsetComment() throws InvalidSPDXAnalysisException {
 		SpdxDocument testSpdxDocument = generator.builderForSpdxDocumentTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSpdxDocument.getExtensions())));
-//		testSpdxDocument.getExtensions().clear();
-//		testSpdxDocument.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSpdxDocument.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSpdxDocument.getComment());
+		String newStringValue = "new comment value";
+		testSpdxDocument.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSpdxDocument.getComment());
 	}
 	
 	/**

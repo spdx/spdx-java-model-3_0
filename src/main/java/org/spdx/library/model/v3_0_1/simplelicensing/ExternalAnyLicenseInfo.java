@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -45,7 +45,6 @@ import org.spdx.library.model.v3_0_1.extension.Extension;
 public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements IndividualUriValue {
 
 	Collection<ExternalRef> externalRefs = Collections.emptyList();
-	Collection<Extension> extensions = Collections.emptyList();
 	Collection<IntegrityMethod> verifiedUsings = Collections.emptyList();
 	Collection<ExternalIdentifier> externalIdentifiers = Collections.emptyList();
 
@@ -105,9 +104,6 @@ public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements Individua
 	public Collection<ExternalRef> getExternalRefs() {
 		return externalRefs;
 	}
-	public Collection<Extension> getExtensions() {
-		return extensions;
-	}
 	public Collection<IntegrityMethod> getVerifiedUsings() {
 		return verifiedUsings;
 	}
@@ -115,6 +111,22 @@ public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements Individua
 		return externalIdentifiers;
 	}
 	
+		/**
+	 * @return the extension
+	 */
+	 @SuppressWarnings("unchecked")
+	public Optional<Extension> getExtension() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	
+	/**
+	 * @param extension the extension to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public AnyLicenseInfo setExtension(@Nullable Extension extension) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
 	/**
 	 * @return the creationInfo
 	 */
@@ -128,6 +140,34 @@ public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements Individua
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public AnyLicenseInfo setCreationInfo(@Nullable CreationInfo creationInfo) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the name
+	 */
+	public Optional<String> getName() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param name the name to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
+		throw new InvalidSPDXAnalysisException("External elements can not set properties");
+	}
+		/**
+	 * @return the description
+	 */
+	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
+		return Optional.empty();
+	}
+	/**
+	 * @param description the description to set
+	 * @return this to chain setters
+	 * @throws InvalidSPDXAnalysisException 
+	 */
+	public AnyLicenseInfo setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 		/**
@@ -156,34 +196,6 @@ public class ExternalAnyLicenseInfo extends AnyLicenseInfo  implements Individua
 	 * @throws InvalidSPDXAnalysisException 
 	 */
 	public AnyLicenseInfo setSummary(@Nullable String summary) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
-	 * @return the description
-	 */
-	public Optional<String> getDescription() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param description the description to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public AnyLicenseInfo setDescription(@Nullable String description) throws InvalidSPDXAnalysisException {
-		throw new InvalidSPDXAnalysisException("External elements can not set properties");
-	}
-		/**
-	 * @return the name
-	 */
-	public Optional<String> getName() throws InvalidSPDXAnalysisException {
-		return Optional.empty();
-	}
-	/**
-	 * @param name the name to set
-	 * @return this to chain setters
-	 * @throws InvalidSPDXAnalysisException 
-	 */
-	public AnyLicenseInfo setName(@Nullable String name) throws InvalidSPDXAnalysisException {
 		throw new InvalidSPDXAnalysisException("External elements can not set properties");
 	}
 	

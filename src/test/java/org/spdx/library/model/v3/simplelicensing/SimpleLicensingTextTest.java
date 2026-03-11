@@ -1,0 +1,211 @@
+/**
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
+ * SPDX-FileType: SOURCE
+ * SPDX-License-Identifier: Apache-2.0
+ */
+package org.spdx.library.model.v3.simplelicensing;
+
+import javax.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.spdx.core.CoreModelObject;
+import org.spdx.core.DefaultModelStore;
+import org.spdx.core.InvalidSPDXAnalysisException;
+import org.spdx.core.IModelCopyManager;
+import org.spdx.core.IndividualUriValue;
+import org.spdx.library.model.v3.ModelObjectV3;
+import org.spdx.storage.IModelStore;
+import org.spdx.storage.IModelStore.IdType;
+import org.spdx.storage.IModelStore.IModelStoreLock;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Objects;
+import java.util.Optional;
+import junit.framework.TestCase;
+import org.spdx.core.ModelRegistry;
+import org.spdx.library.model.v3.MockCopyManager;
+import org.spdx.library.model.v3.MockModelStore;
+import org.spdx.library.model.v3.SpdxConstantsV3;
+import org.spdx.library.model.v3.SpdxModelInfoV3_0;
+import org.spdx.library.model.v3.TestValuesGenerator;
+import org.spdx.library.model.v3.UnitTestHelper;
+import org.spdx.library.model.v3.core.Agent.AgentBuilder;
+import org.spdx.library.model.v3.core.CreationInfo;
+import org.spdx.library.model.v3.core.Element;
+import org.spdx.library.model.v3.core.ExternalIdentifier;
+import org.spdx.library.model.v3.core.ExternalRef;
+import org.spdx.library.model.v3.core.IntegrityMethod;
+import org.spdx.library.model.v3.core.ProfileIdentifierType;
+import org.spdx.library.model.v3.extension.Extension;
+import org.spdx.library.model.v3.simplelicensing.SimpleLicensingText.SimpleLicensingTextBuilder;
+
+/**
+ * GENERATED FILE - DO NOT MODIFY
+ */
+public class SimpleLicensingTextTest extends TestCase {
+
+	static final String TEST_OBJECT_URI = "https://test.uri/testuri";
+	
+	TestValuesGenerator generator;
+	
+	protected void setUp() throws Exception {
+		super.setUp();
+		generator = new TestValuesGenerator(new MockModelStore(), new MockCopyManager());
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#verify()}.
+	 * @throws InvalidSPDXAnalysisException on errors
+	 */
+	public void testVerify() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		List<String> result = testSimpleLicensingText.verify();
+		assertTrue(result.isEmpty());
+		// TODO - add negative tests
+	}
+
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#getType()}.
+	 */
+	public void testGetType() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals("SimpleLicensing.SimpleLicensingText", testSimpleLicensingText.getType());
+	}
+
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#Element(org.spdx.library.model.v3.simplelicensing.SimpleLicensingText.SimpleLicensingTextBuilder)}.
+	 */
+	public void testSimpleLicensingTextSimpleLicensingTextBuilder() throws InvalidSPDXAnalysisException {
+		generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+	}
+	
+	public void testEquivalent() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		SimpleLicensingText test2SimpleLicensingText = generator.builderForSimpleLicensingTextTests("https://testObject2").build();
+		assertTrue(testSimpleLicensingText.equivalent(test2SimpleLicensingText));
+		assertTrue(test2SimpleLicensingText.equivalent(testSimpleLicensingText));
+		// TODO change some parameters for negative tests
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setExtension}.
+	 */
+	public void testSimpleLicensingTextsetExtension() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testSimpleLicensingText.getExtension());
+//		testSimpleLicensingText.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testSimpleLicensingText.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setCreationInfo}.
+	 */
+	public void testSimpleLicensingTextsetCreationInfo() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+//		assertEquals(TEST_VALUE, testSimpleLicensingText.getCreationInfo());
+//		testSimpleLicensingText.setCreationInfo(NEW_TEST_VALUE);
+//		assertEquals(NEW_TEST_VALUE, testSimpleLicensingText.getCreationInfo());
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setDescription}.
+	 */
+	public void testSimpleLicensingTextsetDescription() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.DESCRIPTION_TEST_VALUE), testSimpleLicensingText.getDescription());
+		String newStringValue = "new description value";
+		testSimpleLicensingText.setDescription(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getDescription());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setComment}.
+	 */
+	public void testSimpleLicensingTextsetComment() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testSimpleLicensingText.getComment());
+		String newStringValue = "new comment value";
+		testSimpleLicensingText.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getComment());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setName}.
+	 */
+	public void testSimpleLicensingTextsetName() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.NAME_TEST_VALUE), testSimpleLicensingText.getName());
+		String newStringValue = "new name value";
+		testSimpleLicensingText.setName(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getName());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setSummary}.
+	 */
+	public void testSimpleLicensingTextsetSummary() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testSimpleLicensingText.getSummary());
+		String newStringValue = "new summary value";
+		testSimpleLicensingText.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testSimpleLicensingText.getSummary());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#setLicenseText}.
+	 */
+	public void testSimpleLicensingTextsetLicenseText() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+		assertEquals(TestValuesGenerator.LICENSE_TEXT_TEST_VALUE, testSimpleLicensingText.getLicenseText());
+		String newStringValue = "new licenseText value";
+		testSimpleLicensingText.setLicenseText(newStringValue);
+		assertEquals(newStringValue, testSimpleLicensingText.getLicenseText());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#getExternalIdentifier}.
+	 */
+	public void testSimpleLicensingTextgetExternalIdentifiers() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSimpleLicensingText.getExternalIdentifiers())));
+//		testSimpleLicensingText.getExternalIdentifiers().clear();
+//		testSimpleLicensingText.getExternalIdentifiers().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSimpleLicensingText.getExternalIdentifiers())));
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#getVerifiedUsing}.
+	 */
+	public void testSimpleLicensingTextgetVerifiedUsings() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSimpleLicensingText.getVerifiedUsings())));
+//		testSimpleLicensingText.getVerifiedUsings().clear();
+//		testSimpleLicensingText.getVerifiedUsings().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSimpleLicensingText.getVerifiedUsings())));
+		//TODO: Implement
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.simplelicensing.SimpleLicensingText#getExternalRef}.
+	 */
+	public void testSimpleLicensingTextgetExternalRefs() throws InvalidSPDXAnalysisException {
+		SimpleLicensingText testSimpleLicensingText = generator.builderForSimpleLicensingTextTests(TEST_OBJECT_URI).build();
+//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testSimpleLicensingText.getExternalRefs())));
+//		testSimpleLicensingText.getExternalRefs().clear();
+//		testSimpleLicensingText.getExternalRefs().addAll(NEW_TEST_VALUE);
+//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testSimpleLicensingText.getExternalRefs())));
+		//TODO: Implement
+	}
+}

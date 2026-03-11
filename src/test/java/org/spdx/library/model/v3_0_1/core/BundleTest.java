@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: Copyright (c) 2025 Source Auditor Inc.
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
  * SPDX-FileType: SOURCE
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -93,6 +93,17 @@ public class BundleTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setExtension}.
+	 */
+	public void testBundlesetExtension() throws InvalidSPDXAnalysisException {
+		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
+//		assertEquals(Optional.of(TEST_VALUE), testBundle.getExtension());
+//		testBundle.setExtension(NEW_TEST_VALUE);
+//		assertEquals(Optional.of(NEW_TEST_VALUE), testBundle.getExtension());
+		//TODO: Implement
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setCreationInfo}.
 	 */
 	public void testBundlesetCreationInfo() throws InvalidSPDXAnalysisException {
@@ -101,17 +112,6 @@ public class BundleTest extends TestCase {
 //		testBundle.setCreationInfo(NEW_TEST_VALUE);
 //		assertEquals(NEW_TEST_VALUE, testBundle.getCreationInfo());
 		//TODO: Implement
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setSummary}.
-	 */
-	public void testBundlesetSummary() throws InvalidSPDXAnalysisException {
-		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBundle.getSummary());
-		String newStringValue = "new summary value";
-		testBundle.setSummary(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBundle.getSummary());
 	}
 	
 	/**
@@ -126,6 +126,17 @@ public class BundleTest extends TestCase {
 	}
 	
 	/**
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setSummary}.
+	 */
+	public void testBundlesetSummary() throws InvalidSPDXAnalysisException {
+		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.SUMMARY_TEST_VALUE), testBundle.getSummary());
+		String newStringValue = "new summary value";
+		testBundle.setSummary(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBundle.getSummary());
+	}
+	
+	/**
 	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setContext}.
 	 */
 	public void testBundlesetContext() throws InvalidSPDXAnalysisException {
@@ -134,17 +145,6 @@ public class BundleTest extends TestCase {
 		String newStringValue = "new context value";
 		testBundle.setContext(newStringValue);
 		assertEquals(Optional.of(newStringValue), testBundle.getContext());
-	}
-	
-	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setComment}.
-	 */
-	public void testBundlesetComment() throws InvalidSPDXAnalysisException {
-		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
-		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBundle.getComment());
-		String newStringValue = "new comment value";
-		testBundle.setComment(newStringValue);
-		assertEquals(Optional.of(newStringValue), testBundle.getComment());
 	}
 	
 	/**
@@ -159,15 +159,14 @@ public class BundleTest extends TestCase {
 	}
 	
 	/**
-	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#getExtension}.
+	 * Test method for {@link org.spdx.library.model.v3_0_1.core.Bundle#setComment}.
 	 */
-	public void testBundlegetExtensions() throws InvalidSPDXAnalysisException {
+	public void testBundlesetComment() throws InvalidSPDXAnalysisException {
 		Bundle testBundle = generator.builderForBundleTests(TEST_OBJECT_URI).build();
-//		assertTrue(UnitTestHelper.isListsEquivalent(TEST_VALUE, new ArrayList<>(testBundle.getExtensions())));
-//		testBundle.getExtensions().clear();
-//		testBundle.getExtensions().addAll(NEW_TEST_VALUE);
-//		assertTrue(UnitTestHelper.isListsEquivalent(NEW_TEST_VALUE, new ArrayList<>(testBundle.getExtensions())));
-		//TODO: Implement
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testBundle.getComment());
+		String newStringValue = "new comment value";
+		testBundle.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testBundle.getComment());
 	}
 	
 	/**
