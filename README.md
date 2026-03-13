@@ -1,4 +1,8 @@
 # spdx-java-model-3_0
+
+[![Maven Central](https://img.shields.io/maven-central/v/org.spdx/spdx-java-model-3_0)](https://central.sonatype.com/artifact/org.spdx/spdx-java-model-3_0)
+[![javadoc](https://javadoc.io/badge2/org.spdx/spdx-java-model-3_0/javadoc.svg)](https://javadoc.io/doc/org.spdx/spdx-java-model-3_0)
+
 Generates Java source files from the SPDX 3.0+ specification OWL and SHACL files
 
 ## READ ONLY
