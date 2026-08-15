@@ -1,0 +1,121 @@
+/**
+ * SPDX-FileCopyrightText: Copyright (c) 2026 Source Auditor Inc.
+ * SPDX-FileType: SOURCE
+ * SPDX-License-Identifier: Apache-2.0
+ */
+package org.spdx.library.model.v3.core;
+
+import javax.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.spdx.core.CoreModelObject;
+import org.spdx.core.DefaultModelStore;
+import org.spdx.core.InvalidSPDXAnalysisException;
+import org.spdx.core.IModelCopyManager;
+import org.spdx.core.IndividualUriValue;
+import org.spdx.library.model.v3.ModelObjectV3;
+import org.spdx.storage.IModelStore;
+import org.spdx.storage.IModelStore.IdType;
+import org.spdx.storage.IModelStore.IModelStoreLock;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Objects;
+import java.util.Optional;
+import junit.framework.TestCase;
+import org.spdx.core.ModelRegistry;
+import org.spdx.library.model.v3.MockCopyManager;
+import org.spdx.library.model.v3.MockModelStore;
+import org.spdx.library.model.v3.SpdxConstantsV3;
+import org.spdx.library.model.v3.TestValuesGenerator;
+import org.spdx.library.model.v3.UnitTestHelper;
+import org.spdx.library.model.v3.core.Agent.AgentBuilder;
+import org.spdx.library.model.v3.core.Hash.HashBuilder;
+
+/**
+ * GENERATED FILE - DO NOT MODIFY
+ */
+public class HashTest extends TestCase {
+
+	static final String TEST_OBJECT_URI = "https://test.uri/testuri";
+	
+	TestValuesGenerator generator;
+	
+	protected void setUp() throws Exception {
+		super.setUp();
+		generator = new TestValuesGenerator(new MockModelStore(), new MockCopyManager());
+	}
+
+	protected void tearDown() throws Exception {
+		super.tearDown();
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.core.Hash#verify()}.
+	 * @throws InvalidSPDXAnalysisException on errors
+	 */
+	public void testVerify() throws InvalidSPDXAnalysisException {
+		Hash testHash = generator.builderForHashTests(TEST_OBJECT_URI).build();
+		List<String> result = testHash.verify();
+		assertTrue(result.isEmpty());
+		// TODO - add negative tests
+	}
+
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.core.Hash#getType()}.
+	 */
+	public void testGetType() throws InvalidSPDXAnalysisException {
+		Hash testHash = generator.builderForHashTests(TEST_OBJECT_URI).build();
+		assertEquals("Core.Hash", testHash.getType());
+	}
+
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.core.Hash#Element(org.spdx.library.model.v3.core.Hash.HashBuilder)}.
+	 */
+	public void testHashHashBuilder() throws InvalidSPDXAnalysisException {
+		generator.builderForHashTests(TEST_OBJECT_URI).build();
+	}
+	
+	public void testEquivalent() throws InvalidSPDXAnalysisException {
+		Hash testHash = generator.builderForHashTests(TEST_OBJECT_URI).build();
+		Hash test2Hash = generator.builderForHashTests("https://testObject2").build();
+		assertTrue(testHash.equivalent(test2Hash));
+		assertTrue(test2Hash.equivalent(testHash));
+		// TODO change some parameters for negative tests
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.core.Hash#setAlgorithm}.
+	 */
+	public void testHashsetAlgorithm() throws InvalidSPDXAnalysisException {
+		Hash testHash = generator.builderForHashTests(TEST_OBJECT_URI).build();
+		assertEquals(TestValuesGenerator.ALGORITHM_TEST_VALUE1, testHash.getAlgorithm());
+		testHash.setAlgorithm(TestValuesGenerator.ALGORITHM_TEST_VALUE2);
+		assertEquals(TestValuesGenerator.ALGORITHM_TEST_VALUE2, testHash.getAlgorithm());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.core.Hash#setHashValue}.
+	 */
+	public void testHashsetHashValue() throws InvalidSPDXAnalysisException {
+		Hash testHash = generator.builderForHashTests(TEST_OBJECT_URI).build();
+		assertEquals(TestValuesGenerator.HASH_VALUE_TEST_VALUE, testHash.getHashValue());
+		String newStringValue = "new hashValue value";
+		testHash.setHashValue(newStringValue);
+		assertEquals(newStringValue, testHash.getHashValue());
+	}
+	
+	/**
+	 * Test method for {@link org.spdx.library.model.v3.core.Hash#setComment}.
+	 */
+	public void testHashsetComment() throws InvalidSPDXAnalysisException {
+		Hash testHash = generator.builderForHashTests(TEST_OBJECT_URI).build();
+		assertEquals(Optional.of(TestValuesGenerator.COMMENT_TEST_VALUE), testHash.getComment());
+		String newStringValue = "new comment value";
+		testHash.setComment(newStringValue);
+		assertEquals(Optional.of(newStringValue), testHash.getComment());
+	}
+}
